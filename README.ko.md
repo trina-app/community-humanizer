@@ -31,8 +31,8 @@
 ## 같은 글, 세 가지 댓글
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/img/thread-ko-dark.svg">
-  <img src="docs/img/thread-ko-light.svg" alt="클리앙 모두의공원 '교촌치킨 드시는분?' 글. 그냥 Claude는 세 문단(사람 11%), im-not-ai와 실제 댓글 10개는 세 문장(사람 44%), community-humanizer는 '닭이 작은 건 인정인데 가격이 안 작아요 ㅋㅋ' 한 줄(사람 82%). 진짜 공감 1위 댓글은 사람 88%." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/thread-ko-dark.png">
+  <img src="docs/img/thread-ko-light.png" alt="클리앙 모두의공원 '교촌치킨 드시는분?' 글. 그냥 Claude는 세 문단(사람 11%), im-not-ai와 실제 댓글 10개는 세 문장(사람 44%), community-humanizer는 '닭이 작은 건 인정인데 가격이 안 작아요 ㅋㅋ' 한 줄(사람 82%). 진짜 공감 1위 댓글은 사람 88%." width="100%">
 </picture>
 
 <p align="center"><sub>[원문](https://www.clien.net/service/board/park/19296644) · 점수 출처 [benchmark/korean-comments/judged](benchmark/korean-comments/judged)</sub></p>
@@ -40,8 +40,8 @@
 ## 사람 같은지 채점한 결과
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/img/scores-ko-dark.svg">
-  <img src="docs/img/scores-ko-light.svg" alt="시험용 글 28개의 '사람이 썼다' 점수 평균. 클리앙 댓글: 그냥 Claude 9, im-not-ai와 실제 댓글 30, community-humanizer 62, 진짜 공감 1위 댓글 89. Reddit 댓글: 그냥 Claude 11, humanizer와 실제 댓글 24, community-humanizer 58, 진짜 1위 댓글 80." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/scores-ko-dark.png">
+  <img src="docs/img/scores-ko-light.png" alt="시험용 글 28개의 '사람이 썼다' 점수 평균. 클리앙 댓글: 그냥 Claude 9, im-not-ai와 실제 댓글 30, community-humanizer 62, 진짜 공감 1위 댓글 89. Reddit 댓글: 그냥 Claude 11, humanizer와 실제 댓글 24, community-humanizer 58, 진짜 1위 댓글 80." width="100%">
 </picture>
 
 채점자 셋(GPT, Claude Opus, Claude Sonnet)에게 한 글의 모든 버전을 한꺼번에, 채점자마다 다른 순서로 섞어서 보여 줬어요. 버전마다 "사람이 썼을 확률"(0~100)을 매겼어요. 숫자는 모두 프롬프트를 고칠 때 쓰지 않은 글(언어마다 28개)에서 나왔고, 통과 기준은 시험 전에 적어 뒀어요. 채점자별 점수, 글 시험, 신뢰 구간, 생성 결과는 [benchmark/RESULTS.ko.md](benchmark/RESULTS.ko.md)에 있어요.

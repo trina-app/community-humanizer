@@ -31,8 +31,8 @@
 ## Same thread, three writers
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/img/thread-en-dark.svg">
-  <img src="docs/img/thread-en-light.svg" alt="r/ClaudeAI thread 'What would you do if there's a Claude outage?'. Plain Claude wrote three paragraphs (19% human). humanizer with 10 real comments wrote two (23% human). community-humanizer wrote one line, 'the weekly limit is already the outage for most people on here' (78% human); GPT and Claude Opus ranked it above the real top comment, which scored 86%." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/thread-en-dark.png">
+  <img src="docs/img/thread-en-light.png" alt="r/ClaudeAI thread 'What would you do if there's a Claude outage?'. Plain Claude wrote three paragraphs (19% human). humanizer with 10 real comments wrote two (23% human). community-humanizer wrote one line, 'the weekly limit is already the outage for most people on here' (78% human); GPT and Claude Opus ranked it above the real top comment, which scored 86%." width="100%">
 </picture>
 
 <p align="center"><sub>[The thread](https://www.reddit.com/r/ClaudeAI/comments/1xuzlpu/) · scores from [benchmark/reddit-comments/judged-F1](benchmark/reddit-comments/judged-F1)</sub></p>
@@ -40,8 +40,8 @@
 ## Does it work?
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/img/scores-en-dark.svg">
-  <img src="docs/img/scores-en-light.svg" alt="Average 'a person wrote this' score on 28 held-out Reddit threads: plain Claude 11, humanizer plus 10 real comments 24, community-humanizer 58, the real top comment 80." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/scores-en-dark.png">
+  <img src="docs/img/scores-en-light.png" alt="Average 'a person wrote this' score on 28 held-out Reddit threads: plain Claude 11, humanizer plus 10 real comments 24, community-humanizer 58, the real top comment 80." width="100%">
 </picture>
 
 Three AI judges saw every version of a reply at once, each in its own shuffled order, and gave each a 0–100 chance that a person wrote it. The 28 threads come from r/smallbusiness, r/SaaS, r/selfhosted, r/ClaudeAI and r/startups, and none of them was used while tuning the prompts. The pass rule was written down before the run. Per-judge scores, posts, intervals and every generated text: [benchmark/RESULTS.md](benchmark/RESULTS.md).
