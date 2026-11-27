@@ -1,7 +1,8 @@
-# Quiz site: static page + API on one Worker. Deploy only after the founder's OK (name and domain not decided yet).
+# Quiz site: static page + API on one Worker. Live at https://quiz.trina.app on the Trina Cloudflare account (contact@trina.app).
 name = "which-one-is-real"
 main = "src/worker.js"
 compatibility_date = "2026-07-01"
+routes = [{ pattern = "quiz.trina.app", custom_domain = true }]
 
 [assets]
 directory = "./public"
@@ -11,4 +12,4 @@ run_worker_first = ["/api/*"]
 [[d1_databases]]
 binding = "DB"
 database_name = "which-one-is-real"
-database_id = "00000000-0000-0000-0000-000000000000" # replaced by `wrangler d1 create` before the first deploy
+database_id = "8f4cd84d-2179-45bb-8c09-dde84dd02153"

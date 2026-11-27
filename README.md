@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="#quiz"><img src="https://img.shields.io/badge/Human_or_AI%3F-Take_the_quiz-2a78d6?style=for-the-badge" alt="Human or AI? Take the quiz"></a>
+  <a href="https://quiz.trina.app/?lang=en"><img src="https://img.shields.io/badge/Human_or_AI%3F-Take_the_quiz-2a78d6?style=for-the-badge" alt="Human or AI? Take the quiz"></a>
 </p>
 
 <p align="center">
@@ -105,6 +105,8 @@ node skills/community-humanizer/bin/voice.mjs post --to r/selfhosted --title "Is
 **Cost and time:** one reply (three drafts and the pick) is about $0.07 and 13 seconds with Opus writing, or $0.04 with `--fast` (Sonnet), at the API prices Claude Code reports. The first time in a subreddit, reading and labelling it takes about a minute and is cached for a week.
 
 ## Quiz
+
+**Play it: [quiz.trina.app](https://quiz.trina.app/?lang=en)**
 
 Ten questions from the held-out sets: two versions of a reply or a post, and a person wrote one of them. At the end you see your score and how everyone else did.
 

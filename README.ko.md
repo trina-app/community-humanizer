@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="#퀴즈"><img src="https://img.shields.io/badge/%EC%82%AC%EB%9E%8C%EC%9D%BC%EA%B9%8C_AI%EC%9D%BC%EA%B9%8C%3F-%ED%80%B4%EC%A6%88_%ED%92%80%EA%B8%B0-2a78d6?style=for-the-badge" alt="사람일까 AI일까? 퀴즈 풀기"></a>
+  <a href="https://quiz.trina.app/?lang=ko"><img src="https://img.shields.io/badge/%EC%82%AC%EB%9E%8C%EC%9D%BC%EA%B9%8C_AI%EC%9D%BC%EA%B9%8C%3F-%ED%80%B4%EC%A6%88_%ED%92%80%EA%B8%B0-2a78d6?style=for-the-badge" alt="사람일까 AI일까? 퀴즈 풀기"></a>
 </p>
 
 <p align="center">
@@ -105,6 +105,8 @@ node skills/community-humanizer/bin/voice.mjs post --to clien/kin --title "맥�
 **비용과 시간:** 댓글 하나(초안 3개 + 고르기)는 Opus가 쓰면 약 $0.07에 13초, `--fast`(Sonnet)로 쓰면 약 $0.04예요. Claude Code가 보여 주는 API 가격 기준이에요. 처음 쓰는 커뮤니티는 읽고 나누는 데 1분쯤 걸리고, 그 결과를 일주일 동안 저장해 둬요.
 
 ## 퀴즈
+
+**바로 풀기: [quiz.trina.app](https://quiz.trina.app/?lang=ko)**
 
 시험에 쓴 글에서 10문제가 나와요. 댓글이나 글 두 개 중 하나는 사람이 썼어요. 다 풀면 내 점수와 다른 사람들이 맞힌 비율을 보여 줘요.
 
