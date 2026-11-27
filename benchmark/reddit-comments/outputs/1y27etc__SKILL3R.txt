@@ -1,0 +1,1 @@
+honestly the ones that stick are the boring single-purpose scripts, not the full apps. Anything that runs on its own (cron job, small bot, a folder watcher that renames or sorts files) beats anything you have to remember to open. If it needs you to open a tab and type something, it dies in about two weeks

@@ -1,0 +1,13 @@
+Mostly agree, but I'd add two things from the other side of the table.
+
+First, "proven demand" only counts if it points to a big outcome. A VC doesn't need to believe you'll build a good business. They need to believe there's a real path to returning the fund, so a profitable $5M/yr niche with strong retention can still get a pass. Founders often have the evidence but never frame it as "here's why this gets 100x bigger."
+
+Second, a lot of the famous examples are cleaner in hindsight. Airbnb was rejected by plenty of investors, and the "demand existed on Craigslist" story is much easier to tell after they won. At the time, what got them funded was weak but real traction, a scrappy founding team that kept shipping, and a few investors who happened to buy the market thesis. So it's rarely a single proof point. It's a coherent story where the team, the early numbers, and the market all point the same direction.
+
+Practical stuff I'd add:
+
+- **Stage changes what "proof" means.** Pre-seed is mostly team and insight. Seed is early signal like waitlist conversion, pilots, or LOIs. Series A is repeatable growth and unit economics.
+- **Warm intros matter more than people want to admit.** A cold deck gets a fraction of the attention that a trusted intro does.
+- **Fit matters.** Pitching a fund that doesn't invest in your sector, stage, or check size wastes everyone's time.
+
+If you're a first-time founder with no exit and no big-name résumé, the best substitute is momentum. Show growth that's visibly accelerating, and the "proven team" objection gets a lot quieter.

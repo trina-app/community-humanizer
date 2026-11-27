@@ -1,0 +1,22 @@
+{
+ "id": "1xzln70",
+ "sub": "SaaS",
+ "order": [
+  "PLAIN",
+  "BLADER_S",
+  "SKILL3",
+  "HUMAN"
+ ],
+ "human": {
+  "PLAIN": 3,
+  "BLADER_S": 15,
+  "SKILL3": 55,
+  "HUMAN": 25
+ },
+ "rank": {
+  "PLAIN": 4,
+  "BLADER_S": 2,
+  "SKILL3": 3,
+  "HUMAN": 1
+ }
+}

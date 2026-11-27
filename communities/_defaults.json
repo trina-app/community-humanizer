@@ -1,0 +1,25 @@
+{
+ "note": "type rates used when a community has no profile and fewer than 40 usable comments",
+ "en": {
+  "answer": 0.416,
+  "one-liner": 0.136,
+  "anecdote": 0.167,
+  "disagree": 0.083,
+  "question-back": 0.049,
+  "side-point": 0.04,
+  "agree": 0.012,
+  "joke": 0.07,
+  "complaint": 0.026
+ },
+ "ko": {
+  "answer": 0.399,
+  "one-liner": 0.132,
+  "anecdote": 0.097,
+  "disagree": 0.104,
+  "question-back": 0.045,
+  "side-point": 0.073,
+  "agree": 0.005,
+  "joke": 0.068,
+  "complaint": 0.078
+ }
+}

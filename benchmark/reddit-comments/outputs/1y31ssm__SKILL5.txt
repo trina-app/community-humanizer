@@ -1,0 +1,1 @@
+Tailscale for you two, it's one app and she just toggles it on. For the occasional share-with-others stuff, put only Immich or Nextcloud share links behind a Cloudflare Tunnel and leave the rest private

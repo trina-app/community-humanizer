@@ -1,0 +1,28 @@
+{
+ "id": "1y27etc",
+ "sub": "ClaudeAI",
+ "order": [
+  "RULE",
+  "SKILL",
+  "BLADER_S",
+  "BLADER",
+  "HUMAN",
+  "PLAIN"
+ ],
+ "human": {
+  "RULE": 10,
+  "SKILL": 25,
+  "BLADER_S": 15,
+  "BLADER": 30,
+  "HUMAN": 92,
+  "PLAIN": 8
+ },
+ "rank": {
+  "RULE": 3,
+  "SKILL": 4,
+  "BLADER_S": 5,
+  "BLADER": 2,
+  "HUMAN": 1,
+  "PLAIN": 6
+ }
+}

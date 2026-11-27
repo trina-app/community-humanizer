@@ -1,0 +1,11 @@
+Pretty common with multilingual models. Claude doesn't have a hard "English mode". It's predicting the next token across everything it learned, and sometimes a token or two of Chinese gets more probable than the English option, especially when the context is long or messy. Once a Chinese token is in there, the following tokens often stay in Chinese because the model conditions on its own output.
+
+Things that make it more likely:
+
+- Very long conversations, or a context full of code, logs, or mixed-language text
+- Technical or abstract content where Chinese-language sources were a big part of the training data
+- Sampling randomness: one unlucky token can tip it over
+
+Easy fixes: tell it "respond in English only" (putting it in your system prompt or project instructions makes it stick), or just regenerate. If it keeps happening in a fresh chat with a clean prompt, hit the thumbs down and report it so Anthropic can see it.
+
+It looks weird, but it's a known quirk, not Claude going rogue.

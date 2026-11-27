@@ -1,0 +1,22 @@
+{
+ "id": "1y1im0b",
+ "sub": "selfhosted",
+ "order": [
+  "SKILL3",
+  "BLADER_S",
+  "PLAIN",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL3": 62,
+  "BLADER_S": 55,
+  "PLAIN": 8,
+  "HUMAN": 72
+ },
+ "rank": {
+  "SKILL3": 3,
+  "BLADER_S": 1,
+  "PLAIN": 2,
+  "HUMAN": 4
+ }
+}

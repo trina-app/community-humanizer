@@ -1,0 +1,11 @@
+I went to an AI keynote today, and somewhere around the fifth slide I started noticing something. Every other slide had the same rhetorical move: "X does Y. Z doesn't." Check every line of code, not every decision. Blame the team, don't take ownership. You know the shape.
+
+Once I heard it, I couldn't stop. It's on ads, street banners, company websites, pitch decks. It feels like I put on the sunglasses from They Live and now the whole world is just billboards saying OBEY, except they say "It's not a tool. It's a teammate."
+
+My suspicion is that this is Claude-style phrasing leaking into how people talk and write. Maybe the slides were AI-generated, maybe the speaker just soaked it up from reading a lot of AI output. To be fair, some of it probably isn't AI at all and just happens to fit the pattern. People were writing punchy contrast lines long before LLMs. But I also get a gut feeling of "Claude wrote that" even when I can't point to a specific pattern, and I'm not sure how much of that is real and how much is me being primed.
+
+What bugs me is the bigger picture. I like the tool, I use it all the time. But if it's quietly shaping how we communicate, it might be shaping how we think too, and everything starts to sound like the same smooth, well-balanced, slightly too-tidy voice.
+
+For anything that actually matters to me, I want to keep my own voice. My guess is that the people who keep writing on their own will stand out more and come across as more authentic as this spreads.
+
+So, is anyone else noticing this? Or have I just been staring at too much model output? Also partly just venting, so feel free to vent along with me.

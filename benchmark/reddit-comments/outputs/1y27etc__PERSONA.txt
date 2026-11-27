@@ -1,0 +1,1 @@
+a script that renames the pile of scanned PDFs in my downloads folder based on what's actually in them. boring as hell but I use it every week and I'd be genuinely annoyed if it broke

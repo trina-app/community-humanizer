@@ -1,0 +1,1 @@
+Picking the builder is the wrong question. Either one gets you a demo that works, and the code it spits out is the part engineers will probably rewrite anyway. For a beta with a handful of users that's fine, just don't spend a week agonizing over which tool, and don't plan the whole thing around the handoff to engineers you don't have yet

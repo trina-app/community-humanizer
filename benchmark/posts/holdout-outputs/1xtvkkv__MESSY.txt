@@ -1,0 +1,9 @@
+Not trying to sell anything here, just want real answers from people who've actually dealt with this.
+
+I've been building sites for about 15 years, mostly bigger companies on WordPress and custom CMS stuff. Now I want to start working with small local businesses in my own community, and I'm new to this sub so bear with me. The kind of people I mean are contractors, woodworkers, accountants, roofers, bookkeepers, landscapers. Basically someone who needs a simple 4-5 page site, decent local SEO, and something they can edit themselves without calling me every time they change a phone number.
+
+I know Webflow and Framer already, but when I talk to local owners they keep narrowing it down to Wix or Squarespace. So that's the question. Wix vs Squarespace for a service business.
+
+What I'd love to hear is what you actually run, what kind of business you have, which one you went with and why. If you've used both, even better. And if you hate one of them I want to hear that too, the more specific the better.
+
+I'm deliberately not saying what I think because I don't want to steer anyone. Thanks in advance

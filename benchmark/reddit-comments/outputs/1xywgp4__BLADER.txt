@@ -1,0 +1,11 @@
+140TB/month averages out to about 430 Mbps, so you don't need 2 Gbps, a solid 1 Gbps port is enough. The catch is that almost nobody sells that on a VPS. "Unmetered" VPS plans usually have fair-use clauses that kick in way before 140TB, and you'd get a mail from them within a month.
+
+What I'd look at:
+
+- **Hetzner dedicated server** in the EU. Last I checked they were 1 Gbit with unlimited traffic, around 40 to 50 euro/month for the auction ones. Their cloud VPS is capped at 20TB included and about 1 euro/TB after that, so don't use that.
+- **OVH Eco/Kimsufi/So you Start dedicated**. Unmetered at 500 Mbps to 1 Gbps depending on the model. Check the current terms.
+- **Hosts that sell by port speed**, like FDCServers, Datapacket or Leaseweb. More expensive, but they actually mean it when they say unmetered.
+
+Also, ROMs and DMCA are a bad mix with any mainstream host. They'll forward notices like Cloudflare does, and repeated ones get you terminated too, so read the abuse policy before paying. Same goes for the CF free plan, since pushing that much large-file traffic through it is already against their terms. That's probably a bigger risk than the DMCA mails.
+
+If you still want the Mac Mini as the origin, put a cheap VPS in front with WireGuard back home and nginx caching the big files. Your home IP stays hidden, and if the cache hit rate is decent the tunnel carries way less than 140TB. But the VPS still pushes all the outbound traffic, so it has the same bandwidth problem. A dedicated box with the files on it directly is simpler.

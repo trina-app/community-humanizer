@@ -1,0 +1,7 @@
+Basically I'm scared Cloudflare is going to drop my account one day. i get DMCA notices forwarded through them, and I answer every one pretty fast, but it still feels like a matter of time.
+
+I run a retro gaming site off an M4 Mac Mini at home. 8TB SSD, 10Gbps line, and it's doing around 140 TB a month. Only exposed through a Cloudflare tunnel, with their caching and bot protection in front.
+
+Problem is I only have a shared IPv4 at home so I can't just port forward, and I really don't want my home IP out there anyway. Going IPv6 only is an option I guess but I'd rather not.
+
+So is there any cheap or free replacement for the tunnel? Was thinking a VPS with at least 2Gbps unmetered, but no idea if that's realistic at that price. Anyone doing something like this?

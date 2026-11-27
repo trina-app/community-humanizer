@@ -1,0 +1,5 @@
+I'd probably finally do all the stuff I keep putting off because "Claude could do it faster." Docs nobody reads, cleaning up old tickets, actually reading the code I merged last week.
+
+What would hurt is losing the thinking out loud. A lot of my workflow is now explain the problem to Claude, get a second opinion, then decide. Without that I'd be slower at making decisions and slower at typing too. Same as when a coworker is out sick, I guess.
+
+The XKCD is spot on. "Claude's down" is the new "my code's compiling" and I've already caught myself saying it with a straight face.

@@ -1,0 +1,11 @@
+I keep getting the same question in pitches lately: "Why couldn't we just build this ourselves with Claude?"
+
+My current answer is that yes, you could probably get a weaker version working. But it would cost real time, effort, and money to build, and then you'd have to maintain it. Someone on your team becomes the owner of that thing forever. Sometimes that lands, sometimes I can tell it doesn't.
+
+What's bugging me is that this objection doesn't seem specific to us. I suspect it applies to 95%+ of SaaS startups right now. If a prospect can plausibly say "we could vibe-code that," then the product itself probably isn't the moat anymore. Maybe the real moat is distribution and sales: getting in front of the right people, earning trust, and being the default choice before they even think about building.
+
+Curious how others are handling this in pitches:
+
+- Do you address it head-on or wait for it to come up?
+- What answer has actually worked for you?
+- Do you think I'm right that distribution is the moat now, or am I missing something?

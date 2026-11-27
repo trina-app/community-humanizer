@@ -1,0 +1,1 @@
+Docker socket mounted into like six containers because writing proper permissions is a weekend I'm never getting back. Every time I read about why that's bad I nod, close the tab, and go restart something with it

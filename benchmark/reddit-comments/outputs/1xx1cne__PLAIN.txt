@@ -1,0 +1,15 @@
+Use hardlinks. That's the actual answer to the seeding problem, and it's what the Arr stack does under the hood.
+
+A hardlink makes a second directory entry pointing at the same data on disk. The file shows up in both `downloads/complete` and `jellyfin/movies`, but it only takes up space once. The torrent client keeps seeding from its path, Jellyfin reads from its own, and you can rename or delete either one without breaking the other. Symlinks are worse here because they break as soon as the original gets moved or cleaned up.
+
+The one catch is that both paths have to be on the same filesystem. Your layout already has everything under a single `media` directory, so you're most of the way there. Just make sure that in your containers you mount the *parent* `media` directory as one volume (e.g. `/media`), not `downloads` and `jellyfin` as separate mounts. Separate mounts look like different filesystems to the container and hardlinks fail, so it silently falls back to copying.
+
+For the sorting problem (movies vs shows vs ebooks), that's what Sonarr, Radarr and Readarr/LazyLibrarian are for. Each one handles its own category:
+
+- Give your torrent client categories (`tv`, `movies`, `books`).
+- Sonarr/Radarr watch their category, hardlink the finished file into the right library folder, and rename it properly.
+- Your torrent client keeps seeding the original as long as you want, and no cron job is needed.
+
+If you don't want the whole stack, you can still do it manually with `cp -al src dest` (or `ln`) instead of `mv`, and you get the same seeding benefit. But once you have more than a handful of downloads, Sonarr/Radarr will save you a lot of time.
+
+The TRaSH Guides have a good write-up of the folder structure and hardlink setup if you want to get it right the first time.

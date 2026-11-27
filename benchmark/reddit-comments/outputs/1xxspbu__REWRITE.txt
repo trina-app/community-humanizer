@@ -1,0 +1,16 @@
+I'd think about it as how much a wrong answer costs you, not how hard the task feels.
+
+Haiku for quick, low-stakes stuff where you'd notice if it's off: reformatting resume bullets, summarizing a job posting, turning a daycare's pricing page into a comparison table, drafting a "just checking in" email, pulling dates or fees out of a pile of text.
+
+Sonnet for most of your actual day. Tailoring a cover letter to a specific posting, prepping interview answers, figuring out what to ask a daycare on a tour, and most Claude Code work like writing a function, fixing a bug, explaining what a file does, or small refactors.
+
+Opus when a mistake is expensive or the problem is tangled. Deciding how to position yourself when you switch roles, comparing two job offers with a lot of tradeoffs, planning the architecture of a new project in Claude Code, debugging something Sonnet already failed at twice, or reviewing a big change across many files.
+
+Some rules of thumb:
+
+- Start on Sonnet. Move up if the answer is shallow or wrong, and move down if you're doing the same simple thing over and over.
+- Long repetitive jobs like "do this to 40 job postings" are where Haiku saves you the most.
+- In Claude Code, a common split is Opus for planning and Sonnet for executing the plan. Plan mode is good for this.
+- Opus isn't always better, just slower and more expensive. On simple tasks it often gives you the same answer with more words.
+
+For "everyday," ask whether you'd be annoyed to redo it. If not, use the smaller model. If yes, go up a tier.

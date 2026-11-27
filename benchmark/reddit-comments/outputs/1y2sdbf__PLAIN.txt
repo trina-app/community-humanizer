@@ -1,0 +1,5 @@
+Updates. I know I should apply them on a schedule after reading changelogs, and instead I have Watchtower pull latest on most containers and I find out something broke when my wife says the Jellyfin is down again.
+
+Pinning versions is the right answer and I've done it for the stuff that actually matters, like the database and anything with a migration step. Everything else just floats. Maybe twice a year something breaks, I spend an evening on it, and I still come out ahead on time compared to babysitting 40 containers.
+
+The other one is that my "staging environment" is me doing it on prod at 11pm on a Sunday.

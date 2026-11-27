@@ -1,0 +1,10 @@
+Honestly I'd stop emailing professors. Academics are slow to respond, have tiny budgets, and mostly use open datasets like Ego4D. The people who actually pay for egocentric data right now are mostly industry: robotics startups, the foundation model teams at bigger companies, and data/ML ops leads who are scrambling for training data. Those folks are way easier to reach on LinkedIn or X than a professor buried in grant applications.
+
+A few things I'd try:
+
+- Find 30 or so robotics/embodied AI startups (look at recent funding rounds, YC batches, job posts that mention "egocentric" or "teleoperation data") and message the ML lead or founder. Don't pitch. Ask "where do you get your training data today and what's the annoying part?" People will answer that if you're specific.
+- Pull a small sample of what your contributors have collected, clean it up, and post it publicly (Hugging Face, X, r/robotics, relevant Discords). A free sample gets you inbound conversations in a way cold emails don't, and you'll see right away who actually downloads and asks follow-ups.
+- Skip the $1k conferences for now. Workshops at the big ones are often much cheaper or virtual, and lots of the people you want are on X and Discord anyway.
+- Try to get something concrete early: a small paid pilot or at least a letter of intent. Lots of people will say "yeah that sounds interesting" and never pay. The real test is whether someone will pay for 50 hours of a specific type of data.
+
+One caveat. You've built the supply side (150 contributors) before confirming demand, which is backwards but fixable. Just don't add more contributors until you know what kind of data a buyer actually wants, because the spec (resolution, tasks, annotation, environments) matters way more than volume.

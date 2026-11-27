@@ -1,0 +1,7 @@
+Every time I pitch my SaaS to a prospect, someone asks why they couldn't just rebuild it themselves with Claude.
+
+My answer so far is that yes, you could probably get a weaker version working. But you'd spend real time, effort, and money building it, and then more of all three maintaining it. That usually lands okay in the room, but I can tell it doesn't fully settle the question for them.
+
+What's bugging me is that this objection seems like it applies to 95%+ of SaaS startups, not just mine. If a decent chunk of what we sell can be approximated with a good prompt and a weekend, then what's the moat? I'm starting to think it's mostly distribution and sales now, and the product itself matters less than it used to.
+
+Maybe I'm being pessimistic. For those of you pitching to real prospects, how do you handle this pushback? Do you have an answer that actually works, or do you just lean on relationships and getting in front of people first?

@@ -1,0 +1,14 @@
+Sorry, that's a miserable spot to be in. I'm not a lawyer, but a few things are worth checking before you spend more.
+
+Pull out the purchase agreement and look for these:
+
+- **An acceleration clause.** Many seller-financed deals say that if they miss a payment, the whole remaining balance comes due. That changes the size of the claim a lot.
+- **A personal guarantee** from the buyers, not just the LLC. If the entity is a shell, a judgment against it may be worth nothing.
+- **A security interest or UCC filing** on the business assets. If you have one, you may be able to repossess or force a sale.
+- **An attorney's fees clause.** If the loser pays, suing gets much cheaper to justify.
+
+Whatever you've spent so far, a one-page demand letter on a lawyer's letterhead that cites those clauses sometimes gets people moving. Lots of attorneys will do that for a flat fee, and it's a much smaller bet than a full lawsuit. If the amount is under your state's small claims limit, you can file yourself for a few hundred bucks. Be realistic that winning a judgment and collecting on it are two different things, so look at whether they have assets or a bank account you can reach.
+
+Also ask a commercial litigation attorney whether they'd take it on contingency or a hybrid, since the business is clearly still generating cash.
+
+For anyone reading this before selling: take a bigger down payment than feels comfortable, get a personal guarantee, file a UCC-1 lien, and put a clause in that lets you take the business back if they default. Seller financing with none of that is basically an unsecured loan to a stranger.

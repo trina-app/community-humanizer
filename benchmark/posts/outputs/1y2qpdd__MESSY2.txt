@@ -1,0 +1,5 @@
+Long answers from Claude were killing me, I'd scroll forever trying to find what actually mattered. So now I have a standing instruction to end every reply with a short "## 80/20" block under a divider line. Result always, then Next, Decide, Watch out, Git only if they apply. Each has an emoji label and the key actions are bold, so you can read just the bold and get the answer.
+
+Put it in user preferences and CLAUDE.md so it's everywhere, even the huge chats about my hours tracker app.
+
+What's your small trick? Prompt, setting, something you quit doing?

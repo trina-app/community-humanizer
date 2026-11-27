@@ -1,0 +1,25 @@
+{
+ "id": "1y1m0c0",
+ "sub": "selfhosted",
+ "order": [
+  "SKILL3R",
+  "SKILL3",
+  "HUMAN",
+  "PERSONA",
+  "SKILL2"
+ ],
+ "human": {
+  "SKILL3R": 30,
+  "SKILL3": 55,
+  "HUMAN": 80,
+  "PERSONA": 25,
+  "SKILL2": 40
+ },
+ "rank": {
+  "SKILL3R": 5,
+  "SKILL3": 2,
+  "HUMAN": 1,
+  "PERSONA": 3,
+  "SKILL2": 4
+ }
+}

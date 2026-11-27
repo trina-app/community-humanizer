@@ -1,0 +1,9 @@
+140 TB/month is about 430 Mbps sustained, so you're past what "cheap VPS" usually means. Rough options:
+
+- **Hetzner (cloud or dedicated):** 20 TB included per server, then about €1/TB overage. 140 TB comes to roughly €120-150/mo for a box that can push 1 Gbps. This is probably the cheapest sane option if EU latency is fine for your users.
+- **OVH / similar "unmetered" dedicated:** 1 Gbps unmetered servers exist at a reasonable price, but real 2 Gbps unmetered is rare and costs a lot more. Read the fair-use clause, because "unmetered" often gets throttled at this volume.
+- **Cloudflare R2 for the big files:** zero egress fees, so serving the bulk of your 140 TB from there is nearly free. Check their terms for your content type first, because that's the same risk you're trying to get away from.
+
+To keep your home IP private, run a small VPS as the front end. Point a WireGuard tunnel from home to it, then use nginx or Caddy with a big disk cache so most requests never touch your home line. Pangolin or a plain WireGuard + reverse proxy setup does this well. It also fixes your shared IPv4 problem, since the tunnel is outbound only. Your home upload stops being a bottleneck once the cache is warm.
+
+One caveat: switching providers doesn't remove the DMCA risk. Any host or CDN will forward notices and eventually cut off a repeat offender. Moving only buys you something if the new provider's terms actually fit what you serve, and whoever hosts you can see your traffic anyway. So read the AUP and tell them up front what the site is. Getting dropped by a second provider is worse than your current setup.

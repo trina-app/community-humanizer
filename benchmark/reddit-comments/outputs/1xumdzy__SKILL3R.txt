@@ -1,0 +1,3 @@
+Anthropic moving into your space is less scary than it sounds, because a general assistant bolted onto someone's inbox is a different product from a workspace where the data already lives connected. Your Knots/Stitching/Knowledge Hub stuff is the part they can't copy quickly, since it only works if the email, tasks, notes and files are all in one place from day one.
+
+I'd stop leading with "AI assistant that works across it all" though, because that's exactly the pitch they'll make better. Lead with the contact-centric view, the "everything about this client in one spot" thing, and let the AI be a feature of that. Also the first week is way too early to panic, you've got no real data on churn yet

@@ -1,0 +1,1 @@
+Your answer is already the right one tbh. Nobody's actually paying for the code, they're paying to not be the one who gets paged when it breaks at 2am. Anyone who says "we'll just build it with Claude" is signing up to be a SaaS company with a worse product and one customer

@@ -1,0 +1,9 @@
+I maintain Tesserae, an AGPL e-ink dashboard server you self-host with Docker or as a Home Assistant add-on. No account, nothing to sign up for. I just put it on a Fraimic Large Canvas, which is a 31.5" colour e-ink panel, and wanted to show what it looks like running there.
+
+Two dashboards rotate on it. The first is project stats for the last 30 days: 606 active installs (up from 342), 1,020 stars, 92 merged PRs, and 68 of those PRs came from 8 outside contributors. The second is my GitHub profile, with the contribution graph, streak, top repos and recent activity.
+
+About that install number, since I know this sub cares: it comes from opt-in telemetry that is off by default and only sends an anonymous count. If you don't turn it on, nothing phones home. That's the only reason I can say 606 and not "some".
+
+I built both dashboards by describing them to an AI agent through Tesserae's MCP server. They're plain HTML/CSS/JS plus data sources though, so you can hand-edit them if you'd rather. It also runs on cheaper panels like TRMNL, reTerminal, Inky Frame and old Kindles, so you don't need a 31.5" slab to try it.
+
+If you give it a go, I'd like feedback on the repo and the docs, especially where the setup got confusing.

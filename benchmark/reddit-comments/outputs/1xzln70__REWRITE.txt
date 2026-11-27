@@ -1,0 +1,13 @@
+Views, a few signups, then quiet usually means you're broadcasting to people who don't have the problem right now. Launch threads and directories bring a spike of browsers, and almost none of them have an active pain.
+
+My first 10 came from finding people already complaining about the problem and talking to them one on one. Mostly that was threads, communities and Slack/Discord groups where someone was asking for a fix or a tool. I helped first and only mentioned the product if it actually fit. Posts like "how do I do X" or "alternative to Y" are the best, because intent is highest right then. My own network and their intros were the other source. Boring, but it's the most common answer you'll hear for a reason.
+
+Stuff that doesn't scale was worth it, mostly for what I learned. For B2B, 30 targeted cold emails or LinkedIn DMs to people with a specific job title and a specific problem taught me more than 3,000 views. Keep them short, mention one thing you noticed about the person, and ask for 15 minutes to hear about their workflow instead of pitching. Reply rates are low, but you only need a handful of conversations.
+
+Paid ads were mostly burned money this early. You don't know your message, your audience or what a converted user looks like yet, so ads just make finding that out expensive. Come back to them once organic gives you a repeatable signal.
+
+What I'd stop: directory listings and generic launch threads (fine as a one-time checkbox, not a channel), building more features while nobody uses the existing ones, and counting signups instead of activated users. Ten people using it weekly beat 100 who never come back.
+
+For B2B, pick one narrow niche, like one role at one type of company, and make the landing page speak only to them. Then list 50 specific people in that niche and reach out directly. Narrow beats broad here since your message gets sharper and it's easier to find the right people.
+
+Also, when someone signs up and goes quiet, email them personally and ask why. Those replies were worth more to me than any traffic source.

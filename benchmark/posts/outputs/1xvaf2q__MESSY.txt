@@ -1,0 +1,13 @@
+I'm a CFO at a startup and I've watched a lot of companies go through raises, good ones and honestly pretty bad ones, and the pattern is way simpler than people make it. VCs fund one of two things. Proven demand or a proven team. That's pretty much it.
+
+What they're really asking is whether there's a high chance of a big return. Everything in your deck is just evidence for that. So you need one of these: demand you can generate and replicate at scale, a market where appetite is clearly growing, or founders who've already won before.
+
+Uber in 2011 is the demand one. They had the San Francisco pilot, it was making revenue, people kept coming back to ride again, and the obvious next step was do it again city by city. Nobody had to imagine whether it would work, they could see the loop.
+
+Airbnb 2009 is kind of the other flavor. The demand already existed on Craigslist and Couchsurfing, people were already doing this the messy way. And it spiked during big events when hotels sold out. That's a market telling you it wants this, you're just building the better version.
+
+Then the team side. Beehiiv in 2021, the founders had built the growth engine at Morning Brew, which sold to Business Insider for $75M. So an investor isn't betting on whether these people can grow a newsletter business, they already did it. Affirm in 2014 is the same thing but louder, Max Levchin, PayPal and Slide exits. Different company obviously but the VC logic is the same, you're backing someone who's already done it.
+
+The thing I keep seeing is founders pitching the vision and the product and the "market size" slide, and none of it is actually proof of anything. If you don't have the exit or the track record (most of us don't), then the demand has to carry it. Show that it works somewhere and that it can be copied somewhere else.
+
+Not promoting anything btw, just thought it'd help to see how it looks from the money side. Curious if anyone's raised on something that wasn't one of these two, I can't really think of one

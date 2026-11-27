@@ -1,0 +1,7 @@
+Yeah, it applies to most SaaS, and I'd stop treating it as a trick question. Some of those buyers could build a weak version. Almost none of them will, because the build was never the expensive part. Someone has to own it when it breaks at 2am, keep up with API changes, handle edge cases the third customer finds, and answer for it when the data is wrong. Their time is worth more than your subscription.
+
+What worked for me when it came up: ask what it would cost them to run it, not what it would cost to build. Then ask who on their team would maintain it in a year. Usually that ends the conversation, and if it doesn't, they were probably never going to buy anyway.
+
+Moat is mostly distribution, yeah, plus workflow and data that's already sitting in your product. If a customer has two years of history in your tool, the switching cost is the moat, not the code. Compliance, integrations, and support count too, because those are boring and nobody wants to rebuild them.
+
+If someone really can build it in a weekend with Claude, that's a feature, not a company. Worth being honest with yourself about which one you are.

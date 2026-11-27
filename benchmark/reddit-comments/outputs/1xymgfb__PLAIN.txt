@@ -1,0 +1,7 @@
+I think it fades, but unevenly. People already stopped asking "did you use a compiler?" or "did you use Stack Overflow?" because the tool stopped being the interesting part. What's left is "does it work, and is it good?" AI will probably land there too, just slower on Reddit, since a lot of the hostility here is about slop flooding every sub, not about people building real things.
+
+On your last question: most people don't think less of a product because AI was involved. They think less of bad products. If your thing solves a problem and doesn't fall over, the "anyone could do that" crowd is mostly wrong. Plenty of people have had the same tools and never shipped anything. Finishing, testing, and supporting something is the hard part, and that's still on you.
+
+The imposter feeling is worth separating from the stigma. "Did you use AI?" is often just curiosity, not an accusation. I'd answer it plainly and move on: "Yes, Claude did a lot of the code, I handled the design, testing, and decisions." Said without apology, it usually ends the conversation. The people who keep pushing were never going to be satisfied anyway.
+
+And you're right that Reddit skews negative. Your audiences not caring is the better data point.

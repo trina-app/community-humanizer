@@ -1,0 +1,9 @@
+I've been using coding agents to build projects that are way past my actual skill level. Before this I'd done a bit of game dev and a few intro language courses, so I couldn't have built any of this on my own. It's gone moderately well. I've got a small audience for the stuff I make, and most of them honestly don't care that AI was involved. Some even think it's cool.
+
+Reddit is a different story. The anti-AI sentiment here and on a lot of other subs is strong enough that I've gotten pretty hesitant to talk about how I build things. Even a simple "did you use AI?" in the comments makes me feel like a fraud. I immediately hear "well, anyone could do that" in my head, even though I spent weeks on these projects and made hundreds of decisions along the way.
+
+I know Reddit isn't real life. The people I actually share my work with have been fine about it, and I keep telling myself that. It's just hard to shake when that comment shows up under something I'm proud of.
+
+So I'm curious what you all think. Will the "vibe coded" stigma fade over time, the way people eventually stopped sneering at other tools that made things easier? Will people stop asking "did you use AI?" at some point, or does it become the new default question? And does the general public actually think less of things built with AI, or is that mostly a very online thing?
+
+Would love to hear from anyone who's shared AI-built projects with people outside of Reddit and how it went.

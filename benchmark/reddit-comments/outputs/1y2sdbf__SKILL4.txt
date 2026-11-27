@@ -1,0 +1,3 @@
+Watchtower on `latest` for everything except the stuff that has a database migration step. Those get pinned to a major version tag, because Postgres and Nextcloud are the only ones that have ever really punished auto-updates. Everything else can break on its own, it's a media server.
+
+Also Watchtower's upstream repo got archived, so look at diun or just use the monitor-only mode and update by hand if you care.

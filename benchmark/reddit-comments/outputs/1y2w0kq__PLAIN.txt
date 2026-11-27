@@ -1,0 +1,15 @@
+The "leftovers" worry is partly right, but it's the wrong filter. Matchmaking platforms are mostly a bad channel because of what a cofounder match actually is, not because only bad CEOs show up. You're picking someone you'll be tied to for years, and a few coffee chats don't tell you whether you can work with them. Trust is the whole thing, and trust comes from working together.
+
+So I'd flip the approach: don't look for a CEO, look for a problem, and let the CEO show up around it.
+
+- **Pick a domain you have an edge in and go where the buyers are.** You've done iOS, backend, and hardware. Find a specific industry that's badly served and talk to the people who work in it. The people who are good at selling tend to appear when there's something real to sell into.
+- **Build something small first.** A working prototype or even a landing page with a few real conversations behind it changes who takes your call. "Technical founder with a demo and 10 customer interviews" gets a very different response than "engineer looking for a CEO."
+- **Work with candidates before committing.** Do a 4-8 week project together, like a prototype, a pilot with one customer, or a pitch. You'll learn more from that than from any number of dinners. Also skip equity splits and titles until after that trial.
+- **Use your existing network sideways.** Ask the sales, product, and BD people you've worked with who they'd back. In the Bay Area, people who've left a startup or been laid off and are itching to start something are everywhere. Warm intros from people who've seen them work beat any platform.
+- **Events can work, but treat them as a way to meet people rather than a search.** Go to industry-specific events for your chosen domain, not generic founder mixers.
+
+On whether good CEOs would be on these platforms: some are, but it's hard to tell from a profile, which is the real problem. Anyone can write a good bio. That's why I'd test through work rather than conversation.
+
+One more thing: be honest with yourself about whether you need a CEO or just need to get comfortable talking to customers. Early on, the "CEO job" is mostly customer conversations and learning, and plenty of technical founders get decent at that. You may still want a cofounder strong at sales, but it's worth knowing which gap you're actually filling.
+
+Good luck, and setting a clear deadline like you have is smart.

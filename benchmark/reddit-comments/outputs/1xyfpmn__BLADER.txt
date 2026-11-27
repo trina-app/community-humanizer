@@ -1,0 +1,7 @@
+Yeah, it applies to most SaaS, and I'd stop treating it as a trick question. It's the same thing as "why not hire a dev to build this in-house," which buyers have asked forever. Claude just made the answer to "could we?" a more believable yes.
+
+What I'd do in the pitch is stop arguing about whether they could build it and just price it. Their version costs an engineer's time up front, then that same person gets pulled in every time an integration breaks, an API changes, or someone wants a report that doesn't exist yet. Nobody puts that on a budget line, but it's usually more than your subscription. Also ask who owns it when that engineer leaves. That question lands harder than any feature comparison.
+
+And yes, the moat for most of us is distribution, trust, and being already wired into how the customer works. Plus the dull stuff: uptime, support, security questionnaires, SSO, audit logs. A weekend prototype skips all of that, and it's what buyers actually pay for.
+
+Some buyers really will build it themselves, and I'd let them. If the product is that thin, they were never going to be good customers anyway. The ones who stay are the ones where the real value is data, integrations, or compliance they can't get from a prompt.

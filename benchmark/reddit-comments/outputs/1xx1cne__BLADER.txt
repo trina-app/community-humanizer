@@ -1,0 +1,7 @@
+Hardlinks are what you want here. Radarr and Sonarr import by hardlinking when the downloads folder and the library are on the same filesystem, so the file sits in both places but only takes up space once. You keep seeding from `downloads/complete` and Jellyfin reads from `jellyfin/movies`. Delete either copy later and the other is untouched.
+
+The catch is your bind mounts. Hardlinks only work inside one filesystem, and they only work from the container's point of view if it sees both paths under a single mount. If you mount `downloads` into one container and `jellyfin` into another, the *arr app sees two separate mounts and falls back to copying. Mount the whole `media` dir at the same path in the torrent client and the *arr containers, like `/data`, and it works. The TRaSH Guides have a good page on this layout, search "TRaSH guides hardlinks".
+
+For the categories problem, Sonarr handles shows, Radarr handles movies, and Readarr (or Calibre-Web with an ingest folder) handles ebooks. In the torrent client you give each a category and it saves into a matching subfolder, so nothing has to guess where a file goes. Readarr is pretty much dead now, so for books I'd just use a Calibre-Web or Calibre ingest folder.
+
+If you don't want the full stack, a small script that hardlinks with `cp -al` per category would also work. But Sonarr and Radarr also do the renaming and metadata, which saves you a lot of manual cleanup.

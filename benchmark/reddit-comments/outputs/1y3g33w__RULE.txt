@@ -1,0 +1,17 @@
+Honestly, the problem is probably the pitch. "I build software" isn't something a small business owner wakes up wanting. They want fewer missed calls, faster invoicing, less time on scheduling. Most of them already assume software means expensive, slow, and something they'll get stuck maintaining. Plus a lot of their problems are already solved by off-the-shelf stuff like Square, Jobber, Calendly, or Shopify, so a custom build is a hard sell.
+
+What I'd change:
+
+1. Pick one niche. Not "local businesses," but something like HVAC companies, dental offices, or landscapers. Learn how they run, what they hate, and what they're duct-taping together with spreadsheets. Then you can say "I help HVAC shops stop losing leads from missed calls" instead of "I build software."
+
+2. Go talk to people without pitching. Ask 10 owners in that niche what the most annoying part of their week is. You'll find the problem, and some of them will end up being your first clients.
+
+3. Get one client cheap, or even free, in exchange for a case study and a testimonial. After that you're not a stranger knocking on doors, you're the guy who did X for their competitor down the street.
+
+4. Cold door knocking is a rough channel. Referrals, your old coworkers' networks, local Facebook groups, and chamber of commerce or BNI-type meetings convert much better. Freelance work (Upwork etc.) can also pay the bills while you figure out your niche.
+
+5. Sell the outcome and a price, not a project. "Automated appointment reminders, $X setup plus $Y/month" is way easier to say yes to than "let's discuss your software needs."
+
+Also keep an eye on your runway. 3 months with no traction is normal, but if you're burning savings, take some contract work so you're not desperate. Desperation comes across in sales conversations.
+
+You obviously have the skills, so it's a positioning and distribution problem, not a you problem.

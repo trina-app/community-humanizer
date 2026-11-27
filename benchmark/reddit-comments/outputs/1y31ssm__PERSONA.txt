@@ -1,0 +1,1 @@
+Tailscale for everything, girlfriend just installs the app once and forgets it exists. For the occasional share-with-randos thing, Immich and Nextcloud both have share links, so expose just that one through a Cloudflare tunnel and keep the rest off the internet. Port forwarding Nextcloud directly is how you end up patching at 2am

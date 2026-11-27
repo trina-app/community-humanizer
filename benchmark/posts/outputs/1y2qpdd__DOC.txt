@@ -1,0 +1,29 @@
+Long Claude answers got hard for me to navigate. By the time I scrolled to the end I'd forgotten what I was looking for. So I added a standing instruction: end every reply with a short "## 80/20" block, always placed last, under a divider line.
+
+It has fixed lines with emoji labels:
+
+* 🎯 **Result**: always there
+* ➡️ **Next**: only when relevant
+* ⚖️ **Decide**: only when relevant
+* ⚠️ **Watch out**: only when relevant
+* 🌿 **Git**: only when relevant
+
+The key actions are in bold, so if you read only the bold text you already have the answer. Here's an example from my hours-tracker app:
+
+\---
+
+## 80/20
+
+🎯 **Result:** Timer bug fixed, entries now save in the right timezone.
+
+➡️ **Next:** **Run the migration** on the dev DB.
+
+⚖️ **Decide:** **Round to 15 min or keep exact minutes?**
+
+⚠️ **Watch out:** Old entries keep the wrong timezone until migrated.
+
+🌿 **Git:** **Commit** on the `fix/timezone` branch.
+
+I saved it in two places: claude.ai user preferences, and CLAUDE.md for Claude Code. That way it applies everywhere, including the really long chats about the hours-tracker app I'm building, where I used to get lost the most.
+
+Now I'm curious about your small tricks. It could be a prompt, a setting, a habit, or something you stopped doing that changed how you use Claude. What's yours?

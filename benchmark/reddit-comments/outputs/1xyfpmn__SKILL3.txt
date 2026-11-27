@@ -1,0 +1,1 @@
+"can we build this with claude" usually just means "I don't want to pay this much" or "I'm not that into this problem". Anyone who'd actually go build and maintain their own version was never your customer anyway, and conceding "a weaker version" in your pitch just hands them the framing

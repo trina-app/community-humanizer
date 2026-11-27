@@ -1,0 +1,3 @@
+Audiobookshelf is the one you're overlooking. It's built for audiobooks and podcasts, but it also handles ebooks in a basic way (epub/pdf reader built in). So it's not a full replacement for a big ebook library, but it covers the audiobook side.
+
+Kavita doesn't do audio, and Calibre-Web doesn't either. If you don't want a second container for audiobooks, then Grimmory/Bookorbit really are the only two that do both in one. Otherwise, Audiobookshelf for audio and whatever you like for ebooks is the usual setup, and the extra container is tiny.

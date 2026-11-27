@@ -1,0 +1,11 @@
+Building got cheap, but that was never the hard part. Most people who pay for SaaS aren't paying for the code, they're paying for not having to think about it. Nobody wants to maintain a homegrown invoicing tool, fix it when an API changes, or explain it to the new hire. A weekend Claude project is fun until it breaks at 11pm on a Tuesday.
+
+What *did* get worse is the "I built a thing, now people will come" model. If the product is easy to copy, the product isn't your moat. Distribution, trust, niche knowledge and integrations are.
+
+Struggling to hit 100 customers isn't an AI problem either. It's super common, and it was just as hard in 2019. I'd ask:
+
+- Who exactly is this for? "Anyone" is the wrong answer.
+- Where do those people already hang out, and are you talking to them there?
+- Are you solving something painful enough that they'd pay today, or a nice-to-have they could vibe-code themselves?
+
+If it's the last one, then yeah, that kind of product is in trouble. But the boring, specific, workflow-heavy stuff in a narrow vertical is doing fine. Pick a niche, get 10 people to love it, then grow from there.

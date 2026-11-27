@@ -1,0 +1,7 @@
+I'm running both Bookorbit and Grimmory right now. We started with Grimmory and then tried Bookorbit, and honestly the two feel almost the same. My spouse prefers Bookorbit because audiobooks are right there in the sidebar, whereas in Grimmory it takes 2-3 steps to get to them.
+
+I have a big ebook library and a much smaller audiobook library, but the audiobooks take up about as much disk space as the ebooks do. I don't really want to spin up a separate container just for audiobooks.
+
+I keep hearing about some recent drama around Bookorbit and I'd like to know what other options there are. I'm also not sure if Calibre or Kavita handle audiobooks at all. Does anyone know?
+
+Are there any other containers that do both ebooks and audiobooks, or is it really just these two?

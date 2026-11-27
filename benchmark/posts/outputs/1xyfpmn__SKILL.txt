@@ -1,0 +1,7 @@
+Lately in pitches I keep getting the same question from prospects: "why couldn't we just build this ourselves with Claude?"
+
+My answer so far is that yeah, a weaker version is technically doable. But it would cost them real time, effort and money to build it, and then they'd have to maintain it too. That seems to land okay, but I'm not sure it's the best way to respond.
+
+What I keep coming back to is that this objection probably applies to 95%+ of SaaS startups, not just mine. If anyone with an API key can rebuild a rough version of your product, then is the real moat just distribution and sales now?
+
+How are you all handling this when it comes up in pitches? Do you have an answer that actually works, or do you just ignore it and move on?

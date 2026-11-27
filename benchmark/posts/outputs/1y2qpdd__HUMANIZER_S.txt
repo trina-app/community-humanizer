@@ -1,0 +1,19 @@
+Long Claude answers were getting hard to navigate for me, especially in the long chats about the hours-tracker app I'm building. I'd scroll through a wall of text looking for the one thing I actually needed to do.
+
+So I added a standing instruction to end every reply with a short "## 80/20" block, always last, under a divider line. It looks roughly like this:
+
+```
+---
+## 80/20
+🎯 Result: the weekly totals now group by project, tests pass
+👉 Next: **run the migration** on your local DB
+⚖️ Decide: **keep rounding at 15 min or switch to exact minutes?**
+⚠️ Watch out: old entries without a project will land in "Unassigned"
+🌿 Git: **commit on a new branch** before you touch the schema
+```
+
+Result is always there. Next, Decide, Watch out and Git only show up when they're relevant. The key actions are in bold, so if I only read the bold text I still get the answer. Most of the time I read the block first, then dip into the long part above it only if I need the reasoning.
+
+I saved it in the user preferences on claude.ai and in CLAUDE.md for Claude Code, so it applies everywhere without me asking. It's been about the most useful small change I've made.
+
+What's your small trick? Could be a prompt, a setting, a habit, or something you stopped doing that made things better. Curious what everyone else has found.

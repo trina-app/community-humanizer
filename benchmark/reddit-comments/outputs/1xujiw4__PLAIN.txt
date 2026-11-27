@@ -1,0 +1,27 @@
+Sorry you're dealing with this. It's more common than people admit with seller-financed deals. A few things that might help you get paid without burning more money:
+
+**Look at what you already have in the purchase agreement.** Most of the leverage is there:
+- **Acceleration clause:** many agreements say that if they miss payments, the whole remaining balance is due. That changes the claim from "missed installments" to "they owe you the full amount."
+- **Personal guaranty:** if the buyers signed personally (not just through the LLC), you can go after them, not just an empty shell.
+- **Security interest / UCC-1 filing:** if you took a lien on the business assets and filed it, you may be able to take the assets back. Check whether it was actually filed with the state. If it wasn't, it's worth doing now, though it will rank behind anyone who filed first.
+- **Attorney's fees clause:** if the loser pays legal fees, your math on whether to fight changes a lot.
+- **Dispute resolution clause:** arbitration or mediation is usually much cheaper than a full lawsuit.
+
+**Cheaper escalation steps, roughly in order:**
+1. A formal demand/default notice sent by an attorney, ideally certified mail. A $300-500 letter resolves more of these than a lawsuit does, because it shows you're serious and have documented everything.
+2. Offer a restructured payment plan, but only in writing and with a **consent or stipulated judgment** that kicks in if they miss it. That way a second default doesn't send you back to square one.
+3. If the amount is under your state's small claims limit, you can sue for the missed installments without a lawyer. Some states let you do it repeatedly as each installment comes due.
+4. If the contract gives you the right to take the business back on default, that's often the strongest lever, because they stand to lose something real.
+
+Also, keep records of everything: the revenue they're collecting, every payment attempt, every communication. If they're still taking in customer money while paying you nothing, that helps you in negotiation and in court.
+
+**For future deals (or anyone reading this before selling):**
+- Take as much as you can upfront. The more cash at closing, the less you depend on their goodwill.
+- Get a personal guaranty, not just the entity's promise.
+- File the UCC-1 lien at closing.
+- Keep an acceleration clause and a right to reclaim the business on default.
+- Consider holding back key assets like the lease, licenses, or domain until you're paid in full.
+
+I'm not a lawyer, and the details vary by state, so I'd pay for a one-hour consult with a business collections attorney. Ask specifically about a fixed-fee demand letter instead of an hourly retainer. Bring the agreement and a timeline of what's been paid and what hasn't.
+
+Good luck. I hope you get this resolved.

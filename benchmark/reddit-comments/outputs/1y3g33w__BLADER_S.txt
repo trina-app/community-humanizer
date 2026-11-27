@@ -1,0 +1,7 @@
+Cold knocking on random businesses is a rough way to sell software. Most owners don't wake up wanting "software," they want a specific headache gone, and you're showing up with a solution to a problem they haven't admitted to having.
+
+Flip it. Pick one type of business (dentists, HVAC, whatever you can get access to) and spend a couple weeks just talking to owners about what eats their time. Not pitching, just asking. You'll hear the same complaints over and over: scheduling, quoting, chasing invoices, re-entering the same data in two places. Then build or offer one narrow fix for that and say "I fix X for [type of business]" instead of "I build software."
+
+Also your first client probably isn't a stranger. Ask people you already know, former coworkers, friends who run something, anyone's uncle with a shop. A warm intro beats 100 walk-ins.
+
+And 3 months with no income is a long time, so if the money is getting tight, take some freelance or contract dev work to cover the bills while you figure out who you're selling to. Plenty of people do that for the first year and there's no shame in it.

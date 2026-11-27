@@ -1,0 +1,1 @@
+Mostly just the phone app, for kicking off or checking on a long task when you're away from the desk. Claude Code on the web is also handy when you want something running on a cloud box instead of tying up your laptop, since it clones the repo and can open a PR when it's done. Otherwise the terminal is fine, and nothing else is going to be faster.

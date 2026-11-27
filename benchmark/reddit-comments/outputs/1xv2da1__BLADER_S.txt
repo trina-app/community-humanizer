@@ -1,0 +1,14 @@
+Asking for vested shares back for free isn't standard. Vested means yours. If your lawyer says there's no repurchase right in the docs, they're asking for a favor, and you can price it like one.
+
+"Dead equity" is a real concern, but it's also a negotiating line. Investors do get nervous when a big chunk of the cap table belongs to someone who's gone, because the next lead will ask about it in diligence. Low single digits, nobody cares. Double digits, someone will bring it up. So there's a legit problem here, it's just not one you owe them a solution to for free.
+
+What founders in your spot usually end up with:
+
+- Company or the remaining founder buys back some portion at the 409A or last round price, sometimes paid over time.
+- You keep the shares but give the board a proxy on your vote, so you can't block anything.
+- You keep a smaller stake, and they remove whatever else they were holding over you.
+- Shares get included as secondary in the next round.
+
+If they want a big chunk back, they pay for it, in cash or something else of value. Also get a tax person to look at it, since a gift back vs a sale can be treated very differently.
+
+Don't let them make you feel like you're being difficult. Your lawyer already did the homework, so use it.

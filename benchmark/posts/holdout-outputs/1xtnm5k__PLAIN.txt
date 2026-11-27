@@ -1,0 +1,13 @@
+I'm at the early stage of looking for a business idea to build, probably a SaaS, but I haven't picked a problem yet. Before I write any code, I'd rather hear from people who actually run businesses.
+
+So: what's the one task in your day you absolutely hate doing?
+
+I'm especially curious about the repetitive, mind-numbing stuff. If you don't mind sharing:
+
+- What is the task?
+- Roughly how much time does it eat up each week?
+- Have you automated it in some way, or are you still doing it by hand?
+
+Some examples to get the ball rolling: answering the same customer questions over and over, chasing late payments, handling bookings, updating spreadsheets, or wading through emails. But anything counts, even if it seems too small or boring to mention.
+
+To be clear, I'm not selling anything. This is pure research to find real pain points worth solving. I'd love to hear what's eating your time.

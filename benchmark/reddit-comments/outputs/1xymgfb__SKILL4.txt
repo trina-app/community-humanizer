@@ -1,0 +1,1 @@
+Part of the stigma is earned, though. Plenty of people ship apps with API keys sitting in the frontend and no auth on the endpoints, then post it as a finished product. Everyone who's seen a few of those now assumes the worst when they hear "AI", and that's fair enough. If you can show you reviewed the code and know what's in it, the question stops mattering much.

@@ -1,0 +1,25 @@
+{
+ "id": "1xumdzy",
+ "sub": "SaaS",
+ "order": [
+  "PERSONA",
+  "SKILL3",
+  "SKILL3R",
+  "HUMAN",
+  "SKILL2"
+ ],
+ "human": {
+  "PERSONA": 22,
+  "SKILL3": 40,
+  "SKILL3R": 18,
+  "HUMAN": 85,
+  "SKILL2": 45
+ },
+ "rank": {
+  "PERSONA": 5,
+  "SKILL3": 4,
+  "SKILL3R": 3,
+  "HUMAN": 2,
+  "SKILL2": 1
+ }
+}

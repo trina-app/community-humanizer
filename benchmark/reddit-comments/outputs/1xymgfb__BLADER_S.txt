@@ -1,0 +1,5 @@
+Reddit is probably the worst place to gauge this. Plenty of big subs treat "AI" like a slur, so of course it feels bad here. Outside of it, most people I know just want the thing to work and don't care how it got built.
+
+I think it fades the way "did you use Photoshop?" or "did you use a framework?" did. People still ask, but it stops being an accusation.
+
+Also, anyone who says "anyone could do that" hasn't tried shipping something real with an agent. You still have to know what you want and catch it when it's confidently wrong. I just say yes I used Claude and move on, and it gets less awkward every time.

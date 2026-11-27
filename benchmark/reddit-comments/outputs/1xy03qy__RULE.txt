@@ -1,0 +1,9 @@
+I did a milder version of this for a few months and it felt great until it didn't. The part that got to me wasn't the free time, it was that nobody knew what I'd built. When layoffs rumors started, "does his work fast and quietly" is a terrible thing to have on your record, because to everyone above you it looks the same as "does an average amount of work."
+
+A few things I'd think about:
+
+- Your manager not grasping what a one-week task means is the actual problem. If you can't fix that, at least write it down somewhere with dates. "Shipped X in 5 days, team estimate was 10 weeks" in your own notes is useful when review time or a job hunt comes around.
+- Be careful about whose machine it is. You built the setup on your own Max plan before the company one existed, which is good for you, but check that nothing in your contract makes the automations theirs now.
+- Painting is a great use of that time. I'd still spend a slice of it on a portfolio or on looking around, because the skills you've built are worth a lot more than what you're getting paid for them right now.
+
+I wouldn't call it quiet quitting though, you're still delivering above everyone else. It's more like being underemployed on purpose. Just make sure it's a choice you're making and not one that's slowly being made for you.

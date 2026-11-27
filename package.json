@@ -1,0 +1,17 @@
+{
+  "name": "community-humanizer",
+  "version": "0.1.0",
+  "description": "A humanizer for Reddit and Clien comments and posts: writes the way each community actually writes. Never posts.",
+  "type": "module",
+  "bin": {
+    "community-humanizer": "skills/community-humanizer/bin/voice.mjs"
+  },
+  "files": [
+    "skills/community-humanizer",
+    "communities"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

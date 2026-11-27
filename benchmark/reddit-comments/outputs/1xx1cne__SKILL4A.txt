@@ -1,0 +1,1 @@
+Sonarr/Radarr do this, and they hardlink instead of copying, so you keep seeding with no extra disk space. Just keep downloads and library on the same filesystem, and mount the parent `media` dir into the containers. Readarr or LazyLibrarian for the ebooks.

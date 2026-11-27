@@ -1,0 +1,7 @@
+I think it fades for the stuff people actually use, but slowly. Nobody asks if a game was made in Unity or if a site came from a template anymore, and I'd bet "did you use AI" goes the same way once enough good products are out there. Right now it gets asked because it's new and people are still sorting out what it means.
+
+Reddit is also a bad sample. Most AI-hostile threads are people whose jobs or identities are tied up in coding by hand, so of course it's loud there. Regular users mostly want to know if the thing works and if it's any good. I've never seen someone's non-dev friend or customer care how it was built.
+
+The better question is whether you understand what you shipped. "Anyone could do that" isn't really true, because plenty of people try and end up with a broken mess. Knowing what to build, testing it, fixing it when it breaks, and sticking with it for months is the actual work, and the AI doesn't do that part for you.
+
+So I'd just answer the question straight. "Yeah, I used Claude for a lot of it, I did X, Y, Z myself." Said casually, it usually kills the drama. It's when people get defensive that it turns into an argument.

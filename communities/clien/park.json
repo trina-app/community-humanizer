@@ -1,0 +1,41 @@
+{
+ "community": "클리앙 모두의공원",
+ "platform": "clien",
+ "board": "park",
+ "measured": "2026-11-26",
+ "comments": {
+  "n": 187,
+  "source": "top-level comments with 1+ 공감 in non-political question threads, 2026-11",
+  "chars_median": 54,
+  "types": {
+   "answer": 0.26,
+   "one-liner": 0.11,
+   "anecdote": 0.07,
+   "disagree": 0.1,
+   "question-back": 0.06,
+   "side-point": 0.13,
+   "agree": 0.01,
+   "joke": 0.12,
+   "complaint": 0.14
+  }
+ },
+ "posts": {
+  "n": 31,
+  "chars_median": 199,
+  "lines_median": 6,
+  "dots_pct": 65,
+  "casual_ending_pct": 26,
+  "greeting_pct": 3,
+  "ends_with_question_pct": 29
+ },
+ "rules": {
+  "ai_content": "unknown",
+  "ai_rules": [],
+  "self_promotion_rules": [],
+  "notes": [
+   "Political threads are refused by the tool."
+  ],
+  "checked": null,
+  "source": "https://www.clien.net/service/board/rule"
+ }
+}

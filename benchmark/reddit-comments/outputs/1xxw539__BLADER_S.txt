@@ -1,0 +1,9 @@
+Your instinct is right, bring in the senior dev. You can't judge code quality yourself, so a paired session where you're the only one evaluating tells you very little. Pay your friend for a couple of hours if you have to. Have them look at the real repo, ask her questions, and give you a gut read afterward.
+
+I'd skip the "make a small change" part, or at least not make it the test. Watching someone code live with a stranger watching is a weirdly bad signal, and good engineers often freeze up in that setting. A better version is to let her explain a piece of the codebase and then talk through how she'd fix a real bug or add a real feature. The senior dev can tell pretty fast whether she actually understands tradeoffs or is just using the right vocabulary.
+
+Also do reference checks. Talk to two or three people who worked with her, ideally ones she didn't hand-pick. That tells you more about how she works than any code review will.
+
+After that, a paid trial project of a few weeks is the best test of all. You find out how she communicates, how she handles ambiguity, and whether you can stand working together, which is what usually breaks co-founder relationships anyway.
+
+On the number of tests: two or three touchpoints is plenty. One technical session with your friend, references, then the trial. If she's strong she'll understand why you're doing it, as long as you're upfront and don't drag it out.

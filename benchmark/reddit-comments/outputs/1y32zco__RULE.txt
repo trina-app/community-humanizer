@@ -1,0 +1,9 @@
+First 10 came from DMs, not content. I found people on Reddit and in Slack/Discord communities complaining about the exact problem my tool solved, and I replied helpfully without pitching. When it made sense I'd say "I built something for this, want to try it free?" About 1 in 5 said yes. Took maybe 6 weeks to get to 10 people actually using it, and 3 of those paid.
+
+Posting on X and LinkedIn with zero audience is mostly shouting into a void. Those platforms reward people who already have followers. Going to where your buyers already hang out and being useful in the threads works way better early on.
+
+SEO is real but slow. I wrote a few "X vs Y" and "how to do Z" posts around month 2 and didn't see anything until month 5 or so. Now it's maybe a third of signups, but it wouldn't have helped me get the first 10.
+
+Honestly the biggest thing was picking a narrow niche. "Tool for everyone" gets nothing. "Tool for dentists' office managers" gets you a place to look for people.
+
+So I'd say: find 20 people who have the problem right now, talk to them one on one, and don't worry about traffic yet. What's your product, and who's it for? Might be easier to suggest where to look.

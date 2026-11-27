@@ -1,0 +1,7 @@
+I'm pitching my SaaS to prospects and a question keeps coming up: "why couldn't I just build this myself with Claude?"
+
+My current answer is that a weaker version is technically doable, but it would cost real time, effort and money to build and then maintain. That seems to land okay, but I'm not sure it's the strongest response.
+
+The more I think about it, the more I suspect this objection applies to 95%+ of SaaS startups, not just mine. If anyone can get a rough version of almost any product out of Claude in a weekend, then maybe the real moat now is distribution and sales, not the code.
+
+How are you handling this pushback in your pitches? Do you have an answer that actually works, or do you just move the conversation elsewhere?

@@ -1,0 +1,38 @@
+{
+ "community": "r/SaaS",
+ "platform": "reddit",
+ "measured": "2026-11-26",
+ "comments": {
+  "n": 189,
+  "source": "top-level comments with 2+ points in the 16 busiest question threads of 2026-11-12 to 11-24",
+  "words_median": 37,
+  "types": {
+   "answer": 0.505,
+   "one-liner": 0.101,
+   "anecdote": 0.08,
+   "disagree": 0.112,
+   "question-back": 0.043,
+   "side-point": 0.037,
+   "agree": 0.011,
+   "joke": 0.096,
+   "complaint": 0.016
+  }
+ },
+ "posts": {
+  "n": 60,
+  "words_median": 174,
+  "paragraphs_median": 6,
+  "list_pct": 25,
+  "bold_or_heading_pct": 23,
+  "greeting_pct": 17,
+  "ends_with_question_pct": 33
+ },
+ "rules": {
+  "ai_content": "unknown",
+  "ai_rules": [],
+  "self_promotion_rules": [],
+  "notes": [],
+  "checked": null,
+  "source": "https://www.reddit.com/r/SaaS/about/rules"
+ }
+}

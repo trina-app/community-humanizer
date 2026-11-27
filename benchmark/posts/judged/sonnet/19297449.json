@@ -1,0 +1,22 @@
+{
+ "id": "19297449",
+ "lang": "ko",
+ "order": [
+  "HUMAN",
+  "PLAIN",
+  "HUMANIZER_S",
+  "SKILL"
+ ],
+ "human": {
+  "HUMAN": 90,
+  "PLAIN": 12,
+  "HUMANIZER_S": 10,
+  "SKILL": 35
+ },
+ "rank": {
+  "HUMAN": 1,
+  "PLAIN": 3,
+  "HUMANIZER_S": 4,
+  "SKILL": 2
+ }
+}

@@ -1,0 +1,19 @@
+Your answer is basically right, but "it takes time and money" is the weakest version of it. Buyers hear that as "you could, we just wouldn't want to," and it invites them to run the numbers.
+
+What works better is changing what the buyer thinks they're comparing. They're comparing the cost of building to the cost of subscribing. The real comparison is the cost of owning it versus the cost of subscribing.
+
+Claude can get someone to a working v1 in a weekend. The expensive parts come after:
+
+- Someone has to be on call when it breaks at 2am or an upstream API changes
+- Security, compliance, audit trails, SSO, permissions, backups
+- Edge cases you only learn from hundreds of customers, which a single team never sees
+- Integrations that keep drifting
+- The bus factor when the one person who prompted it together leaves
+
+So I'd ask them, "Who on your team owns this in 18 months, and what are they not working on instead?" Most of the time that ends the conversation, because the honest answer is nobody, and their engineers have better things to do than rebuild a tool that isn't their core business.
+
+Also, if a prospect really would build it themselves, they probably weren't going to buy. Some of those deals are just lost, and that's fine. It's a useful filter on who you're selling to.
+
+To your bigger question, yes, this applies to most SaaS, and I think it's healthy. Thin CRUD apps with a nice UI are getting commoditized. What's left as a moat is distribution, trust, proprietary data, workflow depth, integrations, and being the vendor someone can blame and call. Distribution matters a lot, but I wouldn't say it's the only moat. Accumulated knowledge about the problem is the other one, and that's what your 'weaker version' point is really about.
+
+If your product is something a competent person could clone in a weekend and be happy with, you should hear that early. If it isn't, you should be able to name specifically what the clone would be missing, and that's your pitch.

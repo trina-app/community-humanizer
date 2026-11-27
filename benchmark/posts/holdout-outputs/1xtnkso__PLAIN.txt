@@ -1,0 +1,9 @@
+I'm nearly 50, a longtime engineer, and I spent about a year building a side project with Claude Code. I did it partly to get properly fluent with Claude, and partly so my daughter could get real experience working on something. She did land a job out of it, so that part worked. What I didn't do in that whole year was talk to a single customer.
+
+The product is a consumer service that turns a family's photos and videos into a film. One-time price, no subscription.
+
+A couple of months ago ChatGPT started referring random visitors to it. I can watch what they do on the site, which has been the closest thing to user research I've had. So far that's about 130 signups, running 2-3 a day. I turned on payments last week and have had zero purchases.
+
+I assume the answer is a grind: cold emails, partnerships, pages written to be the answer to a specific question. But Reddit is awkward for this. The places where answering questions would fit tend to ban self-promotion, and the places that allow it don't have my customers in them.
+
+So, for anyone who has taken a consumer product from a trickle to a steady flow: what actually moved things for you? Or is it mostly luck, grind, and having a product people want?

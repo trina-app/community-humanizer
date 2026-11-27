@@ -1,0 +1,9 @@
+Honestly, for your workflow, mostly no. A few cases where I still leave the terminal:
+
+- **Away from my desk.** Kicking off or checking on a task from my phone, or running something in the cloud (claude.ai/code) so it doesn't depend on my laptop staying awake. You mentioned remote control, so you've probably covered some of this already.
+- **Non-code thinking.** Brainstorming, drafting, or researching in plain chat, where I don't want a repo, CLAUDE.md, and tool calls in the context. A clean chat window is better for that.
+- **Artifacts and documents.** If I'm iterating on a doc, a diagram, or a quick interactive mock, the rendered output in the app beats reading raw files in a terminal.
+- **Handing it to other people.** Non-technical teammates won't touch a terminal, so the desktop app or web is the only realistic option for them.
+- **Visual diff review.** Sometimes a proper diff UI in an IDE or on GitHub is easier on the eyes than scrolling terminal output, though that's more about the review than about where Claude runs.
+
+None of that is really "Claude Code is better elsewhere." It's mostly about being mobile, or doing non-coding work. For heavy coding at your volume, the terminal is the right call, and the slowness you noticed elsewhere is real in my experience too.

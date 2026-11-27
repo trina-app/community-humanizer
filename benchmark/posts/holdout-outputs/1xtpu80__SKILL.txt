@@ -1,0 +1,7 @@
+Hi all, I've been thinking about setting up an ARR stack (Sonarr, Radarr, Prowlarr, with Jellyfin or Plex on the front) and I'm not sure it's worth it for how little I'd actually use it. My home lab already runs everything in Docker, so the setup itself wouldn't be a big jump, but the server is pretty low-powered and doesn't have a lot of spare capacity.
+
+I already pay for Netflix and Disney+ Hotstar. I watch about one movie a day, usually less, and 1080p is plenty for me, I don't need 4K.
+
+So for something this light, is the setup and upkeep really worth it? And does it even make sense to run alongside the subscriptions I already have?
+
+For those of you actually running this: does it work okay on weak hardware? And what are the real benefits beyond just having everything in one place?

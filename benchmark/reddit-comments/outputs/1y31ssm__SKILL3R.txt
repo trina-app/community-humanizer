@@ -1,0 +1,3 @@
+Tailscale for the two of you, it's about as set and forget as it gets. Install the app on her phone once, log in, done, and Immich/Jellyfin just work like normal. Nothing exposed means nothing to patch in a panic.
+
+For sharing with people who don't have it, either use Tailscale Funnel for just that one service, or put a reverse proxy in front of only Immich/Nextcloud share links. Don't expose all three, Nextcloud especially is the one people get nagged about. Keep Jellyfin private.

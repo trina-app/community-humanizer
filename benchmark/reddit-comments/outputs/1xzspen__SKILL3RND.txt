@@ -1,0 +1,3 @@
+Hetzner is the boring answer and it's boring because it works. Their private networks are free and cloud-init/terraform support is solid, so adding a node is just another line in your config. Mixing providers sounds nice but you'll eat public internet latency between nodes, and etcd really doesn't like that, so I'd keep the control planes together in one datacenter.
+
+Also just go 3 control planes from the start, and 3 small ones cost less than you'd think. Two gives you worse availability than one, since losing either breaks quorum.

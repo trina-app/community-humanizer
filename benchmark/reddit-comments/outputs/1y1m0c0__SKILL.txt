@@ -1,0 +1,1 @@
+Audiobookshelf is the usual answer. It handles audiobooks well and will also hold ebooks and read epubs in the browser, but it's not great for managing a big ebook library. Kavita doesn't do audiobooks as far as I know, and neither does Calibre-Web. An extra container for ABS is pretty light, and it might get you a better audiobook sidebar than either of the two you're running.

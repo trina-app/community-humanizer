@@ -1,0 +1,15 @@
+Most deep tech founders don't know up front that it's plausible. They get there in stages, and each stage is built to be cheap and to fail fast.
+
+**1. Start from a problem, not a technology.** The ones who do well usually either spent years inside an industry and know exactly what's broken, or came out of a lab with a technical result and then went looking for who would pay for it. Both are fine, but the second is riskier because you can end up with a solution nobody needs.
+
+**2. Split the risk into technical and market, and test them separately.**
+- Technical risk: does the physics/chemistry/engineering actually work? You answer this with a small prototype, a simulation, or a lit review plus talking to experts. You don't need the finished product, just evidence that the hard part isn't impossible.
+- Market risk: does anyone care enough to pay? You answer this by talking to potential customers early, before the thing exists. Ask what they use today, what it costs them, and what they'd need to see to switch. Letters of intent or paid pilots are much stronger signals than "yeah that sounds cool."
+
+**3. Funding follows de-risking, and a lot of deep tech money isn't VC.** Early on it's often grants (SBIR/STTR in the US, NSF, DOE, ARPA-E, and equivalents elsewhere), university programs, and accelerators. These are non-dilutive, so they fund the "is it possible" phase. VCs come in once you've shown a working prototype and some customer pull.
+
+**4. And yes, early on a startup is basically a small group trying to answer a few big questions as cheaply as possible.** It's less "build the product" and more "find out what would have to be true for this to work, and test that first."
+
+At 19, the best move is probably getting close to real technical work. Join a research lab, do hardware internships, build things, and talk to people who work in industries you find interesting. Founders usually find their idea by being near hard problems for a few years, not by sitting down and brainstorming one. You also get the technical depth that makes investors take you seriously.
+
+If you want a reading list, look at how Y Combinator and The Engine (MIT) talk about "tough tech," and read some SBIR award abstracts to see what de-risking looks like in practice.

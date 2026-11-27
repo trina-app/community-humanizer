@@ -1,0 +1,1 @@
+you've written a better docker manager than three docker managers and you want to replace it with one of them

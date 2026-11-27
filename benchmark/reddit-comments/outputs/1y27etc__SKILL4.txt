@@ -1,0 +1,1 @@
+A folder watcher that renames and files downloads is the one that stuck. Hazel does the same thing on Mac, but Claude wrote the rules faster than I could click through them. Anything that needs judgment, like email sorting, I stopped automating. It was wrong just often enough that I had to check every result anyway.

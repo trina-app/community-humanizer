@@ -1,0 +1,9 @@
+Check what your sale paperwork actually says before spending more. If you have a promissory note with an acceleration clause, a security agreement, or a personal guarantee from the buyers themselves (not just their LLC), you have a lot more leverage than it feels like right now. If the note is secured by the business assets and a UCC-1 was filed, you may be able to take the business back or go after the receivables directly.
+
+A cheap first step is one letter from an attorney (flat fee, usually a few hundred bucks) declaring default and demanding the full balance under the acceleration clause. A lot of buyers who've been coasting suddenly find money when the letter says the whole amount is due. If the balance is under your state's small claims limit, you can skip the lawyer entirely, though that limit is often only $10k or so.
+
+Other things I've seen work: offer a payment plan, but only if they sign a consent judgment or stipulated judgment first, so that if they miss one payment you can enforce right away without a new trial. Also ask your lawyer whether any of this can be done on contingency, since a business that's still taking customer payments is a collectible target.
+
+For the next sale, or if anyone reading this is about to sell: get a bigger down payment, a personal guarantee, a security interest in the business, and ideally a right to step back in if they miss payments. Seller financing without those is basically an unsecured loan to a stranger.
+
+Sorry you're dealing with this. Not a lawyer, so run the details past one who handles collections.

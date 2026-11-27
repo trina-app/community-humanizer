@@ -1,0 +1,1 @@
+Mostly the desktop app for anything that isn't code. I use it for long research chats and document work where I want artifacts and projects sitting next to the conversation, and the terminal is awkward for that. For actual coding I'm with you, the terminal is faster and I haven't found a reason to leave it.

@@ -1,0 +1,9 @@
+I think it fades, but slowly, and mostly because the question changes. Nobody asks a writer if they used spellcheck, or a designer if they used Photoshop. "Did you use AI?" gets boring once everyone does, and then people just ask whether the thing works.
+
+Reddit is a bad sample. Subs that hate AI reward the hate with upvotes, so you see the loudest version of it. Most people who use your app or play your game only care if it's good and doesn't break.
+
+The "anyone could do that" thing is also just wrong. If it were true, there'd be a lot more finished products out there. Shipping needs taste, persistence, and knowing what to build, and the agent doesn't supply those. Plenty of people open Claude Code, get a demo working, and never finish. You did, and that's the hard part.
+
+The one place the stigma has teeth is when someone ships something they don't understand and it falls over. That's what people mean by "vibe coded," and it's a fair criticism. If you can explain how your thing works and fix it when it breaks, you're fine.
+
+I'd just answer the question honestly and move on. "Yeah, I used Claude, it did a lot of the typing and I made the decisions." Said plainly, it usually ends the conversation. The ones who keep pushing were never going to be impressed anyway.

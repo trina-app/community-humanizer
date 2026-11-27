@@ -1,0 +1,7 @@
+Short answer: Calibre and Kavita don't do audiobooks, so for a single app that handles both, you're pretty much down to Grimmory and Bookorbit. I haven't seen anything else in that space that does both well.
+
+The usual alternative is Audiobookshelf. It's the standard for audiobooks and it can also hold and read epubs/PDFs, but the ebook side is much more basic than Calibre-Web or Kavita. If you've got a big ebook collection, I wouldn't use it as your only app.
+
+Since you don't want another container, the easiest move is probably to keep Grimmory and stop running Bookorbit. If your wife's main gripe is the extra clicks to reach audiobooks, a bookmark or shortcut straight to the audiobook view might fix it. If the drama makes you nervous about Bookorbit long term, that's a good reason to settle on Grimmory.
+
+If you ever do go the two-app route, a second container like Audiobookshelf is tiny. It's one container pointed at your existing audiobook folder, and it barely uses any resources. It's also a nicer experience for listening, with good mobile apps and progress sync.

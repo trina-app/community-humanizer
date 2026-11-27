@@ -1,0 +1,5 @@
+Just joined the sub and have been skimming a bunch of threads. One thing that keeps coming up is that self-hosting email is a losing fight. From the comments I get why: unless it's purely internal, Google, Microsoft and the other big providers make it really hard, sometimes practically impossible, to send and receive from your own server without getting blocked or dumped in spam.
+
+Email is the only example I've run into so far, so I'm curious what else falls in the same bucket. What can't be self-hosted, or technically can be but isn't worth the trouble?
+
+Would also like to hear if anyone actually tried one of these and gave up, and what finally made you quit.

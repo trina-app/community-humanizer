@@ -1,0 +1,3 @@
+most of them don't know up front, they just find the cheapest way to test the scary part first. For hardware that usually means a janky prototype that proves the one physics or engineering risk isn't a dealbreaker, before anyone builds the whole product. Deep tech funding is often grants or university/lab money early on, and the prototype is what gets investors to take you seriously
+
+And yeah, it's basically a small group betting everything on whether the thing can work, so at 19 the best move is probably getting into a lab or a hardware company and learning what "plausible" looks like from people who've been wrong a few times

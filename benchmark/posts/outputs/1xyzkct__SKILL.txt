@@ -1,0 +1,9 @@
+Went to an AI keynote today and couldn't stop noticing the same pattern in the slides. "X does Y. Z doesn't." Checking every line of code vs. every decision. Blaming the team vs. taking ownership. Slide after slide of it.
+
+And now I can't unsee it. It's on ads, street banners, websites, decks. Everywhere.
+
+My suspicion is that it's Claude-style phrasing leaking into how people talk and write. Some of it probably isn't AI at all and just happens to fit the pattern, but I get this gut feeling of "Claude wrote that" even when I can't point to a specific pattern.
+
+I like the tool, I use it. But it worries me a bit that AI is shaping how people communicate and even think. When I write something that actually matters, I want it to sound like me. I think the people who keep writing on their own will stand out and come across as more authentic.
+
+Anyone else noticing this? Or am I just venting into the void here. Feels a bit like putting on the sunglasses in They Live.

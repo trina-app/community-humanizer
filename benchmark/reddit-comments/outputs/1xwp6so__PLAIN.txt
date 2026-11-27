@@ -1,0 +1,13 @@
+Your 150 contributors are supply, and nobody has shown demand yet. I'd go after that before building anything else.
+
+**Professors may be the wrong target.** Academics mostly use open datasets (Ego4D, EPIC-Kitchens, etc.) because they have small budgets and a strong norm of reproducibility on public benchmarks. The people who actually buy data are ML engineers and data leads at robotics and embodied AI startups, and at the bigger company labs. They have budgets, deadlines, and a data bottleneck. They're also easier to find: LinkedIn, X, the LeRobot/Hugging Face community, robotics Discords and Slacks, and the author lists on recent arXiv papers (look for industry affiliations).
+
+**Make the email easier to answer.** Cold emails to researchers fail when they read like a pitch. Try something like: "I read your paper on X. You mention data diversity as a limitation. I'm trying to understand how teams like yours currently get egocentric data and what's painful about it. Could I have 15 minutes?" Say you're researching, not selling, and name something specific from their work. Expect around 5-10% replies, so you need to contact a few hundred people, not 20.
+
+**Give them something to react to.** Collect a small sample dataset, maybe 20-50 hours in a niche (kitchen tasks, warehouse work, whatever), and put it on Hugging Face with a clear description. Downloads, stars, and especially inbound messages are real demand signals. It also gives you a reason to message people: "we released this, what would make it useful to you?"
+
+**Conferences:** not yet. If you want to go anyway, workshops and co-located events are often much cheaper than the main registration, and many have virtual or free options. Poster sessions and the workshop Slack/Discord channels are where the conversations happen. Better still, ask someone in your calls to introduce you to their peers.
+
+**The question to ask in every call:** "Have you ever paid for data, or tried to? What happened?" If nobody has bought data or even tried, that's an answer too. The strongest validation is a pilot, a letter of intent, or a prepayment for a specific dataset, so ask for one once you've found someone with the need.
+
+Writing something public (a short post on what you learned about egocentric data quality, for example) can help too, but only after the sample dataset and the calls. Content on its own won't tell you whether anyone will pay.

@@ -1,0 +1,7 @@
+"Suppress" is a strong word for what a reverse proxy does by default. Cloudflare terminates the visitor's connection and opens a separate one to your origin, so visitors never see what your origin speaks. Any CDN, or nginx in front of an app, works the same way.
+
+The advice is fair though. Cloudflare can offer visitors IPv6 and hybrid post-quantum key exchange while your origin is still on IPv4 and TLS 1.2, since the origin leg is its own connection. If you care, check it yourself. `openssl s_client` or testssl.sh against the origin will show what it actually negotiates.
+
+Also, some people use Cloudflare because they can't do this themselves. Plenty of home connections sit behind CGNAT or get no IPv6 from the ISP, and tunnels are the easy workaround. Not everyone can fix the origin side.
+
+What did the post find that Cloudflare is hiding? The title reads like a gotcha, but the content sounds more like "don't forget your origin config."

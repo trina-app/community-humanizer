@@ -1,0 +1,7 @@
+Running a retro gaming site off an M4 Mac Mini at home, 8TB SSD, 10Gbps line. Around 140 TB a month going out. Right now the only way in is a Cloudflare tunnel, with Cloudflare doing the caching and bot stuff.
+
+My worry is Cloudflare dropping the account. They forward the DMCA notices to me and I've been answering each one quickly, but I don't want the whole site to vanish if they decide they've had enough. So I want a fallback.
+
+The annoying part is I only have a shared IPv4 at home, so port forwarding is out, and I'd rather not expose my home IP anyway. I know IPv6-only is an option but I really don't like it as a plan.
+
+So what I'm wondering is whether there's a cheap or free alternative to the tunnel. I was looking at a VPS with at least 2Gbps unmetered, but I have no idea if that's realistic for this kind of traffic or what people actually use here. Anyone running something like this?

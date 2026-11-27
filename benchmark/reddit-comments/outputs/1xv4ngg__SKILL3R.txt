@@ -1,0 +1,3 @@
+Building it was never the hard part, and now it's even less of one. Most people don't want to build their own tools anyway, same reason they don't cook every meal despite having a kitchen. The hard part is getting in front of the right people and getting them to trust you with their money, and AI didn't make that any easier.
+
+Struggling to reach 100 customers is a distribution problem, not an "AI killed SaaS" problem. It would have been the same in 2019. Pick one narrow group of people with one annoying problem and go talk to them directly, since a generic tool for everyone just gets lost in the noise

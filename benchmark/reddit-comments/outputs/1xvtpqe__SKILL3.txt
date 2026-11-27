@@ -1,0 +1,1 @@
+honestly the only reasons I can think of are running stuff in the cloud so it keeps going when your laptop is closed, and being able to kick something off from your phone. if you're already doing remote control you've basically got both. for everything else terminal is the fast one, the rest is mostly for people who don't want to live in a shell

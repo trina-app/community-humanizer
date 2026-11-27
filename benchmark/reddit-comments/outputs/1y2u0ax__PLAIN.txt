@@ -1,0 +1,11 @@
+The code was never really the moat. Anyone could copy features before AI too, it just cost more. What's hard to copy is everything around the code:
+
+- **Distribution.** If you own a channel (an audience, a niche community, SEO, a partner ecosystem), a clone has to buy its way to the same customers. Cheap building makes this the main thing.
+- **Data and integrations.** Once a tool holds a customer's history and is wired into their stack, switching costs real effort, even if a competitor's UI is better.
+- **Trust.** For anything touching payments, compliance, or health data, buyers pick the vendor who's been around and won't vanish. A weekend clone can't fake that.
+- **Narrow focus.** A tool built deeply for one boring vertical, with the weird edge cases handled, isn't worth a big player's time to copy, and a generic clone gets those edge cases wrong.
+- **Speed of learning.** A clone can copy what you shipped, but not what you learned from 200 customer calls. The next move is where you stay ahead.
+
+Your point about maintenance getting easier is probably right. But that helps everyone, including you, so it doesn't change who wins.
+
+And yes, someone can clone your idea tomorrow. They could before too. Most clones die because they have no customers and no reason for anyone to switch, not because the code was bad. So the real question is why a customer would stay with you if a clone were free. If you don't have a good answer, that's the thing to work on.

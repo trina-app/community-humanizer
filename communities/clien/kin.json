@@ -1,0 +1,41 @@
+{
+ "community": "클리앙 아무거나질문",
+ "platform": "clien",
+ "board": "kin",
+ "measured": "2026-11-26",
+ "comments": {
+  "n": 131,
+  "source": "top-level comments with 1+ 공감 in non-political question threads, 2026-11",
+  "chars_median": 71,
+  "types": {
+   "answer": 0.538,
+   "one-liner": 0.154,
+   "anecdote": 0.123,
+   "disagree": 0.108,
+   "question-back": 0.031,
+   "side-point": 0.015,
+   "agree": 0,
+   "joke": 0.015,
+   "complaint": 0.015
+  }
+ },
+ "posts": {
+  "n": 75,
+  "chars_median": 190,
+  "lines_median": 5,
+  "dots_pct": 44,
+  "casual_ending_pct": 39,
+  "greeting_pct": 13,
+  "ends_with_question_pct": 29
+ },
+ "rules": {
+  "ai_content": "unknown",
+  "ai_rules": [],
+  "self_promotion_rules": [],
+  "notes": [
+   "Political threads are refused by the tool."
+  ],
+  "checked": null,
+  "source": "https://www.clien.net/service/board/rule"
+ }
+}

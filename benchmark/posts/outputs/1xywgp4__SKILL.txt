@@ -1,0 +1,7 @@
+I run a retro gaming site from an M4 Mac Mini at home. It has an 8TB SSD and a 10Gbps line, and it serves about 140 TB a month. The only way it's exposed is through a Cloudflare tunnel, with Cloudflare caching and bot protection in front.
+
+My worry is that Cloudflare will eventually drop my account because of the DMCA notices they forward. I respond to every one quickly, but I'd still rather have a fallback than get caught out if they decide it's not worth keeping me.
+
+The problem is I only have a shared IPv4 at home, so I can't port-forward directly, and I don't want my home IP exposed anyway. Going IPv6-only is a possible route but it doesn't really appeal to me.
+
+Is there a cheap or free alternative to the tunnel? I was thinking something like a VPS with at least 2Gbps unmetered bandwidth, but I don't know if that's realistic at this price range. What are people using?

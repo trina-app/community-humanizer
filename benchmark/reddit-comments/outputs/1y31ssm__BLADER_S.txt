@@ -1,0 +1,7 @@
+Tailscale for you two, and a small public path for the sharing case. Don't port forward the whole stack.
+
+Install Tailscale on both phones and leave it on. After the first setup it's basically invisible, and Immich and Jellyfin work fine through it. Your girlfriend just opens the same apps she'd use anyway. Nothing is exposed to the internet, so you aren't patching against scanners at 3am. NetBird works too, but Tailscale has the easier clients, which matters for a non-technical user.
+
+For sharing with people who don't have a VPN, only expose what has to be public. Immich share links are the obvious one. Put just that behind a reverse proxy (Caddy is the least work) with HTTPS, or use a Cloudflare Tunnel so you don't open any ports at all. Keep Nextcloud and the Jellyfin admin side private. If you do expose Nextcloud for file shares, keep it updated and put it behind something like Authelia or Authentik with 2FA.
+
+Also set up backups before you worry about any of this. That's what actually bites people.

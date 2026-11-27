@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Which One Is Real</title>
+<meta name="description" content="Two versions, one written by a person. Can you tell which?">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;700&display=swap">
+<style>
+/* Layout: one narrow column; a question is the thread, then two reply slips side by side (stacked on phones). */
+:root {
+  --bg: #f2f4f6; --surface: #ffffff; --ink: #15191e; --muted: #5c6672; --line: #d8dde3;
+  --accent: #3653c9; --accent-soft: #e6eaf9; --human: #167248; --human-soft: #e2f2ea; --wrong: #a23b2a; --bar: #c9d0d8;
+  --body: "IBM Plex Sans", "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --data: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root { --bg: #0f1215; --surface: #171b20; --ink: #e6e9ed; --muted: #98a2ad; --line: #2a3139; --accent: #8ea2ff; --accent-soft: #1f2640; --human: #52c78f; --human-soft: #15291f; --wrong: #f08c78; --bar: #39414b; color-scheme: dark; } }
+* { box-sizing: border-box; }
+html { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.6; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 32px 64px; }
+.wrap { max-width: 760px; margin: 0 auto; display: grid; gap: 22px; }
+h1, h2 { margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+h1 { font-size: clamp(28px, 6vw, 40px); line-height: 1.15; }
+h2 { font-size: 18px; line-height: 1.45; }
+p { margin: 0; }
+.meta { font-family: var(--data); font-size: 12px; color: var(--muted); }
+.lede { color: var(--muted); max-width: 58ch; }
+button { font: inherit; cursor: pointer; }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.primary { background: var(--accent); color: var(--surface); border: none; border-radius: 8px; padding: 10px 18px; font-weight: 500; justify-self: start; }
+.ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 8px 14px; font-size: 13px; }
+.row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.progress { height: 4px; background: var(--line); border-radius: 2px; overflow: hidden; }
+.progress div { height: 100%; background: var(--accent); }
+.op { color: var(--muted); font-size: 14px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 600px) { .pair { grid-template-columns: minmax(0, 1fr); } }
+.slip { text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: grid; gap: 8px; align-content: start; min-width: 0; color: var(--ink); }
+button.slip:hover { border-color: var(--accent); }
+.slip .text { white-space: pre-wrap; overflow-wrap: anywhere; }
+.slip.human { border-color: var(--human); }
+.slip.picked { box-shadow: 0 0 0 2px var(--accent) inset; }
+.chip { font-size: 12px; font-weight: 500; border-radius: 999px; padding: 2px 10px; justify-self: start; }
+.chip.human { background: var(--human-soft); color: var(--human); }
+.chip.ai { background: var(--accent-soft); color: var(--accent); }
+.verdict { font-weight: 500; }
+.verdict.right { color: var(--human); } .verdict.wrong { color: var(--wrong); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.tile { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: grid; gap: 2px; }
+.big { font-family: var(--data); font-size: 28px; font-variant-numeric: tabular-nums; }
+textarea { width: 100%; font: 13px var(--data); background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 10px; resize: vertical; }
+a { color: var(--accent); }
+footer { font-size: 13px; color: var(--muted); display: grid; gap: 6px; }
+</style>
+</head>
+<body>
+<main class="wrap" id="app"></main>
+<script>
+const T = {
+  en: { title: "Two versions. One is real.", lede: "Each question is a real Reddit thread with two versions of a reply or a post. One is the top comment a person really wrote, or the real post. The other was written by an AI. Pick the one a person wrote. 10 questions, about 3 minutes.", start: "Start", pick: "Tap the one a person wrote.", right: "Right. That one is real.", wrong: "Wrong. You picked the AI one.", next: "Next", result: "See result", real: "Real", ai: "AI", judges: "AI judges' human score", crowd: (n, p) => `${n} people answered this one; ${p}% got it right.`, done: (r) => `You spotted ${r} of 10`, chance: "Guessing gets 5 on average.", everyone: (p, n) => `Everyone so far: ${p}% right across ${n} answers.`, share: "Copy result", copied: "Copied", again: "Play another round", source: "Original thread", other: "한국어로 하기", post: "post", comment: "comment", note: "Real texts are cut to 600 characters and shown without usernames. To have a text removed, open an issue on GitHub." },
+  ko: { title: "둘 중 하나만 진짜예요", lede: "클리앙 실제 글마다 댓글(또는 본문) 두 개가 있어요. 하나는 사람이 실제로 쓴 공감 1위 댓글이나 원래 글이고, 하나는 AI가 썼어요. 사람이 쓴 쪽을 고르세요. 10문제, 3분쯤 걸려요.", start: "시작하기", pick: "사람이 쓴 쪽을 누르세요.", right: "맞혔어요. 진짜 사람이 쓴 거예요.", wrong: "틀렸어요. AI가 쓴 쪽을 골랐어요.", next: "다음", result: "결과 보기", real: "진짜 사람", ai: "AI", judges: "AI 채점자가 본 '사람일 확률'", crowd: (n, p) => `이 문제는 ${n}명이 풀었고 ${p}%가 맞혔어요.`, done: (r) => `10개 중 ${r}개 맞혔어요`, chance: "찍으면 평균 5개예요.", everyone: (p, n) => `지금까지 전체 정답률 ${p}% (답 ${n}개)`, share: "결과 복사", copied: "복사했어요", again: "한 판 더", source: "원문 보기", other: "Play in English", post: "글", comment: "댓글", note: "진짜 글은 600자까지만 보여 주고 아이디는 지웠어요. 내리고 싶은 글이 있으면 GitHub 이슈로 알려 주세요." },
+};
+const params = new URLSearchParams(location.search);
+let lang = params.get("lang") === "ko" || (!params.get("lang") && (navigator.language || "").startsWith("ko")) ? "ko" : "en";
+document.documentElement.lang = lang;
+const t = () => T[lang];
+const app = document.getElementById("app");
+const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+let items = [], i = 0, right = 0, shownAt = 0, roundToken = "", cfToken = "", cfg = {};
+function mountTurnstile(box) {
+  const go2 = () => window.turnstile.render(box, { sitekey: cfg.turnstile, callback: (tok) => { cfToken = tok; const b = document.getElementById("go"); if (b) b.disabled = false; } });
+  if (window.turnstile) return go2();
+  const sc = document.createElement("script"); sc.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"; sc.async = true; sc.onload = go2; document.head.append(sc);
+}
+
+function intro() {
+  app.textContent = "";
+  app.append(el("span", "meta", lang === "en" ? "Which one is real?" : "진짜는 어느 쪽?"), el("h1", null, t().title), el("p", "lede", t().lede));
+  if (cfg.turnstile) { const box = el("div"); box.id = "cf"; app.append(box); mountTurnstile(box); }
+  const row = el("div", "row");
+  const go = el("button", "primary", t().start); go.type = "button"; go.id = "go"; go.disabled = !!cfg.turnstile && !cfToken; go.addEventListener("click", start);
+  const sw = el("button", "ghost", t().other); sw.type = "button"; sw.addEventListener("click", () => { lang = lang === "en" ? "ko" : "en"; document.documentElement.lang = lang; intro(); });
+  row.append(go, sw); app.append(row);
+  footer();
+}
+function footer() { const f = el("footer"); f.append(el("p", null, t().note)); app.append(f); }
+
+async function start() {
+  const r = await fetch(`/api/round?lang=${lang}&cf=${encodeURIComponent(cfToken)}`, { credentials: "same-origin" });
+  const d = await r.json();
+  if (!r.ok) { alert(d.error || "Try again."); return; }
+  items = d.items; roundToken = d.round; i = 0; right = 0; cfToken = ""; ask();
+}
+
+function head() {
+  const bar = el("div", "progress"), fill = el("div"); fill.style.width = `${(100 * i) / items.length}%`; bar.append(fill);
+  return bar;
+}
+function ask() {
+  const q = items[i];
+  app.textContent = "";
+  app.append(head(), el("span", "meta", `${i + 1} / ${items.length} · ${q.place} · ${q.kind === "post" ? t().post : t().comment}`), el("h2", null, q.title));
+  if (q.body) app.append(el("p", "op", q.body));
+  const pair = el("div", "pair");
+  ["a", "b"].forEach((side, k) => {
+    const s = el("button", "slip"); s.type = "button";
+    s.append(el("span", "meta", "AB"[k]), el("span", "text", q[side]));
+    s.addEventListener("click", () => answer(side));
+    pair.append(s);
+  });
+  app.append(pair, el("p", "meta", t().pick));
+  shownAt = Date.now(); window.scrollTo(0, 0);
+}
+async function answer(pick) {
+  const q = items[i];
+  const r = await (await fetch("/api/answer", { method: "POST", credentials: "same-origin", headers: { "content-type": "application/json" }, body: JSON.stringify({ round: roundToken, qid: q.qid, pick, ms: Date.now() - shownAt }) })).json();
+  if (r.correct) right++;
+  app.textContent = "";
+  app.append(head(), el("span", "meta", `${i + 1} / ${items.length} · ${q.place}`), el("h2", null, q.title));
+  app.append(el("p", "verdict " + (r.correct ? "right" : "wrong"), r.correct ? t().right : t().wrong));
+  const pair = el("div", "pair");
+  ["a", "b"].forEach((side, k) => {
+    const isHuman = side === r.human;
+    const s = el("div", "slip" + (isHuman ? " human" : "") + (side === pick ? " picked" : ""));
+    const sc = r.scores; const key = isHuman ? "human" : "ai";
+    const line = ["gpt", "opus", "sonnet"].filter((j) => sc[j] && sc[j][key] != null).map((j) => `${j === "gpt" ? "GPT" : j[0].toUpperCase() + j.slice(1)} ${sc[j][key]}`).join(" · ");
+    s.append(el("span", "meta", "AB"[k]), el("span", "chip " + (isHuman ? "human" : "ai"), isHuman ? t().real : t().ai), el("span", "text", q[side]), el("span", "meta", `${t().judges}: ${line}`));
+    pair.append(s);
+  });
+  app.append(pair);
+  if (r.crowd.n > 1) app.append(el("p", "meta", t().crowd(r.crowd.n, Math.round((100 * r.crowd.right) / r.crowd.n))));
+  const row = el("div", "row");
+  const nx = el("button", "primary", i + 1 < items.length ? t().next : t().result); nx.type = "button"; nx.addEventListener("click", () => { i++; i < items.length ? ask() : end(); });
+  const a = el("a", null, t().source); a.href = r.url; a.target = "_blank"; a.rel = "noopener";
+  row.append(nx, a); app.append(row); nx.focus(); window.scrollTo(0, 0);
+}
+async function end() {
+  app.textContent = "";
+  app.append(el("h1", null, t().done(right)), el("p", "lede", t().chance));
+  try {
+    const s = await (await fetch("/api/stats")).json();
+    if (s.all && s.all.n) app.append(el("p", "meta", t().everyone(Math.round((100 * s.all.right) / s.all.n), s.all.n)));
+  } catch {}
+  const msg = lang === "en" ? `I picked the real one ${right}/10 times against an AI. ${location.origin}` : `AI 댓글 사이에서 진짜 사람 댓글 10개 중 ${right}개 맞혔어요. ${location.origin}/?lang=ko`;
+  const ta = el("textarea"); ta.id = "share"; ta.rows = 2; ta.readOnly = true; ta.value = msg;
+  const row = el("div", "row");
+  const cp = el("button", "ghost", t().share); cp.type = "button";
+  cp.addEventListener("click", async () => { try { await navigator.clipboard.writeText(ta.value); cp.textContent = t().copied; } catch { ta.select(); } });
+  const again = el("button", "primary", t().again); again.type = "button"; again.addEventListener("click", start);
+  row.append(again, cp); app.append(ta, row); footer();
+}
+fetch("/api/config").then((r) => r.json()).then((c) => { cfg = c || {}; }).catch(() => {}).finally(intro);
+</script>
+</body>
+</html>

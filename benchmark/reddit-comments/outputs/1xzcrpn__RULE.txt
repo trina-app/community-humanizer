@@ -1,0 +1,13 @@
+Batching beats handling as it comes in, with one exception I'll get to.
+
+I do email at set times, usually 10am and 3pm, and that's it. Everything else is closed. If a client really needs me urgently they'll call, and in 6 years that's happened maybe a handful of times. Checking email constantly was what killed my focus, not the email itself.
+
+For quotes, I block 30 min on Friday afternoon and go through every open quote older than 3 days. Most follow-ups are two lines: "Hey, just checking if you had any questions on the quote." A shocking number of those turn into jobs, so don't skip it. I keep a dead simple spreadsheet with client, amount, date sent, and status. Fancy CRMs just became another thing to maintain.
+
+For files and revisions, the thing that helped most wasn't a better folder structure, it was making clients send stuff to one place. I give every client a shared folder (Drive or Dropbox, whatever they'll actually use) and tell them up front that files sent by email might get missed. Revisions go in a running doc per project, numbered, so "round 2 feedback" is one list instead of 14 scattered emails. I name files with v1, v2, etc. and never overwrite.
+
+The exception to batching: anything that takes under 2 minutes and is clearly a client-blocking thing (like "yes approved, go ahead"), I'll just handle it right then. Otherwise it sits and creates anxiety.
+
+Also, busy weeks are going to pile up regardless. I stopped trying to fix that and just protect one hour at the end of the week to reset. Clear the inbox, update the spreadsheet, plan Monday. Without that, the pile compounds.
+
+If it's still eating half your week after that, it might be worth paying a VA for a few hours a week. Admin at 5-10 hrs/week is usually cheaper to hand off than the billable time you lose.

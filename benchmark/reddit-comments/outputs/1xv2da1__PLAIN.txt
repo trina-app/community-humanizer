@@ -1,0 +1,20 @@
+Short version: dead equity is a real concern, but "give it back for free" is a negotiating position, not a standard. If your lawyer is right that there's no repurchase right on vested shares, you hold nearly all the leverage, and they know it. That's why they're asking nicely.
+
+**Is dead equity real?** Yes, but it's about size and behavior, not the mere existence of a departed founder.
+- A founder who left with 3-5% and is friendly is a non-issue. Nobody blinks at it in a Series A diligence.
+- A founder with 15-25% who's gone and adversarial is a real problem. Investors worry about incentives (you don't care about day-to-day), about the stake blocking or complicating future decisions, and about a big chunk of the cap table that doesn't help the company grow.
+- The practical issue for next-round investors is usually not the percentage itself but whether your shares come with votes, consent rights, or information rights that can cause friction. That's something you can fix without giving away the economics.
+
+**What's typical when a founder leaves after partial vesting?**
+- Unvested shares are forfeited. That's standard and you should accept it.
+- Vested shares are normally kept. Founders who leave on reasonable terms often negotiate a partial buyback, but it's usually paid, or traded for something.
+- Giving back vested equity for nothing is not the norm. If they want it, they should be paying for it.
+
+**What I'd do:**
+1. **Treat any give-back as a trade, not a favor.** Options for what you ask for: cash at a fair price (they'll argue about the valuation, so get a real number), a secondary or buyback in the next round, accelerating some unvested shares, a clean mutual release, or keeping a defined percentage with no strings.
+2. **Offer to solve their real concern without giving up value.** For example, an irrevocable proxy on your voting rights to the board or CEO, waiving information rights, or agreeing to a lock-up or drag-along cooperation. That addresses "dead equity scaring off investors" directly and costs you nothing economically.
+3. **Ask them to say specifically what the problem is.** If they can't point to a concrete investor who said no because of your stake, it's a line. If they can, then you have a number to work with.
+4. **Watch for things that cost you more than the shares:** a non-compete, non-disparagement, or release you'd sign in the same deal. Make sure you're paid for those too.
+5. **Check the tax side before agreeing to anything.** QSBS holding period, 83(b) status, and how a repurchase is characterized can all matter a lot. Use a startup-specific lawyer or tax advisor, not a generalist.
+
+One thing to remember: you're also leaving a company you built. A reasonable middle ground (keeping something meaningful, giving up some in exchange for real value) often beats either "I keep everything and burn the relationship" or "I hand it over and get nothing." But that decision should be yours, made on your terms, not under pressure from the people who benefit from you saying yes.

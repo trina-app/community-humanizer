@@ -1,0 +1,16 @@
+Not alone, but I'd poke at one part of the plan before you get comfortable with it.
+
+The "slightly faster than everyone else" strategy works only as long as nobody looks closely. Your manager doesn't understand what a one-week task means today. That can change the day there's a reorg, a new manager, or a layoff round. At that point "the person who delivers a bit more than average" is not a strong position, and the people deciding will see a regular output curve with nothing to explain it. The automation you built is invisible, and invisible value is the first thing to get cut.
+
+Also, the stuff you built on your own Max plan before the company one: check your contract's IP clause. In a lot of places, tooling you built to do your job can be claimed by the company, and "I did it on my own dime against policy" isn't a great sentence to say out loud in that conversation.
+
+What I'd do in your spot:
+
+1. Keep the painting. Time off the treadmill is a real benefit, and I wouldn't feel guilty about it.
+2. Write down what you've built and the before/after numbers, privately. Weeks vs. months, specific tasks. That's your portfolio whether you stay or leave.
+3. Test the market quietly. If a company that actually values this would pay you well, you'll know your real leverage, and you'll cope with the current job a lot better knowing you have an exit.
+4. Stop trying to convert your colleagues. You showed them, nothing happened, and that's data about the place, not about you.
+
+Coping-wise, the thing that helped me most was treating the job as paying for the life I want, and treating the AI skill as mine, not the company's. The skill goes with you wherever you go.
+
+Quiet quitting is fine if it's a conscious choice. Just make sure it's a choice you're making with an exit option in hand, not a hiding spot.

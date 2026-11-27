@@ -1,0 +1,9 @@
+Been doing this the dumb way for years and I'm starting to think there's a better one. Right now I just SSH in after stuff finishes seeding and mv it over by hand. Works, but it feels clunky.
+
+I've got one `media` dir that's bind-mounted into a few containers. torrent client writes to `downloads/complete`, and jellyfin reads from `jellyfin/shows` and `jellyfin/movies`. I'm guessing the Arr stack handles all this better than me typing mv at 1am?
+
+the thing I can't figure out is seeding. if I move the files I'm not seeding anymore, right? so do people symlink? I want to keep seeding long term and also have it show up in jellyfin
+
+cron job crossed my mind but it's not going to work, since it's not all the same kind of thing. movies, shows, and every now and then an ebook that needs to go somewhere totally different
+
+so what's the cleaner way to get stuff into jellyfin?

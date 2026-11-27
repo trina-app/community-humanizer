@@ -1,0 +1,9 @@
+Hardlinks are what you want, not symlinks. A hardlink gives the same file a second name in a different folder, so it takes no extra space. You can keep seeding from `downloads` while Jellyfin reads it from `jellyfin/movies`, and deleting one doesn't break the other. Symlinks break the moment the torrent client moves or removes the original.
+
+The only catch is that both paths have to be on the same filesystem, and in Docker that means the same mount. You've already got `media` mounted as one tree, so you're fine as long as every container sees it at the same path (e.g. `/media`) and you don't mount `downloads` and `jellyfin` as separate volumes.
+
+Sonarr and Radarr do this automatically. Set the torrent client's category to `sonarr` or `radarr`, and when a download finishes they hardlink it into the right library folder and rename it. That also covers your "some go to movies, some to shows" problem, since the category decides it. The TRaSH Guides have a good page on folder structure and hardlinks that's worth reading before you set it up.
+
+If you don't want the full arr stack, qBittorrent has "Run external program on torrent finished". You can pass it the category and path (`%L` and `%F`) to a small script that does `cp -al` into the right folder based on the category. Ebooks can just be another category that goes to a different folder. It's like 10 lines of bash.
+
+For ebooks, the arr-style options are flakier than for video. A lot of people just use a manual category plus Calibre-Web or Audiobookshelf and skip the automation.

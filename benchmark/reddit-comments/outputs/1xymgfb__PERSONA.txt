@@ -1,0 +1,3 @@
+Honestly the people asking "did you use AI" mostly don't care about the answer, they want to know if you can explain how it works when it breaks. If you can, nobody's going to think less of it. If you can't, that's the actual problem and it was a problem before AI too (copy-pasting from stack overflow).
+
+Reddit is also just the worst place to measure this. Your actual users care that the thing works

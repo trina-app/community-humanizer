@@ -1,0 +1,11 @@
+You're not wrong, but I think the friction comes from the model rather than from missing features. Those tools treat a git repo as the single source of truth for a stack, so they expect everything to live in it. Your setup is the reverse: someone else's repo plus local overlay files. Most GitOps-style tools don't handle that well.
+
+Since you already have the compose override pattern working, you could keep it and bolt on the three missing pieces:
+
+- **Git sync:** a cron or systemd timer running `git pull` in the `git/` folder, then re-running `build-and-run.sh` only if HEAD changed. It's about 5 lines of shell.
+- **Automated updates:** Renovate can open PRs against image tags if you pin versions, which also gives you a changelog to read before updating. If you'd rather run `latest`, Watchtower-style tools work, but I'd be wary of unattended updates on anything that holds data.
+- **Vuln scanning:** Trivy or Grype can scan your running images on a schedule and send the results somewhere. `trivy image` against whatever `docker ps` reports covers most of it.
+
+If you still want a UI, the workaround that fits those tools better is to stop overriding the upstream repo. Make your own private repo per stack containing your `compose.yml`, which uses the upstream image directly and includes your volumes and env. Most projects' compose files are just examples anyway. Komodo and Arcane then point at your repo, and the override problem goes away. Komodo also lets you list extra compose and env file paths per stack, so check whether that covers your case.
+
+Honestly, though, your current setup sounds fine. Adding a timer, Renovate and Trivy to it is probably less work than migrating everything.

@@ -1,0 +1,7 @@
+2Gbps unmetered for cheap doesn't really exist. 140TB/month is about 430Mbps sustained, and most "unlimited" VPS plans have a fair use clause that kicks in way before that. Hetzner cloud is out too, since it includes 20TB and then bills per TB.
+
+What would work is a dedicated server with a real unmetered port. OVH and Hetzner both have 1Gbps ones, and the auction/eco lines are the cheapest. Run Caddy or nginx on it as the public edge and put WireGuard between it and the Mac mini. Your home IP stays hidden and only the dedicated box is exposed. I'd guess 50 to 100 a month for something that actually sustains that traffic.
+
+Keep in mind that any host will forward DMCA notices too, and some will pull the plug faster than Cloudflare does. I'd keep the config in git and have a second provider you can fail over to in an afternoon.
+
+If you're pushing big files through Cloudflare's CDN cache on a free plan, that's probably a bigger risk to your account than the DMCA stuff.

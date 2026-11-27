@@ -1,0 +1,7 @@
+Start by finding people who already spend money or time on the problem. If nobody is paying for a worse solution today, a better one rarely changes that. Competitors are a good sign, since it means someone already pays. I'd only worry if I couldn't name a specific group they serve badly.
+
+For interviews, never ask "would you use this". Ask about the last time the problem came up: what they did, what it cost them, what they tried that didn't work. People lie about the future but are pretty accurate about what they already did. If they've never looked for a fix, it's usually not painful enough.
+
+Polite interest is worthless. Something that costs them counts: a pre-order, a deposit, an intro to their boss, an hour of their time to go through their current process. I did a manual version once with a spreadsheet and email, and two people paid me before there was a single line of code. Five paying people beat 500 signups for me.
+
+Biggest mistake was asking friends. They want you to win, so they say yes.

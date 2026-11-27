@@ -1,0 +1,28 @@
+{
+ "id": "1xv4ngg",
+ "sub": "SaaS",
+ "order": [
+  "BLADER",
+  "PLAIN",
+  "BLADER_S",
+  "SKILL",
+  "HUMAN",
+  "RULE"
+ ],
+ "human": {
+  "BLADER": 30,
+  "PLAIN": 12,
+  "BLADER_S": 35,
+  "SKILL": 30,
+  "HUMAN": 92,
+  "RULE": 12
+ },
+ "rank": {
+  "BLADER": 1,
+  "PLAIN": 4,
+  "BLADER_S": 2,
+  "SKILL": 5,
+  "HUMAN": 6,
+  "RULE": 3
+ }
+}

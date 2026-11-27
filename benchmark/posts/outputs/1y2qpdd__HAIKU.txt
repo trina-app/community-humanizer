@@ -1,0 +1,5 @@
+Long Claude answers were getting hard for me to skim, so I added a standing instruction to end every reply with a short "80/20" block after a divider line. It has fixed lines with emoji labels: Result every time, then Next, Decide, and Watch out, plus Git when it's relevant. The key action in each line is in bold, so if I only read the bold text I still get the answer.
+
+I saved it in claude.ai user preferences and in CLAUDE.md for Claude Code, so it applies everywhere. It even holds up in the long chats about the hours-tracker app I'm building, which is where I was losing the thread most.
+
+Curious what small tricks others have picked up. It could be a prompt, a setting, a habit, or something you stopped doing that made a difference.

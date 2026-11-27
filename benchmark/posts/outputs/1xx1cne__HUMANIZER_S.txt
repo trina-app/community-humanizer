@@ -1,0 +1,7 @@
+I've got one `media` directory bind-mounted into a few containers. The torrent client writes finished downloads to `downloads/complete`, and Jellyfin reads from `jellyfin/shows` and `jellyfin/movies`. For years my workflow has been to SSH in once a torrent is done seeding and move the files over by hand. It works, but it's clunky and I'm tired of it.
+
+I'm guessing the Arr stack handles this better, but I haven't really looked into it. What's the cleaner way to get files into Jellyfin? And how do you keep seeding long term while also having the files show up in the library? Symlinks? Hardlinks? I'm not sure what's safe to do without breaking either side.
+
+I'd rather not just throw a cron job at it. The content isn't uniform: it's mostly movies and shows, but I also grab the occasional ebook, and those need to go somewhere different. I don't see how a dumb script would sort that out reliably.
+
+How do you all handle this?

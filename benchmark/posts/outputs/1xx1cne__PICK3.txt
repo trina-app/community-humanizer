@@ -1,0 +1,5 @@
+Been SSHing in and manually moving finished torrents into the jellyfin folders for years now, after they're done seeding. It works but it feels dumb. I'm guessing the Arr stack does this better and I've just been avoiding it?
+
+Setup is one `media` dir bind-mounted into a few containers. Torrent client writes to `downloads/complete`, Jellyfin reads `jellyfin/shows` and `jellyfin/movies`.
+
+Symlinks maybe, so I can keep seeding? Cron seems wrong since it's movies, shows, sometimes ebooks going elsewhere

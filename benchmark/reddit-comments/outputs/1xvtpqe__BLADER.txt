@@ -1,0 +1,9 @@
+I mostly stay in the terminal too, but there are a few cases where I leave it.
+
+Long research or writing sessions are better in the web app. Artifacts, projects, and being able to scroll back through a long conversation without fighting terminal scrollback make a real difference there. Same for anything with images or PDFs where I want to see what I'm talking about next to the response.
+
+The desktop app is handy when I want a quick question answered without opening a repo. Spinning up a Claude Code session just to ask something small feels like overkill.
+
+Phone is the other one. If a long run is going and I'm away from my desk, checking on it from the app beats nothing. Remote control covers some of that, but I still end up on my phone more than I expected.
+
+For actual coding, though, I haven't found a reason to leave the terminal. Hooks, subagents, and scripting it into other stuff are all better there, and the IDE extensions have always felt like a thinner version of the same thing to me.

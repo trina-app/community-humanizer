@@ -1,0 +1,9 @@
+Your worry about the platforms is partly right. The CEOs with a network usually find their CTO through it, so a generic matchmaking site mostly gets you people who are still figuring out what they want to do. Some good pairs do come out of them, but it's a low hit rate.
+
+What I'd do instead is pick a domain you find interesting and go where the problem people hang out: industry meetups, Slack groups, conferences for that vertical. A sales or ops person who has lived the problem for 10 years is a much better CEO candidate than someone who wants to "start a company" and is shopping for a technical cofounder.
+
+Also, you can build. Ship a rough version of something yourself, even if it's ugly. A working demo gets you a lot more attention from potential CEOs than a pitch about wanting to be a CTO, and it shows you can get traction without them handholding you.
+
+Whoever you end up with, don't hand out equity on a handshake. Work on something small together for a month or two first, and put 4 year vesting with a 1 year cliff in place when you do commit. Most cofounder splits that blow up do so because the two people never actually worked together before signing.
+
+You're in the Bay Area, so you have an advantage here. Just talking to a lot of people about what they're stuck on tends to turn up the right person faster than any platform.

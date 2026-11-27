@@ -1,0 +1,6 @@
+{
+  "name": "community-humanizer",
+  "owner": { "name": "Trina" },
+  "metadata": { "description": "Replies and posts in a community's own voice", "version": "0.1.0", "pluginRoot": "." },
+  "plugins": [{ "name": "community-humanizer", "source": "./", "description": "Write Reddit and Clien replies and posts the way regulars there write.", "version": "0.1.0", "keywords": ["reddit", "clien", "community", "humanizer"] }]
+}

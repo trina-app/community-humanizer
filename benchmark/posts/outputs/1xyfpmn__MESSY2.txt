@@ -1,0 +1,5 @@
+Every pitch now someone asks "why couldn't we just build this ourselves with Claude?" and honestly I keep giving the same answer. Yeah, a weaker version is doable, but it'd cost you real time, effort and money to build and then maintain it.
+
+It works okay but I don't love it. Feels like this objection applies to 95%+ of SaaS startups, not just mine. So is the actual moat just distribution and sales now?
+
+How are you guys handling this in pitches?

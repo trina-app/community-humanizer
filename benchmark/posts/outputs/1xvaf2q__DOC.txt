@@ -1,0 +1,35 @@
+I'm a CFO at a startup and I've watched a lot of companies raise, both the ones that got funded easily and the ones that struggled. After a while the pattern gets pretty simple: VCs mostly fund one of two things. Proven demand or a proven team.
+
+That's it. Everything else in the deck is supporting material for one of those two.
+
+What VCs are really asking is "what's the chance this returns the fund?" You have to show evidence that the chance of a big return is high. In practice that evidence comes in three forms:
+
+1. Demand you can generate and replicate at scale
+2. A market where appetite is clearly growing
+3. Founders who have already won before (a past success or exit)
+
+Some examples that I think make it concrete.
+
+**Uber, 2011**
+
+They had a pilot running in San Francisco. Real revenue, riders coming back repeatedly, and a playbook that could be copied city by city. Investors weren't betting on an idea. They were betting that SF could be repeated 50 times.
+
+**Airbnb, 2009**
+
+Demand already existed. People were using Craigslist and Couchsurfing to find places to stay. And during big events when hotels sold out, bookings spiked. That's proof that people want this and will pay when there's no alternative.
+
+**Beehiiv, 2021**
+
+The founders had built the growth engine at Morning Brew, which sold to Business Insider for $75M. Nobody needed to wonder if these people could build a newsletter business. They'd already done it.
+
+**Affirm, 2014**
+
+Max Levchin. PayPal and Slide, both exits. The track record was the pitch.
+
+Notice that none of these are "we have a great idea and we're really passionate." Each one points at evidence, either the demand is already there and repeatable, or the team has done it before.
+
+If you don't have a past exit, that's fine, most founders don't. Then your job is to bring the demand evidence, and the earlier you can show it, the easier the conversation gets. If you have neither yet, you're probably not ready to raise, and that's useful to know before you burn months pitching.
+
+I wrote this because I think a lot of founders spend their energy polishing slides when what investors want to see is much simpler. Hopefully this helps you understand what's actually going on in their heads.
+
+Again, not promoting anything. Happy to answer questions.

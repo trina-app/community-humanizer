@@ -1,0 +1,9 @@
+Two hours a day of outbound isn't a full fundraise, it's the beginning of one. The empty time is the problem to fix, not something to survive.
+
+- **Make the fundraise bigger.** Cold outbound to investors converts badly. Warm intros convert much better, so spend the time mapping who you know that knows investors: other founders, angels, operators in your space, anyone who's funded something adjacent. Ask every founder you talk to for two intros. That's easily a few hours a day.
+- **Talk to customers, not code.** At pre-seed, the thing that moves investors is evidence, not features. Do 5 or so calls a week with real prospective users, and try to turn some of them into paid pilots, LOIs or at least a waitlist with intent. You get to fail fast on your assumptions without writing code, and every conversation gives you something new to tell investors.
+- **Keep updating investors.** If someone passes or goes quiet, a short "here's what changed since we spoke" email a few weeks later with a new metric or customer works well. Momentum is what they're buying.
+- **Prep diligence now.** Data room, simple financial model, cap table cleanup, references lined up. It's boring, but it's the stuff that slows a deal down when someone finally says yes.
+- **Bootstrap with revenue.** Even small paid pilots or consulting-ish deals in your niche extend your runway, and they count as traction. Just don't let it turn into a side business that eats your whole week.
+
+If you still have spare time after all that, the issue is probably that you're not doing enough of the above. Founders who sit around waiting on inboxes mostly aren't selling hard enough, and selling is the one thing that helps with both the raise and the company.

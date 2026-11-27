@@ -1,0 +1,7 @@
+I'm nearly 50 and have been an engineer a long time. For the past year I've been building a side project with Claude Code, and I did it without talking to a single customer. Partly I wanted to learn Claude properly, partly I wanted my daughter to get real experience working on something (she did land a job out of it, so that part worked).
+
+The product turns a family's photos and videos into a film. One-time price, no subscription. A couple months ago ChatGPT started sending me random visitors, and I can watch what they actually do on the site. That's about 130 signups so far, 2-3 a day. I turned on payments last week and have zero purchases.
+
+I assume the way forward is a grind: emails, partners, pages written to answer the questions people ask ChatGPT. Reddit is the obvious place to look and it's harder than it seems. The subs where answering questions would fit all ban self-promotion, and the subs that allow it don't have my customers.
+
+So for anyone who took a consumer product from a trickle like this to a steady flow: what actually moved things for you? Or is it mostly luck, grind, and having something people want?

@@ -1,0 +1,1 @@
+Happens to me every so often when I'm prompting in English with a lot of Chinese-heavy code or docs in context. The model just drifts into whatever language is most common in the nearby tokens. Start a new chat, or add one line to the system prompt like "always reply in English", and it mostly stops.

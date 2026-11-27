@@ -1,0 +1,15 @@
+so one of my 2TB drives has 7,000+ bad sectors now. about 4 years power on. the other 2TB is fine, 0 bad sectors at ~2 years, and theres a 4TB too but yeah. picking up 6x 6TB WD Red Pro on saturday, got 6 for $500 so i figure its finally time to do RAID properly
+
+current box is a ryzen 3 3200G, 16gb ram (going to 32), rtx 2060 12gb, 256gb nvme for boot. running ubuntu desktop right now with jellyfin and a minecraft server on it. torrents too, and i want to keep a desktop gui for that so
+
+what i want to run after:
+jellyfin
+nas / file share
+navidrome
+minecraft
+
+needs to do RAID, needs to be free, no paying for updates so unraid is out. looked at proxmox but the desktop gui thing kills it for me. also has to work with tailscale
+
+im pretty new to all this tbh, been learning linux on this machine and honestly really enjoying it. so what OS would you guys go with? or do i just stay on ubuntu and do the raid on
+
+kinda want to have it figured out before saturday

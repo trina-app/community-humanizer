@@ -1,0 +1,5 @@
+Radicale + Tasks.org works well for this. Radicale is a tiny CalDAV server, no Nextcloud overhead, and it runs fine on an old PC. Tasks.org syncs to it over CalDAV so your tasks stay in the app you already like.
+
+For the calendar side, DAVx5 on Android syncs events and tasks, and the Calendar app of your choice shows the events. On Windows, Thunderbird shows both events and tasks with colored calendars, and you can set a color per calendar. Android's calendar won't show tasks on its own, so Tasks.org is where those live.
+
+If you want something with a web UI and less config, Baikal is similar. Nextcloud does show tasks, but it's overkill if all you need is a calendar.

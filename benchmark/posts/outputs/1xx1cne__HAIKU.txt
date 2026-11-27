@@ -1,0 +1,9 @@
+So I've been doing this for years and it works, but it feels clunky. The torrent client writes to `downloads/complete` inside a `media` dir that's bind-mounted into several containers, and Jellyfin reads from `jellyfin/shows` and `jellyfin/movies`. After something finishes I SSH in and move it over by hand, and I have to keep it seeding from the original spot too.
+
+I suspect the Arr stack handles this better, but I'm not sure how it deals with seeding. Is there a cleaner way to get files into the media server folders without moving them manually every time?
+
+What I'd really like is to keep seeding long-term and still have stuff show up in Jellyfin. Would symlinks work for that, or is there something better?
+
+I thought about a cron job, but the content varies. Movies go to one place, shows go to another, and every so often I grab an ebook that needs a different destination entirely. I don't see how a simple script would reliably sort that out.
+
+Anyone doing this with a similar setup? What are you using?

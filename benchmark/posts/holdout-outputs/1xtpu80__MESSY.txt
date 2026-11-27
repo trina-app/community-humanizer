@@ -1,0 +1,7 @@
+so my server is already pretty weak, it runs everything in docker but theres not much spare capacity on it. and i keep looking at the arr stack, sonarr radarr prowlarr plus jellyfin or plex, and going back and forth
+
+i already pay for netflix and disney+ hotstar. i watch maybe one movie a day, usually less. 1080p is plenty for me, dont need 4k
+
+the thing is i cant tell if the setup and upkeep is worth it for this little use. like is it even worth doing on top of the subscriptions or would i just be adding a chore
+
+anyone actually running this on weak hardware? does it hold up? and what do you actually get out of it besides having everything in one place

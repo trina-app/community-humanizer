@@ -1,0 +1,15 @@
+Tailscale for you two, and only expose the one or two things you actually need to share.
+
+For your girlfriend, Tailscale is about as painless as it gets. Install the app, log in once, leave it on, and Immich/Jellyfin/Nextcloud apps just work using the tailnet address. Nobody has to know what a port is. I'd turn on "always on" on her phone and set up MagicDNS names so she never types an IP. NetBird is fine too, but Tailscale has the least friction for non-technical people, and you can run Headscale if you ever want to self-host the control side.
+
+For sharing with people who don't have a VPN, you don't have to open everything. Immich share links and Nextcloud public links are the main use case, so put just those behind a reverse proxy (Caddy or Traefik, whichever you like) with HTTPS. Keep Jellyfin private, since it's the one most people end up regretting exposing. If your ISP does CGNAT or you don't want to port forward, a Cloudflare Tunnel or Tailscale Funnel gets you a public URL without opening anything on your router. Pangolin is also worth a look if you have a cheap VPS.
+
+If you do expose stuff:
+- keep it updated, because Immich moves fast and Nextcloud has had its share of CVEs
+- 2FA on everything, strong passwords on the admin accounts
+- CrowdSec or fail2ban in front of it
+- put it on its own VLAN or at least its own Docker network so a compromise doesn't hit the rest of the box
+
+Low maintenance honestly argues for mostly-private. The fewer things facing the internet, the fewer things you have to patch at 11pm. Fully private plus a tiny public surface is what I'd run, and it's what I do.
+
+And whichever way you go, set up backups before you worry about any of this. A 3-2-1 setup matters more than the access method.

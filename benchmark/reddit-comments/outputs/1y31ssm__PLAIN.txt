@@ -1,0 +1,17 @@
+I'd do both, but keep the public part tiny.
+
+**Default: Tailscale for everything.** For you and your girlfriend, the Tailscale app on her phone is install, sign in once, and leave it on. The Immich, Jellyfin and Nextcloud apps then just work, including Immich's background photo backup. Nothing is exposed to the internet, so there's nothing to patch in a panic when the next CVE drops. Invite her to your tailnet, or share the machine with her account. Use MagicDNS plus `tailscale serve` (or a reverse proxy with a real cert) so you get HTTPS and nice names with no cert warnings. NetBird is fine too. I'd just pick whichever you'll actually maintain. Tailscale is the lower-effort one.
+
+**For sharing with people who don't have a VPN:** expose only what's needed for that.
+
+- Immich shared links and Nextcloud public shares are the main use case. Put only those behind a public reverse proxy.
+- Don't expose admin or login pages if you can avoid it. If the proxy supports path rules, only allow the share paths (`/share/*` for Immich, `/s/*` for Nextcloud, plus their asset paths). Everything else stays tailnet-only.
+- Put it behind Cloudflare Tunnel (no port forwarding, hides your home IP) or a cheap VPS running Caddy/Pangolin that tunnels back to your server. Either beats opening 443 on your home router.
+- Turn on 2FA, keep the containers auto-updated, and set expiry dates and passwords on shares.
+- Don't put Jellyfin on the public side. Streaming video through Cloudflare's free tunnel goes against their terms, and Jellyfin has had enough auth issues that it's not worth it. Keep it on Tailscale only.
+
+**Why not just port forward everything?** It works, but you're taking on being your own security team: three apps with big attack surfaces, CVEs, brute-force bots, and your home IP in DNS. For a low-maintenance setup that's the wrong tradeoff when the VPN covers 95% of your use.
+
+**Why not only the VPN?** Because asking your aunt to install Tailscale to see vacation photos will go badly. A share link is the right tool there.
+
+So the setup is: Tailscale for the two of you, a narrow public path for share links only, and Jellyfin never public. It's easy for her, low maintenance for you, and the exposed surface is small.

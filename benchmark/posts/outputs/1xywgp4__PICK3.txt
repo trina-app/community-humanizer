@@ -1,0 +1,5 @@
+Basically I'm scared Cloudflare will boot me eventually over the DMCA notices they forward. I answer every one fast but still. Retro gaming site off an M4 Mini at home, 8TB SSD, 10Gbps line, about 140 TB a month, all behind a CF tunnel with caching and bot protection.
+
+Only have a shared IPv4 so no port forwarding, and I don't want my home IP out there. IPv6 only is possible but meh.
+
+Is there a cheap or free tunnel alternative? Like a VPS with 2Gbps unmetered?

@@ -1,0 +1,25 @@
+{
+ "id": "1xv4ngg",
+ "sub": "SaaS",
+ "order": [
+  "SKILL3",
+  "SKILL3R",
+  "SKILL2",
+  "PERSONA",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL3": 50,
+  "SKILL3R": 25,
+  "SKILL2": 50,
+  "PERSONA": 30,
+  "HUMAN": 80
+ },
+ "rank": {
+  "SKILL3": 2,
+  "SKILL3R": 4,
+  "SKILL2": 1,
+  "PERSONA": 3,
+  "HUMAN": 5
+ }
+}

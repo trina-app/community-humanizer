@@ -1,0 +1,38 @@
+{
+ "community": "r/homelab",
+ "platform": "reddit",
+ "measured": "2026-11-27",
+ "comments": {
+  "n": 129,
+  "source": "top-level comments from the busiest recent threads, read 2026-11-27",
+  "words_median": 22,
+  "types": {
+   "answer": 0.186,
+   "one-liner": 0.116,
+   "anecdote": 0.202,
+   "disagree": 0.023,
+   "question-back": 0.124,
+   "side-point": 0.062,
+   "agree": 0.008,
+   "joke": 0.264,
+   "complaint": 0.016
+  }
+ },
+ "posts": {
+  "n": 40,
+  "words_median": 117,
+  "paragraphs_median": 2,
+  "list_pct": 13,
+  "bold_or_heading_pct": 18,
+  "greeting_pct": 23,
+  "ends_with_question_pct": 23
+ },
+ "rules": {
+  "ai_content": "unknown",
+  "ai_rules": [],
+  "self_promotion_rules": [],
+  "notes": [],
+  "checked": null,
+  "source": "https://www.reddit.com/r/homelab/about/rules"
+ }
+}

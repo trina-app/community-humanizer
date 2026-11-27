@@ -1,0 +1,40 @@
+{
+ "community": "r/ClaudeAI",
+ "platform": "reddit",
+ "measured": "2026-11-26",
+ "comments": {
+  "n": 432,
+  "source": "top-level comments with 2+ points in the 16 busiest question threads of 2026-11-12 to 11-24",
+  "words_median": 39,
+  "types": {
+   "answer": 0.295,
+   "one-liner": 0.119,
+   "anecdote": 0.249,
+   "disagree": 0.077,
+   "question-back": 0.023,
+   "side-point": 0.072,
+   "agree": 0.023,
+   "joke": 0.109,
+   "complaint": 0.033
+  }
+ },
+ "posts": {
+  "n": 60,
+  "words_median": 166,
+  "paragraphs_median": 6,
+  "list_pct": 23,
+  "bold_or_heading_pct": 18,
+  "greeting_pct": 10,
+  "ends_with_question_pct": 22
+ },
+ "rules": {
+  "ai_content": "no rule found",
+  "ai_rules": [],
+  "self_promotion_rules": [
+   "Showcase your project in a way that helps educate and inspire others"
+  ],
+  "notes": [],
+  "checked": "2026-10-31",
+  "source": "https://www.reddit.com/r/ClaudeAI/about/rules"
+ }
+}

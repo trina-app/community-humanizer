@@ -1,0 +1,1 @@
+A script that watches a folder where I dump my scanned receipts and bills, sends each one to Claude, and renames the file to date, vendor and amount, then appends a row to a spreadsheet. It took an afternoon to build and I haven't touched it since. Tax season used to mean a weekend of sorting paper, last year it was about twenty minutes of checking the totals.

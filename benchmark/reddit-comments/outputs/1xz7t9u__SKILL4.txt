@@ -1,0 +1,1 @@
+Check your CLAUDE.md, memory files, and any project instructions for stray Chinese text. A single line in there, or a pasted doc with Chinese in it, is enough to tip it into replying that way. If a fresh chat with no project attached doesn't do it, that's your culprit.

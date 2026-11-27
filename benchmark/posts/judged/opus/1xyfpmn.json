@@ -1,0 +1,22 @@
+{
+ "id": "1xyfpmn",
+ "lang": "en",
+ "order": [
+  "HUMAN",
+  "HUMANIZER_S",
+  "SKILL",
+  "PLAIN"
+ ],
+ "human": {
+  "HUMAN": 88,
+  "HUMANIZER_S": 22,
+  "SKILL": 30,
+  "PLAIN": 10
+ },
+ "rank": {
+  "HUMAN": 4,
+  "HUMANIZER_S": 1,
+  "SKILL": 3,
+  "PLAIN": 2
+ }
+}

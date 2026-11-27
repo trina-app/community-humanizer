@@ -1,0 +1,7 @@
+I built a full software package for my sister's event props rental business: storefront, inventory, invoicing, checklists, and customer communications. I was living back home for a year because of a family issue, and she needed something that fit how she actually runs things, so I made it. She's happy with it and keeps telling me I should sell it to other people, as long as they aren't her competitors.
+
+I resisted for a while because the niche is small. Equipment and props rental isn't exactly a huge market. But I've now got a website and a demo up. I'm pitching it as custom software that's been used day to day in a real rental business, since it isn't a SaaS product with a thousand features nobody asked for.
+
+Where I'm stuck is marketing. It's easily my weakest skill. I don't like cold emails and I assume most people don't either, so I don't want to be that guy in someone's inbox.
+
+If you run something similar (props, party rentals, AV, equipment, anything where you rent physical stuff out), how would you want to be reached by someone selling this? Where do people in your world actually hang out and find tools? I'd like to get in front of the right people without being annoying about it.

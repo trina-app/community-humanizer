@@ -1,0 +1,7 @@
+Fair list, but I'd add a caveat from the other side of the table: proven demand and a proven team get you the meeting, and the round usually closes on something less glamorous. Most VCs I've seen pass on a good story because the numbers underneath didn't hold up. Retention, payback period, and how concentrated your revenue is matter more than a clean narrative.
+
+Your examples also have some survivorship bias. Uber and Airbnb were both rejected by plenty of investors early on, and Airbnb's first few years were rough. "Proven demand" looked a lot clearer after the fact than it did in 2009.
+
+The repeat founder point is the strongest one, though. Max Levchin and the Beehiiv guys got funded partly because the investor's downside was smaller. They'd already seen the founder deal with a bad quarter. First-time founders can get around that by showing the same thing in miniature: a small business, a side project with real paying users, or a track record of shipping something under pressure.
+
+One thing I'd add for first-timers: pick the right VC. A fund that does seed-stage consumer deals won't care about your enterprise pilot, however good it is. Half the "VCs ghosted me" stories I hear are really "I pitched the wrong fund."

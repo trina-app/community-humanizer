@@ -1,0 +1,5 @@
+I'm totally blind and I'm in the UK, and with the new age verification stuff here I've been thinking a lot more about how much of my life sits on other people's platforms. Self hosting keeps coming up as a way to not be tied to anyone else's service, but I have no idea how well it works with a screen reader.
+
+What I'm wondering is how it goes for you day to day. Setting things up, doing admin, and just using the stuff once it's running. Is it usable without sighted help, or do most people end up needing to see the screen for certain bits?
+
+Are there any other blind people here who self host? I'd really like to hear how you do it.

@@ -1,0 +1,7 @@
+Long Claude answers were killing me, I'd scroll forever looking for what to actually do. So I added a standing instruction: end every reply with a short "## 80/20" block, last thing, under a divider line.
+
+Fixed lines with emoji labels. Result is always there. Next, Decide, Watch out, Git only if they matter. Key actions in bold so just the bold bits give you the answer.
+
+Put it in claude.ai preferences and CLAUDE.md so it follows me into Claude Code too, even the huge chats about my hours tracker app.
+
+What's your small trick? Prompt, setting, habit, something you quit doing?

@@ -1,0 +1,11 @@
+Honestly, the "we could just build it with Claude" question mostly comes from people who've never run software in production. The build cost was never the real cost. It's the 2am alert, the edge case a customer hits 8 months in, the API you integrate with changing without warning, the security questionnaire, the "can you add X by Friday" requests. Someone has to own all that, and when it's their internal Claude-built thing, that someone is usually a person who already has a different job.
+
+So I'd stop defending the build cost and ask them what it costs to own it. A few things that have worked for me:
+
+1. Ask who maintains it when the person who built it leaves or gets pulled onto something else. That usually ends the conversation, because nobody has an answer.
+2. Put a number on it. If your product costs $500/mo and their engineer's time is $100+/hr, the math gets obvious pretty fast. If it doesn't, they probably weren't a good fit anyway.
+3. Sell the outcome, not the software. If you're pitching features, you're easy to clone. If you're selling "this problem is handled and someone is accountable," you're not.
+
+And yeah, it does apply to most SaaS, and a lot of thin wrapper products really are in trouble. Anything that's basically a CRUD app with a nice UI is going to get squeezed. What survives is stuff with real data advantages, deep integrations, compliance, network effects, or just being trusted and already embedded in a workflow. Distribution matters a lot, but I'd say the real moat is being the thing people don't want to think about anymore.
+
+Also, if a prospect is seriously going to build it themselves, let them. Half come back after a month, and the other half weren't going to pay you anyway.

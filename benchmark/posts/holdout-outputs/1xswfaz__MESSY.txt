@@ -1,0 +1,5 @@
+just joined here and every other thread I skim says self-hosting email is a losing fight. from the comments I think I get why. unless it's purely internal, google and microsoft and the other big providers make sending and receiving on your own server really hard, like practically impossible
+
+but that's just the one I stumbled on first. is there other stuff that just can't be self-hosted, or isn't worth even trying?
+
+curious what you all have given up on

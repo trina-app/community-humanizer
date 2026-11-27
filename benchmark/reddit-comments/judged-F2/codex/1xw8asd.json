@@ -1,0 +1,22 @@
+{
+ "id": "1xw8asd",
+ "sub": "smallbusiness",
+ "order": [
+  "BLADER_S",
+  "PARA",
+  "PLAIN",
+  "SKILL3"
+ ],
+ "human": {
+  "BLADER_S": 7,
+  "PARA": 96,
+  "PLAIN": 4,
+  "SKILL3": 48
+ },
+ "rank": {
+  "BLADER_S": 1,
+  "PARA": 2,
+  "PLAIN": 3,
+  "SKILL3": 4
+ }
+}

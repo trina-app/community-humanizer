@@ -1,0 +1,1 @@
+Radicale or Baikal for the CalDAV server, then DAVx5 on android and eM Client or Thunderbird on windows. Both do events and tasks, and way lighter than nextcloud

@@ -1,0 +1,18 @@
+SaaS isn't dead, but "I built it" stopped being a moat a while ago. Honestly it was never much of one.
+
+Most people don't want to build their own tool, even if they technically could. They want the problem gone, and they want someone to blame when it breaks at 2am. Someone running a dental clinic isn't going to vibe-code a scheduling system, then maintain it, secure it, and handle updates. They'll pay $50/month to not think about it.
+
+What changed is that building got cheap and everyone else's building got cheap too. So the hard parts are now the parts that were always hard:
+
+- **Distribution.** Getting in front of people who have the problem.
+- **Trust.** Why should they put their data or workflow in your hands?
+- **Niche depth.** A generic tool loses to a free clone. A tool that really understands one industry's weird workflow doesn't.
+- **Ongoing work.** Integrations, compliance, support, uptime. That's what people are actually paying for.
+
+Struggling to hit 100 customers is almost certainly a distribution or positioning problem, not an "AI ate my market" problem. It was just as hard to get the first 100 in 2018. Some questions to ask yourself:
+
+- Can you say exactly who it's for in one sentence?
+- Have you talked to the 10 or so people who did pay and asked why they chose you?
+- Where do your ideal customers already hang out, and are you there?
+
+Go narrower, talk to users more, and sell outcomes instead of features. The people who should worry are the ones whose entire product is a thin CRUD wrapper with no distribution advantage.

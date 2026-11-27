@@ -1,0 +1,7 @@
+most of them don't know up front. they start with a technical bet and try to kill it as cheaply as possible. a bench prototype, a simulation, a few weeks of math on whether the physics even allows it. if it survives, that's when it's worth quitting a job over.
+
+the market side is separate and honestly easier to check. find 20 or 30 people who'd actually buy it (engineers, labs, procurement) and ask what they use now and what it costs them. if nobody has a painful problem, a working device won't save you.
+
+funding for hardware usually goes in stages. grants first (SBIR in the US, similar elsewhere), then a small pre-seed once you have a working prototype, then real money after you have a pilot customer or some data. nobody funds a pitch deck for deep tech, they fund evidence that the hard part works.
+
+and yeah, early on it's basically a small group trying to find out if the thing is possible. at 19 the best move is probably to get into a lab or a hardware company for a few years. you'll learn what's actually hard and meet the people you'd found something with.

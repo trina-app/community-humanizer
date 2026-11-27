@@ -1,0 +1,5 @@
+Either works, and honestly the tool matters less than the setup. Own the GitHub repo from day one, keep Supabase in your own account, and turn on row level security before any beta user touches it. That's the one thing these generated apps love to skip, and it's how people end up with an open database.
+
+Once you start editing outside the builder, treat the builder as just another contributor to the repo, or stop using it. Going back and forth between the two gets messy fast.
+
+On the handoff, I'd assume engineers will rewrite a good chunk of it. That's fine though, the MVP's real job is to tell you what's worth building, not to be the codebase

@@ -1,0 +1,1 @@
+honestly I think the stigma is less about AI and more about people shipping stuff they can't debug when it breaks. if yours works and you can fix it, the "did you use AI" question stops mattering pretty fast

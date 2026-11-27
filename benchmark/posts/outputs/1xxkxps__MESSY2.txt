@@ -1,0 +1,5 @@
+Totally blind, in the UK, and with the age verification stuff going on I've been thinking I'd rather not depend on so many third party services. Self hosting seems like the obvious way to not be tied to anyone's platform.
+
+But how accessible is it really with a screen reader? Setup, admin, just using it day to day. Web UIs, docker, all of it.
+
+Are there other blind people doing this? Would like to hear how it's gone for you.

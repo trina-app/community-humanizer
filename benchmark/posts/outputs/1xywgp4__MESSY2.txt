@@ -1,0 +1,7 @@
+Worried cloudflare is gonna drop me eventually because of all the DMCA notices they forward me. I answer every one fast, but still. Want a fallback.
+
+I run a retro gaming site off an M4 Mac Mini at home, 8TB SSD, 10Gbps line, about 140TB a month. Only exposed through the tunnel, with their caching and bot protection.
+
+Problem is I only have a shared IPv4 so no port forwarding, and I don't want my home IP out there. IPv6 only is possible but meh.
+
+Is there a VPS with 2Gbps unmetered, or something cheaper?

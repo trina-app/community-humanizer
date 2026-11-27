@@ -1,0 +1,3 @@
+Mostly no. The one thing I'd add is the desktop/web app for anything where I want to read a long answer or look at an artifact, since terminal scrollback is miserable for that. For anything that touches code, terminal wins and it's not close.
+
+I do use the mobile app when I'm away from my desk and just want to think something through or kick off a quick question. Not for real work though.

@@ -1,0 +1,13 @@
+I start by trying to sell it before building anything. Not a landing page, an actual person. I find 10 or so people who have the problem, ask how they handle it today, and then try to get them to commit to something: pay, give me their time, or switch from whatever they use now. If I can't get a commitment from a handful of people, I don't write code.
+
+For honest answers, ask about the past, never the future. "Tell me about the last time you dealt with X" gets you a real story. "Would you use this?" gets you politeness. Good follow-ups are "what did you try?" and "what did that cost you?" If they've never tried to solve it, it's probably not a painful enough problem. I avoid pitching in the first conversation at all, because the moment they know it's my idea they start being nice.
+
+Signals that count: someone pays, someone gives you a deposit or signs a letter of intent, someone shows up to a second call, or they send you a coworker without being asked. Signals that don't count: likes, "cool idea", email signups from a friendly post. A landing page with a price on it and a real checkout button tells you a lot more than one with a waitlist form.
+
+Concierge is underrated for devs because it feels like cheating. Do the thing by hand for 3 to 5 people, over WhatsApp or a spreadsheet, and charge for it. You'll learn which parts people actually care about, and usually it's not the part you'd have built first.
+
+On competition, I treat existing competitors as a good sign, since it means someone is already paying for this. What I look for is why their customers are unhappy: read their 2 and 3 star reviews and Reddit complaints. If you can't name a specific group they underserve, there's probably no room.
+
+Hard lesson for me: I spent months building something after 15 friendly chats where everyone said it sounded useful. Nobody had paid or even tried a rough version. Friends and family signal is basically noise.
+
+Books: The Mom Test (short, read it before you talk to anyone) and Talking to Humans. Both are quick reads.

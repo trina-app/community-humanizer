@@ -1,0 +1,8 @@
+Honestly for most of what you're describing, no. A few cases where I do leave the terminal:
+
+- **Headless/CI.** Running it in GitHub Actions for PR review or triage is the best use of it outside a terminal, since nobody's sitting there.
+- **Web/cloud sessions.** Kicking off a long task from my phone and letting it run without my laptop open is nice. It's not better than local, just different.
+- **Non-code stuff.** Research, drafting, and "think through this with me" chats feel better in the regular chat UI. Artifacts and file uploads are less clunky than doing the same in a terminal.
+- **Reviewing big diffs.** Reading a large change in an IDE diff view beats scrolling it in the terminal. I still drive it from the terminal, I just look at the output elsewhere.
+
+At your usage level I'd guess you're already getting 95% of the value where you are. The speed complaint is real, though. The other surfaces add overhead the CLI doesn't have.

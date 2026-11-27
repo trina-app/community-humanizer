@@ -1,0 +1,25 @@
+We launched Stitch.ai last week after years of bootstrapping. This week Anthropic moved into our space. I'm trying to figure out what's left for a small SaaS team when a big AI lab walks into your niche.
+
+Some context on what we built. Stitch is an AI-native all-in-one workspace for solo entrepreneurs and small business owners. It covers email, calendar, tasks, notes, contacts, files, sheets, slides, boards, and forms in one place. We didn't want to bolt AI onto a pile of separate apps, so a few things are built into the core:
+
+- **Auto-extraction on everything.** AI pulls out entities, tags, and connections from every item, so you don't have to organize by hand.
+- **Manual cross-app linking.** Backlinks across apps, for the times you want to say "these two things belong together" yourself.
+- **Knowledge Hub.** Everything tied to a contact (emails, notes, tasks, files) gathered in one view.
+- **Stitchy, the assistant.** It drafts replies, creates tasks, writes briefings and follow-ups. You control what gets imported, so it only sees what you let it.
+
+Then this week Anthropic entered the same space. I won't pretend that didn't hit hard. Years of work, a launch just last week, and now the company that makes some of the best models is building in our category.
+
+My honest read so far, and I'd like to be told where I'm wrong:
+
+1. **Models are becoming a commodity input, and workflow isn't.** A lab can ship a great assistant, but a solo founder's actual day lives across email, contacts, files, and follow-ups. Owning that data layer and the structure on top of it feels like the part that's hard to copy quickly.
+2. **Focus might be the moat.** A lab has to serve everyone. We only have to serve one person well: the solo operator or small shop owner who has no ops team. That means opinionated defaults and a product shaped around their week, not a general-purpose tool.
+3. **Trust and control matter more for small businesses than people assume.** Letting users choose what gets imported is a design choice, and I think it's one a lot of them care about.
+4. **Speed and distribution are the real risk.** I can't outspend them, and I can't pretend they won't have reach we'll never have.
+
+So the questions I'd love your take on:
+
+- When a big lab enters your niche, what actually remains defensible for a small SaaS? Data, workflow, community, pricing, something else?
+- Has anyone here been through this, where a platform or lab moved into your space shortly after you launched? What did you do in the first 90 days?
+- Is "small, focused, and opinionated" a real position, or does it just sound good until the bigger player ships the same features?
+
+Happy to share more about how we're approaching it if that's useful. Mostly I want to hear from people who've been squeezed, or who've avoided it.

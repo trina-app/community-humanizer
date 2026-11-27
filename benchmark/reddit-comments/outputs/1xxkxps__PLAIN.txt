@@ -1,0 +1,10 @@
+Not blind myself, but self-hosting is one of the more screen reader-friendly hobbies out there, since most of it happens in a terminal.
+
+- **The server side is mostly text.** SSH into a headless Linux box (Debian or Ubuntu Server) and you're in a plain text environment that works well with a screen reader on your main machine. Config is YAML or text files you edit with nano or vim, and Docker Compose is just a file plus a couple of commands.
+- **Install without a monitor.** Raspberry Pi Imager lets you preset SSH, wifi and a user before you flash, so you can reach the Pi over the network on first boot. On a regular PC, the Debian installer has a speech-enabled mode, and you can also set up an unattended or preseeded install.
+- **Web UIs are hit or miss.** Some apps have clean, properly labeled interfaces and others are a mess of unlabeled buttons and drag-and-drop widgets. Check the project's GitHub issues for "accessibility" or "screen reader" before committing. Prefer tools that can be configured through files or a CLI, so you don't depend on their dashboard.
+- **Good first projects:** Vaultwarden, Syncthing, Audiobookshelf, a plain file share, or Nextcloud. Start with one small service instead of a whole stack.
+
+Also check r/blind and the Linux accessibility communities. Plenty of blind people run Linux servers, and they'll know which specific apps behave best with NVDA, VoiceOver or Orca.
+
+One caveat on the age laws: self-hosting your own stuff means no one else's account or verification wall, but it won't change what third-party sites require of you.

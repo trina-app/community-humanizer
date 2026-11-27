@@ -1,0 +1,1 @@
+honestly the terminal side is probably the friendliest part, it's all text and ssh. the web UIs on the apps are hit or miss, but a lot of stuff can be run from config files and never needs the UI anyway

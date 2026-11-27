@@ -1,0 +1,11 @@
+Honestly, the scary part isn't that Anthropic showed up, it's that they showed up at the exact moment you finally have something to show. But a few things in your favor.
+
+Big labs ship horizontal features. Your pitch is a specific person (solo owner, small business) whose email, tasks, notes and files already live in one place with the connections built in. That's a workflow and data problem, not a model problem. Anthropic doesn't want to own your customer's contact history, and most small business owners won't wire up five integrations on their own to get something that kind of works.
+
+The Knots/Connections/Knowledge Hub stuff is the actual moat, not the assistant. Anyone can bolt a chatbot onto an inbox. Having the context already structured when the question gets asked is much harder to copy. I'd lead with that everywhere and talk about Stitchy less.
+
+Where I'd worry is the "all-in-one" part. Docs, sheets and slides are exactly where people already have Google or Microsoft and won't switch. If someone has to migrate everything to try you, that's a tough sell against a free add-on from a tool they already use. Make it easy to start with just email + calendar + contacts and let the rest come in later.
+
+Also, a launch week is way too early to read anything into this. Talk to your first 20 users and find out what they'd miss if you vanished. That answer matters a lot more than whatever Anthropic announced this week.
+
+Congrats on getting it out after years of grinding, btw. That part is rare.

@@ -1,0 +1,5 @@
+Cold emails to professors and paper authors got me literally nothing, zero replies. I'm building a platform for collecting real-world audio/video from wearables like smart glasses, and I've got 150+ contributors signed up and a basic working product. What I don't have is a single researcher in robotics, embodied AI or multimodal AI saying they'd want this or pay for it.
+
+Conferences are $1,000+ and that feels like too much before I know anyone cares. But I also can't figure out how to reach the people who actually use these datasets.
+
+For those of you who sold to technical buyers like this, how did you get the first few conversations once cold email failed? Is a conference worth it this early, or is there something cheaper, like making some kind of content or a community where

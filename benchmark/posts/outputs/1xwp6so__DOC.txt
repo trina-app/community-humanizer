@@ -1,0 +1,11 @@
+I'm building a platform that collects real-world audio and video data from wearables like smart glasses, and I'm stuck on the validation side. We have 150+ registered contributors and a basic working product, but I haven't confirmed that any researcher in robotics, embodied AI, or multimodal AI actually wants this data or would pay for it.
+
+The problem is that these buyers are really hard to reach. I've cold emailed professors and paper authors and got zero replies. Conferences are the obvious route, but they run $1,000+ and that feels like too much to spend before I've validated anything. I can't find any other way to get in front of the people who actually use these datasets.
+
+For those of you who sold to technical or research buyers:
+
+\- How did you get your first customer conversations when cold email didn't work?
+
+\- Is a pricey conference worth it this early, or is that a trap?
+
+\- What cheaper alternatives exist? Would it make sense to write something like a technical blog post or start a small community around

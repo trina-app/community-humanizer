@@ -1,0 +1,9 @@
+I'm early on in looking for something to build, probably a SaaS, but I haven't picked a problem yet. Before I commit to anything I'd rather hear from people who actually run businesses than guess from my desk.
+
+So, owners and operators: what's the one task in your week you absolutely hate doing?
+
+I'm after the repetitive, tedious stuff. What is it, roughly how much time does it eat, and have you automated it or are you still doing it by hand?
+
+Stuff I've had in mind is answering the same customer questions over and over, chasing late payments, handling bookings, updating spreadsheets, and email in general. But I'd rather hear what's actually driving you up the wall than anchor on my list.
+
+I'm not selling anything and there's no product to pitch. Just trying to find real pain points before I spend months building the wrong thing.

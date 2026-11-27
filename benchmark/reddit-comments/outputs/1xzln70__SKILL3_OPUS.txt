@@ -1,0 +1,1 @@
+Building it in a few weeks might be the problem. You picked what to build before talking to a single person who'd use it, so now you're hunting for users for a thing nobody asked for. For B2B, flip it: find 10 people with the problem first, then build. Directories aren't going to fix that

@@ -1,0 +1,9 @@
+Five weeks in and I have an MVP. I've talked to 20 potential clients so far. Most of the conversations were positive, but almost everyone holds back and says they'd want a more mature product before committing to anything.
+
+Only 2 of the 20 agreed to a pilot. Both of them want just one small feature, something I never thought was that valuable. It's a long way from what I set out to build, and it kind of cuts against the original vision.
+
+So now I don't know what to do. Do I pivot fully to that one feature, or keep building the whole product and just lead with that feature when I talk to people? The pilots also make me rethink the business model, since nobody seems to want to buy the full thing.
+
+How do you cope with finding out the market wants 10% of what you built? Has anyone been through this and what did you do?
+
+(I won't promote, just looking for perspective)

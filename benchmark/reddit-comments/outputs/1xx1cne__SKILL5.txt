@@ -1,0 +1,3 @@
+Hardlinks, not symlinks. Sonarr/Radarr will hardlink the finished file into your jellyfin folder, so the torrent keeps seeding from `downloads` and Jellyfin sees it in `shows` or `movies`, with no extra disk space used. Only catch is both folders have to be on the same filesystem, and in your setup under one `media` mount they already are, as long as you mount the whole `media` dir in the containers rather than separate subfolders.
+
+Arr handles the shows/movies split for you. Ebooks are a separate thing, Readarr or Calibre or just keep doing those by hand.

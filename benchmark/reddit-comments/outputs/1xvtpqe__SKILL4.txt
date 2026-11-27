@@ -1,0 +1,1 @@
+Reviewing diffs is the one place I'd leave the terminal. The VS Code extension's side-by-side diff with inline accept/reject beats scrolling a unified diff in a pane once a change touches more than a couple of files. Pasting screenshots works in the terminal too, but you can't see what it actually received, so for UI work a GUI is easier.

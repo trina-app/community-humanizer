@@ -1,0 +1,1 @@
+not blind, but 90% of my setup is ssh and yaml files, which is just text, so I'd guess it's easier than most hobbies. the web UIs are where it gets dicey, a lot of them are icon-only buttons with no labels, so I'd check each app before committing to it

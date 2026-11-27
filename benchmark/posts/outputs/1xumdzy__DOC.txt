@@ -1,0 +1,17 @@
+We're a bootstrapped team and we launched Stitch.ai last week, after years of building it. It's an AI-native all-in-one workspace for solo entrepreneurs and small business owners: email, calendar, tasks, notes, contacts, files, sheets, slides, boards and forms, all in one place.
+
+**What we think makes it different**
+
+* **AI that reads everything.** It auto-extracts entities, tags and connections from every item, so you don't have to organize things by hand.
+* **Manual linking across apps.** You can link any item to any other, like backlinks, so an email, a task and a note can all point at each other.
+* **Knowledge Hub.** It gathers everything around a contact in one place: emails, notes, tasks, files.
+* **Stitchy, the assistant.** It drafts replies, creates tasks, writes briefings and follow-ups. You control what gets imported, so it only sees what you let it see.
+
+Then this week Anthropic moved into the same space. We just launched, and I'm worried we're about to get squeezed out before we've had a chance.
+
+So I'd like to hear from other founders:
+
+* **What's left for a SaaS startup when a big AI lab enters your niche?**
+* **Can a small, focused product like ours still survive, and how would you differentiate?**
+
+Honest answers welcome, including the uncomfortable ones.

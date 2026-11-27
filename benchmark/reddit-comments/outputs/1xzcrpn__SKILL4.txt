@@ -1,0 +1,1 @@
+Dubsado or HoneyBook would cover most of this. Quote goes out as a proposal, and an automation sends the follow-up if it sits unsigned for 3 days. Client uploads land in the project's own folder instead of your inbox. Notion can do it too, but you'd be building all of that yourself, which is more admin.

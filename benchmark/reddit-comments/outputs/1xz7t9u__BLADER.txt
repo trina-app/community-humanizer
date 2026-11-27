@@ -1,0 +1,3 @@
+Happens to me every so often. Once the context gets long, or there's a lot of non-English text in it (pasted docs, filenames, whatever), the model can drift into another language mid-response. It's a sampling thing, not a setting you flipped. Some Chinese token gets a bit more probable at one spot and the rest follows from there.
+
+Easiest fix is to say "reply in English" and regenerate. If it keeps doing it, start a fresh chat or put a line in your system prompt or custom instructions saying to always respond in English. Did you have any Chinese text anywhere earlier in the convo?

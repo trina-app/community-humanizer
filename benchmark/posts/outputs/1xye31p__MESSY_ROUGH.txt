@@ -1,0 +1,11 @@
+The part I can't figure out is telling an idea that deserves building from one I just like building. I can build pretty much anything fast, which is the problem. I've burned weeks on MVPs nobody needed and only found out after.
+
+Right now I'm working on a practical consumer thing for everyday people, not an AI wrapper. I'm not going to pitch it here, I just don't want to repeat the same mistake.
+
+So before any code, what do you actually do first? Talk to people, dig through competitors, look at search trends? And how do you get honest answers out of people? Everyone says "yeah I'd use that" and it means nothing. Are there questions you always ask, or ones you stay away from?
+
+Also curious about testing demand without building anything. Landing page, doing it by hand over WhatsApp, pre-orders. What number or behaviour made you think ok this is real, or kill it? Like what actually counted as a go/no-go for you.
+
+Crowded markets too, how do you tell if there's room or you're just late. Haven't really figured that one out.
+
+And any hard-learned mistakes, frameworks, books, checklists, whatever helped you. I think a lot of devs are stuck in build-first mode so hopefully this helps someone else too.

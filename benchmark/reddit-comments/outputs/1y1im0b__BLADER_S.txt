@@ -1,0 +1,3 @@
+Looked at it a while back when I wanted to replace MyFitnessPal. What stopped me was the mobile side. I didn't want to babysit a reverse proxy and open it to the internet just so my phone could log a meal, and I couldn't tell how well the app works when I'm away from home. Barcode scanning and a decent food database matter more to me than 29 integrations.
+
+Also the feature list is huge for something I just want to log calories in. Mood, caffeine, NFC, lab reports. I'd take a smaller thing that does food well over everything at once. Might be a fine project, it's just more than I need.

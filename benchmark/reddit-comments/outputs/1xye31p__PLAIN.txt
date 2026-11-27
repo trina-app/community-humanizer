@@ -1,0 +1,24 @@
+Start by trying to kill the idea, not confirm it. Most of the mistakes you describe come from asking "would you use this?" when the useful question is "what are you doing about this problem right now?"
+
+**First step:** Before talking to anyone, I write down who exactly has the problem and what they currently do about it. If I can't name a specific type of person ("freelance designers who invoice 5+ clients a month") and a specific workaround, the idea is still too fuzzy to test. Then I look for evidence the problem is already costing people time or money: forum complaints, spreadsheets people share, existing paid tools. Search trends are a weak signal on their own, so I use them only as a sanity check.
+
+**Honest answers from users:** Ask about the past, not the future. "Tell me about the last time this happened. What did you do? What did it cost you? What else have you tried?" People lie about what they'd do and are mostly accurate about what they did. Questions I avoid: "Would you use this?", "Would you pay for this?", and anything where I describe my solution first. Compliments are noise. A good sign is when they volunteer a workaround they built, are annoyed enough to have already paid for something, or ask when they can get it.
+
+**Testing without building:**
+- Concierge version: do it by hand for 3-5 people. If you can't get five people to let you do it manually, an app won't fix that.
+- Landing page with a real call to action: only useful if you drive targeted traffic to it. A page with 200 random visitors and a 10% signup rate means little.
+- Pre-orders or deposits are the strongest signal. Even a small payment beats 50 "I'd totally use that" replies.
+
+**Real signals:** I care about behaviour that costs the other person something: time, money, reputation, or switching effort. Examples: they take a second call, intro you to a colleague, pay a deposit, or give you access to their data. Drop signals: lots of enthusiasm and zero follow-through, or every person describing a different problem.
+
+**Competition:** Existing competitors are usually good news because they prove people pay. Look at their one-star and three-star reviews, since that's where the gaps are. Then ask whether you have a narrower customer, a much cheaper or simpler product, or a distribution advantage. "Better" alone is rarely enough.
+
+**Mistakes I'd flag:**
+- Talking to friends and fellow founders instead of the actual buyer
+- Treating a pile of free signups as demand
+- Pitching during interviews instead of listening
+- Setting no kill criteria in advance. Decide beforehand, e.g. "if 3 of 10 people won't pay or commit by week 3, I stop."
+
+**Resources:** *The Mom Test* by Rob Fitzpatrick is the best short read on interviewing. Also look into Jobs To Be Done, which helps you describe the problem without describing a product.
+
+Since you're a developer, the trap is that building feels like progress. Give yourself a fixed 2-3 weeks of conversations and manual tests before you open the editor, and put the stop criteria in writing.

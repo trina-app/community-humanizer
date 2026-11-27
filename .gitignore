@@ -1,0 +1,6 @@
+node_modules/
+.wrangler/
+quiz/.wrangler/
+.DS_Store
+quiz/src/items.json
+quiz/.dev.vars

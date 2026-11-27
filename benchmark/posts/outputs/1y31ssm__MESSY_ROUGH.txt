@@ -1,0 +1,11 @@
+girlfriend is the whole problem here honestly. she's not technical at all and if she has to open an app and toggle something before she can see photos she just won't use it
+
+so i'm building a home server with immich, jellyfin and nextcloud. just the two of us using it. i keep going back and forth between tailscale (or netbird, haven't really compared them) and just putting stuff behind a reverse proxy with https and port forwarding
+
+my priorities in order are security, then ease of use, then low maintenance. so on paper the VPN wins on security but it loses on the "dead simple" part, and port forwarding is the opposite
+
+the other thing is i'd want to send photos or files to people sometimes, and they're not going to install a VPN just to open a link. that's where pure tailscale falls apart for me
+
+is there a third option i'm missing? or is the answer just a hybrid, where the VPN is for everything and only one or two things get exposed? if so which ones, I'd guess nextcloud shares but I'm not sure about that
+
+i'd really like an actual pick and why, not just "it depends"

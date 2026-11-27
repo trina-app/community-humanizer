@@ -1,0 +1,5 @@
+A small script that renames my downloaded invoices. I get PDFs from like six vendors, all named things like "Invoice_88213.pdf" or "download (3).pdf", and I used to sort them by hand at the end of every month for bookkeeping.
+
+Now it reads the first page text, pulls the vendor name, date and amount, and renames to `2026-03-14_vendor_142.50.pdf`. Claude wrote most of it in one sitting, I only had to fix the date parsing for one vendor who writes dates as 14.03.26.
+
+It's maybe 60 lines and I've forgotten it exists, which I guess is the point. Month-end went from an hour of dragging files around to running one command.

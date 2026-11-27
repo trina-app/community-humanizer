@@ -1,0 +1,5 @@
+Solid framework, but I'd push back a little: "proven demand or proven team" is really "proven demand or proven team *at the stage you're raising*." A repeat founder with a deck gets a seed check. A repeat founder with no traction at Series A gets a lot of polite meetings.
+
+The other thing I'd add from the founder side is that VCs aren't only evaluating whether you'll make money, they're evaluating whether you could return the fund. A business that's genuinely good but tops out at $50M in revenue is a pass for a lot of funds, no matter how good the team is. So market size matters way more than most first-time founders think, and it's usually the quiet reason you hear "not a fit for us" with no real explanation.
+
+Also, the Airbnb example is a bit generous. They were basically broke, selling cereal boxes to stay alive, and got turned down by a bunch of investors. The "proven demand" story looks a lot cleaner in hindsight than it did in 2009.

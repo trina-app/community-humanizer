@@ -1,0 +1,11 @@
+Your dread is fair, but the shareholder pressure is already there. Anthropic has raised billions from investors who expect returns, so it isn't waiting on an IPO to feel it. The usual pattern is that prices stay low while the company is buying market share, then the squeeze comes in the form of tighter limits, more tiers, and the best features moving up-market.
+
+Anthropic is structured a bit differently from a typical company. It's a public benefit corporation, and the Long-Term Benefit Trust elects some of the board. That might help at the margins, but a legal structure only goes so far when the money gets big enough. I'd treat it as a mild reason for hope, not a guarantee.
+
+So I wouldn't spend energy on dread. Plan for it instead:
+
+- Keep your prompts, evals, and workflows portable so they don't depend on Claude-specific quirks.
+- Test a second provider every so often, so you know what switching would actually cost.
+- Keep an eye on open-weight models. They trail the frontier, but not by as much as they used to, and they're your price ceiling.
+
+If your org depends on this, treat it like any other vendor dependency. Enjoy the good value now, but don't build something you can't move.

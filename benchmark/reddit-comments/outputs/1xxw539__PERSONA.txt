@@ -1,0 +1,3 @@
+Your plan is fine, just get the senior dev you know to sit in. An hour of their time is cheap compared to a bad co-founder. But the code test tells you less than how she handles it: does she explain things so you actually understand, admit what she doesn't know, and push back on you when you're wrong.
+
+Also work on a small real thing together for a few weeks before you give her equity. Vesting matters more than any interview, because it covers the part nobody can test for in a few meetings.

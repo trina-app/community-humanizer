@@ -1,0 +1,11 @@
+I'm a developer and I can build pretty fast, which has turned out to be a problem. I've spent weeks on MVPs that nobody needed, and I still can't tell ahead of time whether an idea deserves building. Building is the easy part for me, so I default to it.
+
+I'm working on a practical consumer product for everyday people right now. It's not an AI wrapper, and I'm not going to pitch it here, I just want to get better at vetting before I write code.
+
+How do you evaluate an idea before building anything? What's your first step: talking to users, competitor research, looking at search trends? And how do you get honest answers out of people instead of the polite "yeah I'd use that"? Are there specific questions you ask or avoid?
+
+I'm also curious about demand tests that don't involve building. Landing pages, a WhatsApp or manual concierge version, pre-orders. What numbers or behaviours did you treat as a real go/no-go signal?
+
+And how do you judge whether there's room in a crowded market?
+
+Any hard-learned mistakes, frameworks, books or checklists are welcome too. I'm guessing other devs stuck in build-first mode would get something out of this thread.

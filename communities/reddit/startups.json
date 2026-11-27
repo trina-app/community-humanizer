@@ -1,0 +1,40 @@
+{
+ "community": "r/startups",
+ "platform": "reddit",
+ "measured": "2026-11-26",
+ "comments": {
+  "n": 139,
+  "source": "top-level comments with 2+ points in the 16 busiest question threads of 2026-11-12 to 11-24",
+  "words_median": 64,
+  "types": {
+   "answer": 0.511,
+   "one-liner": 0.088,
+   "anecdote": 0.102,
+   "disagree": 0.146,
+   "question-back": 0.058,
+   "side-point": 0.058,
+   "agree": 0,
+   "joke": 0.022,
+   "complaint": 0.015
+  }
+ },
+ "posts": {
+  "n": 60,
+  "words_median": 192,
+  "paragraphs_median": 7,
+  "list_pct": 27,
+  "bold_or_heading_pct": 27,
+  "greeting_pct": 15,
+  "ends_with_question_pct": 18
+ },
+ "rules": {
+  "ai_content": "unknown",
+  "ai_rules": [],
+  "self_promotion_rules": [],
+  "notes": [
+   "Post titles here carry \"(I will not promote)\" or \"[I will not promote]\" (seen in the test threads)."
+  ],
+  "checked": null,
+  "source": "https://www.reddit.com/r/startups/about/rules"
+ }
+}

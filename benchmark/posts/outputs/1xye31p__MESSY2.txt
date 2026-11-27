@@ -1,0 +1,7 @@
+I can build pretty much anything fast, and that's the problem. I've burned weeks on MVPs nobody needed and I keep almost doing it again. Right now it's a consumer product for everyday people (not an AI wrapper, and no, I'm not pitching it).
+
+What's your first step before writing code? Talking to people, competitor research, search trends? And how do you get honest answers instead of "yeah I'd use that"? Which questions do you avoid?
+
+Also curious about landing pages, doing it by hand over WhatsApp, pre-orders. What number or behaviour made it a real go or no go?
+
+How do you tell if a crowded market has room? Books or checklists welcome, might help other devs stuck in build-first mode.

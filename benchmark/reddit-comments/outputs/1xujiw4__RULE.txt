@@ -1,0 +1,11 @@
+Sorry, that's a rough spot. A few things that might help, though I'm not a lawyer.
+
+First, dig out your purchase agreement and look for three things: an acceleration clause (one missed payment makes the whole balance due), a security interest or UCC lien on the business assets, and a personal guarantee from the buyers. If you have those, your leverage is way better than it probably feels right now. A promissory note with a default clause is also a lot easier to enforce than a vague "they agreed to pay us."
+
+Second, you don't need to sue to apply pressure. A demand letter from an attorney, citing the default and the acceleration clause, costs a few hundred bucks and gets a surprising number of people to the table. Plenty of buyers in this spot are just hoping you'll get tired and go away. If they don't pay, a lot of attorneys will do a flat-fee or contingency arrangement on a clear-cut note default, so ask about that instead of an hourly retainer.
+
+Third, if the business is still running and taking customer payments, they have the cash. That helps you in a settlement conversation. A lot of these end with a reduced lump sum or a tighter payment plan with a consent judgment, so if they default again you can collect right away without another trial.
+
+For anyone reading this who's selling later: get a bigger down payment, a personal guarantee, a lien on the assets, and ideally the right to take the business back if they default. Seller financing with none of that is basically an unsecured loan to a stranger.
+
+Whatever happens, talk to a business litigation or collections attorney in your state. Many do a free first consult, and they can tell you pretty fast whether it's worth chasing. Good luck, I hope you get paid.

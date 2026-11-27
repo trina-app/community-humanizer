@@ -1,0 +1,17 @@
+I'm building a home server to run Immich, Jellyfin, and Nextcloud. There are only two users: me and my girlfriend. She's not technical, so remote access has to be dead simple for her, or it won't get used. I'm torn on how to reach it from outside the house and would like a concrete recommendation.
+
+**Option A: private mesh VPN (Tailscale or NetBird).** Nothing is exposed to the internet, which is great for security. The downside is that she has to install an app and keep it connected, and I'm worried that's where "it's too much hassle" starts. I'd also have trouble sharing a photo album or a file with someone outside our household, since they don't have the VPN.
+
+**Option B: expose selected services.** Reverse proxy, HTTPS, port forwarding. That's the easiest experience for her (open the app, it works) and sharing links with outsiders just works. But now I'm responsible for keeping Immich, Nextcloud, and Jellyfin patched and hardened against whatever gets scanned on the open internet, and I want low maintenance.
+
+My priorities, in order: security, ease of use, low maintenance.
+
+Is there a better third option I'm missing? I'm leaning toward a hybrid, something like this:
+
+- Everything private by default behind Tailscale, with the mesh VPN as the main way in.
+- Only the thing that needs to be shared with outsiders (probably Immich share links, or a Nextcloud public link) exposed publicly, ideally through something that isn't a raw port forward on my home IP.
+- Jellyfin stays VPN-only, since streaming through a public endpoint seems like the riskiest and least necessary part.
+
+For the public piece, I've looked at Cloudflare Tunnel, or a small VPS that reverse proxies back over Tailscale. Is that a sensible split, or am I overcomplicating it for two users? And for my girlfriend, is Tailscale on her phone actually as painless as people say, with always-on VPN so she never has to think about it?
+
+Would you pick one of these, or is the hybrid the right call?

@@ -1,0 +1,22 @@
+{
+ "id": "1xxkxps",
+ "sub": "selfhosted",
+ "order": [
+  "SKILL4",
+  "HUMAN",
+  "SKILL4A",
+  "SKILL3"
+ ],
+ "human": {
+  "SKILL4": 30,
+  "HUMAN": 80,
+  "SKILL4A": 15,
+  "SKILL3": 55
+ },
+ "rank": {
+  "SKILL4": 3,
+  "HUMAN": 4,
+  "SKILL4A": 2,
+  "SKILL3": 1
+ }
+}

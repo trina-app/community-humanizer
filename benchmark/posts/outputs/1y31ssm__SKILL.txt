@@ -1,0 +1,9 @@
+Hey all,
+
+I'm putting together a home server that will run Immich, Jellyfin and Nextcloud. It's only going to have two users, me and my girlfriend. She's not technical at all, so whatever I set up for remote access has to be dead simple for her. If it's annoying she just won't use it.
+
+I'm torn between two ways of doing it. One is a private mesh VPN like Tailscale or NetBird, where nothing is exposed to the internet. The other is exposing just the services I pick through a reverse proxy with HTTPS and port forwarding. Is there a third option I'm not thinking of?
+
+My priorities in order are security, ease of use, then low maintenance. The catch is that I'd also like to occasionally share photos or files with people who obviously don't have a VPN, which is where the VPN-only route gets awkward.
+
+I'm leaning toward some kind of hybrid, but I'd rather hear what you'd actually pick and why than a list of pros and cons. What would you do in my spot?

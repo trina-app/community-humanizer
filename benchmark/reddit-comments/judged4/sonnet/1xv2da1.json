@@ -1,0 +1,22 @@
+{
+ "id": "1xv2da1",
+ "sub": "startups",
+ "order": [
+  "SKILL3",
+  "SKILL4",
+  "SKILL4A",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL3": 50,
+  "SKILL4": 25,
+  "SKILL4A": 40,
+  "HUMAN": 88
+ },
+ "rank": {
+  "SKILL3": 3,
+  "SKILL4": 1,
+  "SKILL4A": 4,
+  "HUMAN": 2
+ }
+}

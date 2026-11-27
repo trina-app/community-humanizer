@@ -1,0 +1,9 @@
+Honestly, my first 10 or so came from going where people were already complaining about the problem. I searched Reddit, X and a couple of Slack/Discord communities for phrases like "anyone know a tool for..." and "I hate doing X manually", then replied with actual help first. Only mentioned the product if it fit, usually in a DM. That got me my first 5 paying users in about 3 weeks.
+
+The next batch came from cold outreach, 20 to 30 personalized emails a day to people who matched my ideal customer. Reply rate was around 10%, and a lot of those turned into calls. Calls matter more than the sale at that stage, because you learn how they describe the problem, and that language becomes your landing page copy.
+
+What didn't work for me: posting generic content on X and LinkedIn with no audience. It's slow and you're mostly talking to other founders, who aren't your buyers.
+
+SEO took about 5 months before it showed anything, so I'd start it early but not count on it for the first 100. Comparison pages ("X vs Y", "alternatives to Z") were what finally pulled in traffic.
+
+If you're getting no traffic, I'd stop posting broadly and pick one narrow type of customer, find where 50 of them hang out, and talk to them one by one. It doesn't scale, but you don't need it to scale yet.

@@ -1,0 +1,21 @@
+Honestly the best filter I've found is whether I can get someone to part with something before the product exists. Money is best, but time or reputation counts too (an intro to their boss, a spot in their calendar for a 30 min call).
+
+First step for me is always to find 5-10 people who have the problem and talk to them. Not friends. Competitor research and search trends come after, because they only tell you that a market exists, not that anyone is unhappy enough to switch.
+
+For honest answers, ask about the past, never the future. "Would you use this?" gets you polite lies. "Tell me about the last time you dealt with X. What did you do? What did it cost you? What have you already tried?" gets you the truth. If they've never tried to solve it, or they're using a duct-tape spreadsheet and don't care, that's your answer. People who really have the problem usually already have a hacky workaround.
+
+For testing without building, I've done the manual version a couple of times. You do the thing by hand for 3-5 people, over email or WhatsApp or whatever, and see if they come back. It's ugly but you learn more in a week than from a month of coding. A landing page with a real price and a pre-order or deposit button is also good, but a waitlist signup means almost nothing. Free email signups are cheap.
+
+Real signals for me:
+- someone pays, even a small amount
+- someone asks "when can I get this?" without you pushing
+- someone gets annoyed when you say it's not ready
+- they send you other people who have the same problem
+
+Drop signals: lots of "interesting, let me know when it's live" with zero follow-through. That's polite for no.
+
+On competition, I'd actually worry more if there's none. Existing competitors mean people pay for this already. The question is whether you have a specific angle: a niche they ignore, a much simpler version, or a group they're underserving. "Better and cheaper" usually isn't enough.
+
+Hard lesson for me: I spent 3 months building something my friends said was great. Not one of them ever paid or used it twice. Their enthusiasm was about me, not the product. Now I assume compliments are worth zero and only count behavior.
+
+Books-wise, The Mom Test is short and covers the interview stuff really well. Read that before you talk to anyone.

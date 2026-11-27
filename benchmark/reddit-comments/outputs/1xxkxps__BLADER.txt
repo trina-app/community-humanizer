@@ -1,0 +1,7 @@
+Mostly yes, it's more doable than you'd think. The core of self hosting is a terminal and config files, and that's about as screen reader friendly as computing gets. SSH into a Linux box, edit text files, run commands. Lots of blind sysadmins and devs do exactly this.
+
+Where it gets patchy is the web UIs. Some apps are fine with a screen reader, some have unlabeled buttons and weird custom widgets that make them a pain. Jellyfin, Nextcloud and Vaultwarden are the ones I'd look at first, but I can't promise how they behave with your setup, so check each one's GitHub issues for accessibility reports before committing. Home Assistant also has a decent community around it.
+
+For setup I'd go with a cheap mini PC or a Pi running Debian or Ubuntu Server with no desktop at all, plus Docker Compose. Everything is a text file you can read line by line, which beats clicking through installers. Avoid anything that only ships a GUI based setup wizard.
+
+Also try r/blind and the Audiogames forum or Mastodon's blind tech community, since people there have probably already done this and can tell you which apps to skip.

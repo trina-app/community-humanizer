@@ -1,0 +1,3 @@
+"suppress key information about the origin" is like the whole point of putting it in front of the origin lol. half of us are on cloudflared tunnels so the origin doesn't even have a public IP, v4 or v6
+
+make sure CF to origin is actually encrypted with a real cert and not flexible mode, sure. but post quantum on a box only cloudflare can talk to isn't high on my list

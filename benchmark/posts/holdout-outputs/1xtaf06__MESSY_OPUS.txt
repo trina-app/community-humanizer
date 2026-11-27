@@ -1,0 +1,19 @@
+so the thing that surprised me most is how readable it is from across the room. 31.5 inches of colour e-ink is just big, it's a Fraimic Large Canvas and I finally got Tesserae running on it this week
+
+Tesserae is the AGPL self-hosted e-ink dashboard server I maintain, runs in Docker or as a Home Assistant add-on, no account needed
+
+two dashboards rotate on it right now
+
+one is project stats for the last 30 days. 606 active installs (up from 342), 1,020 stars, 92 merged PRs, 68 of those from 8 outside contributors which honestly is the number I like looking at most
+
+before anyone asks, the installs number is from opt-in telemetry. it's off by default and it's an anonymous count only, nothing else. if you don't turn it on nothing phones home, at all. I know people here care about that and so do I
+
+other one is my github profile, contribution graph, streak, top repos, recent activity. bit vain maybe but it looks really nice in colour
+
+I built both by just describing what I wanted to an AI agent through Tesserae's MCP server. but they're not some black box, they're plain HTML/CSS/JS with data sources so if you'd rather hand edit them you totally can
+
+also you don't need a giant panel for this, it runs on cheaper stuff too, TRMNL, reTerminal, Inky Frame, old Kindles
+
+would really like people to try it and tell me what's confusing, especially in the docs. issues/feedback on the repo welcome, even the
+
+anyway. big e-ink is very cool

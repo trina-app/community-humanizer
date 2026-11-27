@@ -1,0 +1,7 @@
+Every pitch lately someone asks "why can't I just build this with Claude" and honestly I'm getting tired of it. Fair question though, I'd probably ask it too if I were on the other side.
+
+What I say right now is that yeah, a weaker version is technically doable. But you'd spend real time and money building it, and then you'd have to maintain it, which is the part nobody budgets for. That mostly lands but I can tell it doesn't fully kill the objection. Some of them nod and I can see they're still thinking they'll try it over the weekend.
+
+The thing that's bugging me more is that this isn't just my product. I'd guess 95%+ of SaaS startups get this same question, or will soon. So if "you could build it yourself" is true for almost everyone, is the moat just distribution and sales now? Like the product is the easy part and getting in front of people and closing them is the actual business. I don't love that answer but it's where I keep ending up.
+
+Anyway, how do you handle this in pitches? Do you have a line that works, or do you just not go down that road at all?

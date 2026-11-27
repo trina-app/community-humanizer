@@ -1,0 +1,13 @@
+I'm researching lending to AI startups and trying to understand one specific problem: the gap between when you pay for compute and when your customers pay you.
+
+If you sell to enterprises, you're probably paying GPU or API bills monthly (sometimes up front), while your customers are on net 60 or net 90. That seems like it could create a real cash crunch, especially as usage scales.
+
+For those of you in this spot:
+
+- Has this gap actually caused cash problems for you? How bad did it get?
+- How did you cover it? Equity raise, venture debt, a bank line of credit, cloud credits, customer prepayment, something else?
+- Did you ever look at invoice financing or factoring? If so, what did you think, and did you use it?
+
+I'm not selling anything and I'm not promoting a product. I just want honest accounts of what people actually do, including the stuff that didn't work or that you'd do differently.
+
+Thanks in advance.

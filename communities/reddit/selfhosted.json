@@ -1,0 +1,41 @@
+{
+ "community": "r/selfhosted",
+ "platform": "reddit",
+ "measured": "2026-11-26",
+ "comments": {
+  "n": 165,
+  "source": "top-level comments with 2+ points in the 16 busiest question threads of 2026-11-12 to 11-24",
+  "words_median": 24,
+  "types": {
+   "answer": 0.341,
+   "one-liner": 0.262,
+   "anecdote": 0.183,
+   "disagree": 0.018,
+   "question-back": 0.061,
+   "side-point": 0.018,
+   "agree": 0.006,
+   "joke": 0.091,
+   "complaint": 0.018
+  }
+ },
+ "posts": {
+  "n": 60,
+  "words_median": 160,
+  "paragraphs_median": 6,
+  "list_pct": 35,
+  "bold_or_heading_pct": 23,
+  "greeting_pct": 23,
+  "ends_with_question_pct": 38
+ },
+ "rules": {
+  "ai_content": "no rule found",
+  "ai_rules": [],
+  "self_promotion_rules": [
+   "Spam / Self-Promotion / Affiliate Links",
+   "Blog Link Posts"
+  ],
+  "notes": [],
+  "checked": "2026-10-31",
+  "source": "https://www.reddit.com/r/selfhosted/about/rules"
+ }
+}

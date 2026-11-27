@@ -1,0 +1,1 @@
+Radicale + DAVx5 on android, tasks.org already syncs with it

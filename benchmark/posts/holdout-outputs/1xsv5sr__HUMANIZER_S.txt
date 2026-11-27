@@ -1,0 +1,5 @@
+Bought an FFJ 18ft RGB TV backlight strip off Amazon in July for about $80. It's the kind for 75-85" screens with app/Bluetooth control and music sync. It died after about 2 months. The seller's listing is now gone and my warranty emails got no reply, so I'm out of luck there.
+
+The strip is still mounted on the back of the TV and looks fine. The sensor/controller box is sitting in a drawer. It takes USB-C, which splits into a wall-wart power plug and a data line to the LEDs. The only way to control it is an Android app over Bluetooth, so no hub, no API, nothing local.
+
+I'd rather not rip the strip off and throw it out if I can reuse it. Has anyone replaced a dead controller like this with something self-hosted? I'm happy to have Claude write something quick and dirty if that's the realistic route, but I'd like to hear other suggestions first, especially from anyone who's done something similar with cheap Bluetooth LED strips.

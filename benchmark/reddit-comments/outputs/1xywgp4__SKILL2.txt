@@ -1,0 +1,3 @@
+the 'unmetered' VPS thing mostly falls apart at 140TB. I had a 1Gbps "unmetered" box years ago and got a fair use email after about three weeks of actually using it. and a retro gaming site is going to get the same DMCA mail, just from a host who'll pull the plug instead of forwarding it
+
+honestly your mac mini behind cloudflare is doing a lot of work for free, I'd be nervous about losing that too

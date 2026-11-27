@@ -1,0 +1,25 @@
+Long Claude answers got hard for me to navigate. I'd scroll through six paragraphs just to find out what I actually needed to do next.
+
+So I added a standing instruction: end every reply with a short **## 80/20** block, always last, under a divider line. It looks like this:
+
+```
+---
+## 80/20
+🎯 Result: Fixed the timezone bug; entries now save in UTC.
+👉 Next: **Run the migration** on the staging DB.
+⚖️ Decide: **Keep per-day rounding or switch to per-entry?**
+⚠️ Watch out: Old entries won't be converted automatically.
+🌿 Git: Commit on a new branch, **don't push to main yet**.
+```
+
+A few details that make it work for me:
+
+- **Result** is always there. **Next**, **Decide**, **Watch out** and **Git** only show up when they're relevant, so the block stays short.
+- The key actions are in bold, so if you read only the bold text you still get the answer.
+- It's always at the bottom, so I know where to look, and I can skip the rest unless I want the details.
+
+I saved it in two places: my claude.ai user preferences, and CLAUDE.md for Claude Code. It now applies everywhere, including the long chats about the hours-tracker app I'm building, where it helps most. After a long back-and-forth I can jump to the block and pick up where I left off.
+
+It's a small change, but it's the one that made long sessions much less tiring.
+
+What's your small trick? It could be a prompt, a setting, a habit, or something you stopped doing. I'd like to hear what changed how you use Claude.

@@ -1,0 +1,11 @@
+Knowing the problem is maybe 20% of it. A consultant can map a customer's pain perfectly and still not know how to build the thing, price it, get people to switch to it, or survive 18 months of nobody caring. Those are different skills, and most consultants have never had to use them because their income doesn't depend on any of it. They get paid by the hour whether or not the recommendation works.
+
+Consultants also see a biased sample of problems. They hear about what big companies can afford to pay someone to look at, which usually isn't where a small startup can win.
+
+On the 10 dermatologists, I'd bet those founders already knew the space, or one of them was a derm or married to one. Ten interviews lands differently when you already know which questions to ask. The first few interviews tell you a lot, and after about 10 you mostly hear the same complaints. Depth matters more than count. A consultant doing 200 shallow interviews for a deck isn't learning more than a founder who sat in a clinic for a week.
+
+Also, "someone has already mapped it out" rarely holds up. Their map is in their head or in a deck for one client, and it goes stale. Even if you had it, you'd still need to find out whether people will pay for your particular fix, and you only learn that by shipping something.
+
+I'd pick sales over consulting if you want to see PMF up close. In sales you hear objections, you watch deals die, and you learn what people will actually pay for. Consulting mostly teaches you to diagnose, which is the easier half. An early-stage startup job would probably teach you more than either, since you'd watch a team try to find PMF in real time.
+
+Young founders aren't a contradiction. They tend to start in areas they already live in, like student tools or gaming, so they have the problem knowledge for free. And you mostly hear about the ones who got lucky, not the many who picked a problem they didn't understand.

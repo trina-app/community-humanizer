@@ -1,0 +1,7 @@
+Pretty sure I'm doing this the dumb way. Torrent client dumps into downloads/complete, and after it's done seeding I SSH in and mv stuff into jellyfin/shows or jellyfin/movies. Been doing that for years. Works, but clunky.
+
+Everything's one media dir bind-mounted into the containers. I assume the Arr stack handles this better?
+
+Also how do you keep seeding AND have it in Jellyfin, symlinks?
+
+Cron seems like it wouldn't work, since some of it is ebooks that go somewhere else

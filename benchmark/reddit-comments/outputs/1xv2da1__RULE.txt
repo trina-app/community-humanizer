@@ -1,0 +1,12 @@
+Short answer: it's a real concern, but it's also a negotiating line, and the weight depends on the number. Nobody at seed or Series A cares if a departed founder holds 2-3%. At 10-15%+ with no involvement, a lead investor might raise it, because they want the remaining team to be the ones holding the upside. You never said what percentage we're talking about, and that matters a lot.
+
+The part that matters most is what your lawyer already told you: they have no contractual right to take vested shares. So what they're asking for is a favor. That doesn't make it unreasonable to ask, but a favor gets paid for. "Give it back for nothing" isn't a standard ask, and I'd push back on it hard. What's more normal when a founder leaves on bad terms:
+
+- They buy back some or all of it at a real price (last round price or a discount to it, not zero)
+- You keep the shares but sign a voting proxy to the CEO or the board, so the control concern goes away
+- You keep a smaller stake and they clean up the rest
+- Some combo with a cash payout or a secondary sale at the next round
+
+Also think about what they want from you besides the shares: a smooth transition, a non-disparagement, a clean release, resigning the board seat, maybe help with customers or the codebase. All of that has value to them and you can trade on it.
+
+I'd be careful not to let the conflict with your cofounder drive this. Investors will frame it as "everyone does this" because that's cheaper for them. Get a startup-specific lawyer to negotiate the buyback terms, not just review the docs, and don't sign anything fast. They're the ones who need a clean cap table for the next raise, so time is on your side more than theirs.

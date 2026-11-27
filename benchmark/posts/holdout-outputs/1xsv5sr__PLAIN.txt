@@ -1,0 +1,9 @@
+Bought an FFJ 18ft RGB TV backlight strip (the one for 75-85" screens, with app/Bluetooth control and music sync) on Amazon back in July for about $80. It died after roughly two months. The seller's listing has since vanished and my warranty emails have gone unanswered, so I'm not getting a replacement.
+
+The annoying part is that the strip itself is probably fine. It's still mounted on the back of the TV. What's dead is the sensor/controller box, which is now sitting in a drawer. From what I can tell, it takes USB-C that splits into a wall-wart for power and a data line out to the LEDs. The only way to control it is an Android phone app over Bluetooth. No remote, no web interface, nothing local.
+
+So I'm wondering if anyone has a self-hosted way to reuse this hardware. Something like replacing the dead controller with an ESP32 running WLED, or hooking it into Home Assistant, would be ideal. I don't yet know what LED type is in the strip (it's RGB, so I'm guessing either analog 12V or addressable), and I haven't opened anything up. If anyone has done a similar swap and can tell me what to check first, I'd really appreciate it.
+
+I'm also open to having Claude write something quick and dirty to drive it, but I'd rather hear what others would do before I go down that road. Suggestions, warnings, and "just buy X" are all welcome.
+
+Thanks!

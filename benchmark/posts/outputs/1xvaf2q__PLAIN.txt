@@ -1,0 +1,33 @@
+I'm a startup CFO. I've watched strong startups raise money and weak ones fail to, and the pattern is simpler than most founders think. Not promoting anything, just sharing what I've seen.
+
+**VCs mostly fund one of two things: proven demand or a proven team.**
+
+A VC isn't asking whether your idea is good. They're asking whether there's a high chance this returns many times the money. Your job is to give them evidence of that. In practice it shows up in three ways:
+
+1. Demand you can generate and replicate at scale
+2. A market with growing appetite
+3. Founders who have already won (a past success or exit)
+
+Some examples:
+
+**Uber (2011): demand that replicates**
+They ran a pilot in San Francisco and had revenue, and riders came back. Repeat usage is what mattered. It suggested the model could be copied city by city. The pitch wasn't "imagine a world where..." but "here's what happened in one city, and we can do it again in the next."
+
+**Airbnb (2009): demand that already existed**
+People were already looking for places to stay on Craigslist and Couchsurfing. Airbnb didn't have to invent the behavior, just make it better. There were also spikes around big events when hotels sold out. That's a clear sign of unmet demand and a market that's hungry.
+
+**Beehiiv (2021): a proven team**
+The founders had helped build the growth engine at Morning Brew, which sold to Business Insider for $75M. Investors weren't betting on an unknown. They were backing people who had already done the hard part once.
+
+**Affirm (2014): a proven founder**
+Max Levchin had the PayPal and Slide exits behind him. When someone has already returned money to investors, the risk looks very different.
+
+**What this means for you**
+
+- If you don't have a track record, get demand evidence: paying customers, repeat usage, a pilot you can show works and explain how to repeat.
+- If you don't have traction yet, lean on what your team has already done. Relevant experience, past exits, and prior growth results all count.
+- If you have neither, you're asking a VC to take on a lot of risk. That's not impossible, but it's much harder, and it's usually better to build evidence first and raise second.
+
+Most weak raises I've seen weren't bad ideas. The founders just never showed why this would be big and why they'd be the ones to do it.
+
+Curious what others have seen. Did you raise on traction, on the team, or on something else?

@@ -1,0 +1,9 @@
+Mine is the opposite end of yours: I stop Claude from guessing before it starts.
+
+I add one line to my preferences: "If my request is ambiguous, ask up to 3 short questions first. If it's clear, just do it."
+
+Before that, I'd get a long, confident answer to a question I hadn't quite asked, then spend three more messages steering it back. Now the misunderstanding gets caught in the first reply, and the "if it's clear, just do it" part keeps it from quizzing me on simple stuff.
+
+It pairs well with your 80/20 block. Questions up front, summary at the end, and the middle can be as long as it needs to be.
+
+Also, the "bold text alone is the answer" idea is a nice touch. Stealing that.

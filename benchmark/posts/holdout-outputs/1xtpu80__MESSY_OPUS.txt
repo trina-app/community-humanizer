@@ -1,0 +1,7 @@
+so my server is already running everything in docker so adding sonarr radarr prowlarr and jellyfin or plex wouldnt be hard to spin up i guess, but the box is pretty weak and theres not a lot of room left on it. thats kind of the first worry
+
+the other thing is i already pay for netflix and disney+ hotstar. and honestly i watch like one movie a day, sometimes less. 1080p is totally fine for me, dont care about 4k at all
+
+so is it actually worth setting all this up and then maintaining it for that little usage? or does it only make sense if youre watching a lot. not sure if it even makes sense next to the subs or if id just end up paying for both and using
+
+for people running it, does it work ok on low powered hardware? and what do you actually get out of it besides having everything in one place, because thats the only benefit i can think of rn

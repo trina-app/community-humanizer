@@ -1,0 +1,7 @@
+I'm early on in trying to find a business idea to build, probably a SaaS, but I haven't picked a problem yet. Instead of guessing, I figured I'd ask the people who actually run businesses.
+
+So for owners and operators: what's the one task you absolutely hate doing? The most repetitive, annoying thing in your day.
+
+I'd like to know what it is, how much time it eats up, and whether you've managed to automate it or you're still doing it by hand. Stuff like answering the same customer questions over and over, chasing payments, handling bookings, updating spreadsheets, writing emails, that kind of thing, but anything counts.
+
+I'm not selling anything, this is just research to find real pain points before I build something nobody wants.

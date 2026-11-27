@@ -1,0 +1,22 @@
+{
+ "id": "1xymgfb",
+ "lang": "en",
+ "order": [
+  "PLAIN",
+  "SKILL",
+  "HUMAN",
+  "HUMANIZER_S"
+ ],
+ "human": {
+  "PLAIN": 15,
+  "SKILL": 25,
+  "HUMAN": 90,
+  "HUMANIZER_S": 10
+ },
+ "rank": {
+  "PLAIN": 3,
+  "SKILL": 2,
+  "HUMAN": 1,
+  "HUMANIZER_S": 4
+ }
+}

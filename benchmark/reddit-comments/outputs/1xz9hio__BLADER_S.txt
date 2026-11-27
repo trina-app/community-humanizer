@@ -1,0 +1,13 @@
+I'd go Lovable over Bolt for this, mostly because the GitHub sync is two-way and the Supabase integration is built in. Bolt works too, but I found the repo drifted from what the builder showed more often once I started editing outside it.
+
+Set the repo up on day one and treat the builder as just one contributor. If you edit in Cursor or by hand and then go back to the builder, it will sometimes overwrite or fight your changes, so pick a main branch you never let it touch directly. Deploys from GitHub to Vercel or Netlify are easy since it's a standard Vite/React app. The pain is usually env vars and Supabase config, not the code.
+
+On handoff, engineers usually keep the UI and throw out or heavily rewrite the data layer. Generated code tends to put queries and business logic right in components, and the Supabase RLS policies are often too loose or missing. Expect a few weeks of cleanup before anyone builds features on it. That's still much cheaper than building from scratch, because the beta already told you which screens matter.
+
+Before inviting users:
+- Turn on RLS for every table and test it with a second account. This is the one that really hurts if you skip it.
+- Keep separate Supabase projects for dev and prod.
+- Don't put secrets or anything sensitive in client code.
+- Add basic error tracking (Sentry free tier) so you see failures before users email you.
+
+Since you're semi-technical, pay an engineer for a couple of hours to review the auth and database setup before the beta. It's cheap and it's the part that's painful to fix later.

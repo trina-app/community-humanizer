@@ -1,0 +1,3 @@
+Consultants get paid to solve one client's version of a problem, and that client's quirks are the whole job. A product needs the same problem showing up across a lot of customers, and the consultant's incentive is the opposite of that. Billing hours on a bespoke fix is a fine business, and it's a different one from shipping something 500 people will pay for without you in the room.
+
+The 10 interviews thing isn't absurd if the answers kept repeating. You stop when you quit hearing new problems, not at some magic number.

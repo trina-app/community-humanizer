@@ -1,0 +1,5 @@
+A small script that watches my downloads folder and files everything where it belongs. PDFs go to the right client folder, receipts get renamed with date and vendor, and screenshots older than a week get cleaned up. It took maybe 40 minutes to build, and I haven't thought about my Downloads folder since.
+
+The other one that stuck is a morning digest. It pulls my calendar, a few RSS feeds, and my open to-do items, then sends me one plain text summary at 7am. No app to open, no dashboard to check. It's just there when I wake up.
+
+What I've noticed is that the things that last are boring and tiny, and they remove one small annoyance. The big ambitious apps I started all got abandoned after a couple of weeks.

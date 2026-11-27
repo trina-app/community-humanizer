@@ -1,0 +1,28 @@
+{
+ "id": "1y31ssm",
+ "sub": "selfhosted",
+ "order": [
+  "HUMAN",
+  "BLADER",
+  "RULE",
+  "BLADER_S",
+  "SKILL",
+  "PLAIN"
+ ],
+ "human": {
+  "HUMAN": 88,
+  "BLADER": 15,
+  "RULE": 15,
+  "BLADER_S": 20,
+  "SKILL": 30,
+  "PLAIN": 8
+ },
+ "rank": {
+  "HUMAN": 6,
+  "BLADER": 1,
+  "RULE": 3,
+  "BLADER_S": 5,
+  "SKILL": 4,
+  "PLAIN": 2
+ }
+}

@@ -1,0 +1,11 @@
+Not promoting anything, no link, no name, just want to say that up front.
+
+So I built the thing and put it live and it was honestly easier than what came after. Nobody's using it. Zero users. I figured the hard part was the code, and now I'm sitting here with a deployed MVP and nobody to show it to.
+
+The part that's bugging me most is I don't even know if the problem is real. Like maybe it is and I'm just not reaching the right people, or maybe nobody actually cares and I've been building for myself. And I can't tell which one it is, because who do I even ask? Friends will say it's cool. That's not feedback.
+
+Also not sure who the audience even is, which probably tells you something.
+
+I don't want to sink more dev time in until I know. I've got basically no marketing budget so ads are out.
+
+For people who got their first 10-20 users: where did they come from? And what actually got you honest feedback, not the polite kind? How did you tell there was real need vs people just being nice to you?

@@ -1,0 +1,43 @@
+{
+ "community": "r/smallbusiness",
+ "platform": "reddit",
+ "measured": "2026-11-26",
+ "comments": {
+  "n": 274,
+  "source": "top-level comments with 2+ points in the 16 busiest question threads of 2026-11-12 to 11-24",
+  "words_median": 44,
+  "types": {
+   "answer": 0.429,
+   "one-liner": 0.11,
+   "anecdote": 0.22,
+   "disagree": 0.062,
+   "question-back": 0.062,
+   "side-point": 0.015,
+   "agree": 0.022,
+   "joke": 0.033,
+   "complaint": 0.048
+  }
+ },
+ "posts": {
+  "n": 60,
+  "words_median": 123,
+  "paragraphs_median": 4,
+  "list_pct": 22,
+  "bold_or_heading_pct": 23,
+  "greeting_pct": 13,
+  "ends_with_question_pct": 42
+ },
+ "rules": {
+  "ai_content": "banned",
+  "ai_rules": [
+   "No market research posts - not for developing apps, not for AI, not for business offerings"
+  ],
+  "self_promotion_rules": [
+   "No links, product recommendations, unsolicited advice, blog content, or SEO shaping.",
+   "No business promotion posts"
+  ],
+  "notes": [],
+  "checked": "2026-10-31",
+  "source": "https://www.reddit.com/r/smallbusiness/about/rules"
+ }
+}

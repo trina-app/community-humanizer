@@ -1,0 +1,7 @@
+Not promoting anything here, just want to say that up front.
+
+I built an MVP and got it deployed, and now I have no users. Turns out building was the easier part. I honestly didn't expect getting anyone to try it to be this much harder than writing the code.
+
+What I can't tell is whether the problem is actually real, or whether I'm just talking to the wrong people. I'm not sure who the right audience even is. And before I sink more dev time into this, I'd like some way to get feedback I can trust, not just "cool idea" from friends.
+
+So for those of you who've been here: how did you get your first 10-20 users? What got you honest feedback, as opposed to polite feedback? And how did you tell the difference between people who really needed it and people who were just being nice? Especially if you had little to no marketing budget.

@@ -1,0 +1,16 @@
+I'm researching lending to AI startups, and one thing keeps coming up: the timing between compute bills and customer payments. GPU or API costs hit every month, but enterprise customers often pay net 60 or net 90. That means you're fronting two or three months of compute for every new contract before you see any of the cash.
+
+For anyone selling AI products to larger companies, has that gap actually caused cash problems for you? I'm curious whether it's a real constraint or something that looks worse on paper than it feels in practice.
+
+If it did bite, how did you cover it?
+
+- Equity raise
+- Venture debt
+- Bank line of credit
+- Cloud credits
+- Customer prepayment or annual upfront billing
+- Something else
+
+Did anyone look at invoice financing or factoring? If you tried it, was it worth the cost, or did you rule it out early? I'd especially like to hear from people who looked at it and walked away, and why.
+
+I'm not selling anything and I'm not going to pitch anyone in the comments. I just want to hear what founders actually do, including the messy versions like pushing out vendor payments or putting compute on a personal card.

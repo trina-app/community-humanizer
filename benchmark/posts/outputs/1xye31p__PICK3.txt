@@ -1,0 +1,9 @@
+I can build almost anything in a couple of weeks, that's the problem. I've burned weeks on MVPs nobody needed and I still can't tell if an idea deserves building before I start coding.
+
+Working on a practical consumer thing for everyday people right now. Not an AI wrapper. Not pitching it, so no link.
+
+What's your first step? Talking to users, competitor research, search trends? And how do you get honest answers when everyone just says "I'd use that"? Which questions do you avoid?
+
+Also demand tests without building: landing page, WhatsApp or manual concierge version, pre-orders. What number actually counted as a go/no-go for you?
+
+How do you judge room in a crowded market? Books or checklists welcome too, maybe it helps other devs stuck in build-first mode

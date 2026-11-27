@@ -1,0 +1,1 @@
+Most of the ones who ask that never finish the weekend project anyway. The few who do build it end up with a thing one person understands and nobody wants to be on call for. I've lost more deals to "we'll just use a spreadsheet" than to Claude, and the answer is the same: you're not selling code, you're selling not having to think about it again

@@ -1,0 +1,1 @@
+Unmetered 2Gbps VPS for 140TB/month is going to get you kicked off almost anywhere, "unmetered" stops meaning anything at that volume. Look at Hetzner dedicated or OVH, and put the VPS in front as a reverse proxy over WireGuard so your home IP stays hidden

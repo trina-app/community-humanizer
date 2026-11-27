@@ -1,0 +1,22 @@
+{
+ "id": "1xxsnku",
+ "lang": "en",
+ "order": [
+  "SKILL",
+  "HUMANIZER_S",
+  "PLAIN",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 30,
+  "HUMANIZER_S": 25,
+  "PLAIN": 15,
+  "HUMAN": 85
+ },
+ "rank": {
+  "SKILL": 3,
+  "HUMANIZER_S": 4,
+  "PLAIN": 2,
+  "HUMAN": 1
+ }
+}

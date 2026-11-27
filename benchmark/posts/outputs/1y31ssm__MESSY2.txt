@@ -1,0 +1,7 @@
+Setting up a home server with Immich, Jellyfin and Nextcloud, just me and my girlfriend using it. She's not technical at all so it has to be dead simple, she's not going to fiddle with anything.
+
+Torn between Tailscale/NetBird and just putting stuff behind a reverse proxy with HTTPS and port forwarding. Security comes first for me, then ease of use, then low maintenance.
+
+Also want to send photos/files to people who obviously don't have a VPN
+
+is there some third option i'm missing? or hybrid? just tell me what you'd pick

@@ -1,0 +1,21 @@
+I've been a CFO at a few startups and watched a lot of companies raise, some that really should have and some that probably shouldn't have. After enough pitch meetings and diligence calls, I think most of it comes down to one thing, and it's simpler than people make it.
+
+VCs mostly fund one of two things: proven demand or a proven team. What they're really trying to figure out is whether there's a high chance of a big return. If you can show that, you get the money. If you can't, no amount of polish on the deck helps.
+
+The evidence usually takes one of three forms. Demand you can generate and repeat at scale. A market where people clearly want more of the thing every year. Or founders who've already won before.
+
+Some examples, since this is easier to see than to describe:
+
+Uber in 2011. They ran a pilot in San Francisco and had actual revenue and riders coming back. The investors could see that if it worked in one city, it could be copied city by city. The pitch was basically "we did this once, here's the playbook to do it forty more times."
+
+Airbnb in 2009. They didn't invent the demand. People were already looking for rooms on Craigslist and Couchsurfing, and during big events when hotels sold out you could see spikes. The demand was there and they were giving it a better place to land.
+
+Beehiiv in 2021. The founders had helped build the growth engine at Morning Brew, which sold to Business Insider for $75M. Investors weren't betting on a newsletter platform so much as on people who had already done this at scale.
+
+Affirm in 2014. Max Levchin, with PayPal and Slide exits behind him. Same logic: the team was the evidence.
+
+Notice that none of these were "great idea, trust us." Each one had something concrete a VC could point to when explaining the bet to their partners. If you're early and have no exit, you need traction that stands in for it: paying customers, repeat usage, a channel you can show works and could be scaled up with more money.
+
+When I see founders struggle to raise, it's usually because they're pitching the vision when the investor wants the evidence. Work out which of the two you can honestly show, and lead with that.
+
+Not promoting anything, just wanted to share what I've seen from the finance side. Curious if other founders who've raised saw the same pattern, or if you think I'm missing something.

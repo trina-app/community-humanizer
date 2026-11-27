@@ -1,0 +1,22 @@
+{
+ "id": "1xvaf2q",
+ "sub": "startups",
+ "order": [
+  "HUMAN",
+  "PLAIN",
+  "BLADER_S",
+  "SKILL3"
+ ],
+ "human": {
+  "HUMAN": 94,
+  "PLAIN": 5,
+  "BLADER_S": 22,
+  "SKILL3": 51
+ },
+ "rank": {
+  "HUMAN": 3,
+  "PLAIN": 2,
+  "BLADER_S": 1,
+  "SKILL3": 4
+ }
+}

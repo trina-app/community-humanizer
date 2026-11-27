@@ -1,0 +1,29 @@
+Sorry, that's a rough one. Here's what I'd ask up front next time.
+
+**Contract**
+- Month-to-month, or 30 days' notice at most. Anything longer means they're protecting themselves, not you.
+- A termination-for-nonperformance clause. If the deliverables aren't met, you can leave.
+- No auto-renew, and no setup fee that's vague about what it covers.
+
+**Deliverables, not activities**
+"Link building and on-page optimization" can mean anything. Get it in writing as numbers: how many pages optimized per month, which technical fixes, how many pieces of content, how many links. Ask who does the work, whether they need CMS access, and for a change log of what they touched each month.
+
+**Link standards**
+Ask for 3-4 examples of links they built for current clients. If those sites exist only to sell links, or are "write for us" and syndication junk, walk away. Domain rating is a vanity metric anyway. Ask about relevance and whether the sites get real traffic.
+
+**Ownership and access**
+You should own and have admin access to Google Analytics, Search Console, and your Business Profile from day one. Never let them set these up under their own accounts.
+
+**Reporting**
+Insist on a baseline at the start and reporting tied to leads, calls, and revenue. If the report is mostly their proprietary dashboard and "progress" language, that's a red flag. "AI visibility" is mostly the same fundamentals (good content, real mentions on credible sites), so be skeptical of anyone selling it as a separate magic product.
+
+**Vetting**
+Ask to talk to 2-3 current clients, ideally similar in size and industry. Also consider starting with a paid 1-3 month audit or pilot before any long retainer.
+
+**For right now**
+- Reread your contract for what the scope actually promises. If it listed deliverables and they didn't deliver, you may have grounds to dispute the remaining payments.
+- Keep everything in writing: your cancellation request, their replies, and the monthly reports.
+- If you pay by card, ask whether a dispute is an option for services not rendered. It's not guaranteed, but it's worth asking.
+- Make sure you hold the logins to everything, and revoke theirs when you're done.
+
+Sucks to learn it this way, but you're asking the right questions now.

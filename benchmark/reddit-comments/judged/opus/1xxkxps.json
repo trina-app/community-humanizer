@@ -1,0 +1,28 @@
+{
+ "id": "1xxkxps",
+ "sub": "selfhosted",
+ "order": [
+  "RULE",
+  "BLADER",
+  "HUMAN",
+  "BLADER_S",
+  "SKILL",
+  "PLAIN"
+ ],
+ "human": {
+  "RULE": 12,
+  "BLADER": 10,
+  "HUMAN": 85,
+  "BLADER_S": 12,
+  "SKILL": 15,
+  "PLAIN": 5
+ },
+ "rank": {
+  "RULE": 2,
+  "BLADER": 3,
+  "HUMAN": 6,
+  "BLADER_S": 4,
+  "SKILL": 5,
+  "PLAIN": 1
+ }
+}

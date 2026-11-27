@@ -1,0 +1,1 @@
+Mine is the opposite: I tell it to answer first and keep the reasoning short unless I ask for it. Same idea as your 80/20 block, but you don't have to scroll to the bottom to find it. One thing I'd watch is the "Result: always" line. On long chats it can start repeating itself and you end up skimming it like a footer, so I'd let it skip when there's nothing new

@@ -1,0 +1,7 @@
+I'm building a platform that collects real-world audio and video data from wearables like smart glasses. We have 150+ registered contributors and a basic working product. What we don't have is a single researcher in robotics, embodied AI or multimodal AI who has told us they want this data or would pay for it.
+
+That's the part I'm stuck on. The people who'd buy it are researchers, and they're hard to reach. I've cold emailed professors and paper authors and got zero replies.
+
+Conferences are the obvious way to meet them, but they run $1,000+ and that feels like too much to spend before I know anyone wants this. I also can't figure out where the people who actually use these datasets hang out.
+
+For those of you who sold to technical buyers like this, how did you get your first real conversations once cold email stopped working? Is an expensive conference worth it this early, or is that just burning money? And what are cheaper ways in? I've wondered about making some kind of content or building a community around it, but I don't know if that works for a niche like this.

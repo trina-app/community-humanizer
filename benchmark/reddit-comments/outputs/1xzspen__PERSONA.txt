@@ -1,0 +1,3 @@
+Hetzner Cloud is the boring answer. Cheap, KVM, German/Finnish DCs, private networks built in, and the cloud-controller-manager and CSI driver just work with k3s. Only real gotcha is they're strict about abuse reports and new account verification can be annoying
+
+Also 3 control planes or just 1 with a backup of the datastore is saner than 2. Two is strictly worse than one for etcd since you now have two things that can kill quorum

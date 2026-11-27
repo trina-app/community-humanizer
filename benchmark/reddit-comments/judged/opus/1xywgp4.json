@@ -1,0 +1,28 @@
+{
+ "id": "1xywgp4",
+ "sub": "selfhosted",
+ "order": [
+  "BLADER",
+  "BLADER_S",
+  "HUMAN",
+  "PLAIN",
+  "SKILL",
+  "RULE"
+ ],
+ "human": {
+  "BLADER": 25,
+  "BLADER_S": 25,
+  "HUMAN": 92,
+  "PLAIN": 12,
+  "SKILL": 35,
+  "RULE": 18
+ },
+ "rank": {
+  "BLADER": 1,
+  "BLADER_S": 3,
+  "HUMAN": 6,
+  "PLAIN": 5,
+  "SKILL": 4,
+  "RULE": 2
+ }
+}

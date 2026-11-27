@@ -1,0 +1,1 @@
+Backups are fine, I test restores the same way I test my smoke detector: by assuming it works

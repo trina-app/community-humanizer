@@ -1,0 +1,3 @@
+A little script that watches my downloads folder and renames and files whatever lands there. Claude wrote most of it in one evening. Invoices go to a folder by month, screenshots get a date, and random PDFs get sorted by whatever the first line of text says. Took me maybe an hour to get it working and I haven't touched it in months.
+
+It's boring but it's the only thing I built that I actually use every single day. The fancy dashboards I made all died after a week.

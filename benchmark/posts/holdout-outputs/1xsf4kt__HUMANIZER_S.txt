@@ -1,0 +1,15 @@
+I'm building a web tool that lets people customize print-on-demand products, and the people I'm building it for are returned LDS missionaries. There's no inventory on my side. The software and the customization experience are the whole product, and the printing and shipping get handled by a fulfillment partner.
+
+I'm a returned missionary myself and I live in Utah, so the audience is basically all around me. I know what these people care about, what they'd want on a mug or a shirt or a framed print, and how they talk to each other. What I don't have is an ad budget. At all.
+
+The obvious places to find them are Facebook groups and Reddit, and almost all of those either ban self-promotion or frown on it hard. I get why. I'd hate to be the guy who shows up in a group, drops a link, and disappears. I don't want to spam people in a community I'm actually part of, and I'd rather not get banned from the few places where I'm a normal member.
+
+So I'm stuck on how to get from "I know exactly who this is for" to "ten people have used it." Things I've been thinking about but haven't really tried:
+
+- Asking a few people I know to try it and share it with their ward or their mission group
+- Reaching out to people who run mission reunion pages or alumni groups and offering something for their members
+- Some kind of referral thing, though I'm not sure it works with so few users at the start
+
+For anyone who got their first customers in a niche without paying for ads, what actually worked? I'm especially curious about partnerships and referrals, and whether anyone found a respectful way into communities that don't like promotion. Also curious what didn't work, so I can skip it.
+
+Thanks for reading.

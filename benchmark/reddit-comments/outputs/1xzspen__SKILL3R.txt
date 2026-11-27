@@ -1,0 +1,1 @@
+Six nodes to run a cluster whose main job is teaching you why you didn't need a cluster

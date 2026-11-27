@@ -1,0 +1,1 @@
+Pangolin on a cheap VPS with wireguard back to the mini, bandwidth is the catch though, 140TB/month on "unmetered" will get you kicked off most providers fast

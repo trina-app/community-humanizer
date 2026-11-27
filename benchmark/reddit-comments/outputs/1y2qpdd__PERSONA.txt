@@ -1,0 +1,1 @@
+Reading the last block first is basically how I treat every long answer anyway, you just made it official. The "only show a line when it has real content" part is what keeps it from turning into the same boilerplate footer every time

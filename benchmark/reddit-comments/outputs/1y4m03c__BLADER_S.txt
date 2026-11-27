@@ -1,0 +1,1 @@
+Half of us are on ISPs that still don't hand out IPv6, and plenty are behind CGNAT, so Cloudflare Tunnel is the only way to expose anything. Also, you forgot to link the blog post.

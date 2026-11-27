@@ -1,0 +1,5 @@
+professors are probably the wrong people to email. Academics have tiny budgets, and plenty of them will just use whatever open dataset already exists for free. The ones who actually pay for data are usually ML teams at companies building robotics or embodied stuff, and those people are on LinkedIn, Twitter and Discord all day, which is a lot easier than reaching someone with a faculty page and 400 unread emails
+
+also 150 contributors is supply. You've built the easy half. The only validation that counts is someone saying "yes I'll pay for X hours of Y", so I'd skip the "can I pick your brain" emails and show up with something specific, like a sample batch of 20 clips and a price, and see who bites. A vague pitch gets ignored. A concrete offer at least gets a "no thanks, because..." and that reason is basically your whole customer discovery
+
+and don't spend $1k on a conference to find this out. If you can't get one reply from a stranger online, a badge scanner probably won't save you

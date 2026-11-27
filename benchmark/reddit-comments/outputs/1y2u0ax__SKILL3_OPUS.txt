@@ -1,0 +1,3 @@
+The code was never the moat, even before AI. Anyone decent could clone most SaaS in a few months back then too, they just didn't bother. What's hard to copy is distribution, the customers you already have, their data sitting in your tool, integrations they've wired into their workflow, and knowing the niche well enough to build the right thing before they ask
+
+So yeah someone can rebuild your app tomorrow. Getting your customers to switch is the part that doesn't get easier with better models

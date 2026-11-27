@@ -1,0 +1,5 @@
+Honestly the one that stuck is a dumb little script that watches a folder of scanned receipts and invoices, pulls out the date, vendor and amount, and dumps it all into a spreadsheet. I run a small clinic and tax season used to be me with a shoebox and a bad attitude for a whole weekend. Now I drag PDFs into a folder and it's done by the time I'm back with coffee.
+
+It took maybe an hour to build, and most of that was me being picky about the vendor name cleanup. It gets maybe 90% right and flags the rest, which is fine by me. The flagging part was the thing that made me actually trust it.
+
+Everything fancy I built fizzled after a week. The boring script that saves me 20 minutes a day is the only one that stuck.

@@ -1,0 +1,7 @@
+Pitching our SaaS to prospects and a lot of them end up asking the same thing: why would they pay us when they could just rebuild it with Claude themselves?
+
+My honest answer is that a weaker version is doable. Someone could get something working. But it would still cost them real time, effort, and money to build it, and then keep it running and maintained after that. That's the part I keep coming back to when I answer, but I'm not sure it lands with people who are already thinking about cutting costs.
+
+I've been wondering if this objection applies to most SaaS startups now, not just ours. If it does, maybe the real moat is distribution and sales more than the product itself. Haven't figured that out yet.
+
+How are you all handling this when it comes up in pitches? Do you have a line that actually works, or do you just let it go and focus on the customers who aren't asking?

@@ -1,0 +1,5 @@
+mostly they don't know, they just find the scariest assumption and try to kill it as cheaply as possible. for deep tech that's usually "can this physically work at all", so it's a janky prototype or a lab experiment, not a company. a lot of the funded ones come out of a university lab or a past job where the underlying tech was already half proven, and the founders are the people who understood it best
+
+the marketable part is separate, and you can test that without building anything. talk to the people who'd buy it and find out if the problem is real and who pays for it
+
+at 19 I'd go work in a lab or at a company in the field you care about. you'll learn what's plausible way faster than guessing from the outside, and you'll meet the people you'd start it with

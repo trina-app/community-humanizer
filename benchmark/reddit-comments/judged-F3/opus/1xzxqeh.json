@@ -1,0 +1,22 @@
+{
+ "id": "1xzxqeh",
+ "sub": "SaaS",
+ "order": [
+  "SKILL3RND",
+  "HUMAN",
+  "PLAIN",
+  "BLADER_S"
+ ],
+ "human": {
+  "SKILL3RND": 45,
+  "HUMAN": 85,
+  "PLAIN": 10,
+  "BLADER_S": 25
+ },
+ "rank": {
+  "SKILL3RND": 3,
+  "HUMAN": 4,
+  "PLAIN": 2,
+  "BLADER_S": 1
+ }
+}

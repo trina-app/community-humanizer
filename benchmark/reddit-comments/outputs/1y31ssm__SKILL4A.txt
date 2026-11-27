@@ -1,0 +1,3 @@
+The annoying part is that "non-technical person plus VPN" always ends with the app saying it can't connect because Tailscale got toggled off. Set it to always-on in the app and it mostly stops. It's still better than having Nextcloud sitting open on the internet.
+
+Tailscale for you two. For the occasional share, put just Immich's share links behind a Cloudflare Tunnel or Tailscale Funnel and leave the rest private. Jellyfin has had unauthenticated holes before, so I wouldn't expose that one.

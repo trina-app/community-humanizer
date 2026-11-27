@@ -1,0 +1,9 @@
+so the led strip on my tv died after like 2 months. FFJ 18ft rgb backlight thing, the one for 75-85" tvs with the app/bluetooth control and music sync, got it on amazon in july for about $80. seller listing is just gone now and warranty emails went nowhere
+
+strip is still stuck to the back of the tv. the sensor/controller box is sitting in a drawer. it's usb-c that splits into a wall wart for power and a data line going to the leds, and the only way to drive it was an android app over bluetooth
+
+has anyone done a self hosted way to reuse this kind of hardware? like replace the dead controller with something
+
+i'm fine with having claude write something quick and dirty for it but would rather hear what other people did first, open to other suggestions too
+
+does it even make sense if the controller is the thing that's dead or am i just

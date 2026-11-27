@@ -1,0 +1,13 @@
+I'm totally blind and based in the UK. With the new age-verification laws coming in, I've been thinking a lot about how much of what I use depends on third-party services, and how little say I have in the terms they decide to impose. It's made me want to cut back on that dependence where I can.
+
+Self-hosting seems like the obvious route. I like the idea of not being tied to anyone's platform, and of running things on my own terms instead of waiting for the next policy change to land on me.
+
+What I don't know is how realistic that is with a screen reader. So I'd love to hear from anyone who's done it, especially other blind or visually impaired self-hosters:
+
+- **Setup:** How did you get things installed and configured? Was it mostly command line, and did you run into anything that was a pain to do without sight?
+- **Administration:** How accessible are the web UIs and dashboards for the stuff you run? Are there projects that are particularly good or particularly bad for screen reader users?
+- **Day-to-day use:** Once everything is up and running, how does it hold up for regular use and maintenance?
+
+Any advice on where to start, what to avoid, or which tools play nicely with a screen reader would be really appreciated. And if you're a blind self-hoster, I'd be glad to hear how you got into it and what your setup looks like.
+
+Thanks in advance.

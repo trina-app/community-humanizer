@@ -1,0 +1,5 @@
+I'm totally blind and based in the UK. With the new age verification laws here, I've started thinking about how much I rely on third-party services that can change their rules or start demanding ID whenever they like. Self-hosting looks like a way out of being tied to anyone's platform.
+
+What I don't know is how realistic it is with a screen reader. Setup, admin, and the day-to-day stuff like checking logs or updating containers. I assume a lot of it happens in the terminal, which I'm fine with, but I've no idea how many of the web UIs (Portainer, Nextcloud, Jellyfin and so on) work properly with NVDA or VoiceOver, or whether the docs and guides assume you can see a screen.
+
+Are there any other blind or visually impaired people here who self-host? What does your setup look like, and what tripped you up when you were starting out? Any advice on where to begin would be appreciated.

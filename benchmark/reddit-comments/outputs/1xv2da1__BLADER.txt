@@ -1,0 +1,21 @@
+Dead equity is a real thing, but it's also a convenient line for the people asking you to hand shares over for free. Since your lawyer says there's no right to claw back vested shares, you're negotiating from a strong spot. Vested means it's yours, and they can only get it if you agree.
+
+Whether it matters for the next round mostly comes down to size. A departed founder holding 3-5% is normal and nobody blinks. At 15-25% held by someone who isn't working there, new investors do ask about it, because the cap table is carrying a chunk that isn't motivating anyone. Some will want it cleaned up before they lead. So the concern is legitimate, but it's about the number, and they're asking you to solve it for free.
+
+What I usually see when a founder leaves on bad terms:
+
+- Unvested shares go back, no argument. That's the deal.
+- Vested shares stay, or the company buys some back at a negotiated price (last round price, a discount to it, or a payout over time).
+- Sometimes a partial give-back in exchange for something you want: a clean release, a cash payment, a fixed buyback of the rest, a good reference, or loosening a non-compete if there is one.
+- A voting proxy to the board or CEO for your shares is a common middle ground. It fixes the "random person with a big vote" problem without you giving up the economics.
+
+Things I'd push on:
+
+- If they want the shares, they pay for them. "Without compensation" is the part I'd reject, not the idea of reducing your stake.
+- Don't sign a separation agreement and a share transfer in the same hurry. Get a full mutual release if you're going to give anything up.
+- Check what you still need from them: info rights, ROFR and drag-along terms, tax treatment (83(b) filed?), and whether any buyback would be taxed as income or capital gains.
+- Ask yourself what you'd actually accept. Selling back half at a fair price might be a good outcome for you too, since a minority stake in a private company you don't run is illiquid for years.
+
+Also keep in mind that they have some leverage too. A messy fight with a founder can hurt a raise, and you might care about that if you want the shares to be worth something. That's a reason to negotiate seriously, not a reason to give in.
+
+Your lawyer is the right person for the specifics, but if they're a general corporate lawyer, it may be worth a second opinion from someone who does founder departures and cap table disputes.

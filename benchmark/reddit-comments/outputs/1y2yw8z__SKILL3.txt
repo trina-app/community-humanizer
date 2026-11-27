@@ -1,0 +1,3 @@
+Radicale. It's a tiny CalDAV server, and both events and tasks (VTODO) live in it as separate calendars, each with its own color. Android: DAVx5 syncs it, and tasks.org can use the same CalDAV account, so you keep the app you already like. Windows: Thunderbird shows events and tasks together, and I think that's about the only desktop client that does it well
+
+Nextcloud is basically a CalDAV server with a lot of stuff stacked on top, so if you only want calendar and tasks it's overkill for an old PC

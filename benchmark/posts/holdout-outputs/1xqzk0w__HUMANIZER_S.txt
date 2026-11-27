@@ -1,0 +1,13 @@
+I've built and deployed my MVP and I have zero users. I'm not promoting anything, I just want advice.
+
+Building it turned out to be the easy part. I'm a builder, so I knew how to do that. Getting a single person to try it has been a lot harder than I expected, and I don't have a good read on why. Maybe the problem isn't real. Maybe I'm pointing it at the wrong people. Maybe it's fine and nobody has heard of it. From where I'm sitting those all look the same, and I don't want to keep pouring dev time into it until I know which one it is.
+
+I also don't have a marketing budget, so paid ads aren't really an option right now.
+
+For those of you who got your first 10 to 20 users:
+
+- Where did they come from?
+- How did you get feedback you could trust? Friends and family say it looks great, and that tells me nothing.
+- How did you decide whether the need was real before building more?
+
+If you were in my spot with no budget, what would you do this week?

@@ -1,0 +1,5 @@
+Code was never really the moat, distribution was. Anyone can copy your features, they can't copy the 2,000 people who already know your name and have your tool wired into their workflow.
+
+The stuff that's still hard to clone: your customers' data living in your product, integrations they've set up, and trust. Nobody switches a tool that runs their payroll just because a cheaper copy showed up.
+
+And yeah, someone could clone your idea tomorrow. Most people who try will quit around the time the first angry support email lands

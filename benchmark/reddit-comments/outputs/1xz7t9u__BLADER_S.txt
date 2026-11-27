@@ -1,0 +1,1 @@
+Probably the context got long and it drifted. Models pick up on whatever language is in the recent context, and one stray Chinese token early on can snowball. If you had any Chinese in your files, tool output, or system prompt, that's my guess. Try /clear or start a new chat and see if it repeats.

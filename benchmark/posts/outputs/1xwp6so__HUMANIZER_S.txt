@@ -1,0 +1,15 @@
+I'm building a platform that collects real-world audio and video from wearables like smart glasses. Contributors wear the device, record their day, and we package the data up for people training models. The target buyers are researchers working on robotics, embodied AI and multimodal AI.
+
+We have 150+ registered contributors and a basic working product. What we don't have is a single researcher who has told us they want this data or would pay for it. I've been building on an assumption, and I know that's the classic way to waste a year.
+
+The problem is that these buyers are very hard to reach. I emailed a bunch of professors and paper authors and got zero replies. Not even a "no thanks." Conferences are the obvious next move, but with travel and tickets it's $1,000+ each, and that feels like too much to spend before I know anyone cares.
+
+I also can't figure out where the people who actually use these datasets hang out. I can find authors, but authors aren't necessarily the ones downloading and training on the data.
+
+For anyone who has sold to technical buyers like this:
+
+1. How did you get your first few real conversations once cold email failed? Did anything work besides email?
+2. Is a pricey conference worth it this early, or is that just a way to feel productive?
+3. What are the cheaper ways in? I've wondered about writing something useful for this crowd, like a short writeup on what's missing from existing egocentric datasets, or finding a community where they already talk shop, but I don't know if that's realistic or just slow.
+
+Any experience with researchers or ML teams specifically would help a lot. I'm not looking to pitch anyone here, I just want to find out whether anyone wants this before I keep going.

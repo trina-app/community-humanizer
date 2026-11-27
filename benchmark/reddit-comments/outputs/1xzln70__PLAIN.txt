@@ -1,0 +1,24 @@
+The pattern you describe (views, a few signups, then quiet) usually means you're broadcasting to people who don't have the problem right now. Launch threads and directories give you a spike of browsers. They rarely give you people with an active pain.
+
+For the first 10, what tends to work is going to where someone is already complaining about the problem and talking to them one on one.
+
+**Where the first 10 usually come from**
+- Threads, communities and Slack/Discord groups where people are asking for a fix or a tool. Reply with help first, and mention the product only if it fits.
+- People who've just posted "how do I do X" or "alternative to Y". Intent is highest right then.
+- Your own network and their second-degree intros. It's boring, but it's the most common answer.
+
+**Doing things that don't scale**
+Yes, and it's worth it, mainly because of what you learn. For B2B, 30 targeted cold emails or LinkedIn DMs to people with a specific job title and a specific problem will teach you more than 3,000 views. Keep them short, mention one thing you noticed about them, and ask for 15 minutes to learn about their workflow instead of pitching. Reply rates are low, but you only need a handful of conversations.
+
+**Paid ads**
+Mostly burned money this early. You don't yet know your message, your audience or what a converted user looks like, so ads just make that expensive. Revisit them once you have a repeatable signal from organic channels.
+
+**What to stop**
+- Directory listings and generic launch threads. They're fine as a one-time checkbox, but they aren't a channel.
+- Building more features while nobody is using the existing ones.
+- Counting signups instead of activated users. Ten people who use it weekly beat 100 who never come back.
+
+**For B2B specifically**
+Pick one narrow niche, like one role at one type of company. Make the landing page speak only to them. Then list 50 specific people in that niche and reach out to them directly. Narrow beats broad at this stage, because it makes your message sharper and your outreach easier to find.
+
+Also, when someone signs up and goes quiet, email them personally and ask why. Those replies are worth more than any traffic source.

@@ -1,0 +1,7 @@
+Honestly the part that gets me is the "did you use AI?" comment. Not even a mean one, just that question, and I immediately feel like a fraud. Like the subtext is "so anyone could've done that."
+
+Context: I had basically no coding background before this. Some game dev stuff and a couple intro language courses, that's it. With coding agents I've built things way past what I could ever write myself, and it's gone okay, moderate success I'd say. The people who actually use what I make mostly don't care how it got built. Nobody in those circles has made it weird.
+
+Reddit is different. The anti-AI feeling here is strong enough that I get hesitant to even say how I build stuff. I tell myself Reddit isn't real life, which I believe, but it's hard to shake when you're staring at a thread of people dunking on anything that smells like AI.
+
+So do you think the "vibe coded" thing fades? Like does it become normal enough that people just stop asking, or does it stick around as a label forever? And I guess what I really want to know is whether regular people, not the people online, actually think less of something because AI helped build it. Or is that mostly a Reddit thing

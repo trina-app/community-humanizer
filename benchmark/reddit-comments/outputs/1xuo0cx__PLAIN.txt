@@ -1,0 +1,11 @@
+Knowing the problem is maybe 20% of it. Consultants are great at diagnosing, but they're paid to hand over a recommendation, not to build something and bet their own money on it being right. The skills that make a good founder are different: building the thing, getting distribution, and tolerating years of ambiguity with no client paying you for hours. Plenty of consultants start companies, but a lot of them end up building consultancies, which is a perfectly good business, just not the one you're describing.
+
+Also, "mapped the problem" doesn't mean "solved it." A problem can be well known and still unsolved because the solution is hard, the buyer won't switch, or the economics don't work. If someone already did the mapping, that usually just means the problem is real. The work is in the part after.
+
+On the 10 dermatologists: when a segment is narrow and homogeneous, you stop hearing new things pretty fast. Ten interviews with a tight group of people doing the same job gets you most of the pattern. Hundreds of interviews across different industries gets you breadth, not depth. And I'd bet those founders had some prior context, like a co-founder who was a doctor, or they'd already worked in healthcare. The 10 interviews were probably validating something they half knew.
+
+Young founders win mostly in a few situations: they are the customer (students, gamers, creators), the market is too small or weird for incumbents to care about, or the cost of trying is low enough that being wrong doesn't hurt. Nobody wins by out-researching a consultant.
+
+Sales is probably the better of your two options. You hear objections directly, you learn what people actually pay for rather than what they say they want, and you get a feel for what a buying decision looks like. Consulting teaches you to analyze, sales teaches you what makes someone pull out a credit card.
+
+If you go that route, pick an industry you'd actually want to build in and stay long enough to see the same problem from several angles. And don't wait for permission to start. Talk to 15-20 people in a space you care about this month. That tells you more about whether you like this work than any amount of thinking about it.

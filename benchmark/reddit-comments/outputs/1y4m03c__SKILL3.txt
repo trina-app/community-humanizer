@@ -1,0 +1,1 @@
+most people use cloudflare because they don't want their home IP sitting out in the open, not because they're hunting for the newest TLS version. "your origin isn't on IPv6" isn't much of a reason to drop it when half our ISPs still hand out CGNAT

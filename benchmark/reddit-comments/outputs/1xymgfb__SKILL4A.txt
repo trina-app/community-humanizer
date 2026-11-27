@@ -1,0 +1,1 @@
+The stigma is mostly aimed at stuff that ships with no review, like API keys sitting in the frontend or a database with no auth. Run `/security-review` in Claude Code before you post a project and you've dealt with most of what people are actually sneering at. Pair that with a basic test suite and a README that says what it does.

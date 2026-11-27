@@ -1,0 +1,13 @@
+You're not overcomplicating it, but I'd change the format a bit.
+
+Get the senior dev in and pay them for an hour or two to sit on the call while she walks through the codebase. They'll judge her answers way better than you can. Tell her upfront who they are and why they're there. A strong candidate will get it, since a co-founder is a big commitment for both sides. Afterwards ask the dev if they'd want to work with her, not just whether she's good.
+
+Even without judging the code, you can listen for a few things. Can she explain the tradeoffs well enough that you follow? Does she say "it depends, here's why" instead of sounding certain about everything? Is she fine saying "I don't know, I'd look into X"? Does she tie technical choices back to the business, like what to cut, what can be hacky for now, and what will hurt later?
+
+I'd also do a short paid trial project, a real, small, scoped piece of work over 2-4 weeks. You see how she communicates, how she estimates, whether she ships, and how you two handle disagreement. It tests the co-founder relationship better than a code review, which only covers the coding.
+
+Ask for 1-2 references too, ideally engineers or managers she's worked with closely. That tells you more than a coding test.
+
+Put vesting in place. 4 years with a 1-year cliff is standard, and it's your real protection: if things don't work out after the trial, you both have a clean way out.
+
+As for how many meetings, you've already had several good conversations. I'd do one code walkthrough with your senior dev, check the references, then move to the trial. After that, more meetings mostly add friction for her, and the trial is where you actually find out.

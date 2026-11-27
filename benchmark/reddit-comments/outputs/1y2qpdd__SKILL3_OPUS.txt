@@ -1,0 +1,3 @@
+Mine's dumber: "before you start, ask me whatever you need to know." Half the time it asks something I hadn't thought about, and that saves a whole round of fixing the wrong thing
+
+Also worth trying on yours: tell it the 80/20 block can't introduce anything new. Otherwise sometimes the "summary" is where the actual answer shows up for the first time, and then the long part above it is just padding

@@ -1,0 +1,7 @@
+The "this does X, this doesn't" pattern is real, but I don't think Claude invented it. It's an old LinkedIn and TED-talk move: punchy contrast, rule of three, a mic-drop closer. Claude learned it from the corporate keynote genre, and now it hands that genre back to everyone at 100x volume. So the keynote you saw was probably half-written by a human who was already writing like that.
+
+What does change is how often you see it. One person with a tic is a quirk. Thousands of people all running the same tic through the same model makes it feel like a parallel reality, like you said.
+
+I'd be careful about the gut feeling, though. Once you start looking for it, everything reads as AI, and plenty of people were writing like this long before 2023. Some of the "Claude wrote this" calls will be wrong, and I'd rather not accuse a stranger of being a bot over a punchy sentence.
+
+I do agree about your own voice. The best defense is to write the first draft yourself, even if it's messy. If I let a model write the first pass, I tend to keep its structure even after I rewrite the words. Using it to poke holes in what I wrote works much better than using it to write for me.

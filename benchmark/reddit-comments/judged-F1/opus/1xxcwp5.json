@@ -1,0 +1,22 @@
+{
+ "id": "1xxcwp5",
+ "sub": "ClaudeAI",
+ "order": [
+  "BLADER_S",
+  "HUMAN",
+  "PLAIN",
+  "SKILL3"
+ ],
+ "human": {
+  "BLADER_S": 30,
+  "HUMAN": 85,
+  "PLAIN": 8,
+  "SKILL3": 40
+ },
+ "rank": {
+  "BLADER_S": 3,
+  "HUMAN": 1,
+  "PLAIN": 2,
+  "SKILL3": 4
+ }
+}

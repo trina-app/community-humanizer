@@ -1,0 +1,1 @@
+Job search, daycare search, and learning Claude Code is mostly "everyday" stuff, so Sonnet covers it fine. I'd only reach for Opus when Sonnet gives me a bad answer and I want a second try. Don't overthink it, switching up when something's too hard costs you about ten seconds

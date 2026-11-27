@@ -1,0 +1,1 @@
+Most of us use Cloudflare precisely so the origin isn't a public thing. Not sure "your origin should have IPv6 and PQ TLS" is the takeaway when the whole point is that only CF talks to it

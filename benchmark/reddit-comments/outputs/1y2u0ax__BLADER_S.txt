@@ -1,0 +1,7 @@
+Most of the moat is stuff that has nothing to do with code. Distribution, trust, and being wired into how a customer already works. Someone can clone your features in a weekend, but they can't clone your 400 customers who already have their data in it and their team trained on it.
+
+Cloning the idea was never the hard part, even before AI. The hard part is getting someone to switch, and switching costs are real. People don't leave a tool that works just because a cheaper lookalike showed up.
+
+The niche stuff holds up best. A tool for one specific kind of business, with the weird workflows and integrations they need, isn't worth a big player's time to copy. And if you're the person who answers support in 10 minutes, that's hard to beat too.
+
+If your whole pitch is "we built it first," yeah, that's not a moat. I'd worry more about whether anyone cares about it than whether someone copies it.

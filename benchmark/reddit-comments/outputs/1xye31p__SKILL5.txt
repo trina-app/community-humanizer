@@ -1,0 +1,5 @@
+this reads like seven questions with a book report attached. every one of these has been asked here a hundred times, the search bar is right there. and I'd point out that asking a forum how to validate an idea is its own version of spending weeks on the MVP, just with less typing.
+
+you haven't said what the product is, who it's for, or what you've already tried, so nobody can tell you anything except generic advice. "practical product for everyday people" could be a budgeting app or a doorbell.
+
+pick a few people you think have the problem, ask how they deal with it today, and see if any of them are annoyed enough to pay. if you can't even name a few people to ask, that's your answer already

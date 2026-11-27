@@ -1,0 +1,19 @@
+{
+ "id": "1y27etc",
+ "sub": "ClaudeAI",
+ "order": [
+  "SKILL5",
+  "SKILL3",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL5": 50,
+  "SKILL3": 72,
+  "HUMAN": 88
+ },
+ "rank": {
+  "SKILL5": 3,
+  "SKILL3": 2,
+  "HUMAN": 1
+ }
+}

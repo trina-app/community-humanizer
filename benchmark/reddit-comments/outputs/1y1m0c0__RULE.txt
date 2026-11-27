@@ -1,0 +1,5 @@
+Audiobookshelf is the one you're overlooking. It handles audiobooks and also lets you read epubs/PDFs in the browser. The ebook side is pretty basic compared to a dedicated library app, though. It's fine for reading, not great for managing a huge collection.
+
+To your other questions: Kavita doesn't do audiobooks, and Calibre/Calibre-Web are really ebook-only. You can technically stash audio files in a Calibre library, but nothing there will play or track them properly.
+
+So realistically it's Grimmory, Bookorbit, or Audiobookshelf, and I don't know of anything else that does both well. If the drama has you nervous about Bookorbit, I'd just keep Grimmory for the ebooks and put Audiobookshelf on the audiobooks. Yeah, it's one more container, but it's a light one, and the audiobook apps and progress syncing are way better than anything the all-in-one tools do. Your wife might end up liking it more than the sidebar shortcut anyway.

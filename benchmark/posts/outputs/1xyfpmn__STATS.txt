@@ -1,0 +1,7 @@
+Every pitch I do now, someone asks why they couldn't just build this themselves with Claude. Fair question, honestly.
+
+My current answer is that a weaker version is technically doable, but it would cost them real time, effort and money to build it and then keep maintaining it. That's true, but I can tell it doesn't land as hard as it used to. It sounds like I'm defending myself.
+
+The more I think about it, the more I suspect this applies to 95%+ of SaaS startups, not just mine. If so, is the real moat now just distribution and sales? The product being hard to build doesn't seem to be the thing anymore.
+
+How do you handle this pushback in your pitches? What do you say when a prospect brings it up?

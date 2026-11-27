@@ -1,0 +1,1 @@
+Honestly the "connected context" part is the bit Anthropic can't just ship in a week. Big labs do generic assistant well, but years of work on how email, notes and contacts link together is a real moat for a small-business workspace. Worry less about them, more about whether solo owners will move their whole inbox to a new tool

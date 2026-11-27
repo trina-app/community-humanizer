@@ -1,0 +1,14 @@
+Honestly one lifetime customer is the easiest version of this problem.
+
+"Lifetime" almost always means the lifetime of the product, not the lifetime of the customer. Check his ToS for language on that. Even if it's vague, he's in a much better spot than someone with 500 lifetime users.
+
+What I'd do in his shoes:
+
+1. Email the guy directly. Give a decent heads up, 60-90 days.
+2. Offer a refund, or at least a partial one. If he paid $200 or whatever, just eat it. It's cheap compared to a grumpy customer posting about it, and it closes the whole thing cleanly.
+3. Let him export his data before shutdown.
+4. If the customer really loves the product, you could offer to hand over the code or self-host it. Or sell the thing to someone for cheap. Even small SaaS products with a few users sometimes find a buyer on Acquire or MicroAcquire.
+
+The only real risk is leaving them hanging with no notice. Nobody's going to sue over a lifetime deal on a dead product if you handled it like a human being.
+
+Not a lawyer, but this is how most people handle it.

@@ -1,0 +1,9 @@
+Not selling anything, just trying to understand this properly because I'm researching lending to AI startups. The thing I keep coming back to is the cash gap. Your GPU or API compute bill lands every month, but the enterprise customer you're running it for pays net 60, sometimes net 90. So you're fronting 2-3 months of compute before you see a dollar.
+
+Has that actually caused real cash problems for anyone here? Not in theory, I mean like a month where you were scrambling.
+
+And if so, how did you cover it? I'm guessing a mix of things: equity raise, venture debt, a bank line, cloud credits, getting the customer to prepay. Curious which ones people actually ended up using and which were a pain to get.
+
+Also, did anyone look at invoice financing or factoring? Genuinely wondering if that's something founders consider or if it just feels like a bad sign to go that route.
+
+I'd rather hear what you actually did than what you're supposed to do.

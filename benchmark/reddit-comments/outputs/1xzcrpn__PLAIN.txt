@@ -1,0 +1,15 @@
+I'd do both, but split by type, because the two kinds of admin need different handling.
+
+**Batch the stuff that can wait.** I do two short admin windows a day, late morning and end of day, about 30 to 45 minutes each. Email gets answered only in those windows, not whenever it pings. Almost nothing in a creative business is so urgent that a 4-hour reply delay matters, and clients adjust fast. If someone needs you faster, they'll call.
+
+**Handle on the spot only what takes under 2 minutes.** Filing an incoming asset, confirming receipt, or saving a file to the right folder is quicker to do now than to schedule.
+
+**Fix the leaks, not just the schedule.** Your three pain points are all fixable with a system:
+
+- **Incoming files:** Give clients one place to send them (a shared folder or a form with upload) instead of letting files arrive by email. A template folder that auto-creates per project (`01_Inbox / 02_WIP / 03_Delivered / 04_Admin`) means you never decide where something goes.
+- **Revisions:** Keep one running doc or card per project with dated revision rounds and what was requested. Paste feedback in there rather than hunting through threads. Put a revision cap in your contract so rounds don't multiply.
+- **Quote follow-ups:** This is the one that costs real money. When you send a quote, immediately schedule the follow-up (a reminder at 3 days and 7 days). Make a simple pipeline board with columns like Sent / Following up / Won / Lost. Don't rely on remembering. Template the follow-up email so it takes 30 seconds.
+
+**Protect one day.** I keep one weekly slot (Friday afternoon) for invoicing, pipeline review, and planning the next week. Because it's recurring, the small stuff has a place to go and stops nagging at me.
+
+Last thing: if admin is eating half your week, check whether it's time to hand some of it off. A VA for a few hours a week on file sorting and invoice chasing often pays for itself the first time you land a project you'd have been too busy to quote.

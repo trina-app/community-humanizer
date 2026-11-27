@@ -1,0 +1,1 @@
+Audiobookshelf handles audiobooks and does ebooks too, though the ebook side is basic. A lot of people run it next to Kavita or Calibre-Web for that reason. Not one container, but if the wife just wants audiobooks in a sidebar it might beat running both of the others

@@ -1,0 +1,7 @@
+Not always. It mostly gets preachy when your request is vague or could read as sketchy. If you give it context up front ("I'm writing a thriller", "this is for my own server", "I'm a nurse and need the real dosage info") it relaxes a lot.
+
+The narc feeling is mostly the disclaimers and moral commentary nobody asked for. Telling it "skip the warnings, just answer" works more often than you'd think, and custom instructions or a system prompt that sets the tone help too.
+
+For roleplay, fiction, brainstorming and just chatting it's pretty fun and way less uptight than it was a year or two ago. It still has hard limits, but it won't report you to anyone, it just says no and moves on.
+
+What did it flake on for you? Could be a prompt thing.

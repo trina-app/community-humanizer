@@ -1,0 +1,1 @@
+Add "Always respond in English" to your custom instructions, or to CLAUDE.md if it's happening in Claude Code. It's one line and it stops the language drifting mid-session.

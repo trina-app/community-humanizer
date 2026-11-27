@@ -1,0 +1,5 @@
+Running Docker containers as root with the socket mounted. Watchtower, Portainer, half my stack has /var/run/docker.sock in the compose file and I know exactly what that means if any one of them gets popped. I keep telling myself I'll move to a socket proxy and never do.
+
+Also my backups are "tested" in the sense that I once restored a single file in 2023 and it worked. Everything else I just trust.
+
+The reverse proxy on the same box thing is fine imo. If the box dies I'm not serving anything anyway, so who cares where the proxy lives.

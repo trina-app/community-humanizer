@@ -1,0 +1,7 @@
+Right now I'm running both Bookorbit and Grimmory. I started with Grimmory, then tried Bookorbit, and honestly the two feel almost identical. My spouse prefers Bookorbit because audiobooks are right there in the sidebar. In Grimmory it takes 2-3 clicks to get to them, which apparently is enough to be annoying.
+
+I have a big ebook library and a much smaller audiobook library, but the audiobooks take up about as much disk space as all the ebooks combined. I don't want to spin up a separate container just for audiobooks, so I'd like one app that does both.
+
+I've also heard there's been some drama around Bookorbit lately, so I'd like to know what else is out there before I commit to either one.
+
+Does Calibre or Kavita handle audiobooks? I couldn't tell from the docs. And is there any other container that covers ebooks and audiobooks, or is it really just these two?

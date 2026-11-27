@@ -1,0 +1,19 @@
+I haven't shipped a handoff on either, so this is pattern-matching from stuff I've seen and read.
+
+Lovable vs. Bolt matters less than you'd think. Both spit out a React/Vite/Tailwind front end, which any engineer can work with. Whether the code survives handoff comes down to how you set things up around it.
+
+Keep the data model in Supabase, not in the generated code. Write the schema as migrations with the Supabase CLI and turn on row-level security from day one. The tables and RLS policies are the most valuable thing you'll hand an engineer, and the UI code is the most disposable. Most "we rewrote everything" stories I've seen came from tangled logic and a messy schema, and the tool had little to do with it.
+
+Treat the builder as a scaffold. Once you start editing in GitHub, syncing back into Lovable or Bolt gets messy, so pick one source of truth early. I'd use the builder for the first few screens, then move to Cursor or Claude Code on the repo and stop round-tripping.
+
+Deploy from the repo. Vercel or Netlify off GitHub, with separate Supabase projects for staging and prod. That alone makes it feel like a real codebase to an engineer.
+
+Before you invite beta users:
+- Get secrets and env vars out of the code.
+- Test that auth and RLS actually stop one user from reading another's data. AI-generated apps often get this wrong.
+- Add basic error logging like Sentry.
+- Set up database backups.
+
+I'd expect engineers to keep the schema, the overall flow, and a good chunk of the UI components, and to rewrite the business logic and anything performance-sensitive. That's fine for a beta, since the MVP is there to teach you what to build, and nobody expects it to be the final codebase.
+
+If you're semi-technical, Lovable plus Supabase is a reasonable start. Just spend an hour on the schema and RLS before you spend a week on features.

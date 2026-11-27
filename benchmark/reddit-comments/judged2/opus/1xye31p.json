@@ -1,0 +1,25 @@
+{
+ "id": "1xye31p",
+ "sub": "startups",
+ "order": [
+  "HUMAN",
+  "PERSONA",
+  "SKILL2",
+  "SKILL",
+  "BLADER_S"
+ ],
+ "human": {
+  "HUMAN": 30,
+  "PERSONA": 55,
+  "SKILL2": 60,
+  "SKILL": 35,
+  "BLADER_S": 25
+ },
+ "rank": {
+  "HUMAN": 2,
+  "PERSONA": 5,
+  "SKILL2": 3,
+  "SKILL": 4,
+  "BLADER_S": 1
+ }
+}

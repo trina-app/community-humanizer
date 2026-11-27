@@ -1,0 +1,11 @@
+Lifetime almost never means "for the life of the customer." It means for the life of the product. Check the terms he sold it under. If the ToS or checkout page says something like "for as long as the service operates," he's fine to shut down. If it promised lifetime access with no qualifier, he's in murkier territory, but even then a good-faith wind-down is very different from just pulling the plug.
+
+What I'd do in his position:
+
+1. **Give real notice.** 60-90 days is reasonable for a single customer. Email them directly, don't just post a banner.
+2. **Offer a refund.** Prorated or even the full amount they paid. With one lifetime customer it's probably a few hundred bucks, and it removes almost all the legal and reputational risk. Cheap insurance.
+3. **Let them export their data.** Make sure they can get everything out in a usable format before the lights go off.
+4. **Consider handing it off.** If that customer really loves it, they might want to buy it, or he could open-source it or sell it on Acquire or Microns. One happy lifetime user is a decent signal that someone else might pay for it.
+5. **Write down the shutdown date** in the email so it's clear and there's a paper trail.
+
+Honestly the worst outcome is silence. Customers get angry about being ghosted far more than about a shutdown done decently. Not legal advice, but if he treats the one customer well, this is a non-issue.

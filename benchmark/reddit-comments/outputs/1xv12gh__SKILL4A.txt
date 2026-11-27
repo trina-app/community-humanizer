@@ -1,0 +1,5 @@
+Check the terms he agreed to first. Most lifetime deals say "lifetime of the product," and plenty of them spell out that it ends if the service shuts down. If his terms say that, he's mostly covered, and he can just give proper notice (60 to 90 days is normal) and shut down.
+
+Even so, I'd refund the guy anyway. One person's lifetime payment is probably a couple hundred bucks, and that's cheaper than a bad review or a chargeback. Pro-rate it if you want, but a full refund is cleaner. Send an export of their data with the shutdown notice too.
+
+The other option is to sell the thing or hand it off. Even a tiny SaaS with a paying user can go on Acquire.com or Microns for a few hundred bucks, and then the lifetime sub becomes the buyer's problem.

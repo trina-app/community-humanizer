@@ -1,0 +1,15 @@
+What you're describing is really common. The thing that helped most people I've seen get out of that spiral is treating the tax money as not yours from the moment it lands.
+
+GST collected, PAYG withholding and super aren't business income. You're just holding them for the ATO and your staff. So every time a payment comes in, a set percentage goes straight into a separate savings account before you see it. Ask your accountant for the right number. Usually it's GST (1/11th of the invoice), plus a % for company tax and PAYG instalments based on your actual margin. Then BAS day is just moving money you already set aside, not a surprise.
+
+A few other things that make it less painful:
+
+- **Ask your accountant for a forecast, not just a compliance service.** If you keep finding out about things years later, you're probably paying for lodgement and not for planning. Ask for a mid-year tax estimate and a cash flow forecast, and ask outright "what else should I know about that we haven't talked about?"
+- **Check your PAYG instalments.** They're based on last year's numbers, so if income has dropped you may be overpaying and can vary them down.
+- **Get on top of debtors.** Unpaid clients are what really kills cash flow. Shorter terms, deposits, automatic reminders, and a hard stop on repeat late payers. Chasing is awkward but it's literally your money.
+- **If you're already on an ATO arrangement, don't let it slide.** Stay current on new BAS and super while you pay it off. Falling behind on the new stuff is what makes arrangements collapse. The ATO is generally much more reasonable if you contact them early.
+- **Look at your pricing.** If costs keep rising and you haven't lifted prices to match, the compliance load feels worse because your margin is thinner than you think.
+
+"Turns over decent money but I don't know where it goes" usually means revenue is being confused with profit. Turnover isn't what you keep. A monthly look at actual profit after tax set-asides will tell you whether it's a cash timing problem or a margin problem, and those have very different fixes.
+
+You're not doing it wrong. The system is just built around businesses having a buffer most don't get to build, so setting one up deliberately is the way through.

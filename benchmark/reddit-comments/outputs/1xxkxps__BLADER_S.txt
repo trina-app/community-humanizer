@@ -1,0 +1,5 @@
+Mostly pretty accessible, since a lot of self hosting is SSH, a terminal and text config files, and that works well with a screen reader. Docker compose is just a yaml file, and you can do almost everything from the command line.
+
+Where it gets hit or miss is the web UIs. Some apps are fine and some are a mess of unlabeled buttons and drag and drop stuff. Check an app's GitHub issues for "accessibility" or "screen reader" before committing to it. Also worth asking over at r/blind or the Blind Linux Users mailing list, since people there have probably already tried most of this.
+
+A cheap VPS or an old mini PC running Debian is an easy way to start. Skip anything with a GUI installer and stick to the terminal.

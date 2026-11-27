@@ -1,0 +1,5 @@
+Audiobookshelf. It's the standard answer for audiobooks, and it also handles ebooks (epub, pdf, cbz) in the same library, so it could cover both. Its ebook management is basic compared to Calibre-Web or Kavita, so with a big ebook collection you may not love it for that side.
+
+Calibre and Kavita won't help you here. Calibre-Web doesn't do audio, and Kavita is built for ebooks, comics and manga, with no audiobook support that I know of.
+
+I get not wanting another container, but ABS is light, and you could point your wife at that for audiobooks while the ebooks stay wherever they are now. I haven't tried Bookorbit or Grimmory, so I can't say whether anything else does both well.

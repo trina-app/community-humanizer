@@ -1,0 +1,7 @@
+Mine isn't a prompt exactly, more a standing instruction. Long Claude answers were getting hard for me to find my way around, especially in the long chats about the hours-tracker app I'm building, where I'd scroll up and down trying to work out what it actually wanted me to do. So now every reply ends with a short "## 80/20" block, always last, under a divider line.
+
+The block has fixed lines with an emoji label each. Result is always there. Next, Decide, Watch out and Git only show up when they're relevant, otherwise they're skipped. The key actions are in bold, so if you read only the bold text you already have the answer. Honestly that part is what made it work for me, i barely read the rest unless I need to.
+
+I put it in my user preferences on claude.ai and also in CLAUDE.md for Claude Code, so it's the same everywhere and I don't have to remember to ask.
+
+Anyway, curious what small stuff other people do. Doesn't have to be a prompt, could be a setting or a habit, or something you stopped doing that made it better.

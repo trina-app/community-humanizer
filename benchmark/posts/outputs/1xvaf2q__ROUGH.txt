@@ -1,0 +1,11 @@
+I'm a CFO at a startup, and I've watched a lot of companies go through fundraising, some strong and some weak. Not promoting anything, just sharing what I keep noticing.
+
+VCs mostly fund one of two things: proven demand or a proven team. What they want is evidence that there's a high chance of a big return. That evidence usually comes from demand you can generate and replicate at scale, a market whose appetite is growing, or founders who have already won before.
+
+Uber in 2011 is the demand case. They had a pilot in San Francisco with real revenue and riders who kept coming back. And it looked replicable city by city, so the investor could picture it getting big.
+
+Airbnb in 2009 is a bit different. The demand already existed on Craigslist and Couchsurfing, and it spiked during big events when hotels sold out. They didn't have to convince anyone people wanted it.
+
+Then there's the team side. Beehiiv in 2021: the founders had built the growth engine at Morning Brew, which sold to Business Insider for $75M. Affirm in 2014 had Max Levchin, who'd already had PayPal and Slide exits.
+
+Anyone here raised on one of these two angles?

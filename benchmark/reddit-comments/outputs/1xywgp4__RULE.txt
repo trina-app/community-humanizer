@@ -1,0 +1,14 @@
+140TB/month averages out to roughly 430 Mbps sustained, so you don't need 2Gbps unmetered. A 1Gbps unmetered port covers you if your traffic isn't super spiky. Peaks will matter though, so look at your CF analytics for the busiest hour.
+
+What I'd do is rent a small VPS or dedicated box as the public edge and run a WireGuard tunnel back home. Your home IP never shows up in DNS, and you only need outbound connectivity from home, so the shared IPv4 doesn't matter. Put nginx or Caddy on the VPS with proxy_cache on a big disk, so most hits for popular files are served from the VPS and never touch your home line. If you want something prebuilt, Pangolin or frp/rathole do the tunnel + reverse proxy bit.
+
+For the actual bandwidth, the usual suspects are:
+- Hetzner: dedicated servers in the EU come with a 1Gbps unmetered port, and they're cheap. Their cloud VPS has a traffic cap (20TB) and then charges per TB, which gets expensive at your volume.
+- OVH / Kimsufi / SoYouStart: unmetered 500Mbps-1Gbps on a lot of their lines for not much money. Quality varies by datacenter.
+- Scaleway/Leaseweb/other budget dedi providers are worth a look too, but read the fair use clause. Plenty of "unmetered" VPS plans get throttled or killed once you actually use it, and at 140TB you will actually use it.
+
+Two caveats:
+1. Any host will forward abuse/DMCA notices too, and they're a lot less patient than Cloudflare is. Having a fast takedown process is good, but don't expect a VPS provider to be more lenient.
+2. Cloudflare's ToS has historically been picky about serving lots of large non-HTML files through the proxy/tunnel. Depending on what you're serving, that may be the bigger risk to your account than the DMCA stuff, so it's worth reading their current terms.
+
+If most of your traffic is big static files, you could also split it: keep the site on the cheap VPS and put the heavy files on a storage/CDN setup priced for bandwidth. At 140TB, per-GB CDN pricing will hurt though, so a flat-rate unmetered box is probably still the cheapest.

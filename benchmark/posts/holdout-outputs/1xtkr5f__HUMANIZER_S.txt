@@ -1,0 +1,11 @@
+Hi all, I'm fairly new to Linux and self-hosting and I'm enjoying learning it, but I've hit the point where I need to pick a proper OS for my home server.
+
+Current hardware: Ryzen 3 3200G, 16GB RAM (going to 32), RTX 2060 12GB, and a 256GB NVMe for boot. It's running Ubuntu desktop right now with Jellyfin and a Minecraft server. I also run torrents on it and want to keep a desktop GUI for that.
+
+The drives are the reason I'm asking now. I have a 2TB with 7,000+ bad sectors (about 4 years power-on), another 2TB with 0 bad sectors (about 2 years), and a 4TB. On Saturday I'm buying 6x 6TB WD Red Pro, 6 for $500, so it's finally time to do RAID properly.
+
+What I'm after is an OS that handles RAID well and suits self-hosting. It has to be free with no paid updates, so Unraid is out. I'd have gone with Proxmox, but I want to keep the desktop GUI for torrents, so that's out too. It also needs to work with Tailscale.
+
+Planned services are Jellyfin, a NAS/file share, Navidrome, and the Minecraft server.
+
+What would you go with? Should I just stay on Ubuntu and set up RAID there, or is there something better suited to this? Sorry if this is a basic question, I'm still figuring things out.

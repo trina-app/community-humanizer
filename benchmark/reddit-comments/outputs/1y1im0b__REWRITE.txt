@@ -1,0 +1,13 @@
+Haven't run it, so this is just what would make me hesitate on any self-hosted tracker, not a review.
+
+Pace of change is the first one. "Multiple PRs merged every day" is great for momentum, but this would hold years of my food and workout logs, so I'd wonder how often upgrades break things. Tagged releases, a real changelog and tested migrations between versions would matter more to me than the feature count.
+
+Second, getting data out. The data is the whole point of a tracker. I'd want to export everything in an open format and restore from a backup without surprises. Being able to leave is a big part of trusting it.
+
+Third, the food database and barcode scanning. This is what makes or breaks nutrition apps. If the food data is thin or leans on third-party APIs with rate limits, daily logging gets annoying fast and people drift back to MyFitnessPal or Cronometer.
+
+Phone sync too. Most of the data comes from a phone or watch, so if Health Connect/Apple Health sync is flaky or takes a lot of setup, that's where most people will give up.
+
+Last, scope. Caffeine, alcohol, NFC, mood, medications and 29 integrations is a lot. I'd rather see food, workouts and weight be rock solid before the long tail. A short "start here" setup that gets you to a working core would help too.
+
+On the install side, a single compose file with a small footprint and sensible defaults goes a long way in this sub.

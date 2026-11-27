@@ -1,0 +1,12 @@
+Your outreach list is probably the problem. Professors are a rough first target: they're swamped, their budgets are small grant money, and a cold email from an unknown startup is easy to ignore. The people who actually pay for data are at companies: robotics startups, the embodied AI teams at bigger labs, and data/ML leads building egocentric or manipulation models. They're easier to reach too, because they're on LinkedIn and X and often answer when you ask a specific question.
+
+Some things I'd try:
+
+- Look at who's building on Ego4D, EPIC-Kitchens, and similar egocentric datasets. Those people already buy or use this kind of data. Email them with something like "I read your paper, what was missing from Ego4D for your use case?" That's a much easier yes than a pitch.
+- Skip the $1k conferences for now. Plenty of workshops have cheap or virtual tickets, and a lot of the real conversation happens on Discord, Slack groups, Hugging Face forums, and r/robotics or r/MachineLearning. Authors of recent papers reply to DMs more than you'd think.
+- Don't ask whether they'd pay. Offer a small sample dataset to 3 or 4 teams for free and ask what they'd need changed to buy a bigger one. If nobody bothers to look at free data, that tells you a lot.
+- Ask what they do today. Do they collect in house, use public sets, buy from Scale or a similar vendor? Their answer shows you the real competition and the price anchor.
+
+Also, the first thing a buyer will ask is about consent and privacy. Smart glasses footage captures bystanders and homes, and that kills a lot of deals. Have an answer ready before the calls.
+
+Having 150 contributors shows you can build supply, but it doesn't say anything about demand yet. I'd hold off on more platform work until a few people tell you what they'd pay for.

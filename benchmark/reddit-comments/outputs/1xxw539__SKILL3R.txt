@@ -1,0 +1,5 @@
+Get the senior dev friend to sit in, it's not overcomplicating, it's an hour of their time. You don't need them to grade her coding, you need them to tell you if she explains things clearly and if her answers hold up when they poke at them. Good engineers can usually tell pretty fast.
+
+I'd also just ask her who you can talk to that's worked with her before. Past colleagues will tell you more than any code exercise, and a strong candidate won't mind.
+
+The best test is probably a few weeks of working on something real together before you hand out equity. Vesting with a cliff covers the rest. Two or three conversations plus one code session is plenty, anything past that and you're just making her do homework

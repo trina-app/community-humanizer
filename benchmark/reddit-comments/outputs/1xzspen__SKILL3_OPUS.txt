@@ -1,0 +1,3 @@
+Hetzner is the boring answer and it's boring because it works. Cloud servers in Falkenstein/Nuremberg/Helsinki, private networks included, and the traffic allowance is big enough you'll never think about it. Netcup is cheaper if you're ok with annual-ish commitments and a slightly clunkier panel
+
+Also just go 3 control planes from the start. k3s with embedded etcd on 3 small nodes is less hassle than running an external datastore that then becomes your new single point of failure

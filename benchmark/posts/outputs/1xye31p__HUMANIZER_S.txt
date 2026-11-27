@@ -1,0 +1,11 @@
+I can build pretty much anything in a couple of weeks, and that's turned out to be a problem. I've burned weeks on MVPs nobody needed, and each time the building was the easy part. What I can't do is tell beforehand whether an idea deserves the weeks.
+
+I'm working on something now: a practical consumer product for everyday people, not an AI wrapper. I won't pitch it here, because I'm after how you vet ideas, not feedback on mine.
+
+What do you do before writing any code? Is your first step talking to people, digging through competitors, or looking at search trends? If it's conversations, how do you get honest answers? Everyone I've asked says "yeah, I'd use that," which tells me nothing. Are there questions you've learned to ask, or to never ask?
+
+I'm also curious about testing demand without building. Landing pages, a WhatsApp or manual concierge version where you do it by hand, pre-orders? And what number or behaviour made you decide it was a real go? Something like 5 pre-orders, or people coming back unprompted, as opposed to a pile of signups that go nowhere.
+
+Then there's the crowded market problem. How do you tell whether there's room for one more product when a bunch of players already exist? Does a lot of competition mean the demand is real, or that you're late?
+
+And if you've got hard-learned mistakes, frameworks, books or checklists that helped, I'd like to hear them. I suspect a lot of devs here are stuck in the same build-first loop, so hopefully the thread helps more people than just me.

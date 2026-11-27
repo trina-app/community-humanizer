@@ -1,0 +1,20 @@
+I can build almost anything in a couple of weeks, and that's exactly my problem. I've lost weeks to MVPs nobody needed, because building felt like progress and the question of whether anyone wanted it never got asked. I'd like to fix that before I start the next one.
+
+I'm working on a practical consumer product for everyday people. It's not an AI wrapper, and I'm not going to pitch it here. I just want to know how you vet ideas before you write any code.
+
+**What's your first step?**
+Do you start with user conversations, competitor research, or search trends? Something else? And what does that first week look like?
+
+**How do you get honest answers?**
+Everyone says "yeah, I'd use that" because it costs them nothing. Which questions got you real answers, and which ones should I stop asking? How do you tell politeness from actual interest?
+
+**Demand tests without building**
+I've read about landing pages, WhatsApp or manual concierge versions, and pre-orders. Which of these have you actually run? What numbers or behaviours made you say "this is a go" or "kill it"? A signup rate, a number of pre-orders, someone offering to pay before there's a product?
+
+**Crowded markets**
+If there are already a dozen competitors, how do you decide whether there's still room? Is a crowded market a red flag or a sign that people will pay?
+
+**Mistakes and resources**
+What did you get wrong that you'd now spot early? Any frameworks, books, or checklists that changed how you work? *The Mom Test* comes up a lot, and I'd like to know what else is worth reading.
+
+I suspect a lot of devs are stuck in build-first mode like me, so I hope this thread is useful to them too. Thanks in advance.

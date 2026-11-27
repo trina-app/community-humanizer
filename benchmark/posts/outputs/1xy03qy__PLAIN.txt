@@ -1,0 +1,13 @@
+I've been a senior dev at a company of under 100 people for a while now, and I've been quietly doing something I'm curious whether anyone else is doing too.
+
+I paid for Claude Max out of my own pocket for over a year, even though the AI policy technically said not to. Recently the firm rolled out Max accounts to everyone, so I'm now covered, which is a bit funny given how long I'd been doing it on my own dime.
+
+Over that time I've automated almost all of my work. These days my job is mostly supervising what Claude does: checking output, steering it, catching the occasional mistake. The actual hands-on work is a small fraction of what it used to be.
+
+I did try to share this. I showed my colleagues how to automate the parts of their work they have access to. Nobody adopted it. Not one person. The result is that I finish in a week what others take about two months to do. My manager doesn't seem to grasp what that means, and as far as I can tell leadership above them isn't paying attention to it at all.
+
+So here's my plan, and it's not a dramatic one: stay just a bit faster than everyone else, not so much that it raises questions, and use the spare time to learn things I never had room for. Painting is the first one on the list.
+
+I'd call it AI-powered quiet quitting. I'm still doing my job and delivering, I'm just not converting all the efficiency into more output for the company.
+
+Is anyone else doing something like this? And if so, how do you cope with it? I go back and forth between feeling like I've found a great setup and feeling a little weird about the whole thing, and I'd like to hear how others think about it.

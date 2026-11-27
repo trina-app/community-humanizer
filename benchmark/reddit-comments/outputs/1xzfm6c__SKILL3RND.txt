@@ -1,0 +1,1 @@
+Your setup already sounds fine, just add Renovate for the updates and Trivy for the vuln scanning

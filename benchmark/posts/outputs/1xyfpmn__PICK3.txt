@@ -1,0 +1,5 @@
+Every pitch lately someone asks why they can't just rebuild it with Claude. My answer so far is that yeah, a weaker version is doable, but it'd cost them real time and money to build and then keep maintaining. Which is true but doesn't feel like it lands.
+
+Honestly I think this applies to like 95%+ of SaaS startups, not just mine. So is the real moat just distribution and sales now? Starting to think so.
+
+How are you handling this in pitches? Curious what actually works when they push back.

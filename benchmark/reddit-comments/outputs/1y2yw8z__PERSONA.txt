@@ -1,0 +1,3 @@
+Radicale or Baikal for the CalDAV side, then DAVx5 on android and tasks.org will sync its tasks to the same server, so they show up next to events in any calendar app that reads VTODO. Windows is the weak spot, Thunderbird handles caldav events and tasks fine though
+
+Nextcloud does do tasks and calendar but yeah it's a lot of server for just that

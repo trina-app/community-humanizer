@@ -1,0 +1,5 @@
+The people asking that are usually comparing your price to the cost of the code, and that's the wrong comparison. The code is the cheap part now. What they'd actually be signing up for is the stuff around it: uptime, someone on call when it breaks at 2am, security patches, API changes from whatever you integrate with, backups, and the edge cases your other customers already hit and you already fixed.
+
+So I'd stop defending the product and ask them what their engineer's hour costs and who owns it in a year. If they have a team with spare capacity and the product is simple, let them build it. They weren't going to be a good customer anyway.
+
+And yes, it applies to most SaaS. The ones that hold up have either data that accumulates, integrations that are a pain to rebuild, or a workflow people won't rip out. Distribution matters, but it's not the only thing.

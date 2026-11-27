@@ -1,0 +1,3 @@
+The only thing that ever worked for me was asking for money before I wrote any code. Not a pre-order page, just messaging 10 people who had the problem and saying "I'll do this by hand for $X, want it?" Everyone's happy to say they'd use it, but almost nobody wants to pay for it, and you find that out in a week instead of two months.
+
+Also "would you use this" is a useless question. I just ask how they handle it today and what the last time they dealt with it looked like. If they're not already duct-taping something together with a spreadsheet, they probably don't care enough

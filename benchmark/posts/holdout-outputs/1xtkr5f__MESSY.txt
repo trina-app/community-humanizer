@@ -1,0 +1,7 @@
+Buying 6x 6TB WD Red Pro on Saturday, 6 for $500, so I figure it's time to actually do RAID. Right now I've got one 2TB with 7,000+ bad sectors (about 4 years power-on), another 2TB with 0 bad sectors (~2 years), and a 4TB. Yeah, I know about the bad one.
+
+Server is a Ryzen 3 3200G, 16GB RAM (going to 32), RTX 2060 12GB, 256GB NVMe boot. Currently on Ubuntu desktop running Jellyfin and a Minecraft server. Torrents are on it too and I want to keep a desktop GUI for that, which is the whole reason Proxmox is out for me.
+
+So what OS should I go with? Needs to do RAID and be decent for self-hosting. Free, no paid updates, so Unraid is out. Has to work with Tailscale.
+
+Plan is Jellyfin, a NAS/file share, Navidrome, and Minecraft. I'm pretty new to all this, learning Linux and honestly enjoying it, so don't assume I know stuff. Should I just stay on Ubuntu and do mdadm or is there something better?

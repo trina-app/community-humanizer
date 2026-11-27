@@ -1,0 +1,22 @@
+{
+ "id": "1y31ssm",
+ "lang": "en",
+ "order": [
+  "SKILL",
+  "HUMAN",
+  "PLAIN",
+  "HUMANIZER_S"
+ ],
+ "human": {
+  "SKILL": 30,
+  "HUMAN": 55,
+  "PLAIN": 20,
+  "HUMANIZER_S": 45
+ },
+ "rank": {
+  "SKILL": 3,
+  "HUMAN": 4,
+  "PLAIN": 2,
+  "HUMANIZER_S": 1
+ }
+}

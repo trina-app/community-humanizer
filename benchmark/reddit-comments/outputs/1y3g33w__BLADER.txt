@@ -1,0 +1,7 @@
+Knocking on doors and pitching "I build software" is a tough sell, because most small business owners don't know they need software. They know they need more customers, fewer headaches, less time on paperwork. Nobody wakes up wanting an app.
+
+So stop selling software and pick one type of business to learn well. Say dentists, HVAC companies, or landscapers. Spend a couple weeks talking to owners in that one niche and ask what eats their time. Scheduling, quoting, chasing invoices, whatever comes up. Then pitch fixing that specific thing, and put a price on it they can say yes to quickly.
+
+Also, 3 months of cold walk-ins in your own town is a small sample. Local businesses are slow to trust a stranger with their operations. Warm intros work way better. Ask former coworkers, friends, and family who they know that runs a business, and offer to fix one small problem cheaply or free in exchange for a testimonial and a referral. One real case study beats fifty cold visits.
+
+Last thing: how long can you keep going without income? If it's less than 6 months, I'd think about taking some contract dev work on the side so you aren't desperate while you figure out who your customer is. A lot of people do that for the first year and there's no shame in it.

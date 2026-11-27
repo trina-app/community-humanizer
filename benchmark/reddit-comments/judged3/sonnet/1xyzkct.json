@@ -1,0 +1,25 @@
+{
+ "id": "1xyzkct",
+ "sub": "ClaudeAI",
+ "order": [
+  "SKILL3",
+  "SKILL3R",
+  "SKILL2",
+  "PERSONA",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL3": 80,
+  "SKILL3R": 30,
+  "SKILL2": 30,
+  "PERSONA": 35,
+  "HUMAN": 2
+ },
+ "rank": {
+  "SKILL3": 1,
+  "SKILL3R": 3,
+  "SKILL2": 4,
+  "PERSONA": 2,
+  "HUMAN": 5
+ }
+}

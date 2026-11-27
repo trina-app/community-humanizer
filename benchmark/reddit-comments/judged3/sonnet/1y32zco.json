@@ -1,0 +1,25 @@
+{
+ "id": "1y32zco",
+ "sub": "SaaS",
+ "order": [
+  "SKILL2",
+  "PERSONA",
+  "SKILL3",
+  "SKILL3R",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL2": 62,
+  "PERSONA": 40,
+  "SKILL3": 55,
+  "SKILL3R": 35,
+  "HUMAN": 60
+ },
+ "rank": {
+  "SKILL2": 1,
+  "PERSONA": 2,
+  "SKILL3": 4,
+  "SKILL3R": 3,
+  "HUMAN": 5
+ }
+}

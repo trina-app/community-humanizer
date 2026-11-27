@@ -1,0 +1,9 @@
+Long Claude answers were getting hard for me to navigate, especially in the long chats about an hours-tracker app I'm building. I'd scroll around trying to find what it actually told me to do.
+
+So i added a standing instruction: end every reply with a short "## 80/20" block, always last, under a divider line. It has fixed emoji-labeled lines. Result is always there, and Next, Decide, Watch out and Git only show up when they're relevant. The key actions are in bold, so if you read only the bold text you already have the answer.
+
+I saved it in user preferences on claude.ai and in CLAUDE.md for Claude Code, so it applies everywhere. Now I just jump to the bottom and the rest is there if I need it.
+
+Small thing, but it changed how I read replies more than any fancy prompt did.
+
+What's your small trick? Could be a prompt, a setting, a habit, or something you stopped doing.

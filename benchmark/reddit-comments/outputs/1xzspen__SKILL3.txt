@@ -1,0 +1,1 @@
+Hetzner Cloud, private networks are free and the traffic allowance is huge. Spread across their German and Finnish DCs if you want some redundancy

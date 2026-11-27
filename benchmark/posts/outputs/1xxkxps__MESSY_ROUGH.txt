@@ -1,0 +1,9 @@
+so the age verification stuff here in the UK has me thinking about how much of my stuff sits on someone else's platform. i'm not really worried about one specific service, it's more that i don't love being tied to whoever's platform it is and it keeps feeling like that's only going to get worse
+
+which is why i've been looking at self hosting properly. problem is i'm totally blind, so i use a screen reader for everything
+
+anyone else here blind? genuinely curious how it goes for you. setup is what i'm most nervous about, like how much of it is terminal and how much is clicking around web UIs that may or may not be accessible. and then the admin side after, and just using it day to day
+
+also i don't know if that's even a reasonable thing to ask before i've started, but figured better to ask now than get halfway in and find out
+
+would really like to hear from other blind people doing this, whatever your setup looks like

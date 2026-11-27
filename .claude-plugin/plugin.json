@@ -1,0 +1,18 @@
+{
+  "name": "community-humanizer",
+  "version": "0.1.0",
+  "description": "A humanizer for Reddit and Clien comments and posts: writes the way each community actually writes, learned from real comments there. Never posts, never invents experience, refuses political threads.",
+  "author": {
+    "name": "Trina"
+  },
+  "license": "MIT",
+  "keywords": [
+    "reddit",
+    "clien",
+    "community",
+    "humanizer",
+    "voice",
+    "comments",
+    "korean"
+  ]
+}

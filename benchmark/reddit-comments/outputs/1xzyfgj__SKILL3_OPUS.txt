@@ -1,0 +1,1 @@
+Postgres row level security, before anything else. Also google HIPAA before you store a single real patient record

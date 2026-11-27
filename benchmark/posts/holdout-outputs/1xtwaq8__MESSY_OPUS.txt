@@ -1,0 +1,9 @@
+Genuine question for anyone selling AI stuff to bigger companies. Your GPU or API bill shows up every month, but the enterprise customer pays net 60, sometimes net 90. So you're fronting the compute for two or three months before you see a dime of it. How are people actually covering that?
+
+Context, I'm researching lending to AI startups, so yes that's why I'm asking, but I'm not selling anything here and not going to DM anyone with an offer. I just want to know what people really do vs what I'd guess from the outside.
+
+Mainly curious if the gap has caused real cash problems for you or if it's more of a theoretical thing that sorts itself out. And if it did bite, what did you do. Raise more equity? Venture debt? Bank line? Burn through cloud credits and hope? Get the customer to prepay, which I'd assume enterprise procurement mostly laughs at but maybe not
+
+Also has anyone looked at invoice financing or factoring for this? Like borrowing against the receivable from the big customer. Did you consider it and pass, and if so why, or did it just never come up
+
+Honest answers are way more useful than polished ones, even "we just ate it and it sucked"

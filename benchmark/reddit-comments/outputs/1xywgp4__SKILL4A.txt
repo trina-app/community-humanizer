@@ -1,0 +1,1 @@
+Any VPS provider that sees 140 TB/month of retro ROMs is going to read your DMCA emails a lot faster than Cloudflare does. "Unmetered" is carrying a lot of weight in that sentence.

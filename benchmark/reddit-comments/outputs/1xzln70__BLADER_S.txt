@@ -1,0 +1,9 @@
+For B2B, the first 10 almost never come from launches. A launch thread gets people who sign up to look around and leave, which sounds like what you're seeing.
+
+The first users usually come from DMing people who already have the problem. Find where they complain (a subreddit, LinkedIn comments, a Slack group), reply to the actual complaint, and offer to set it up for them by hand. It's slow, but those people answer your emails, and you find out what to build next from them.
+
+Cold email works if the list is small and you look at each company before writing. Past that it's just spam with extra steps.
+
+I'd skip ads until you know which message converts. Before that you're paying to test your copy.
+
+Directories and launch days are what I'd stop. You get a spike in traffic and nobody sticks around.

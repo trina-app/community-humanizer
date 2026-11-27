@@ -1,0 +1,1 @@
+Shareholders are the whole reason you get this much compute for $20 a month right now. The dread makes sense, but the alternative to the VC-subsidized phase isn't some pure nonprofit, it's the same bill with fewer GPUs. And if they jack up prices you've got other options anyway, there's like four labs at this level

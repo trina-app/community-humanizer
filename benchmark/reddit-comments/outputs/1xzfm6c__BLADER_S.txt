@@ -1,0 +1,5 @@
+Your setup is basically what Komodo is built for. Keep the compose.override.yml pattern, point Komodo at a repo for the base compose, and let it handle the sync. If it won't let you override files in the synced repo, the usual workaround is to fork the project's repo and carry your changes there.
+
+For updates, Renovate or Watchtower covers it, and Trivy or Grype handles vuln scanning. You can run all of that next to your scripts without migrating anything.
+
+I'd skip the big management UI. Your layout already works, you're just missing three cron jobs.

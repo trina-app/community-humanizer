@@ -1,0 +1,1 @@
+A script that renames my downloaded files based on what's actually in them. Invoices, receipts, random PDFs called "scan0043.pdf", it reads them and renames to something like "2024-03-electric-bill.pdf". Took maybe 20 minutes to build and I've used it every week since. Boring as hell but it's the only thing I've made that I haven't abandoned after a month

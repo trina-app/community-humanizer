@@ -1,0 +1,3 @@
+the "engineers can take over later" part is doing a lot of heavy lifting. every engineer i've seen handed a vibe coded repo just quietly starts a new folder called v2
+
+just ship it with whatever and stop planning the handoff before you have a single user

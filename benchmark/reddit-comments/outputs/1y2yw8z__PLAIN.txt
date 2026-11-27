@@ -1,0 +1,14 @@
+Skip Nextcloud for now and run a plain CalDAV server instead. Radicale is the easiest: one small container, a config file, and basically no maintenance. Baikal is similar if you'd like a web UI for managing users and calendars. Both use almost nothing on an old PC.
+
+CalDAV handles both events and tasks (VEVENT and VTODO), so one server covers your whole setup. Tasks.org already supports CalDAV, so you can point it at the same server and keep the app you like. On Android, DAVx5 syncs the calendars and task lists into the system. Colors are set per calendar and per list, so you get your colored lists.
+
+The Windows side is the weak spot. Thunderbird has a good built-in calendar with CalDAV and shows events and tasks together, with colors per calendar. There's no great native Windows option beyond that, so Thunderbird is what I'd try first.
+
+Setup order I'd suggest:
+1. Run Radicale in Docker.
+2. Put it behind a reverse proxy with HTTPS if you want access away from home (or use Tailscale/WireGuard and skip exposing it).
+3. Add DAVx5 on Android and tick the calendars and task lists you want.
+4. In Tasks.org, switch the sync to DAVx5/CalDAV.
+5. Add the account in Thunderbird on Windows.
+
+Nextcloud does show tasks too, through its Tasks and Calendar apps, but if all you need is calendar and tasks, it's overkill. If you later want files and contacts as well, it's worth revisiting.

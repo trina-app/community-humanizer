@@ -1,0 +1,28 @@
+{
+ "id": "1xzcrpn",
+ "sub": "smallbusiness",
+ "order": [
+  "HUMAN",
+  "PLAIN",
+  "SKILL",
+  "BLADER_S",
+  "BLADER",
+  "RULE"
+ ],
+ "human": {
+  "HUMAN": 88,
+  "PLAIN": 8,
+  "SKILL": 45,
+  "BLADER_S": 25,
+  "BLADER": 22,
+  "RULE": 35
+ },
+ "rank": {
+  "HUMAN": 6,
+  "PLAIN": 3,
+  "SKILL": 5,
+  "BLADER_S": 4,
+  "BLADER": 2,
+  "RULE": 1
+ }
+}

@@ -1,0 +1,5 @@
+Most of self-hosting is SSH and text config files, which is about the friendliest setup there is for a screen reader. A plain Debian or Ubuntu server with Docker Compose means you edit a YAML file and run `docker compose up -d`, with no GUI involved. Install the OS headless over SSH and skip anything that needs a graphical installer.
+
+The web UIs of the apps are where it varies. Vaultwarden, Jellyfin and Nextcloud are common starting points, but check their accessibility issues on GitHub before committing to one. Tools with a good CLI or API are safer picks.
+
+Reach it remotely through Tailscale or plain WireGuard rather than opening ports, so you also skip the reverse proxy and cert setup at the start.

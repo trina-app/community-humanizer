@@ -1,0 +1,7 @@
+Professors are probably the wrong target. Academic labs mostly use free datasets like Ego4D, and grant money rarely goes to buying data. The people who pay for this are ML or data leads at robotics and embodied AI companies, many of them early-stage and short on training data. Those people are a lot easier to reach.
+
+Look at who is hiring for data collection or "egocentric data" roles, and who's posting about teleop and wearable data on LinkedIn and X. The LeRobot and Hugging Face Discords and the robotics Slack groups are full of them too. Message a few of them with one specific question, like "where do you get egocentric video for training right now and what's annoying about it?" Don't pitch anything or ask for a call in the first message.
+
+Skip the $1,000+ conferences for now. Most have free workshops, virtual passes or poster sessions, and the people attending post about it anyway. You can reach the same crowd without the ticket.
+
+Your real test is whether anyone will commit to something. Once you have a few conversations, offer a small paid pilot or ask for a letter of intent. Even a handful of people saying "we'd pay for X hours of Y kind of footage" tells you more than 150 contributors do. Right now you've validated the supply side but not the demand.

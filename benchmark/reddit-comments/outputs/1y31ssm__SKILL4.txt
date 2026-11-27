@@ -1,0 +1,1 @@
+Tailscale for the two of you, and put the share-with-randos part on something separate. Immich has built-in shared links, so a Cloudflare Tunnel pointed at just that one service works fine and the rest stays off the internet. Jellyfin and Nextcloud don't need to be public at all if you're only using them yourselves.

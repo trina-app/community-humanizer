@@ -1,0 +1,9 @@
+Hi all,
+
+I'm totally blind and based in the UK. With the new age verification laws coming in, I've been thinking more about how much I depend on third party services, and how little say I have in what they decide to do next.
+
+Self-hosting appeals to me as a way of not being tied to anyone's platform. But I have no real idea how accessible it is in practice with a screen reader. That covers the initial setup, the admin side of things, and the day to day use of whatever you end up running.
+
+Are there any other blind people here who self host? I'd really like to hear how you get on with it, what works well, and what doesn't.
+
+Thanks!

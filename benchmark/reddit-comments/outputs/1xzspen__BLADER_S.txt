@@ -1,0 +1,5 @@
+Hetzner Cloud is the obvious answer for this. EU locations, KVM, private networks, and 20 TB of traffic included per server on most EU plans. It also has a cloud controller manager and CSI driver, so LoadBalancers and volumes work in k3s without extra effort. The ARM (CAX) instances are the cheapest per core if your images are multi-arch.
+
+Netcup is the other one people recommend a lot for price per GB of RAM, but it's less cloud-like. There's no private networking in the Hetzner sense, so you'd run WireGuard or Tailscale between nodes. Contabo is cheap on paper, but people regularly complain about CPU steal and slow disks, so I'd skip it for etcd.
+
+Two control planes is worse than one, since losing either breaks quorum. Run 3 with embedded etcd, or 1 server with the default SQLite and regular backups, which is fine for a homelab cluster. Keep the control planes in the same provider and region too. etcd doesn't like high latency between members, so mixing providers is better done on the worker side.

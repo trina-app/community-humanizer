@@ -1,0 +1,5 @@
+I'd go by how much a wrong answer costs you. Haiku for the stuff where you'd notice a bad answer in two seconds: rewording an email, summarizing a job posting, "what's the difference between these two daycare tour questions," quick lookups. Sonnet for most of the rest. Cover letters, tailoring your resume to a posting, comparing daycares from notes you paste in, and most Claude Code work, like explaining what a file does or making a small change.
+
+Opus I save for when Sonnet gave me something mediocre and I want to see if it does better, or for big multi-step stuff, like planning a refactor across a bunch of files or untangling a bug I can't find. For your list that's probably only the Claude Code learning once you start building real things.
+
+Easiest way to find your own line is to start on Sonnet and only move up when the answer annoys you. After a week you'll know what actually needs Opus, and I'd guess it's less than you think.

@@ -1,0 +1,9 @@
+Congrats on shipping after years of bootstrapping, that's the hard part.
+
+I wouldn't read Anthropic showing up as the end of the story. Big labs ship horizontal tools, and a solo florist or consultant isn't going to wire together connectors, prompts, and a mailbox on their own. They want the inbox, calendar, and client notes to already be in one place when they open the app. You own that surface and they don't.
+
+What would worry me more is the breadth. Email, calendar, tasks, notes, sheets, slides, forms is a lot of ground to cover when Google and Microsoft already bundle most of it. The part nobody else has is the Knots/Connections layer, where opening a contact shows the emails, meetings, tasks, and files tied to them. I'd put that on the landing page and in every demo, and let the rest of the apps be the reason that context exists.
+
+Practical stuff for this week: talk to the first 10 users and find out which single workflow they opened the app for. My guess is it's the contact view or the briefing, not the sheets app. Then make that one thing noticeably better than anything a general chatbot can do. Also, if people can import their existing Gmail and calendar in a couple of minutes, that beats any feature comparison with a lab's product.
+
+Being small helps here. You can pick a niche and support it properly, and they can't.

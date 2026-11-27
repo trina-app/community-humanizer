@@ -1,0 +1,1 @@
+Building was never the hard part. I've shipped stuff in a weekend that got zero users, and the one thing that finally got paying customers was a boring tool for a niche I'd been cold emailing for months. People don't pay for code, they pay to not think about the problem, and nobody wants to maintain their own invoicing app at 11pm

@@ -1,0 +1,5 @@
+Kavita doesn't do audiobooks, and Calibre/Calibre-Web don't really either. Audiobookshelf is the one everyone points to for audio. It also opens epubs and PDFs, but the ebook side is basic, so I wouldn't use it to replace a big library.
+
+Most people I've seen end up with ABS for audio plus Calibre-Web-Automated or Kavita for ebooks. I know you don't want another container, but ABS is light, idles at almost nothing, and has solid mobile apps. If your wife mainly wants audiobooks front and center, giving her ABS might be nicer than the sidebar in either of the other two. You could then drop whichever of Bookorbit/Grimmory you like less and stop running both.
+
+Beyond that I don't know of anything else that handles both formats well in one app. I'd say it's basically those two plus the ABS combo.

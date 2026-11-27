@@ -1,0 +1,3 @@
+The pattern you describe (views, a few signups, then quiet) is what launching broadly looks like. Launch threads and directories give you a spike and nothing that repeats, because nobody there has the problem right now. For B2B I'd skip all of it and go find the people already complaining about the problem in the wild, then DM or email them one by one. It doesn't scale, but at 10 users that's the point, and you also get to hear what they actually say, which a signup count never tells you.
+
+Can't speak on paid ads, I haven't tested them so I'd just be guessing

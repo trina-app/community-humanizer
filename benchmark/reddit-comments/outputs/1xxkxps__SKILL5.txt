@@ -1,0 +1,1 @@
+Are you planning to use a screen reader on the server side too, or is it mostly the web UIs you're worried about?

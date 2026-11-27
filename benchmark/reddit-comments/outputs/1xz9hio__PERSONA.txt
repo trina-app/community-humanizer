@@ -1,0 +1,3 @@
+Honestly the tool matters less than the Supabase part. Both just spit out React + Vite and push to GitHub, so engineers can read it fine. The thing that'll bite you is RLS policies being wrong or missing, because the generated code will happily work in the demo while letting any user read everyone's rows. Check that before you invite anyone
+
+Also expect engineers to keep the schema and maybe the UI and rewrite most of the logic. Which is fine, that's what a beta MVP is for

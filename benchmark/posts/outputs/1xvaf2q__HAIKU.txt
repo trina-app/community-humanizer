@@ -1,0 +1,9 @@
+Been a startup CFO for a while now and have watched a fair number of companies go out to raise, some strong and some pretty weak. Figured I'd write down the one thing I keep coming back to, because it's simpler than most of the advice floating around here.
+
+From what I've seen, VCs mostly fund either proven demand or a proven team.
+
+By proven demand I mean evidence that demand can be generated and replicated at scale, or that appetite in a market is growing. Uber in 2011 is the one I think of. It had a San Francisco pilot with revenue and repeat riders, and the question for investors was whether it could be repeated city by city. Airbnb in 2009 had existing demand on Craigslist and Couchsurfing, and it spiked during big events when hotels sold out. Those are signals you can point to, not claims in a deck.
+
+The other route is a proven team. The people behind Beehiiv in 2021 had built the growth engine for Morning Brew, which sold to Business Insider for $75M. Affirm in 2014 had Max Levchin, who had PayPal and Slide exits behind him.
+
+I'm not promoting anything here. I just think a lot of founders pitch the idea and skip the part where they show one of those two things. For people who've been on the investor side or raised recently, does that match what you've seen, or are there other things that get checks written first?

@@ -1,0 +1,18 @@
+Don't run 2 control planes. With embedded etcd you get the same fault tolerance as 1 (quorum needs 2 of 2), but twice as many ways to break. Either run 1 server with the default SQLite/external DB and accept it's a single point of failure, or run 3 small servers with embedded etcd. K3s servers can run workloads too, so 3 servers + 3 agents is a fine layout and doesn't cost much more.
+
+For providers, the usual picks for this kind of setup:
+
+- **Hetzner Cloud**: the default answer for a reason. Private networks are built in, there's a big traffic allowance in EU locations, there's a CCM/CSI driver for k8s, and hcloud-k3s tooling is plentiful. The ARM (CAX) line is usually the best value if your images support arm64.
+- **Netcup**: VPS and "root server" plans are good value and heavily CPU-oriented. No real private networking, so you'd do WireGuard or Tailscale. Good for workers.
+- **OVH / Scaleway**: fine as a second provider for diversity, and OVH has vRack if you need it.
+- **Contabo**: cheap on paper, but people regularly report noisy neighbors and slow disk. I'd keep it away from anything etcd-related, since etcd is very sensitive to disk fsync latency.
+
+Some things matter more than the provider:
+
+1. **Keep the control plane in one provider and one region.** Etcd over a WAN between providers gets flaky fast. Mixing providers is fine for workers, but expect higher latency and have a plan for it (node labels, taints, keeping stateful stuff on the same side).
+2. **Storage is the usual pain point.** Local NVMe is fast, but your PVs are tied to a node. Longhorn on VPS disks works but eats resources, so for most homelab-scale stuff, local-path plus good backups (Velero or restic) is simpler.
+3. **Run WireGuard (or Tailscale/flannel wireguard-native backend) even if you have a private network.** It keeps things consistent if you add a second provider later.
+4. **Check the fine print on "unlimited" bandwidth.** Many LowEndTalk deals throttle after a threshold, so look for a stated TB cap rather than "unmetered".
+5. **Benchmark before committing.** Run `fio` with fsync and a quick CPU test on day one. Most providers will refund within a short window if the box is a dud.
+
+If I were starting from scratch, I'd do 3 small Hetzner nodes as servers and add Netcup or other cheaper workers as needed. Do you need persistent storage on the cluster, or is it mostly stateless apps and CI runners? That changes the recommendation quite a bit.

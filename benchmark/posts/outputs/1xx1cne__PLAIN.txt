@@ -1,0 +1,15 @@
+Hi all,
+
+I've been self-hosting for a while, and there's one part of my setup that has always felt clunky: getting finished downloads into my media server.
+
+Right now I have a single `media` directory bind-mounted into a few containers. The torrent client writes to `downloads/complete`, and Jellyfin reads from `jellyfin/shows` and `jellyfin/movies`. When something finishes and I'm done seeding it, I SSH in and move the files over by hand. I've done it this way for years. It works, but it feels like there should be a better way.
+
+I suspect the Arr stack handles this much better, but I'd like to hear how other people actually do it before I go down that road.
+
+A few specific questions:
+
+1. **What's the cleaner way to get files from the torrent folder into the media server folders?** Is the Arr stack the answer, or is there something simpler?
+2. **How do you keep seeding long-term while also having the files in Jellyfin?** If I move the files, the torrent client loses them. I've seen symlinks mentioned. Is that what people use, or is there a better approach?
+3. **What about mixed content?** I mostly have movies and shows, but occasionally ebooks, which need to go somewhere else entirely. I don't think a simple cron job will work, since it can't tell what a given download is or where it should go. How do you deal with that?
+
+If you've got a similar layout, I'd love to hear how you've set it up. Thanks!

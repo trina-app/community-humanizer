@@ -1,0 +1,11 @@
+Two hours of outbound a day isn't a bottleneck, it's the job. Most of the people I know who closed a pre-seed were doing way more than that, because the rounds that work are usually the ones where you keep a pipeline of 50+ conversations going. If you're only sending cold emails and waiting, I'd look at whether the outbound is the weak point.
+
+What I'd do with the extra hours:
+
+Talk to users. If the MVP is live, get 5 to 10 people using it and watch them. Investors ask about traction in every meeting, and "I've talked to 30 customers and here's what changed" beats a clean deck.
+
+Work warm intros instead of cold ones. Founders in your space, angels who've backed similar stuff, anyone who's raised from your target funds. Cold has a way lower reply rate.
+
+Keep shipping small. You don't have to build features, but fixing what real users hit is the opposite of over-building.
+
+Also, whatever you do, don't spend three weeks on a rebrand or a new landing page. I did that once and it was just hiding from the hard part.

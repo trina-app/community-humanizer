@@ -1,0 +1,1 @@
+140 TB/month on a retro gaming site is almost certainly ROMs, and no cheap VPS host is going to put up with that either. "Unmetered" 2Gbps plans get throttled or cancelled the second you actually use them, and you'd be getting DMCA'd by a provider that has less patience than Cloudflare. Honestly Cloudflare tolerating you this long is the surprise

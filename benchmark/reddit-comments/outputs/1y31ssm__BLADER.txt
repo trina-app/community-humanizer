@@ -1,0 +1,13 @@
+Tailscale for everything you and your girlfriend use, and a small public path only for sharing.
+
+Putting Immich, Jellyfin and Nextcloud on the open internet means you're the one patching three web apps that all hold sensitive stuff. Tailscale means nothing is listening publicly, so a zero-day in any of them doesn't matter much. Port forwarding is fine if you keep up with updates, but "low maintenance" and "exposed Nextcloud" don't really go together.
+
+For her, the Tailscale app is a one-time setup. Install it, sign in, leave it on. Set up MagicDNS and a reverse proxy so she types photos.whatever.com instead of an IP and port. Also turn on the Immich and Nextcloud mobile apps' auto-backup and she'll never think about it again. Only gotcha is iOS sometimes needs a nudge if the VPN gets toggled off, so tell her to leave it on.
+
+For sharing with people who don't have a VPN, you have a few options:
+
+- Immich and Nextcloud both have share links. Put only those behind a public reverse proxy (Caddy or Traefik with Let's Encrypt), or use a Cloudflare Tunnel so you don't open any ports. Keep Jellyfin off the public side.
+- Expire the links, set passwords, and turn on 2FA and fail2ban or CrowdSec on whatever is exposed.
+- Or skip public hosting altogether. Tailscale Funnel can expose a single service, or you just upload the stuff to a throwaway share when someone needs it.
+
+If you only share occasionally, I'd go with the Cloudflare Tunnel for just Nextcloud or Immich shares and keep the rest tailnet-only. If you're worried about trusting Tailscale's coordination server, Headscale works but it's more upkeep, and NetBird is fine too. For your priorities I'd just use Tailscale.

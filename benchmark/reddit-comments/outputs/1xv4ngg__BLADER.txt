@@ -1,0 +1,7 @@
+Building was never the hard part, so Lovable didn't change much for the part you're stuck on. Getting 100 customers is a distribution problem, and it was one in 2015 too.
+
+Most people paying for SaaS could already have hired a freelancer or hacked together a spreadsheet. They pay because they don't want to own the thing. Nobody wants to be on call when their homemade invoicing tool breaks the night before payroll. A Claude subscription doesn't remove that.
+
+What it does do is flood your category with more clones, so a generic "X for everyone" product gets harder to sell. If you're at under 100 customers, I'd look at who your best 5 or 10 customers are and what they have in common, then go find 200 more of exactly that kind of person. Talking to the ones who churned is worth a few hours too.
+
+What are you building and who's it for? Hard to say more without that.

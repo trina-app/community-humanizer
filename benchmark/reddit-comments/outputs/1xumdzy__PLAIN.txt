@@ -1,0 +1,18 @@
+Congrats on shipping after years of bootstrapping. That's hard, and launching the same week a big lab walks into your category feels awful. But I don't think it's the death sentence it looks like.
+
+A few thoughts:
+
+**Anthropic's move validates the category.** A year ago "AI-native workspace" needed explaining. Now the biggest names are saying it's the future. You didn't lose a market, you gained a lot of free education for it.
+
+**Big labs build horizontal, you can win vertical.** They have to serve everyone, so they ship a general assistant plus connectors. You're built for solo operators and small business owners, which means opinionated defaults, simpler setup, and pricing that fits a one-person shop. Enterprise-grade generality is a weakness at that size.
+
+**Your real moat isn't the AI, it's the data model.** Knots, Tags, Connections, and Stitching are the interesting part. An assistant that bolts onto your Gmail and Docs is only as good as what it can retrieve. If your workspace already holds the relationships between a contact, their emails, meetings, tasks, and files, the assistant has context a connector layer has to rebuild every time. That compounds as people use it, and it's also what makes switching costly.
+
+**What I'd do this week:**
+- Lead your messaging with the connected context, not "AI assistant." Everyone has an assistant now.
+- Get 10 users to tell you what they actually do in Stitch daily, then double down on that one workflow.
+- Don't try to out-feature them. Be the place where a small business's work already lives.
+
+To your title: what's left of SaaS is the stuff that owns the data and the workflow. Wrappers get squeezed, systems of record don't. You're on the right side of that line if people actually keep their work in it.
+
+Good luck, and I'd be curious which workflow ends up being the sticky one.

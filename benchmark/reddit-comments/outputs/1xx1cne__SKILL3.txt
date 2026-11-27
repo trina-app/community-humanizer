@@ -1,0 +1,1 @@
+Sonarr/Radarr, and use hardlinks so you can keep seeding. Readarr or LazyLibrarian for the ebooks

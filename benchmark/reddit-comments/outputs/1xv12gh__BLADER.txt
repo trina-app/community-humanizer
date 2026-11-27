@@ -1,0 +1,7 @@
+Depends on what "lifetime" was sold as, but in most cases the lifetime deal means lifetime of the product, not lifetime of the customer. Read the terms he had at checkout. If there's a line like "for the life of the product" or "as long as the service operates," he's covered and can shut down with reasonable notice.
+
+If the terms say nothing, it's murkier, but one customer is a small problem. The cleanest fix is to email them directly, give 60 to 90 days notice, and offer something real: a prorated refund based on what they paid, plus an export of their data. Most people take that and move on. A refund of a few hundred bucks is cheaper than any dispute.
+
+Other options if he doesn't want to just close it: sell the product to someone who'll keep running it (small SaaS on Acquire or MicroAcquire-type marketplaces sells for more than people expect, and the lifetime customer comes with it), or open source it and hand over the keys.
+
+One thing I'd avoid is quietly going dark and hoping the one customer doesn't notice. That's how a tiny annoyance turns into a chargeback or a public complaint.

@@ -1,0 +1,33 @@
+Since this is patient data, I'd flip the question: instead of learning to write the backend, learn to verify it. You can do that without coding.
+
+**1. What to learn**
+- Pick one tenancy model and understand it well: a shared schema with a `tenant_id` on every table, enforced with Postgres Row Level Security. The Postgres docs on RLS and the Crunchy Data and Supabase RLS write-ups are enough to follow what the agent builds.
+- The AWS "SaaS Tenant Isolation Strategies" whitepaper is vendor-flavored but a good overview of the tradeoffs.
+- *SQL Antipatterns* by Bill Karwin is a readable book on schema design mistakes.
+- Skip the heavy books like *Designing Data-Intensive Applications* for now.
+- Learn the basics of whichever rules apply to you (HIPAA, GDPR, or your local equivalent). They shape the architecture more than any framework choice does.
+
+**2. Mistakes that are hardest to fix later**
+- Tenant isolation done only through `WHERE tenant_id = ...` in app code. One forgotten filter is a data leak. Enforce it in the database too (RLS).
+- Roles and permissions bolted on after the fact. A receptionist, a doctor, and a clinic admin see very different things, so design this early.
+- No audit log of who viewed or changed which patient record. This is painful to retrofit and often legally needed.
+- Rolling your own auth. Use a managed provider.
+- Money stored as floats. Use integer cents or numeric.
+- Appointment time zones. Store UTC plus the clinic's time zone.
+- Hard deletes, with no plan for retention or "right to erasure" requests.
+- Uploaded files (scans, PDFs) not scoped per tenant.
+- No tested backups and restores.
+
+**3. Parallel agents**
+- One git worktree per agent and one small ticket per task. Everything goes through a PR, never straight to main.
+- Don't parallelize anything that touches the schema or migrations. Do those one at a time.
+- Give each agent a lane (e.g. billing UI vs. appointments API) so they rarely touch the same files.
+- CI is your safety net. Nothing merges unless tests, types, and lint pass.
+
+**4. Drift**
+- Keep a `CLAUDE.md` with the architecture rules, written as hard rules ("every query goes through the tenant-scoped helper", "never edit /auth without asking").
+- Write cross-tenant tests: log in as clinic A, try to read clinic B's data, and the test must fail if it succeeds. This is the most valuable test you can have, and it's how you check the agent's work without reading code.
+- Use CODEOWNERS and branch protection so changes to auth, RLS, and migrations require your explicit approval.
+- Have a second agent review each PR against your rules before you look at it.
+
+One more thing: since this holds real patient data, budget for a one-off security review by a human before real patients go in. A few hours of a good backend or security person's time is cheap compared to a breach. Also, I'd be wary of paid 1:1 offers in the DMs. Find someone with actual healthcare SaaS experience.

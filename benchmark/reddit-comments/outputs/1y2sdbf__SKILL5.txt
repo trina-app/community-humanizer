@@ -1,0 +1,1 @@
+Running things on the same box as the proxy is fine until the box dies, then it's everything at once. Mine's the same, just keep a config backup somewhere else so a rebuild is an afternoon, not a week

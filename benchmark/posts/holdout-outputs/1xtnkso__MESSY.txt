@@ -1,0 +1,11 @@
+Payments went live last week and I have zero purchases. Not shocked, but it's a weird feeling after a year of building.
+
+Quick background. I'm nearly 50, been an engineer forever, and spent about a year on this side project with Claude Code. Partly to actually learn Claude properly, partly so my daughter could get some real experience on something shipping, and she did land a job out of it, so that part worked. What I did not do in that whole year is talk to a single customer. Not one conversation.
+
+The product turns a family's photos and videos into a film. Consumer thing, one-time price, no subscription.
+
+A couple months ago ChatGPT started sending me random visitors. I can actually watch them use it, which is the only reason I know anything about what people do. So that's about 130 signups, 2-3 a day. Nothing I did on purpose, which is kind of the problem, I don't know how to make more of it.
+
+My assumption is it's just a grind. Emails, partnerships, pages written to be the answer to the questions people ask ChatGPT. But Reddit is confusing me. The subs where answering questions is the whole point ban self-promo, and the subs that allow it don't have my customers in them. Families making a film from their photos aren't hanging out here.
+
+So for anyone who took a consumer product from a trickle like this to something steady: what actually moved it? Was it a specific channel, or is it mostly luck plus grind plus the product being something people want? I haven't even proven the last part yet, since nobody's paid.

@@ -1,0 +1,1 @@
+Most buyers who ask that aren't really planning to build it, they're testing whether you flinch. Yes, a weaker version is doable, but then someone on their team owns it forever and gets paged when an upstream API changes. I just ask what a month of one engineer costs them versus my annual price and let them do the math.

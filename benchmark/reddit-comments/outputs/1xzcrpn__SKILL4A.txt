@@ -1,0 +1,3 @@
+Stop handling the quotes follow-ups from memory. Put every pending quote in a spreadsheet or a free Trello board with a "follow up on" date, and look at it once a day for five minutes. Most of the dread comes from not knowing what's slipping, and a dated list fixes that.
+
+For the client files, set up one shared folder per client where they upload things themselves (Dropbox file requests or a Google Drive folder work fine) so nothing arrives as an email attachment you have to sort. Then batch the rest. I'd do admin in one block late in the day, since your best hours should go to the actual projects.

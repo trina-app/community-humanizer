@@ -1,0 +1,3 @@
+Updates. I know I should be running them on a schedule with a staging step, but I've got Watchtower pointed at basically everything and I just let it rip at 4am. Maybe twice a year something breaks and I spend a Saturday fixing it. The other 363 days I'm not thinking about it at all, which feels like a fair trade.
+
+Also my "documentation" is a folder of compose files and a few comments that say things like "don't touch this, it works." Future me can deal with it.

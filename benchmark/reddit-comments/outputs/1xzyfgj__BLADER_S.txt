@@ -1,0 +1,9 @@
+Biggest thing for you: this is patient data, so tenant isolation and access control matter more than anything else on your list. Put Postgres row-level security on every table that has a tenant_id, and make the app set the tenant per request at the database level. Then a bug in the app code can't leak one clinic's records to another. Also check what your country requires for health data (HIPAA, GDPR, whatever applies) before you store a single real record, because that changes hosting and audit logging.
+
+Hardest to fix later: a bad tenant model, no audit log of who viewed or changed what, hard-deleting records instead of soft-deleting, and money stored as floats. Get those right on day one.
+
+For learning, you don't need a course. Read the Postgres docs on RLS and have Claude explain your schema back to you in plain language until you can spot something wrong. The Citus multi-tenant guide is free and good.
+
+For agents, one branch or worktree per task, small tickets, CI that has to pass, and you read every PR that touches auth or tenant code. Put the rules in CLAUDE.md, and add tests that try to read tenant A's data as tenant B. If those fail, the agent drifted.
+
+Before you pay anyone for 1:1, hire a security reviewer for a few hours once the first version works. That's worth more than lessons.

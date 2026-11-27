@@ -1,0 +1,9 @@
+Not blind myself, but the core of self hosting is pretty friendly to screen reader users, since most of it is text. SSH into a box, edit a docker-compose file, read logs. All of that is just a terminal, and a terminal is usually better for you than a GUI would be. Lots of blind sysadmins and devs live in tmux and vim/nano all day.
+
+The rough spots are the web UIs of individual apps. Some are great, some are a mess of unlabeled buttons and drag and drop. Vaultwarden and Nextcloud are decent from what I've seen, and Jellyfin is mixed. You'd have to try each one, and the app's GitHub issues often say how its accessibility is. The good news is that most things can also be done through config files or an API, so you're not stuck if a UI is bad.
+
+The first setup is the part that can be annoying. If you don't want to fight an installer, rent a cheap VPS so it comes up with SSH already working, or flash a Pi with a headless image where you set SSH up before first boot. Then everything after that is over SSH. Tailscale or WireGuard make it easy to reach stuff from anywhere without opening ports.
+
+Start small: one container, like Vaultwarden or a file sync thing, and see how it feels. Also check out r/blind and the Linux accessibility communities, since people there have done this and can tell you which tools work well with NVDA or VoiceOver.
+
+Good luck, and welcome to the rabbit hole.

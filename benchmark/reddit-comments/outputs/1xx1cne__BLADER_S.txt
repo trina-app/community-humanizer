@@ -1,0 +1,7 @@
+Use Sonarr/Radarr (and Readarr or similar for the ebooks, though Readarr is dead now, so look at Bookshelf or Calibre-Web with an import folder). They handle the move for you, and they do it with hardlinks, so the file lives in both places without taking extra space and your torrent client keeps seeding the original.
+
+The one catch is that hardlinks only work inside a single filesystem. Your layout is already close, since `downloads` and `jellyfin` sit under the same `media` directory. Just mount the whole `media` folder into the Arr containers and the torrent client as one volume, not separate mounts for downloads and library. Split mounts are the usual reason people end up with copies instead of links.
+
+Each Arr app has its own root folder and category, so movies, shows and books go to the right places without cron jobs. Set a different category per app in the torrent client and they'll only pick up their own stuff.
+
+Trash Guides has a good writeup of the folder structure and hardlink setup if you want to check yours against it.

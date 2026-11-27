@@ -1,0 +1,3 @@
+I'd go make coffee and then actually read the code I've been merging. Honestly the first hour would be mostly finding out how much of my own codebase I can still explain without asking Claude.
+
+After that I'd probably do the boring stuff I've been putting off: docs, cleaning up tickets, answering emails. Slower, but doable. A full day off seems about right though.

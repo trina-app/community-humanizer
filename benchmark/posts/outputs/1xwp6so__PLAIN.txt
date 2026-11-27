@@ -1,0 +1,17 @@
+I'm an early-stage founder building a platform that collects real-world audio and video data from wearables like smart glasses. The idea is that robotics, embodied AI, and multimodal AI teams need first-person, real-world data, and that it's hard to get at scale. We have 150+ registered contributors and a basic working product.
+
+What we don't have is confirmation that any researcher actually wants this data, let alone would pay for it. I haven't had a single conversation with someone who would be a buyer, and that's the part that worries me.
+
+**What I've tried so far**
+
+- Cold emails to professors and authors of relevant papers. Zero replies.
+- Looking into conferences. Most cost $1,000+ once you add the ticket, travel, and lodging, which feels like too much to spend before I've validated anything.
+- Trying to find where the people who actually use these datasets hang out. I haven't found a good answer.
+
+**What I'm trying to figure out**
+
+1. If you've sold to hard-to-reach technical buyers (researchers, ML engineers, academics), how did you get your first few customer conversations once cold email failed?
+2. Are expensive conferences worth it this early, or is that something to save for after you've validated?
+3. What are cheaper ways to get in front of these people? I've wondered about writing content (technical posts, a small dataset release, something useful to the community) or joining or building a community where they already gather. Has anything like that worked for you, or is it a time sink at this stage?
+
+I'm not looking to promote anything. I just don't want to keep building before I know whether anyone wants this. Any advice, especially from people who've been in a similar spot, would be appreciated.

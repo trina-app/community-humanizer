@@ -1,0 +1,16 @@
+I built and deployed my MVP a little while ago, and I've hit a wall I didn't expect: no users. Building it turned out to be the easier part. Getting anyone to actually try it is the thing I can't crack.
+
+To be upfront, I'm not promoting anything here. No link, no pitch. I just want to learn from people who've been through this.
+
+What's bugging me is that I can't tell what the real problem is. It could be that the problem I'm solving isn't that painful. It could be that I'm aiming at the wrong audience. Or it could be that the product is fine and I'm just bad at getting it in front of people. From where I sit those all look the same, which is a big part of why this is hard.
+
+I'm also wary of sinking more dev time in before I know which one it is. It would be easy to keep building features and tell myself that's progress, when really I'm avoiding the harder question of whether anyone wants this.
+
+So I'd love to hear from founders who've been here:
+
+- How did you get your first 10-20 users? Where did they actually come from?
+- What got you honest feedback? Friends and family are polite, and strangers mostly ignore you, so I'm not sure how to get the real thing.
+- How did you tell the difference between "people are interested" and "people actually need this"?
+- What worked with little or no marketing budget?
+
+If you've got a story about what didn't work, I'd like to hear that too. Thanks in advance.

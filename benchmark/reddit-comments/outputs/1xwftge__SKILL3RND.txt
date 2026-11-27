@@ -1,0 +1,1 @@
+Narc how, though? If you ask it for help with something sketchy it'll say no, same as it does in code. It's not out here snitching on you for fun. Most of the "loser" stuff is just it being a bit preachy on edge cases, and a decent system prompt fixes a lot of that

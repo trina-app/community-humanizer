@@ -1,0 +1,5 @@
+Honestly the "everything app" thing is real, but I think the bigger shift is that it's becoming the thing that sits *between* all your other apps. Half my meetings already end with someone pasting the notes into Claude to turn them into action items, so having it in the room isn't that far-fetched.
+
+The part I'm less sure about is whether people want one app doing everything or just want the tools they already use to talk to each other properly. MCP and the integrations are what make it useful for me, not Claude itself being the destination.
+
+Also, 2027 meetings will still have someone saying "can you see my screen?" Some things AI won't fix.

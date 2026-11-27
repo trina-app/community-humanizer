@@ -1,0 +1,1 @@
+Code was never really the moat. Distribution, trust, and being the thing people already have their data in were the moat before AI too. Anyone can clone your features, nobody can clone your 500 customers who'd have to migrate and retrain their team. If your only defense is "it's hard to build," yeah, you're toast

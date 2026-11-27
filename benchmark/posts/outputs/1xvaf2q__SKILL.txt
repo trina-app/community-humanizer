@@ -1,0 +1,15 @@
+I'm a CFO at a startup, and over the years I've watched a lot of companies raise money, some strong, some pretty weak. The pattern I keep coming back to is simple: VCs mostly fund either proven demand or a proven team. That's it.
+
+What they're really looking for is evidence of a high chance of big returns. In practice that shows up as one of three things: demand you can generate and replicate at scale, a market with growing appetite, or founders who've already had a success or exit.
+
+A few examples that fit:
+
+Uber in 2011 had a pilot in San Francisco with real revenue and repeat riders, and the obvious pitch was that you could copy it city by city. 
+
+Airbnb in 2009 wasn't inventing demand. People were already looking for places to stay on Craigslist and Couchsurfing, and during big events when hotels sold out, it spiked.
+
+Beehiiv in 2021 was founded by the people who built the growth engine at Morning Brew, which sold to Business Insider for $75M. That's a team that has already done it.
+
+Affirm in 2014 had Max Levchin, with PayPal and Slide exits behind him.
+
+So if you're pitching, think about which of those you actually have. If you don't have a past exit, then you need the demand story to be real, with numbers showing it can be repeated and scaled. Not promoting anything here, just sharing what I've noticed from the finance side.

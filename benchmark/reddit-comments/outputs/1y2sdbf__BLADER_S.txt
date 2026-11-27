@@ -1,0 +1,3 @@
+Running everything as root in docker compose with `restart: unless-stopped` and never pinning image tags. I use `:latest` on almost all of it. Yes, I've been bitten (a Postgres major bump once ate a whole evening), but nightly backups mean I'd rather fix it when it breaks than read changelogs for 40 containers.
+
+Also my "staging environment" is me doing it on prod at 11pm on a Sunday.
