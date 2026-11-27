@@ -100,6 +100,8 @@ node skills/community-humanizer/bin/voice.mjs post --to r/selfhosted --title "Is
 3. It draws three kinds at that subreddit's real rates and writes one draft of each, each in a separate Claude call with real comments of that kind as samples.
 4. A smaller model picks the one that reads most like a regular. You get the other two as well.
 
+The persona is adapted from the one that got GPT-4.5 judged human 73% of the time in a three-party Turing test ([Jones & Bergen, 2025](https://arxiv.org/abs/2503.23674)). That was a chat test; we rewrote it for forum replies and measured it blind (results above).
+
 **Posts:** you give the point as notes. It writes the post the way a regular types it on a phone, from six real posts in that subreddit, then checks that nothing in the post goes beyond your notes.
 
 **Cost and time:** one reply (three drafts and the pick) is about $0.07 and 13 seconds with Opus writing, or $0.04 with `--fast` (Sonnet), at the API prices Claude Code reports. The first time in a subreddit, reading and labelling it takes about a minute and is cached for a week.
