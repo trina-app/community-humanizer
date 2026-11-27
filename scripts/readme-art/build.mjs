@@ -17,7 +17,7 @@ const THEMES = {
   dark: { paper: '#121314', ink: '#ecebe7', ink2: '#a9a7a0', ink3: '#6f6d67', rule: '#26272a', track: '#2c2d30', accent: '#7b9cff', accentSoft: '#1a2140', ghost: '#4a4b4f' },
 }
 const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">`
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 
@@ -205,46 +205,40 @@ const SCALES = {
 
 function scaleFigure(lang, t) {
   const d = SCALES[lang]
-  const W = 880
-  const track = (tr) => {
-    // Labels alternate above and below so close marks never collide.
-    const marks = tr.marks.map(([label, v, kind], k) => {
-      const up = k % 2 === 1
-      const cls = kind === 'ours' ? 'ours' : kind === 'real' ? 'realm' : ''
-      return `<div class="mk ${cls}" style="left:${v}%"><div class="dot"></div><div class="lab ${up ? 'up' : 'down'}"><span class="v num">${v}</span>${esc(label)}</div></div>`
-    }).join('')
-    const ticks = [0, 25, 50, 75, 100].map((v) => `<div class="tick" style="left:${v}%"><span class="num">${v}</span></div>`).join('')
-    return `<div class="trackwrap"><div class="tname">${esc(tr.name)}</div><div class="line">${ticks}<div class="base"></div>${marks}</div></div>`
+  const W = 880, H = 250 // plot height in px for 100
+  // Bar chart, one panel per test: bars rise left to right towards the real comment, ours in the accent colour.
+  const panel = (tr) => {
+    const n = tr.marks.length
+    const grid = [25, 50, 75, 100].map((g) => `<div class="grid" style="bottom:${(g / 100) * H}px"><span class="num">${g}</span></div>`).join('')
+    const bars = tr.marks.map(([, v, kind]) => `<div class="col ${kind || ''}"><div class="bar" style="height:${(v / 100) * H}px"><span class="val num">${v}</span></div></div>`).join('')
+    const labs = tr.marks.map(([label, , kind]) => `<div class="lab ${kind || ''}">${esc(label)}</div>`).join('')
+    return `<div class="panel">${d.tracks.length > 1 ? `<div class="tname">${esc(tr.name)}</div>` : ''}<div class="plot" style="height:${H}px">${grid}<div class="cols" style="grid-template-columns:repeat(${n},1fr)">${bars}</div></div><div class="labs" style="grid-template-columns:repeat(${n},1fr)">${labs}</div></div>`
   }
+  const wide = d.tracks.length === 1
   const css = `
-.head { display: flex; align-items: baseline; gap: 14px; margin-top: 18px; }
-.head .n { font: 500 76px/1 'JetBrains Mono', monospace; color: ${t.accent}; letter-spacing: -.04em; }
-.head .vs { font: 400 30px/1 'JetBrains Mono', monospace; color: ${t.ink3}; }
-.headtext { font: 400 26px/1.25 'Instrument Serif', serif; margin-top: 12px; max-width: 760px; }
-.headtext.ko { font: 600 21px/1.4 Pretendard, sans-serif; letter-spacing: -.02em; }
-.headtext.zh { font: 600 21px/1.45 "PingFang SC", "Noto Sans SC", sans-serif; }
-.trackwrap { margin-top: 30px; }
-.tname { font-size: 13px; font-weight: 600; color: ${t.ink}; margin-bottom: 6px; }
-.line { position: relative; height: 118px; margin: 0 18px; }
-.base { position: absolute; left: 0; right: 0; top: 58px; height: 2px; background: ${t.track}; }
-.tick { position: absolute; top: 52px; width: 1px; height: 14px; background: ${t.track}; }
-.tick span { position: absolute; top: 46px; left: 50%; transform: translateX(-50%); font-size: 10.5px; color: ${t.ink3}; opacity: 0; }
-.mk { position: absolute; top: 0; width: 0; }
-.dot { position: absolute; top: 51px; left: -8px; width: 16px; height: 16px; border-radius: 50%; background: ${t.ghost}; border: 3px solid ${t.paper}; }
-.ours .dot { background: ${t.accent}; width: 20px; height: 20px; left: -10px; top: 49px; }
-.realm .dot { background: ${t.paper}; border: 2px solid ${t.ink}; }
-.lab { position: absolute; left: 0; transform: translateX(-50%); white-space: nowrap; font-size: 12.5px; color: ${t.ink2}; text-align: center; line-height: 1.3; }
-.lab .v { display: block; font-size: 17px; font-weight: 500; color: ${t.ink}; }
-.lab.down { top: 76px; }
-.lab.up { top: -4px; }
-.ours .lab { color: ${t.accent}; font-weight: 600; }
-.ours .lab .v { color: ${t.accent}; font-size: 20px; }
-.axis { font-size: 12px; color: ${t.ink3}; margin-top: 8px; display: flex; justify-content: space-between; }`
+.headtext { font: 400 30px/1.2 'Instrument Serif', serif; margin-top: 14px; max-width: 800px; }
+.headtext.ko { font: 600 23px/1.4 Pretendard, sans-serif; letter-spacing: -.02em; }
+.headtext.zh { font: 600 23px/1.45 "PingFang SC", "Noto Sans SC", sans-serif; }
+.panels { display: grid; grid-template-columns: repeat(${d.tracks.length}, 1fr); gap: 44px; margin-top: 30px; }
+.tname { font-size: 13.5px; font-weight: 600; color: ${t.ink}; margin-bottom: 18px; }
+.plot { position: relative; margin: 34px 0 0 30px; border-bottom: 1.5px solid ${t.ink3}; }
+.grid { position: absolute; left: 0; right: 0; height: 0; border-top: 1px dashed ${t.track}; }
+.grid span { position: absolute; left: -30px; top: -8px; width: 22px; text-align: right; font-size: 11px; color: ${t.ink3}; }
+.cols { position: absolute; inset: 0; display: grid; }
+.col { position: relative; }
+.bar { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: ${wide ? 46 : 56}%; max-width: 120px; background: ${t.ghost}; border-radius: 6px 6px 0 0; }
+.col.ours .bar { background: ${t.accent}; }
+.col.real .bar { background: repeating-linear-gradient(135deg, ${t.ink3} 0 1.5px, transparent 1.5px 7px); border: 1.5px solid ${t.ink2}; border-bottom: none; }
+.val { position: absolute; left: 50%; transform: translateX(-50%); bottom: calc(100% + 8px); background: ${t.paper}; padding: 0 6px; line-height: 1.15; font-size: ${wide ? 22 : 18}px; font-weight: 500; color: ${t.ink}; }
+.col.ours .val { font-size: ${wide ? 30 : 24}px; font-weight: 600; color: ${t.accent}; }
+.labs { display: grid; margin: 12px 0 0 30px; }
+.lab { text-align: center; font-size: ${wide ? 13.5 : 12.5}px; line-height: 1.35; color: ${t.ink2}; padding: 0 6px; }
+.card.ko .lab { word-break: keep-all; }
+.lab.ours { color: ${t.accent}; font-weight: 600; }`
   const html = `<div class="card ${d.script || ""}">
 <div class="kicker ${d.script || ""}"><i></i>${esc(d.kicker)}</div>
-<div class="head"><span class="n">${d.head[0]}</span><span class="vs">${esc(d.head[1])}</span></div>
 <div class="headtext ${d.script || ""}">${esc(d.headText)}</div>
-${d.tracks.map(track).join('')}
+<div class="panels">${d.tracks.map(panel).join('')}</div>
 <div class="foot">${esc(d.axis)}</div>
 </div>`
   return page(t, W + 120, { css, html })
