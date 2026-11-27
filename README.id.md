@@ -127,6 +127,15 @@ Setiap subreddit punya profil kecil di [communities/](communities/): seberapa se
 
 [benchmark/](benchmark/) berisi protokol yang ditulis sebelum setiap pengujian, skrip, semua teks yang dihasilkan, dan skor setiap juri. Komentar dan postingan asli tidak disebarkan ulang. `ids.json` berisi tautan ke setiap thread sumber. Ingin menguji humanizer Anda sendiri dengan thread yang sama? Buka PR dengan hasilnya.
 
+## Kontribusi
+
+PR yang kami terima:
+- **Subreddit baru**: satu profil di [communities/](communities/) (satu perintah dan cek halaman aturannya).
+- **Bahasa baru**: uji buta dalam bahasa itu, seperti [benchmark/indonesian-comments/](benchmark/indonesian-comments/). Kalau itu bahasa ibu Anda, README dan teks kuisnya juga kami terima.
+- **Komunitas di luar Reddit**: pembaca seperti [lib/clien.mjs](skills/community-humanizer/lib/clien.mjs), satu profil, dan uji dengan thread yang tidak dipakai untuk menyetel prompt.
+
+Detailnya ada di [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Lisensi
 
 MIT

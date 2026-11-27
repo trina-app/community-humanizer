@@ -17,7 +17,6 @@ const THEMES = {
   dark: { paper: '#121314', ink: '#ecebe7', ink2: '#a9a7a0', ink3: '#6f6d67', rule: '#26272a', track: '#2c2d30', accent: '#7b9cff', accentSoft: '#1a2140', ghost: '#4a4b4f' },
 }
 const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">`
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 
@@ -25,18 +24,21 @@ function page(t, width, body) {
   return `<!doctype html><html><head><meta charset="utf-8">${FONTS}<style>
 * { box-sizing: border-box; margin: 0; }
 html, body { background: transparent; }
-body { width: ${width}px; font-family: Inter, Pretendard, system-ui, sans-serif; color: ${t.ink}; -webkit-font-smoothing: antialiased; }
+body { width: ${width}px; font-family: Pretendard, system-ui, sans-serif; color: ${t.ink}; -webkit-font-smoothing: antialiased; }
 .card { background: ${t.paper}; border: 1px solid ${t.rule}; border-radius: 22px; padding: 44px 52px 34px; }
-.kicker { font: 500 12px 'JetBrains Mono', monospace; letter-spacing: .14em; text-transform: uppercase; color: ${t.ink2}; display: flex; align-items: center; gap: 10px; }
+.kicker { font: 600 13.5px Pretendard, sans-serif; letter-spacing: 0; color: ${t.ink2}; display: flex; align-items: center; gap: 10px; }
 .card .kicker.ko { font: 500 13px Pretendard, sans-serif; letter-spacing: 0; }
-.card.zh { font-family: Inter, "PingFang SC", "Noto Sans SC", sans-serif; }
+.card.ja { font-family: Pretendard, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
+.card .kicker.ja { font: 500 13px "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; letter-spacing: .04em; text-transform: none; }
+.card.zh { font-family: Pretendard, "PingFang SC", "Noto Sans SC", sans-serif; }
 .card .kicker.zh { font: 500 13px "PingFang SC", "Noto Sans SC", sans-serif; letter-spacing: .04em; text-transform: none; }
 .kicker i { width: 7px; height: 7px; border-radius: 50%; background: ${t.accent}; display: inline-block; }
-h1 { font: 400 40px/1.12 'Instrument Serif', Pretendard, serif; letter-spacing: -.01em; margin-top: 14px; }
-h1.long { font-size: 31px; line-height: 1.18; }
+h1 { font: 700 33px/1.3 Pretendard, sans-serif; letter-spacing: -.025em; margin-top: 12px; }
+h1.long { font-size: 27px; line-height: 1.35; }
 h1.ko { font: 600 31px/1.3 Pretendard, sans-serif; letter-spacing: -.02em; }
+h1.ja { font: 600 31px/1.35 "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; letter-spacing: .01em; }
 h1.zh { font: 600 31px/1.3 "PingFang SC", "Noto Sans SC", sans-serif; letter-spacing: .01em; }
-.num { font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; }
+.num { font-family: Pretendard, sans-serif; font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
 .foot { margin-top: 26px; padding-top: 16px; border-top: 1px solid ${t.rule}; font-size: 12.5px; line-height: 1.6; color: ${t.ink2}; }
 ${body.css}
 </style></head><body>${body.html}</body></html>`
@@ -159,15 +161,15 @@ function threadFigure(lang, t) {
 .sub { font-size: 12.5px; color: ${t.ink3}; margin-top: 4px; line-height: 1.45; }
 .text { font-size: 15.5px; line-height: 1.6; color: ${t.ink2}; }
 .clamp { display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
-.kicker.case { text-transform: none; letter-spacing: .06em; }
+.kicker.case { text-transform: none; letter-spacing: 0; }
 .text.short { font-size: 19px; color: ${t.ink}; font-weight: 500; }
-.more { font: 400 11.5px 'JetBrains Mono', monospace; color: ${t.ink3}; margin-top: 8px; letter-spacing: .04em; }
+.more { font: 500 12.5px Pretendard, sans-serif; color: ${t.ink3}; margin-top: 8px; }
 .note { font-size: 12.5px; color: ${t.ink2}; margin-top: 10px; display: flex; align-items: center; gap: 8px; font-weight: 400; }
 .note i { width: 6px; height: 6px; border-radius: 50%; background: ${t.accent}; display: inline-block; }
 .score { text-align: right; }
 .big { font-size: 40px; font-weight: 500; line-height: 1; letter-spacing: -.02em; }
 .ours .big { color: ${t.accent}; }
-.big span { font: 500 12px Inter, Pretendard, sans-serif; color: ${t.ink3}; margin-left: 5px; letter-spacing: 0; }
+.big span { font: 500 12.5px Pretendard, sans-serif; color: ${t.ink3}; margin-left: 5px; letter-spacing: 0; }
 .meter { position: relative; height: 14px; margin-top: 14px; }
 .trk { position: absolute; left: 0; right: 0; top: 6px; height: 2px; background: ${t.track}; border-radius: 1px; }
 .fill { position: absolute; left: 0; top: 5px; height: 4px; border-radius: 2px; }
@@ -241,8 +243,9 @@ function scaleFigure(lang, t) {
     return `<div class="panel">${d.tracks.length > 1 ? `<div class="tname">${esc(tr.name)}</div>` : ''}<div class="hbody">${grid}${rows}</div>${axis}</div>`
   }
   const css = `
-.headtext { font: 400 30px/1.2 'Instrument Serif', serif; margin-top: 14px; max-width: 800px; }
+.headtext { font: 700 27px/1.35 Pretendard, sans-serif; letter-spacing: -.025em; margin-top: 12px; max-width: 820px; }
 .headtext.ko { font: 600 23px/1.4 Pretendard, sans-serif; letter-spacing: -.02em; }
+.headtext.ja { font: 600 23px/1.45 "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
 .headtext.zh { font: 600 23px/1.45 "PingFang SC", "Noto Sans SC", sans-serif; }
 .panel { margin-top: 30px; }
 .panel + .panel { margin-top: 34px; }
@@ -275,6 +278,7 @@ const QUIZ = {
   ko: { q: '어느 쪽이 사람이 쓴 걸까요?', sub: '10문제 · 3분 · quiz.trina.app', cta: '퀴즈 풀기 →', script: 'ko' },
   zh: { q: '哪一条是真人写的？', sub: '约 3 分钟 · quiz.trina.app', cta: '来答题 →', script: 'zh' },
   es: { q: '¿Cuál escribió una persona?', sub: '10 preguntas · 3 min · quiz.trina.app', cta: 'Haz el test →' },
+  ja: { q: '人が書いたのは、どっち？', sub: '約3分 · quiz.trina.app', cta: 'クイズに挑戦 →', script: 'ja' },
   id: { q: 'Mana yang ditulis orang?', sub: '10 soal · 3 menit · quiz.trina.app', cta: 'Ikut kuis →' },
 }
 function quizButton(lang, t) {
@@ -285,18 +289,20 @@ function quizButton(lang, t) {
 .qcard { display: grid; grid-template-columns: 190px 1fr auto; gap: 26px; align-items: center; background: ${t.paper}; border: 1px solid ${t.rule}; border-radius: 20px; padding: 22px 24px 22px 22px; }
 .opt { display: flex; align-items: center; gap: 10px; border: 1.5px solid ${t.rule}; border-radius: 12px; padding: 9px 12px; }
 .opt + .opt { margin-top: 8px; }
-.opt b { flex: none; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font: 600 12px Inter, sans-serif; background: ${t.track}; color: ${t.ink2}; }
+.opt b { flex: none; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font: 700 12px Pretendard, sans-serif; background: ${t.track}; color: ${t.ink2}; }
 .opt.pick { border-color: ${t.accent}; background: ${t.accentSoft}; }
 .opt.pick b { background: ${t.accent}; color: ${onAccent}; }
 .lines { flex: 1; }
 .lines i { display: block; height: 6px; border-radius: 3px; background: ${t.track}; }
 .lines i + i { margin-top: 6px; }
-.q { font: 400 29px/1.15 'Instrument Serif', serif; color: ${t.ink}; }
+.q { font: 700 22px/1.3 Pretendard, sans-serif; letter-spacing: -.02em; color: ${t.ink}; }
 .ko .q { font: 600 21px/1.35 Pretendard, sans-serif; letter-spacing: -.02em; }
+.ja .q { font: 600 21px/1.35 "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
 .zh .q { font: 600 21px/1.35 "PingFang SC", "Noto Sans SC", sans-serif; }
-.sub { font: 500 12px 'JetBrains Mono', monospace; color: ${t.ink3}; margin-top: 8px; letter-spacing: .03em; }
-.ko .sub, .zh .sub { font-family: 'JetBrains Mono', Pretendard, "PingFang SC", monospace; }
-.cta { background: ${t.accent}; color: ${onAccent}; font: 600 16px Inter, Pretendard, "PingFang SC", sans-serif; padding: 14px 22px; border-radius: 999px; white-space: nowrap; }`
+.sub { font: 500 13px Pretendard, sans-serif; color: ${t.ink3}; margin-top: 6px; }
+.zh .sub { font-family: Pretendard, "PingFang SC", sans-serif; }
+.ja .sub { font-family: Pretendard, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+.cta { background: ${t.accent}; color: ${onAccent}; font: 700 16px Pretendard, "PingFang SC", "Hiragino Sans", sans-serif; padding: 14px 22px; border-radius: 999px; white-space: nowrap; }`
   const html = `<div class="qcard ${d.script || ''}">
 <div class="opts">${opt('A', 82, 55, false)}${opt('B', 64, 38, true)}</div>
 <div><div class="q">${esc(d.q)}</div><div class="sub">${esc(d.sub)}</div></div>
@@ -317,10 +323,10 @@ function shoot(name, html, width) {
     `--window-size=${width},${height}`, '--virtual-time-budget=4000', `--screenshot=${join(OUT, `${name}.png`)}`, `file://${file}`], { stdio: 'ignore' })
 }
 
-for (const lang of ['en', 'ko', 'zh', 'es', 'id'])
+for (const lang of ['en', 'ko', 'ja', 'zh', 'es', 'id'])
   for (const [mode, t] of Object.entries(THEMES)) {
-    shoot(`thread-${lang}-${mode}`, threadFigure(lang, t), 1000)
-    shoot(`scores-${lang}-${mode}`, scaleFigure(lang, t), 1000)
+    if (THREADS[lang]) shoot(`thread-${lang}-${mode}`, threadFigure(lang, t), 1000)
+    if (SCALES[lang]) shoot(`scores-${lang}-${mode}`, scaleFigure(lang, t), 1000)
     shoot(`quiz-${lang}-${mode}`, quizButton(lang, t), 760)
   }
-console.log('wrote docs/img/{thread,scores,quiz}-{en,ko,zh,es,id}-{light,dark}.png')
+console.log('wrote docs/img/{thread,scores,quiz}-{en,ko,ja,zh,es,id}-{light,dark}.png')

@@ -127,6 +127,15 @@ Each subreddit has a small profile in [communities/](communities/): how often ea
 
 [benchmark/](benchmark/) holds six tests (English, Chinese, Spanish and Indonesian Reddit replies, Korean Clien replies, and posts in English and Korean): the protocol written before each run, the scripts, every generated text and every judge's score. The real comments and posts are not redistributed; `ids.json` links to each source thread. Want to test your own humanizer on the same threads? Open a PR with its outputs.
 
+## Contributing
+
+PRs are welcome for:
+- **A subreddit**: a profile in [communities/](communities/) (one command and a look at the rules page).
+- **A language**: a blind test in that language, like [benchmark/indonesian-comments/](benchmark/indonesian-comments/). If it's your native language, a README and the quiz strings too.
+- **A community outside Reddit**: a reader like [lib/clien.mjs](skills/community-humanizer/lib/clien.mjs), a profile, and a test on threads that weren't used for tuning.
+
+Details in [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## License
 
 MIT

@@ -127,6 +127,15 @@ node skills/community-humanizer/bin/voice.mjs post --to r/selfhosted --title "Is
 
 [benchmark/](benchmark/) 里有每次测试前写好的方案、脚本、所有生成结果和每个评委的打分。真实的评论和帖子不随仓库分发，`ids.json` 里有每个原帖的链接。想用同样的帖子测你自己的 humanizer？欢迎把输出结果提个 PR。
 
+## 参与贡献
+
+欢迎提 PR：
+- **新的 subreddit**：在 [communities/](communities/) 里加一个配置（一条命令，再看一眼规则页）。
+- **新的语言**：用这门语言做一次盲测，做法参考 [benchmark/indonesian-comments/](benchmark/indonesian-comments/)。如果这是你的母语，也欢迎补上 README 和答题文案。
+- **Reddit 以外的社区**：一个像 [lib/clien.mjs](skills/community-humanizer/lib/clien.mjs) 这样的读取模块、一份配置，以及一次用没参与调试的帖子做的测试。
+
+详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
 ## 开源协议
 
 MIT

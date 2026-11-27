@@ -127,6 +127,15 @@ Cada subreddit tiene un perfil pequeño en [communities/](communities/): con qu�
 
 En [benchmark/](benchmark/) están el protocolo escrito antes de cada prueba, los scripts, todos los textos generados y la puntuación de cada juez. Los comentarios y las publicaciones reales no se redistribuyen: `ids.json` enlaza a cada hilo original. ¿Quieres probar tu propio humanizer con los mismos hilos? Abre un PR con los textos que genere.
 
+## Cómo contribuir
+
+Aceptamos PR de:
+- **Un subreddit**: un perfil en [communities/](communities/) (un comando y un vistazo a la página de reglas).
+- **Un idioma**: una prueba a ciegas en ese idioma, como [benchmark/indonesian-comments/](benchmark/indonesian-comments/). Si es tu lengua materna, también el README y los textos del test.
+- **Una comunidad fuera de Reddit**: un lector como [lib/clien.mjs](skills/community-humanizer/lib/clien.mjs), un perfil y una prueba con hilos que no se usaron para ajustar nada.
+
+Los detalles están en [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Licencia
 
 MIT

@@ -127,6 +127,15 @@ node skills/community-humanizer/bin/voice.mjs post --to clien/kin --title "맥�
 
 [benchmark/](benchmark/)에는 시험 여섯 개(영어·중국어·스페인어·인도네시아어 Reddit 댓글, 한국어 클리앙 댓글, 영어·한국어 글)가 있어요. 시험마다 시험 전에 적은 기준, 대본, 생성 결과, 채점 점수가 들어 있어요. 실제 댓글과 글은 쓴 사람의 것이라 넣지 않았고, `ids.json`에 원문 링크를 뒀어요. 내 휴머나이저도 같은 글로 재 보고 싶으면 결과를 PR로 보내 주세요.
 
+## 기여하기
+
+이런 PR을 받아요.
+- **서브레딧**: [communities/](communities/)에 프로필 하나(명령어 하나와 규칙 페이지 확인이면 돼요).
+- **언어**: 그 언어로 하는 블라인드 시험이에요. [benchmark/indonesian-comments/](benchmark/indonesian-comments/)처럼 하면 돼요. 그 언어가 모국어라면 README와 퀴즈 문구도 환영해요.
+- **Reddit 밖의 커뮤니티**: [lib/clien.mjs](skills/community-humanizer/lib/clien.mjs) 같은 리더, 프로필, 프롬프트를 고칠 때 쓰지 않은 글로 한 시험.
+
+자세한 건 [CONTRIBUTING.md](CONTRIBUTING.md)에 있어요.
+
 ## 라이선스
 
 MIT
