@@ -1,12 +1,32 @@
-# community-humanizer
+<h1 align="center">community-humanizer</h1>
 
-**Humanizers make text sound less like AI. This makes it sound like the people who actually hang out there.**
+<p align="center">
+  <b>Humanizers make text sound less like AI.<br>This makes it sound like the people who actually hang out there.</b>
+</p>
 
-A Claude Code skill that writes Reddit replies and posts the way that subreddit's regulars write, learned from real comments in the same subreddit. It never posts anything.
+<p align="center">
+  A Claude Code skill that writes Reddit replies the way each subreddit's regulars do. It never posts.
+</p>
 
-**[Two replies, one written by a person. Can you tell which? Take the 10-question quiz →](#quiz)**
+<p align="center">
+  <a href="#quiz"><img src="https://img.shields.io/badge/Human_or_AI%3F-Take_the_quiz-2a78d6?style=for-the-badge" alt="Human or AI? Take the quiz"></a>
+</p>
 
-<sub>[한국어](README.ko.md)</sub>
+<p align="center">
+  <img src="https://img.shields.io/badge/Claude_Code-plugin-555" alt="Claude Code plugin">
+  <img src="https://img.shields.io/badge/license-MIT-555" alt="MIT license">
+  <a href="benchmark/"><img src="https://img.shields.io/badge/benchmark-blind%2C_held--out-555" alt="Blind, held-out benchmark"></a>
+</p>
+
+<p align="center">
+  <a href="#same-thread-three-writers">Example</a> ·
+  <a href="#does-it-work">Benchmark</a> ·
+  <a href="#install">Install</a> ·
+  <a href="#quiz">Quiz</a> ·
+  <a href="README.ko.md">한국어</a>
+</p>
+
+---
 
 ## Same thread, three writers
 
@@ -15,7 +35,7 @@ A Claude Code skill that writes Reddit replies and posts the way that subreddit'
   <img src="docs/img/thread-en-light.svg" alt="r/ClaudeAI thread 'What would you do if there's a Claude outage?'. Plain Claude wrote three paragraphs (19% human). humanizer with 10 real comments wrote two (23% human). community-humanizer wrote one line, 'the weekly limit is already the outage for most people on here' (78% human); GPT and Claude Opus ranked it above the real top comment, which scored 86%." width="100%">
 </picture>
 
-<sub>[The thread](https://www.reddit.com/r/ClaudeAI/comments/1xuzlpu/) · scores from [benchmark/reddit-comments/judged-F1](benchmark/reddit-comments/judged-F1)</sub>
+<p align="center"><sub>[The thread](https://www.reddit.com/r/ClaudeAI/comments/1xuzlpu/) · scores from [benchmark/reddit-comments/judged-F1](benchmark/reddit-comments/judged-F1)</sub></p>
 
 ## Does it work?
 
@@ -47,17 +67,23 @@ What this doesn't show:
 
 ## Install
 
-Claude Code:
+| Agent | Install |
+| --- | --- |
+| **Claude Code** | `/plugin marketplace add trina-app/community-humanizer` then `/plugin install community-humanizer@community-humanizer` |
+| **Codex, Cursor, Gemini CLI, Copilot** and other [Agent Skills](https://agentskills.io) hosts | `npx skills add trina-app/community-humanizer -g` |
+| **Any agent that can run commands** | Paste the prompt below |
 
 ```text
-/plugin marketplace add trina-app/community-humanizer
-/plugin install community-humanizer
+Set up community-humanizer for me: clone https://github.com/trina-app/community-humanizer,
+read skills/community-humanizer/SKILL.md, and follow it whenever I ask for a Reddit reply or post.
 ```
 
-Then just ask: "write a reply to this thread: <url>" or "write a post for r/selfhosted about ...".
+Then ask in plain words: "write a reply to this thread: <url>" or "write a post for r/selfhosted about ...".
+
+Whichever agent you use, it needs Node 18+ and [Claude Code](https://claude.com/claude-code) installed and signed in: the drafts are written by `claude -p` calls.
 
 <details>
-<summary>From a clone (Node 18+, Claude Code installed and signed in)</summary>
+<summary>From a clone, in a terminal</summary>
 
 ```bash
 node skills/community-humanizer/bin/voice.mjs reply <reddit post url> [--point "what you want to say"]

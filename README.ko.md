@@ -1,10 +1,32 @@
-# community-humanizer
+<h1 align="center">community-humanizer</h1>
 
-**AI 티만 빼는 게 아니라, 그 커뮤니티 사람처럼 써요.**
+<p align="center">
+  <b>AI 티만 빼는 게 아니라, 그 커뮤니티 사람처럼 써요.</b>
+</p>
 
-Reddit과 클리앙의 댓글과 글을, 그 커뮤니티 단골들이 실제로 쓰는 말투로 써 주는 Claude Code 스킬이에요. 말투는 같은 커뮤니티의 실제 댓글을 보고 맞춰요. 대신 올려 주지는 않아요.
+<p align="center">
+  클리앙과 Reddit 댓글을 그곳 단골들이 쓰는 말투로 써 주는 Claude Code 스킬이에요. 대신 올려 주지는 않아요.
+</p>
 
-**[둘 중 하나는 사람이 썼어요. 맞혀 보세요: 10문제 퀴즈 →](#퀴즈)** · [English](README.md)
+<p align="center">
+  <a href="#퀴즈"><img src="https://img.shields.io/badge/%EC%82%AC%EB%9E%8C%EC%9D%BC%EA%B9%8C_AI%EC%9D%BC%EA%B9%8C%3F-%ED%80%B4%EC%A6%88_%ED%92%80%EA%B8%B0-2a78d6?style=for-the-badge" alt="사람일까 AI일까? 퀴즈 풀기"></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Claude_Code-plugin-555" alt="Claude Code plugin">
+  <img src="https://img.shields.io/badge/license-MIT-555" alt="MIT license">
+  <a href="benchmark/"><img src="https://img.shields.io/badge/benchmark-blind%2C_held--out-555" alt="Blind, held-out benchmark"></a>
+</p>
+
+<p align="center">
+  <a href="#같은-글-세-가지-댓글">예시</a> ·
+  <a href="#사람-같은지-채점한-결과">채점 결과</a> ·
+  <a href="#설치">설치</a> ·
+  <a href="#퀴즈">퀴즈</a> ·
+  <a href="README.md">English</a>
+</p>
+
+---
 
 ## 같은 글, 세 가지 댓글
 
@@ -13,7 +35,7 @@ Reddit과 클리앙의 댓글과 글을, 그 커뮤니티 단골들이 실제로
   <img src="docs/img/thread-ko-light.svg" alt="클리앙 모두의공원 '교촌치킨 드시는분?' 글. 그냥 Claude는 세 문단(사람 11%), im-not-ai와 실제 댓글 10개는 세 문장(사람 44%), community-humanizer는 '닭이 작은 건 인정인데 가격이 안 작아요 ㅋㅋ' 한 줄(사람 82%). 진짜 공감 1위 댓글은 사람 88%." width="100%">
 </picture>
 
-<sub>[원문](https://www.clien.net/service/board/park/19296644) · 점수 출처 [benchmark/korean-comments/judged](benchmark/korean-comments/judged)</sub>
+<p align="center"><sub>[원문](https://www.clien.net/service/board/park/19296644) · 점수 출처 [benchmark/korean-comments/judged](benchmark/korean-comments/judged)</sub></p>
 
 ## 사람 같은지 채점한 결과
 
@@ -45,17 +67,23 @@ Reddit과 클리앙의 댓글과 글을, 그 커뮤니티 단골들이 실제로
 
 ## 설치
 
-**Claude Code**
+| 에이전트 | 설치 |
+| --- | --- |
+| **Claude Code** | `/plugin marketplace add trina-app/community-humanizer` 다음 `/plugin install community-humanizer@community-humanizer` |
+| **Codex, Cursor, Gemini CLI, Copilot** 등 [Agent Skills](https://agentskills.io) 지원 에이전트 | `npx skills add trina-app/community-humanizer -g` |
+| **명령어를 실행할 수 있는 모든 에이전트** | 아래 문장을 붙여 넣기 |
 
 ```text
-/plugin marketplace add trina-app/community-humanizer
-/plugin install community-humanizer
+community-humanizer를 설치해 줘: https://github.com/trina-app/community-humanizer 를 받아서
+skills/community-humanizer/SKILL.md 를 읽고, 내가 Reddit이나 클리앙 댓글·글을 부탁하면 그대로 따라 줘.
 ```
 
 그다음 "이 글에 댓글 써 줘: <주소>"나 "클리앙 아무거나질문에 올릴 글 써 줘"처럼 말하면 돼요.
 
+어떤 에이전트로 쓰든 Node 18 이상과 [Claude Code](https://claude.com/claude-code) 로그인이 필요해요. 초안은 `claude -p` 호출로 쓰거든요.
+
 <details>
-<summary>레포를 받아서 직접 쓸 때 (Node 18 이상, Claude Code 로그인 필요)</summary>
+<summary>레포를 받아서 터미널에서 직접 쓸 때</summary>
 
 ```bash
 node skills/community-humanizer/bin/voice.mjs reply <reddit 또는 클리앙 글 주소> [--point "하고 싶은 말"]
