@@ -1,0 +1,3 @@
+Lo que describís es lo que vende gente que cobra por venderlo. "Cualquiera lo puede hacer" lo dicen hace 30 años con cada herramienta nueva, y siempre terminó alguien teniendo que entender qué carajo se rompió a las 3 de la mañana. Un LLM te tira código, pero no se hace cargo de nada cuando prod se cae.
+
+Y lo de que no sabés qué aportar es un poco el síntoma de estar 2 años en el rubro y recién terminando la facu. Todavía no viste lo suficiente para saber dónde se rompe esto. Yo no tiraría la carrera por un titular de LinkedIn

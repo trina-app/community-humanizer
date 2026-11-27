@@ -1,0 +1,9 @@
+Lo que aportás es que sos el que responde cuando se rompe. Si hay un bug un viernes a las 6 en producción, nadie le va a reclamar a Claude, te lo reclaman a vos. Y para eso tenés que entender lo que se subió, aunque no lo hayas escrito.
+
+Lo de "la AI te va preguntando" me parece medio engañoso. Te pregunta "¿querés una transacción acá?" y vos contestás que sí, pero para contestar bien tenés que saber cómo usa el CRM la gente de operaciones, qué pasa si dos usuarios tocan el mismo registro, qué dato histórico ya está sucio en la base. Eso no está en el repo ni en el ticket. Alguien que no conoce el producto le va a decir que sí a todo y va a salir algo que anda en stage y falla con los datos reales.
+
+Además, el "anda y no rompe nada" se mide mal. El problema de lo suficientemente bueno no aparece en el ticket, aparece a los 6 meses, cuando tenés 40 features que resolvieron cada uno su caso de una forma distinta y nadie sabe por qué. Cuando sos el único dev, evitar eso es parte de tu laburo.
+
+Ojo igual con una cosa: si revisás sin entender del todo, o si ya no te acordás cómo funciona lo que subiste hace dos meses, ahí sí te estás vaciando. Yo me fijaría en eso más que en si el reemplazo es posible.
+
+Y que parezca fácil desde adentro también es señal de que lo estás haciendo bien. Lo difícil es lo que ya sabés y no ves.

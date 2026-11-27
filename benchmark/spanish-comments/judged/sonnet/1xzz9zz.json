@@ -1,0 +1,22 @@
+{
+ "id": "1xzz9zz",
+ "sub": "programacion",
+ "order": [
+  "HUMANIZER_S",
+  "PLAIN",
+  "HUMAN",
+  "SKILL"
+ ],
+ "human": {
+  "HUMANIZER_S": 30,
+  "PLAIN": 8,
+  "HUMAN": 88,
+  "SKILL": 85
+ },
+ "rank": {
+  "HUMANIZER_S": 1,
+  "PLAIN": 3,
+  "HUMAN": 4,
+  "SKILL": 2
+ }
+}

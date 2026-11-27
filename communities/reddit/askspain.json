@@ -1,0 +1,46 @@
+{
+ "community": "r/askspain",
+ "platform": "reddit",
+ "measured": "2026-11-27",
+ "comments": {
+  "n": 159,
+  "source": "top-level comments from the busiest recent threads, read 2026-11-27",
+  "words_median": 30,
+  "types": {
+   "answer": 0.465,
+   "one-liner": 0.245,
+   "anecdote": 0.113,
+   "disagree": 0.044,
+   "question-back": 0,
+   "side-point": 0.038,
+   "agree": 0.031,
+   "joke": 0.044,
+   "complaint": 0.019
+  }
+ },
+ "posts": {
+  "n": 40,
+  "words_median": 137,
+  "paragraphs_median": 3,
+  "list_pct": 5,
+  "bold_or_heading_pct": 8,
+  "greeting_pct": 0,
+  "ends_with_question_pct": 23
+ },
+ "rules": {
+  "ai_content": "banned",
+  "ai_rules": [
+   "No hilos de poco esfuerzo"
+  ],
+  "self_promotion_rules": [
+   "No se permiten encuestas o autopromoción"
+  ],
+  "notes": [
+   "The rule \"No hilos de poco esfuerzo\" says: \"No aceptamos nada generado por IA.\"",
+   "Political questions are removed; political talk goes to r/SpainPolitics.",
+   "Questions about moving to Spain go to r/GoingToSpain, relationship questions to r/Relaciones."
+  ],
+  "checked": "2026-11-27",
+  "source": "https://www.reddit.com/r/askspain/about/rules"
+ }
+}

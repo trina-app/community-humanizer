@@ -1,0 +1,22 @@
+Antes del número, pensá qué es el rol. Lo que describís es un jefe de área de uno solo, no un sysadmin senior: HIS, soporte a todos los sectores, guardia, reportes, documentación y armar el equipo. Sysarmy te sirve de piso, no de techo. Yo no me ataría a 4M. Dejá que tiren un número primero si pueden, y si no, pedí un rango cuyo piso sea lo que hoy te cierra.
+
+Ojo con lo de "revisión a los 3 meses": si no queda escrito con fecha y criterio, es una promesa al aire. Mejor pactar un ajuste periódico atado a inflación o paritaria. Y fuera de convenio no tenés escala ni horas extra automáticas, así que todo lo que no esté escrito no existe.
+
+Sobre la guardia:
+- Siendo el único y con un hospital con internación, "guardia" puede ser 24/7 los 365 días. Eso no lo aguanta nadie por mucho tiempo.
+- Pedí que se defina por escrito qué es guardia pasiva, qué se considera intervención, cómo se paga (adicional fijo por disponibilidad más horas o compensatorio por intervención) y cuál es el límite.
+- Que el proveedor del HIS tenga un SLA con escalamiento propio fuera de horario, así vos no sos el único punto de falla.
+- Hablalo con un abogado laboral antes de firmar. Fuera de convenio, la disponibilidad gratis es lo más fácil de que se te cuele.
+
+Otras cosas que yo dejaría claras antes de aceptar:
+- **Alcance:** qué es tuyo y qué no (redes, telefonía, impresoras, equipos, cámaras, equipamiento médico conectado). Si no se define, todo termina siendo tuyo.
+- **Presupuesto y autonomía:** quién aprueba compras, licencias y contratos con terceros. Sin eso sos responsable de algo que no controlás.
+- **Seguridad y datos:** son historias clínicas, datos sensibles. Backups, accesos, antivirus y plan ante ransomware (los hospitales son blanco frecuente). Quién responde si pasa algo y qué recursos tenés para prevenirlo.
+- **Refuerzo:** pedí un compromiso de sumar a alguien (aunque sea un pasante o junior) en 6 a 12 meses. Si no, "documentar para después sumar gente" queda en la nada.
+- **Tus proyectos propios:** si querés seguir con ellos, que quede por escrito que podés hacerlo y que no hay conflicto con propiedad intelectual. Muchos contratos lo cierran por default.
+
+Para comparar con el freelo, no mires solo el bruto. Descontá cargas (alrededor del 17%), sumá aguinaldo y vacaciones pagas, y restá la flexibilidad que perdés con 44 h presenciales. A veces el número "no tan alto" rinde distinto, pero otras veces pierdes más de lo que pensás.
+
+Y si sentís que van a querer pagar poco, no te apures a responder en el momento. Pedí la propuesta por escrito, pensala con calma y contraofertá. Una directora que te ofrece el puesto después de ver tu trabajo ya te está diciendo que te quiere ahí, así que tenés más margen del que sentís.
+
+Suerte, y contanos cómo sale.

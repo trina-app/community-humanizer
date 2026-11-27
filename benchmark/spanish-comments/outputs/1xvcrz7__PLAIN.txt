@@ -1,0 +1,19 @@
+Te entiendo, es una sensación bastante compartida en el rubro hoy. Te dejo algunas cosas que a mí me ayudan a verlo.
+
+**Escribir código se abarató, pero el laburo nunca fue tipear.** Era entender el problema, decidir qué construir, saber qué puede romperse y hacerte cargo cuando se rompe. Un LLM te arma una demo en una tarde. Lo que no hace solo es sostener un sistema en producción, debuggear algo raro a las 3 de la mañana o darse cuenta de que el diseño que le pediste va a explotar con 10x de carga. Para todo eso necesitás saber lo técnico.
+
+**Saber lo técnico es lo que te permite usar bien al agente.** Sin eso, no tenés cómo notar cuándo te está mintiendo con total seguridad, y se equivoca seguido. Los que orquestan 3000 agentes sin entender nada de lo que hay abajo son los primeros en comerse el bardo cuando algo falla. Con criterio técnico, la herramienta te multiplica. Sin criterio, solo genera más deuda más rápido.
+
+**Lo que aportás que un LLM no:** responsabilidad, contexto del negocio y de las personas, gusto para decidir qué vale la pena hacer, y saber cuándo algo está mal aunque compile. Nada de eso es "ser más humano" en el sentido de psicología. Es seguir siendo técnico, pero con juicio.
+
+Dicho esto, tampoco te voy a vender humo: el mercado está duro, sobre todo para perfiles con poca experiencia, y el rol está cambiando. Eso es real y es normal que te pegue. Pero que el rol cambie no es lo mismo que desaparezca. Las áreas donde la profundidad pesa (infra, seguridad, performance, datos, sistemas críticos) no se están volviendo menos necesarias.
+
+Un par de consejos prácticos:
+
+- No decidas un cambio de carrera en medio de una crisis. Venís de laburar, parar y terminar la facu, y es probable que parte de esto sea cansancio e incertidumbre.
+- Agarrá un proyecto propio y construilo con estas herramientas. Cuando ves que podés hacer en un fin de semana lo que antes te llevaba un mes, a muchos se les vuelve a prender la curiosidad que tenías de pibe.
+- Fijate qué parte te gusta más: entender cómo funcionan las cosas, o escribir el código en sí. Si es lo primero, tenés para rato.
+
+Y si después de probar todo esto igual sentís que no va, cambiar es válido. Pero no lo hagas por miedo a que "un LLM te reemplace", porque esa pregunta todavía no tiene la respuesta que parece.
+
+Ánimo, que no sos el único que se lo está preguntando.

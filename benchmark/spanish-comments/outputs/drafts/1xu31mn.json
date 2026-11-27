@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "joke",
+  "complaint",
+  "answer"
+ ],
+ "drafts": [
+  "Paso 7 es \"reviso por arriba\", paso 9 es \"paso el MR\". El revisor del MR hace el paso 7 de tu paso 7, y así llegamos a producción por fe",
+  "Lo triste es que el paso 7 es \"reviso por arriba\" y el 9 es \"paso el MR\", o sea que el que lee el service de verdad es el que te aprueba el MR, que seguro también lo mira por arriba porque también está prendido fuego. Todos confiando en que el otro leyó. Y cuando explote en prod nadie sabe cómo funciona eso porque nadie lo escribió ni lo leyó",
+  "El proceso está bien armado, el problema es el paso 7. Si no leés el service, que es donde vive la lógica de negocio, estás confiando en que los tests cubran todo, y los tests también los escribió la IA, así que tienden a validar lo que el código ya hace y no lo que tendría que hacer. Yo el plan.md lo leería más por arriba y el código de la lógica lo leería línea por línea, que es justo al revés de lo que hacés. Lo de los procesos que decís que no mirás tanto es donde suelen aparecer los bugs feos, los que pasan los tests y explotan en producción. Si no llegás a leer todo, al menos leé lo que toca plata, permisos, y escrituras a la base"
+ ],
+ "pick": 0,
+ "haiku": "1",
+ "rates_from": "pool (160)"
+}

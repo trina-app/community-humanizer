@@ -1,0 +1,48 @@
+{
+ "community": "r/China_irl",
+ "platform": "reddit",
+ "measured": "2026-11-27",
+ "comments": {
+  "n": 160,
+  "source": "top-level comments from the busiest recent threads, read 2026-11-27",
+  "chars_median": 23,
+  "types": {
+   "answer": 0.156,
+   "one-liner": 0.119,
+   "anecdote": 0.069,
+   "disagree": 0.044,
+   "question-back": 0.019,
+   "side-point": 0.219,
+   "agree": 0.006,
+   "joke": 0.263,
+   "complaint": 0.106
+  }
+ },
+ "posts": {
+  "n": 40,
+  "source": "the 40 text posts with the most comments (5+) of 2026-11-01 to 11-24, body of 60+ characters, not removed (Arctic Shift); the profile command's 30-word filter finds almost no Chinese posts",
+  "chars_median": 316,
+  "lines_median": 5,
+  "list_pct": 3,
+  "bold_or_heading_pct": 10,
+  "greeting_pct": 0,
+  "ends_with_question_pct": 20
+ },
+ "rules": {
+  "ai_content": "disclosure required",
+  "ai_rules": [
+   "保证发帖质量"
+  ],
+  "self_promotion_rules": [
+   "保证发帖质量"
+  ],
+  "notes": [
+   "r/China_irl rule 保证发帖质量 (d): AI-generated content must be declared when you post it (在发布由 AI 生成的内容时，应主动进行声明); undeclared posts may be removed.",
+   "Rule 使用中文: write in Chinese; non-Chinese posts and comments may be removed.",
+   "Rule 保证发帖质量 (b): self-promotion, surveys, donation requests and anything involving money need the mods' approval through ModMail first.",
+   "Rule 保护个人隐私: remove tracking parameters from links, no b23.tv short links, and blur usernames and personal details in screenshots."
+  ],
+  "checked": "2026-11-27",
+  "source": "https://www.reddit.com/r/China_irl/about/rules"
+ }
+}

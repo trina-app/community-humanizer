@@ -1,0 +1,14 @@
+Instalar sí es copiar archivos, pero casi nunca es solo eso. El instalador es un programa más (Inno Setup, NSIS, MSI, lo que sea) que automatiza un montón de pasos que si no tendrías que hacer a mano.
+
+Lo que suele hacer además de copiar:
+
+- Escribe en el registro de Windows: configuración, asociaciones de archivos (para que los .pdf se abran con tu lector), opciones del menú contextual, y la entrada que hace que el programa aparezca en "Aplicaciones y características" para poder desinstalarlo.
+- Instala dependencias. Muchos programas necesitan el runtime de Visual C++, .NET o alguna DLL compartida. Si no están en tu máquina, el exe ni arranca. El instalador las trae o las verifica.
+- Crea accesos directos, y según el caso registra servicios, tareas programadas, drivers o agrega carpetas al PATH.
+- Pide permisos de administrador, porque Program Files está protegido y un usuario normal no puede escribir ahí.
+
+Ahora, lo de copiar y pegar a veces funciona perfectamente. Esos son los programas "portables": el exe lleva todo adentro o al lado, y guarda su configuración en su propia carpeta en vez de en el registro. Si el programa no necesita nada del sistema, instalarlo es opcional. En macOS arrastrar la .app a Aplicaciones es literalmente eso, porque la .app es una carpeta con todo dentro. En Linux el gestor de paquetes (apt, dnf, pacman) es un instalador que además lleva la cuenta de qué archivo pertenece a qué paquete y qué depende de qué.
+
+Un detalle: "Program Files (x86)" no depende de tu Windows a secas, es donde van los programas de 32 bits cuando tenés un Windows de 64. En uno de 32 bits solo existe Program Files.
+
+Y la razón práctica más grande es desinstalar. Si copiaste una carpeta y la borrás, te pueden quedar claves de registro, servicios y archivos en AppData tirados por ahí. El instalador anota todo lo que tocó para poder deshacerlo después.

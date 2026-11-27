@@ -1,0 +1,22 @@
+{
+ "id": "1xnk2eq",
+ "sub": "devsarg",
+ "order": [
+  "HUMAN",
+  "HUMANIZER_S",
+  "SKILL",
+  "PLAIN"
+ ],
+ "human": {
+  "HUMAN": 88,
+  "HUMANIZER_S": 30,
+  "SKILL": 55,
+  "PLAIN": 5
+ },
+ "rank": {
+  "HUMAN": 4,
+  "HUMANIZER_S": 1,
+  "SKILL": 2,
+  "PLAIN": 3
+ }
+}

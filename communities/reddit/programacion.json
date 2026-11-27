@@ -1,0 +1,45 @@
+{
+ "community": "r/programacion",
+ "platform": "reddit",
+ "measured": "2026-11-27",
+ "comments": {
+  "n": 41,
+  "source": "top-level comments from the busiest recent threads, read 2026-11-27",
+  "words_median": 26,
+  "types": {
+   "answer": 0.39,
+   "one-liner": 0.171,
+   "anecdote": 0.073,
+   "disagree": 0.073,
+   "question-back": 0.049,
+   "side-point": 0.098,
+   "agree": 0,
+   "joke": 0.098,
+   "complaint": 0.049
+  }
+ },
+ "posts": {
+  "n": 12,
+  "words_median": 67,
+  "paragraphs_median": 2,
+  "list_pct": 8,
+  "bold_or_heading_pct": 8,
+  "greeting_pct": 0,
+  "ends_with_question_pct": 17
+ },
+ "rules": {
+  "ai_content": "no rule found",
+  "ai_rules": [],
+  "self_promotion_rules": [
+   "Sin spam"
+  ],
+  "notes": [
+   "Posts and comments must be in Spanish (\"En Español\").",
+   "Programming topics only; not a tech-support sub.",
+   "Homework is not done for you: show your own progress.",
+   "Generic titles (\"Hola\", \"Ayuda\", \"Tengo una pregunta\") are removed; code goes in code blocks."
+  ],
+  "checked": "2026-11-27",
+  "source": "https://www.reddit.com/r/programacion/about/rules"
+ }
+}

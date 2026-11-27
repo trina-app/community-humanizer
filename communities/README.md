@@ -18,7 +18,7 @@ node skills/community-humanizer/bin/voice.mjs profile clien/<board>
 ```
 
 This writes the numbers. Then open the community's rules page and fill in `rules` by hand:
-- `ai_content`: `"banned"` if a rule bans AI-written posts or comments, `"no rule found"` if you read the rules and there is none, `"unknown"` if you didn't check
+- `ai_content`: `"banned"` if a rule bans AI-written posts or comments, `"disclosure required"` if AI-written text is allowed but must be declared (put the rule in `notes` so it is shown before you post), `"no rule found"` if you read the rules and there is none, `"unknown"` if you didn't check
 - `ai_rules`: the names of those rules, word for word
 - `self_promotion_rules`: the names of the rules about promotion, links or ads
 - `notes`: anything else a newcomer gets removed for, such as a required flair, a title tag, or a karma minimum

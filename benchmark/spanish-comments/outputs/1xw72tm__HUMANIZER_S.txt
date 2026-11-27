@@ -1,0 +1,5 @@
+Sí, se puede, y bastante. Sistemas te enseña a modelar procesos, a trabajar con datos y a pensar en cómo se resuelve un problema paso a paso, y eso sirve en muchos lados. Lo que más sale en la práctica es análisis de datos, análisis de negocio, gestión de proyectos, producto, consultoría, auditoría de sistemas, ciberseguridad (que es bastante más de procesos y riesgo que de programar) y finanzas, donde mucha gente que sabe de datos tiene ventaja sobre la que solo sabe de números.
+
+Que la IA te haya desmotivado no quiere decir que la carrera no te sirva. Entender cómo funcionan los sistemas te deja mejor parada que alguien que solo usa las herramientas sin saber qué hay detrás.
+
+Yo no me cambiaría todavía. Ya llevas la mitad, así que termina, y mientras tanto prueba cosas distintas: una materia de bases de datos o de gestión, un proyecto chico, una pasantía en algo que no sea desarrollo puro. Con eso vas a ver qué te late sin tirar media carrera. Si después de probar sigues sin sentir nada, ahí sí cambiar tiene sentido, y economía o contabilidad combinadas con lo que ya sabes de sistemas te dejan en un perfil muy buscado.

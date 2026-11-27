@@ -1,0 +1,7 @@
+Sí, se puede. Un matemático que sabe programar tiene bastante salida: datos, machine learning, backend, criptografía, finanzas cuantitativas, optimización. Ahí piden gente que entienda lo que está haciendo y no solo que escriba código.
+
+Lo del mercado es verdad, el entry level está más duro que hace unos años. Pero eso le pega más a quien sabe poco de todo que a alguien con una base fuerte y algo de portfolio. Y pensar que la IA "lo hace mil veces mejor" tampoco es tan así: alguien tiene que saber si lo que escupió está bien, y para eso hace falta justo lo que vos estás entrenando.
+
+Yo haría esto: terminá la carrera, que no te cierra puertas en ningún sentido, y en paralelo aprendé Python y SQL por tu cuenta. Racket te sirve para pensar (recursión, composición de funciones), pero afuera casi nadie lo usa, así que no te encariñes con el lenguaje. Después armá un par de proyectos propios con datos reales y subilos a GitHub. Eso pesa más que cualquier cantidad de cursos.
+
+Con 21 años y segundo año tenés tiempo de sobra, no te apures por el atraso.

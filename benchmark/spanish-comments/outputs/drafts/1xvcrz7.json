@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "side-point",
+  "disagree",
+  "joke"
+ ],
+ "drafts": [
+  "lo de los 3000 agentes en paralelo hoy esta subsidiado con plata de inversores, el dia que te cobren lo que cuesta de verdad capaz sale mas barato el pibe que lee la codebase",
+  "Lo que describís es lo que vende gente que cobra por venderlo. \"Cualquiera lo puede hacer\" lo dicen hace 30 años con cada herramienta nueva, y siempre terminó alguien teniendo que entender qué carajo se rompió a las 3 de la mañana. Un LLM te tira código, pero no se hace cargo de nada cuando prod se cae.\n\nY lo de que no sabés qué aportar es un poco el síntoma de estar 2 años en el rubro y recién terminando la facu. Todavía no viste lo suficiente para saber dónde se rompe esto. Yo no tiraría la carrera por un titular de LinkedIn",
+  "Tranqui, si un LLM hiciera todo lo que dicen, ya me hubiera pedido a mí mismo que le arregle el deploy del viernes a las 6 de la tarde"
+ ],
+ "pick": 1,
+ "haiku": "2",
+ "rates_from": "pool (160)"
+}

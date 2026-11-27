@@ -1,0 +1,15 @@
+Sí, es totalmente posible. Sistemas es de las carreras más versátiles justamente por lo que buscabas: no te encasilla en programar. Con ese título (o incluso a medio camino con las materias que ya llevas) puedes moverte por varios lados:
+
+- **Análisis de negocio / analista funcional**: traducir lo que necesita una empresa a requerimientos para los equipos técnicos. Hay mucha demanda y se programa poco o nada.
+- **Datos y BI**: análisis de datos, dashboards, reportes. Mezcla muy bien con economía o contabilidad.
+- **Gestión de proyectos / producto**: Project Manager, Scrum Master, Product Owner. Importa más organizar y comunicar que escribir código.
+- **Consultoría de procesos o ERP** (SAP, Oracle, etc.): implementar sistemas en áreas como finanzas, logística o RR.HH. Si te gusta la contabilidad, esto es oro.
+- **Ciberseguridad, auditoría de sistemas y riesgos**: auditoría TI es un puente directo entre sistemas y el mundo contable/financiero.
+- **QA, soporte, UX, infraestructura/redes**: otras ramas técnicas que no son "ser dev".
+- **Fintech, banca, emprendimiento**: ahí se valora mucho alguien que entienda tecnología y negocio a la vez.
+
+Sobre la IA: sí, está cambiando el panorama, pero también afecta a economía y contabilidad (la automatización contable avanza rápido). Cambiarte de carrera no te saca de ese tema. Lo que cuenta es saber usar la tecnología en un área concreta, y eso es lo que tú puedes ofrecer.
+
+Mi consejo: estás a mitad de carrera, así que no tires lo avanzado. Busca electivas, una pasantía o proyectos que se acerquen a lo que sí te interesa (datos, procesos, finanzas) y mira qué tal se siente. Si más adelante quieres, puedes complementar con un diplomado o una maestría en finanzas, administración o analítica. Esa combinación (sistemas + algo de negocio) suele ser más valiosa que cualquiera de las dos por separado.
+
+Que no te apasione programar no significa que la carrera no sea para ti. Mucha gente exitosa en TI nunca fue dev. ¡Ánimo!

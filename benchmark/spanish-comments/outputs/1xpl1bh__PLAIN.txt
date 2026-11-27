@@ -1,0 +1,31 @@
+Corta: **instalar es copiar archivos + configurar el sistema para que sepa que ese programa existe**. Copiar es solo la parte más visible.
+
+## Qué hace un instalador además de copiar
+
+1. **Registro de Windows.** Muchos programas guardan configuración, licencias, rutas y asociaciones en el registro. Si no existen esas claves, el programa puede fallar o arrancar "de cero".
+2. **Asociaciones de archivos.** Que al hacer doble clic en un `.pdf`, `.psd` o `.mkv` se abra con tu programa, o que aparezca una opción en el menú contextual del botón derecho. Todo eso son entradas en el registro.
+3. **Dependencias.** Tu programa puede necesitar Visual C++ Redistributable, .NET, DirectX, una versión concreta de una DLL, etc. El instalador comprueba si existen y, si no, las instala. Si solo copias la carpeta, te sale el típico "falta MSVCP140.dll".
+4. **Servicios, drivers y tareas programadas.** Un antivirus, un cliente de VPN o un launcher con actualizaciones automáticas necesitan registrar un servicio de Windows o una tarea. Eso no se logra copiando un `.exe`.
+5. **Accesos directos y entrada en el menú Inicio.** Cosméticos, pero son parte de la experiencia.
+6. **Variables de entorno / PATH.** Herramientas como Git, Python o Node se añaden al PATH para poder usarlas desde la terminal.
+7. **Permisos.** `Program Files` está protegido, y escribir ahí requiere permisos de administrador. El instalador pide elevación una vez y deja todo en su sitio. Por eso muchos programas guardan sus datos de usuario en `AppData`, no en su carpeta.
+8. **Registro para desinstalar.** El instalador añade una entrada en "Aplicaciones y características" con la lista de lo que puso, para poder quitarlo limpiamente. Si pegas una carpeta, Windows ni se entera de que existe.
+9. **Transacciones y rollback.** Con MSI, si algo falla a mitad de la instalación, se revierte todo para no dejarte el sistema a medias.
+
+## Entonces, ¿por qué algunos programas no se instalan?
+
+Porque **no necesitan nada de lo anterior**. Son los llamados *portables*: un ejecutable autocontenido que lleva todo dentro (o solo usa librerías que ya trae Windows) y guarda su configuración junto a él. Ejemplos clásicos: 7-Zip portable, Notepad++ en zip, PuTTY, muchas utilidades de Sysinternals. Los copias, haces doble clic, y funcionan. Y cuando quieres quitarlos, borras la carpeta.
+
+Es un diseño deliberado: el desarrollador evita depender del sistema. El precio es que no tienes integración con el sistema (menú contextual, asociaciones, actualizaciones automáticas), a menos que lo hagas tú a mano.
+
+## Otros sistemas lo resuelven distinto
+
+- **macOS:** una `.app` es en realidad una carpeta con todo dentro (un *bundle*). Por eso "instalar" suele ser arrastrarla a Aplicaciones. Es literalmente copiar y pegar, pero el sistema está diseñado para eso.
+- **Linux:** el gestor de paquetes (`apt`, `dnf`, `pacman`) resuelve dependencias, coloca archivos en `/usr/bin`, `/usr/lib`, `/etc`, etc., y guarda una base de datos de qué archivo pertenece a qué paquete. Desinstalar es limpio porque el sistema sabe exactamente qué puso.
+- **Formatos modernos** (MSIX, Flatpak, Snap, AppImage) intentan lo mismo: aislar o empaquetar el programa con sus dependencias para que instalar y desinstalar sea predecible.
+
+## Resumen
+
+Copiar y pegar funciona cuando el programa es autocontenido. Instalar es necesario cuando el programa necesita **integrarse** con el sistema (registro, dependencias, servicios, permisos, desinstalación). La "instalación" es básicamente el proceso de preparar el entorno para que el programa funcione y se pueda gestionar después.
+
+Si quieres verlo con tus propios ojos, instala un programa con Process Monitor (Sysinternals) abierto y verás todo lo que toca además de copiar archivos. Es una buena forma de quitarse la duda existencial.

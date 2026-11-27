@@ -25,6 +25,16 @@ const items: any[] = []
     rawHuman: String(p.human.body), rawAi: readFileSync(join(D, 'replies', `${p.id}__SKILL.txt`), 'utf8').trim(), human: cut(String(p.human.body)), ai: cut(readFileSync(join(D, 'replies', `${p.id}__SKILL.txt`), 'utf8').trim()),
     scores: Object.fromEntries(['codex', 'opus', 'sonnet'].map((j) => [j === 'codex' ? 'gpt' : j, { human: score(join(D, 'judged'), j, p.id, 'HUMAN'), ai: score(join(D, 'judged'), j, p.id, 'SKILL') }])) })
 }
+// Chinese (r/China_irl) and Spanish Reddit comments: held-out sets, SKILL; outputs and scores are in the repo
+for (const [lang, dir, name] of [['zh', 'chinese-voice-test', 'chinese-comments'], ['es', 'spanish-voice-test', 'spanish-comments']]) {
+  const D = join(K, dir), B = new URL(`../../benchmark/${name}/`, import.meta.url).pathname, posts = JSON.parse(readFileSync(join(D, 'posts.json'), 'utf8')) as any[]
+  for (const p of posts) {
+    const ai = readFileSync(join(B, 'outputs', `${p.id}__SKILL.txt`), 'utf8').trim()
+    items.push({ qid: `${lang}c-${p.id}`, lang, kind: 'comment', place: `r/${p.sub}`, title: p.title, body: cut(p.body ?? ''), url: `https://www.reddit.com/r/${p.sub}/comments/${p.id}/`,
+      rawHuman: String(p.human.body), rawAi: ai, human: cut(String(p.human.body)), ai: cut(ai),
+      scores: Object.fromEntries(['codex', 'opus', 'sonnet'].map((j) => [j === 'codex' ? 'gpt' : j, { human: score(join(B, 'judged'), j, p.id, 'HUMAN'), ai: score(join(B, 'judged'), j, p.id, 'SKILL') }])) })
+  }
+}
 // posts: held-out set, MESSY
 {
   const D = join(K, 'post-voice-test', 'holdout'), posts = JSON.parse(readFileSync(join(D, 'posts.json'), 'utf8')) as any[]
@@ -36,9 +46,17 @@ const items: any[] = []
       scores: Object.fromEntries(['codex', 'opus', 'sonnet'].map((j) => [j === 'codex' ? 'gpt' : j, { human: score(join(D, 'judged'), j, p.id, 'HUMAN'), ai: score(join(D, 'judged'), j, p.id, 'MESSY') }])) })
   }
 }
-const ko = items.filter((x) => x.lang === 'ko' && (POL.test(x.title) || POL.test(x.human)))
+// r/China_irl drifts into politics and one real person's scandal; the benchmark's guard let those through, the quiz doesn't.
+// 1xnixty was read by hand: Taiwan and NVIDIA come up only as chip-industry examples.
+const ZH_POL = /黄仁勋|老黄|黄皮|爱泼斯坦|萝莉岛|中共|共产党|习近平|政府|政治|台湾|香港|新疆|西藏|穆斯林|伊斯兰|性少数|间谍|认知战|地缘|粉红|润人|经济停止|经济恶化|身败名裂|川普|特朗普|拜登|战争|民主|社会主义|集权/
+const ZH_OK = new Set(['zhc-1xnixty'])
+const zh = items.filter((x) => x.lang === 'zh' && !ZH_OK.has(x.qid) && [x.title, x.body, x.rawHuman, x.rawAi].some((s) => ZH_POL.test(s)))
+// Spanish: same idea, and a real reply that is only a link would give the answer away
+const ES_POL = /nazi|fascis|comunis|\bvox\b|psoe|\bpp\b|sánchez|ayuso|amlo|morena|sheinbaum|milei|kirchner|peronis|elecci|gobierno|polític/i
+const es = items.filter((x) => x.lang === 'es' && ([x.title, x.body, x.rawHuman, x.rawAi].some((s) => ES_POL.test(s)) || /^\s*https?:\/\/\S+\s*$/.test(x.rawHuman.split('\n')[0])))
+const ko = [...items.filter((x) => x.lang === 'ko' && (POL.test(x.title) || POL.test(x.human))), ...zh, ...es]
 const unfair = items.filter((x) => !fair(x.rawHuman, x.rawAi))
 const keep = items.filter((x) => !ko.includes(x) && !unfair.includes(x)).map(({ rawHuman, rawAi, ...x }) => x)
 writeFileSync(new URL('../src/items.json', import.meta.url), JSON.stringify(keep))
-for (const [l, k] of [['en', 'comment'], ['en', 'post'], ['ko', 'comment'], ['ko', 'post']]) console.log(`${l} ${k}: ${keep.filter((x) => x.lang === l && x.kind === k).length}`)
+for (const [l, k] of [['en', 'comment'], ['en', 'post'], ['ko', 'comment'], ['ko', 'post'], ['zh', 'comment'], ['es', 'comment']]) console.log(`${l} ${k}: ${keep.filter((x) => x.lang === l && x.kind === k).length}`)
 console.log(`dropped as political: ${ko.length}, dropped because only one side would be cut: ${unfair.length}`)

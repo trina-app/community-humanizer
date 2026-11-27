@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "answer",
+  "complaint",
+  "joke"
+ ],
+ "drafts": [
+  "Lee Designing Data-Intensive Applications de Kleppmann, que no te habla de MVC ni de modas sino de por qué los sistemas se rompen. Después Fundamentals of Software Architecture si querés algo más \"de rol\". Igual la arquitectura se entiende de verdad cuando un proyecto tuyo crece y se pone feo, antes de eso los libros te suenan a humo",
+  "lo mejor es que el que suelta esa frase nunca te explica qué es \"hacer arquitecturas\", solo que hay que saberlo. es el \"hay que aprender a aprender\" de ahora",
+  "Dibujar cajitas con flechas en una pizarra y decir \"esto escala\" hasta que alguien te crea"
+ ],
+ "pick": 0,
+ "haiku": "1",
+ "rates_from": "pool (94)"
+}

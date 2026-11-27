@@ -1,0 +1,22 @@
+{
+ "id": "1xlm663",
+ "sub": "preguntaleareddit",
+ "order": [
+  "HUMAN",
+  "PLAIN",
+  "HUMANIZER_S",
+  "SKILL"
+ ],
+ "human": {
+  "HUMAN": 80,
+  "PLAIN": 6,
+  "HUMANIZER_S": 40,
+  "SKILL": 72
+ },
+ "rank": {
+  "HUMAN": 3,
+  "PLAIN": 1,
+  "HUMANIZER_S": 2,
+  "SKILL": 4
+ }
+}

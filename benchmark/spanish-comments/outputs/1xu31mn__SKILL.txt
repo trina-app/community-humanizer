@@ -1,0 +1,1 @@
+Paso 7 es "reviso por arriba", paso 9 es "paso el MR". El revisor del MR hace el paso 7 de tu paso 7, y así llegamos a producción por fe

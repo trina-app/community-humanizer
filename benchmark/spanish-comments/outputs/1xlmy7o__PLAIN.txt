@@ -1,0 +1,26 @@
+Arquitectura no se aprende de golpe con un curso, es más bien acumular criterio sobre trade-offs. Pero hay un camino bastante claro:
+
+**Libros (en este orden te lo recomendaría):**
+
+1. **"A Philosophy of Software Design"** (John Ousterhout): corto y muy práctico. Te enseña a pensar en complejidad y diseño de módulos, que es la base de todo lo demás.
+2. **"Clean Architecture"** (Robert C. Martin): ojo que tiene opiniones fuertes y algo dogmáticas, pero te da el vocabulario (capas, dependencias, límites). Léelo con espíritu crítico.
+3. **"Fundamentals of Software Architecture"** (Mark Richards y Neal Ford): ideal para ver los distintos estilos (monolito, microservicios, event-driven, etc.) y cuándo conviene cada uno.
+4. **"Designing Data-Intensive Applications"** (Martin Kleppmann): el mejor libro para entender bases de datos, consistencia, colas, replicación. Es denso, pero es oro puro.
+5. **"Software Architecture: The Hard Parts"**: para cuando ya tengas lo anterior y quieras meterte en sistemas distribuidos.
+
+**Otros recursos:**
+
+- **Domain-Driven Design**: empieza con "Learning Domain-Driven Design" (Vlad Khononov), mucho más digerible que el libro azul de Eric Evans.
+- **Patrones**: refactoring.guru es gratis y está muy bien para patrones de diseño.
+- **Blogs**: Martin Fowler (martinfowler.com), y The Pragmatic Engineer.
+- **Casos reales**: los blogs de ingeniería de Netflix, Uber, Stripe, etc. y el repo "awesome-scalability" en GitHub.
+- **Diagramas**: aprende el modelo C4 para comunicar arquitectura, es más importante de lo que parece.
+
+**Consejos prácticos:**
+
+- Lo que dices del MVC es justo el punto: la arquitectura es elegir según el contexto. No existe "la mejor", todo es trade-offs (complejidad vs. flexibilidad, consistencia vs. disponibilidad, etc.).
+- Practica con proyectos propios: arma el mismo proyecto como monolito modular y luego sepáralo, y vas a entender por qué se hace cada cosa.
+- Lee código de proyectos open source grandes y fíjate cómo organizan los módulos.
+- Escribe ADRs (Architecture Decision Records) de tus decisiones. Te obliga a justificar el porqué.
+
+Y una aclaración sobre lo que ves en los comentarios: el código sigue siendo importante. Un buen arquitecto es alguien que ha escrito mucho código y ha sufrido las consecuencias de malas decisiones. La arquitectura se aprende sobre todo con experiencia, así que no te saltes esa parte.

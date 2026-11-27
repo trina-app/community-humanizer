@@ -1,0 +1,22 @@
+{
+ "id": "1xsjqix",
+ "sub": "askspain",
+ "order": [
+  "HUMAN",
+  "PLAIN",
+  "SKILL",
+  "HUMANIZER_S"
+ ],
+ "human": {
+  "HUMAN": 85,
+  "PLAIN": 8,
+  "SKILL": 45,
+  "HUMANIZER_S": 20
+ },
+ "rank": {
+  "HUMAN": 2,
+  "PLAIN": 4,
+  "SKILL": 1,
+  "HUMANIZER_S": 3
+ }
+}

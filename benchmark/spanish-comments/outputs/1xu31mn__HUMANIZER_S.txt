@@ -1,0 +1,7 @@
+Tu flujo está bastante bien armado, pero el paso 7 es el que me haría ruido. Si no llegás a leer el service, justo la parte donde vive la lógica de negocio queda sin revisar, y ahí es donde la IA mete las cagadas sutiles: un caso borde que no contempló, una query que anda con 10 registros y se muere con 10 mil, una validación que asumió algo que no es cierto en tu dominio.
+
+Yo leo todo, pero no con la misma profundidad. Lo que es boilerplate, DTOs, mapeos y tests lo recorro rápido. Services y todo lo que toque plata, permisos o datos de otros lo leo línea por línea. Si no entiendo algo que generó, lo reescribo o le pido que lo simplifique, porque si mañana se rompe en prod el que firmó el MR sos vos, no la IA.
+
+También ojo con los tests: si los generó la misma IA que escribió el código, muchas veces testean lo que el código hace y no lo que debería hacer. Con que escribas vos un par de casos a mano para lo importante ya ganás un montón.
+
+Si están todos prendidos fuego y nadie lee a fondo, la deuda se acumula igual, solo que la vas a pagar más adelante y con intereses.

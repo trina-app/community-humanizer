@@ -1,0 +1,1 @@
+Lo que me quema es que "instalar" se vendió siempre como magia cuando en el 90% de los casos es copiar archivos y apuntar un par de cosas en el registro, y nadie lo explica así. Y de paso te cuelan el desinstalador que a veces deja media basura repartida por AppData.

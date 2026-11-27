@@ -1,0 +1,7 @@
+Yo empezaría por "Designing Data-Intensive Applications" de Martin Kleppmann. No es de patrones de diseño, es de cómo se arman sistemas reales: bases de datos, colas, replicación, qué pasa cuando algo falla. Es lo que más me abrió la cabeza.
+
+Después "Clean Architecture" de Uncle Bob, que está bien para entender separación de capas y dependencias, aunque no te lo tomes como biblia. Y "Fundamentals of Software Architecture" de Richards y Ford, que es más práctico para ver los trade-offs entre monolito, microservicios, event-driven y demás.
+
+Lo que casi nadie te dice es que arquitectura se aprende sobre todo cagándola en un proyecto que crece. Leé los libros, pero armá algo con usuarios reales, aunque sea chico, y vas a ver rápido por qué se separan las cosas de cierta manera. También ayuda leer código de proyectos open source grandes y los ADRs que dejan algunos equipos.
+
+Y sobre lo del MVC, tenés razón: es un patrón para organizar una app, no una arquitectura completa.

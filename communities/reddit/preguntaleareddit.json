@@ -1,0 +1,44 @@
+{
+ "community": "r/preguntaleareddit",
+ "platform": "reddit",
+ "measured": "2026-11-27",
+ "comments": {
+  "n": 130,
+  "source": "top-level comments from the busiest recent threads, read 2026-11-27",
+  "words_median": 16,
+  "types": {
+   "answer": 0.338,
+   "one-liner": 0.315,
+   "anecdote": 0.077,
+   "disagree": 0.154,
+   "question-back": 0,
+   "side-point": 0.046,
+   "agree": 0.015,
+   "joke": 0.038,
+   "complaint": 0.015
+  }
+ },
+ "posts": {
+  "n": 27,
+  "words_median": 87,
+  "paragraphs_median": 2,
+  "list_pct": 7,
+  "bold_or_heading_pct": 4,
+  "greeting_pct": 0,
+  "ends_with_question_pct": 30
+ },
+ "rules": {
+  "ai_content": "no rule found",
+  "ai_rules": [],
+  "self_promotion_rules": [
+   "📣 Spam y Autopromoción 📢"
+  ],
+  "notes": [
+   "Posts and comments must be in Spanish.",
+   "Sexual content only on Saturdays and Sundays; no gender-war content.",
+   "Titles must say the question (no \"Tengo una pregunta\" or \"¿Qué opinan?\"); repeated questions are removed."
+  ],
+  "checked": "2026-11-27",
+  "source": "https://www.reddit.com/r/preguntaleareddit/about/rules"
+ }
+}

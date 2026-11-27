@@ -1,0 +1,46 @@
+{
+ "community": "r/devsarg",
+ "platform": "reddit",
+ "measured": "2026-11-27",
+ "comments": {
+  "n": 160,
+  "source": "top-level comments from the busiest recent threads, read 2026-11-27",
+  "words_median": 15,
+  "types": {
+   "answer": 0.169,
+   "one-liner": 0.094,
+   "anecdote": 0.075,
+   "disagree": 0.056,
+   "question-back": 0.013,
+   "side-point": 0.125,
+   "agree": 0.006,
+   "joke": 0.362,
+   "complaint": 0.1
+  }
+ },
+ "posts": {
+  "n": 37,
+  "words_median": 122,
+  "paragraphs_median": 3,
+  "list_pct": 8,
+  "bold_or_heading_pct": 11,
+  "greeting_pct": 0,
+  "ends_with_question_pct": 22
+ },
+ "rules": {
+  "ai_content": "no rule found",
+  "ai_rules": [],
+  "self_promotion_rules": [
+   "No se permite publicar tu app vibecodeada.",
+   "No se permite spam de tu canal de YT, IG o Linkedin o de tus cursos"
+  ],
+  "notes": [
+   "Posts need a descriptive title: no all caps, no \"ayuda\" or \"qué les parece?\" titles.",
+   "Removed as posts: low-effort or venting posts, CV reviews, basic salary or university questions, job hunting, googleable questions, \"how much should I charge\".",
+   "Job offers must give the salary range, remote/office/hybrid and the years of experience.",
+   "A post that mentions the mods must call them \"Honorable Cámara de Moderadores\" (a ban rule)."
+  ],
+  "checked": "2026-11-27",
+  "source": "https://www.reddit.com/r/devsarg/about/rules"
+ }
+}

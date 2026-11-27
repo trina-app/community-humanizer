@@ -1,0 +1,22 @@
+{
+ "id": "1xuefra",
+ "sub": "China_irl",
+ "order": [
+  "HUMAN",
+  "HUMANIZER_S",
+  "PLAIN",
+  "SKILL"
+ ],
+ "human": {
+  "HUMAN": 88,
+  "HUMANIZER_S": 30,
+  "PLAIN": 12,
+  "SKILL": 82
+ },
+ "rank": {
+  "HUMAN": 2,
+  "HUMANIZER_S": 4,
+  "PLAIN": 3,
+  "SKILL": 1
+ }
+}

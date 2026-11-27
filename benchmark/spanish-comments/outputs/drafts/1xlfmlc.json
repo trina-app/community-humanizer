@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "answer",
+  "one-liner",
+  "joke"
+ ],
+ "drafts": [
+  "Nadie sabe, pero lo de diseñadores gráficos no me cierra tanto. Un diseñador entrega algo que se ve bien y listo, en software lo que entregás tiene que seguir funcionando, cambiar y no romperse cuando alguien lo toca dentro de dos años. Alguien tiene que responder cuando falla, y eso no lo delegás en una herramienta.\n\nLo que sí creo que cambia es qué se valora: menos tipear código, más entender el problema, evaluar lo que sale y decidir qué se construye. Y eso siendo analista senior ya lo tenés bastante adelantado.",
+  "Los diseñadores gráficos siguen existiendo, solo que ahora cobran por saber qué pedir y qué descartar, y eso en programación ya es medio el laburo",
+  "Tranqui, los diseñadores gráficos al menos todavía le dicen \"hacelo más pop\" al cliente, nosotros vamos a tener que explicarle a la IA por qué el cliente cambió los requisitos por quinta vez"
+ ],
+ "pick": 0,
+ "haiku": "1",
+ "rates_from": "pool (94)"
+}

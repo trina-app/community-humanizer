@@ -1,0 +1,22 @@
+{
+ "id": "1xlfmlc",
+ "sub": "programacion",
+ "order": [
+  "HUMAN",
+  "HUMANIZER_S",
+  "SKILL",
+  "PLAIN"
+ ],
+ "human": {
+  "HUMAN": 85,
+  "HUMANIZER_S": 25,
+  "SKILL": 35,
+  "PLAIN": 8
+ },
+ "rank": {
+  "HUMAN": 1,
+  "HUMANIZER_S": 3,
+  "SKILL": 2,
+  "PLAIN": 4
+ }
+}

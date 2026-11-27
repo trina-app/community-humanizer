@@ -1,0 +1,45 @@
+{
+ "community": "r/mexico",
+ "platform": "reddit",
+ "measured": "2026-11-27",
+ "comments": {
+  "n": 139,
+  "source": "top-level comments from the busiest recent threads, read 2026-11-27",
+  "words_median": 21,
+  "types": {
+   "answer": 0.137,
+   "one-liner": 0.05,
+   "anecdote": 0.122,
+   "disagree": 0.158,
+   "question-back": 0.036,
+   "side-point": 0.115,
+   "agree": 0.029,
+   "joke": 0.273,
+   "complaint": 0.079
+  }
+ },
+ "posts": {
+  "n": 26,
+  "words_median": 101,
+  "paragraphs_median": 3,
+  "list_pct": 4,
+  "bold_or_heading_pct": 15,
+  "greeting_pct": 4,
+  "ends_with_question_pct": 19
+ },
+ "rules": {
+  "ai_content": "no rule found",
+  "ai_rules": [],
+  "self_promotion_rules": [
+   "No aceptamos ventas, encuestas, autopromociones, spam, doxeo, golpeteos políticos.",
+   "¡Puedes promocionar tu comunidad hasta una vez por semana!"
+  ],
+  "notes": [
+   "Posts need the right flair (political posts: [Política SERIO] or [Política HUMOR]).",
+   "Threads tagged [SERIO] only accept serious comments; off-topic comments are removed.",
+   "Narco-related posts go to other communities such as r/narco."
+  ],
+  "checked": "2026-11-27",
+  "source": "https://www.reddit.com/r/mexico/about/rules"
+ }
+}

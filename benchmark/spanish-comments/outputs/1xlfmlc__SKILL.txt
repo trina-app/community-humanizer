@@ -1,0 +1,3 @@
+Nadie sabe, pero lo de diseñadores gráficos no me cierra tanto. Un diseñador entrega algo que se ve bien y listo, en software lo que entregás tiene que seguir funcionando, cambiar y no romperse cuando alguien lo toca dentro de dos años. Alguien tiene que responder cuando falla, y eso no lo delegás en una herramienta.
+
+Lo que sí creo que cambia es qué se valora: menos tipear código, más entender el problema, evaluar lo que sale y decidir qué se construye. Y eso siendo analista senior ya lo tenés bastante adelantado.

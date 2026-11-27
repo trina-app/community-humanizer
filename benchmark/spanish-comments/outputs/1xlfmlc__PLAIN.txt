@@ -1,0 +1,9 @@
+Creo que el rol va a cambiar más de lo que va a desaparecer, pero no voy a decir que no hay motivo para preocuparse.
+
+Lo que la IA automatiza bien es escribir código a partir de una especificación clara. Eso es una parte del trabajo, y casi nunca la más difícil. Lo difícil sigue siendo entender qué necesita realmente el negocio, bajar requerimientos ambiguos o contradictorios a algo construible, decidir trade-offs, integrar con sistemas legacy horribles, y hacerse cargo cuando algo falla en producción un viernes a la noche. Con 20 años de experiencia como analista senior, tenés justo el perfil que más valor gana cuando generar código se abarata.
+
+La comparación con los diseñadores gráficos tiene algo de cierto, pero hay una diferencia importante. Un diseño malo se nota a simple vista y el costo de equivocarse es bajo. Un sistema mal construido puede andar perfecto en la demo y explotar con datos reales, con seguridad o con volumen. Alguien tiene que responder por eso, y mientras haya responsabilidad legal y económica, va a haber humanos en el medio.
+
+Dicho eso, creo que los más afectados van a ser los juniors y los perfiles que solo traducían tickets a código. La entrada a la profesión se va a poner más difícil, y eso es un problema real a mediano plazo, porque de los juniors de hoy salen los seniors de mañana.
+
+Nadie sabe cómo va a estar esto en 5 años, y quien te diga que sí está vendiendo algo. Lo que me parece más sensato es usar la IA a fondo, apoyarte en lo que ya sabés de negocio y arquitectura, y no casarte con ninguna herramienta en particular. Si el día de mañana el trabajo cambia de nombre pero sigue siendo resolver problemas con tecnología, vos ya estás parado en el lugar correcto.

@@ -1,0 +1,22 @@
+{
+ "id": "1xlhut8",
+ "sub": "programacion",
+ "order": [
+  "SKILL",
+  "HUMAN",
+  "PLAIN",
+  "HUMANIZER_S"
+ ],
+ "human": {
+  "SKILL": 72,
+  "HUMAN": 88,
+  "PLAIN": 6,
+  "HUMANIZER_S": 22
+ },
+ "rank": {
+  "SKILL": 2,
+  "HUMAN": 1,
+  "PLAIN": 4,
+  "HUMANIZER_S": 3
+ }
+}

@@ -1,11 +1,12 @@
 # Third-party files
 
-Two skills are copied here so the benchmark can be rerun with the exact text it used. Both are MIT licensed; their notices follow.
+Three skills are copied here so the benchmark can be rerun with the exact text it used. All three are MIT licensed; their notices follow.
 
 | File | Source |
 | --- | --- |
 | `reddit-comments/blader-SKILL.md` | [blader/humanizer](https://github.com/blader/humanizer) `SKILL.md` |
 | `korean-comments/imnotai-SKILL.md` | [epoko77-ai/im-not-ai](https://github.com/epoko77-ai/im-not-ai) `SKILL.md` |
+| `chinese-comments/humanizer-zh-SKILL.md` | [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh) `SKILL.md` (license in `chinese-comments/humanizer-zh-LICENSE`) |
 
 ## blader/humanizer
 

@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "disagree",
+  "one-liner",
+  "answer"
+ ],
+ "drafts": [
+  "Lo que describís es que el valor lo estás poniendo vos, solo que no lo ves porque ya es automático. La AI pregunta \"¿querés una transacción acá?\" y vos sabés qué responder. Alguien que no sabe contesta \"dale, lo que sea\" y se entera en producción, cuando el CRM le pisa datos a un cliente.\n\nY sos el único dev del producto, o sea que el contexto, el \"esto lo pidieron pero en realidad querían otra cosa\" y el que se come el bardo cuando falla, todo eso también sos vos. Que sea un CRM interno no lo hace menos importante, es lo que usa la empresa para laburar todos los días.",
+  "Lo que aportás es que cuando se rompe algo a las 6 de la tarde del viernes, hay alguien a quien llamar",
+  "Lo que aportás es que sos el que responde si se rompe. Claude te hace el ticket, pero vos decidís qué ticket vale la pena, qué le falta al pedido que nadie dijo en la call y qué pasa con la data de producción cuando lo subís. Que la AI te pregunte \"¿querés una transacción?\" no es lo difícil, lo difícil es saber que la respuesta cambia según cómo labura la gente en operaciones, y eso lo sabés vos porque estás ahí todos los días.\n\nAdemás sos el único dev, así que el día que algo anda raro a las 6 de la tarde, el que lo entiende y lo arregla sos vos, no el que \"entiende un poco del producto\". Ahí se ve la diferencia, y casi nunca es mientras todo anda bien"
+ ],
+ "pick": 1,
+ "haiku": "2",
+ "rates_from": "pool (160)"
+}

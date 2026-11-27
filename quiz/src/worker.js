@@ -2,7 +2,7 @@
 // work it out; the page learns it only after answering. Sessions and rounds are signed, answers are accepted only for
 // pairs the server handed out in that round, and nothing about the person is stored (no IP, no user agent).
 //   GET  /api/config             { turnstile: site key or null }
-//   GET  /api/round?lang=en|ko   ten pairs (optionally after a Turnstile check)
+//   GET  /api/round?lang=en|ko|zh|es   ten pairs (optionally after a Turnstile check)
 //   POST /api/answer             { round, qid, pick: "a" | "b", ms }
 //   GET  /api/stats              how often people picked the real one (cached for a minute)
 // Secrets: SECRET (required), TURNSTILE_SECRET and TURNSTILE_SITE_KEY (optional).
@@ -44,12 +44,14 @@ export default {
 
     if (url.pathname === '/api/round' && req.method === 'GET') {
       if (!(await turnstileOk(env, req, url.searchParams.get('cf')))) return json({ error: 'Check failed. Reload the page.' }, { status: 403 })
-      const lang = url.searchParams.get('lang') === 'ko' ? 'ko' : 'en'
+      const lang = ['ko', 'zh', 'es'].includes(url.searchParams.get('lang')) ? url.searchParams.get('lang') : 'en'
       let s = await unsign(env, decodeURIComponent(cookie(req) || ''))
       const headers = {}
       if (!s) { s = crypto.randomUUID(); headers['set-cookie'] = `s=${encodeURIComponent(await signed(env, s))}; Path=/; Max-Age=31536000; SameSite=Lax; Secure; HttpOnly` }
       const pool = shuffle(ITEMS.filter((x) => x.lang === lang))
-      const picked = shuffle([...pool.filter((x) => x.kind === 'comment').slice(0, 6), ...pool.filter((x) => x.kind === 'post').slice(0, 4)])
+      // 6 comments and 4 posts; Chinese and Spanish have comments only
+      const posts = pool.filter((x) => x.kind === 'post').slice(0, 4)
+      const picked = shuffle([...pool.filter((x) => x.kind === 'comment').slice(0, 10 - posts.length), ...posts])
       const round = await signed(env, `${s}|${Date.now()}|${picked.map((x) => x.qid).join(',')}`)
       const items = []
       for (const x of picked) {

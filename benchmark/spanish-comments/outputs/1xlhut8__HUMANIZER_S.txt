@@ -1,0 +1,5 @@
+Lo haces por diversión y estás aprendiendo, así que no tiene nada de poco profesional. Hasta en el trabajo la gente usa IA todo el rato.
+
+El riesgo de depender de ella aparece si copias las 30 líneas y sigues. Si no entiendes qué hacen, no sabes cuándo fallan. Mi consejo es que se las pidas, pero luego le hagas preguntas hasta entender cada paso, y después intentes reescribirlo tú sin mirar. Si te atascas, vuelves a mirar. Lo de la teoría y las matemáticas te lo puede ir explicando con ejemplos pequeños, y así lo vas aprendiendo de a poco.
+
+Además, mucho algoritmo se entiende mejor después de verlo funcionando que antes.

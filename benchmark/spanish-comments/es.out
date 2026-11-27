@@ -1,0 +1,50 @@
+
+## opus (n=28)
+arm          human%  pass%  upvote-rank
+PLAIN           9.9    0.0      3.3
+HUMANIZER_S    29.8    0.0      2.4
+SKILL          50.7   42.9      2.4
+HUMAN          87.7  100.0      1.9
+SKILL - HUMANIZER_S: human 20.9 [14.4, 27.9]
+SKILL - HUMAN: human -37.0 [-43.3, -30.3]
+SKILL - PLAIN: human 40.8 [34.0, 48.0]
+HUMANIZER_S - PLAIN: human 19.9 [17.8, 21.9]
+judged more human than the real comment: PLAIN 0/28, HUMANIZER_S 0/28, SKILL 0/28
+by subreddit (SKILL - HUMANIZER_S): devsarg 21.7 (n=6), mexico 23.0 (n=5), preguntaleareddit 28.8 (n=6), askspain 13.6 (n=5), programacion 16.7 (n=6)
+without r/askspain (n=23): PLAIN 9.5, HUMANIZER_S 30.1, SKILL 52.6, HUMAN 87.6; SKILL - HUMANIZER_S 22.5 [15.2, 30.3]
+
+## sonnet (n=28)
+arm          human%  pass%  upvote-rank
+PLAIN          11.3    0.0      3.1
+HUMANIZER_S    36.4   21.4      2.0
+SKILL          60.3   71.4      2.3
+HUMAN          84.5  100.0      2.6
+SKILL - HUMANIZER_S: human 23.9 [15.4, 32.3]
+SKILL - HUMAN: human -24.2 [-33.1, -15.6]
+SKILL - PLAIN: human 49.0 [39.9, 58.0]
+HUMANIZER_S - PLAIN: human 25.1 [18.9, 31.9]
+judged more human than the real comment: PLAIN 0/28, HUMANIZER_S 0/28, SKILL 2/28
+by subreddit (SKILL - HUMANIZER_S): devsarg 34.0 (n=6), mexico 25.4 (n=5), preguntaleareddit 11.8 (n=6), askspain 23.0 (n=5), programacion 25.5 (n=6)
+without r/askspain (n=23): PLAIN 10.8, HUMANIZER_S 38.3, SKILL 62.4, HUMAN 85.0; SKILL - HUMANIZER_S 24.1 [14.7, 33.3]
+
+## mean of the judges that ran (opus, sonnet)
+PLAIN        10.6
+HUMANIZER_S  33.1
+SKILL        55.5
+HUMAN        86.1
+
+## mean of the judges that ran (opus, sonnet), without r/askspain (n=23)
+PLAIN        10.2
+HUMANIZER_S  34.2
+SKILL        57.5
+HUMAN        86.3
+
+thread 1xynq5l: opus PLAIN 8 HUMANIZER_S 25 SKILL 82 HUMAN 88 | sonnet PLAIN 8 HUMANIZER_S 30 SKILL 80 HUMAN 85
+
+length (median chars / words): PLAIN 1559/280, HUMANIZER_S 628/115, SKILL 239/48, HUMAN 100/17
+in Spanish (word check): PLAIN 28/28, HUMANIZER_S 28/28, SKILL 28/28, HUMAN 28/28
+not Spanish: none
+SKILL picked type: answer 8, one-liner 5, complaint 5, joke 4, side-point 3, disagree 2, agree 1
+
+Claude cost (total_cost_usd): guard $0.03, guard-sonnet $0.41, label $0.39, gen-skill $0.67, gen-humanizer $1.61, gen-pick $0.01, gen-plain $0.31, judge-sonnet $0.25, judge-opus $0.56; total $4.24 over 504 calls
+codex: 0 runs, 0 tokens used

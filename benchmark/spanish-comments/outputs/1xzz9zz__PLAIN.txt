@@ -1,0 +1,21 @@
+Sí, se puede, y la matemática es una de las mejores bases que podés tener para meterte en IT. Te hago unos puntos:
+
+**Sobre la situación del mercado:** es cierto que el nivel junior está más complicado que hace unos años, pero el pánico de "la IA programa todo" está bastante exagerado. La IA escribe código, pero alguien tiene que entender el problema, verificar que lo que sale esté bien, depurar, diseñar sistemas y tomar decisiones. Eso se apoya justo en lo que se entrena haciendo matemática: pensar con rigor, abstraer, detectar casos borde, desconfiar de un resultado hasta entenderlo. Que la IA haga tus ejercicios de Racket mejor que vos no significa que no valga la pena aprender: es como que la calculadora no volvió inútil entender el álgebra.
+
+**Dónde la matemática pesa de verdad:**
+- Data science / ML / estadística (acá es donde más se valora)
+- Quant y finanzas
+- Criptografía y seguridad
+- Optimización, investigación operativa, simulación
+- Backend/ingeniería de software en general, donde te va a servir la lógica y la facilidad con la recursión y la modularización que mencionás
+
+**Qué haría en tu lugar:**
+1. **No dejes la carrera.** Un título de Matemática abre puertas y te da tiempo para ir armando el perfil técnico en paralelo.
+2. **Aprendé Python y SQL** (más Git y la terminal). Racket está buenísimo para entender conceptos, pero para trabajar vas a necesitar lo más usado en la industria. La transición desde un funcional es más fácil de lo que parece.
+3. **Hacé proyectos propios**, aunque sean chicos: analizar un dataset que te interese, un scraper, una app simple, algo que puedas mostrar en GitHub. Hoy el portfolio pesa más que el título para un junior.
+4. **Buscá pasantías o trabajos part-time** antes de recibirte. Tener experiencia aunque sea mínima cambia mucho el panorama.
+5. **Usá la IA como herramienta de aprendizaje**, no como reemplazo. Pedile que te explique, que te corrija, pero escribí el código vos primero. Si no entendés lo que te devuelve, no sirve.
+
+Y un último consejo: no hace falta que decidas ya entre academia o industria. Tenés 21, te faltan años, y lo que aprendas en cualquiera de los dos caminos te sirve en el otro. Si te gusta programar y te resulta natural, ya tenés mucho ganado.
+
+Éxitos.

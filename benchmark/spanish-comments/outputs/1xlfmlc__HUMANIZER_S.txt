@@ -1,0 +1,5 @@
+Creo que la comparación con los diseñadores gráficos no va tanto por ahí. Un diseñador vende un resultado que cualquiera puede juzgar a ojo, y el código se juzga cuando falla en producción, a las 3 de la mañana, con un cliente enojado. Ahí alguien tiene que entender qué pasó, y eso no se lo pedís a un prompt.
+
+Lo que sí veo es que va a haber menos puestos de gente que solo traduce tickets a código. Las empresas grandes van a recortar donde puedan, como dice otro comentario. Siendo analista senior estás mejor parado que un junior, porque tu valor está en entender el problema del negocio y en decidir qué conviene construir, y eso la IA todavía no lo hace.
+
+Dentro de 5 años no sé, y creo que nadie lo sabe. Yo seguiría usando la herramienta a fondo y apostando a lo que no se automatiza fácil: arquitectura, criterio y hablar con el que tiene el problema.

@@ -1,0 +1,16 @@
+Tu proceso está bastante bien armado, pero el punto flojo es el 7. El service es justo donde vive la lógica de negocio, y es donde la IA mete los bugs sutiles: casos borde, un if invertido, una query que anda con 10 registros y se muere con 100k.
+
+Yo no leo todo con la misma profundidad, lo hago según el riesgo:
+
+- **Leo línea por línea:** todo lo que toca plata, permisos/auth, migraciones, queries pesadas, concurrencia y manejo de errores.
+- **Leo por arriba:** DTOs, mappers, boilerplate, tests de cosas triviales.
+
+Otras cosas que me sirven:
+
+- **Los tests verdes no alcanzan.** La IA escribe tests que pasan, no necesariamente tests que validen lo que importa. Mirá qué asserta cada uno y si falla cuando rompés la lógica a propósito.
+- **Revisá el diff como si fuera de un junior que no conocés.** Y preguntate si podrías explicar cada cambio en el MR. Si no podés, cuando se rompa en prod igual te llaman a vos, no a la IA.
+- **Pedile que te liste las decisiones y supuestos que tomó** y qué casos no cubrió. Te marca dónde mirar.
+- **Una pasada de review en un chat limpio**, sin el contexto de la implementación, encuentra cosas que el mismo chat no ve.
+- **En el plan, los procesos son donde más duele un error.** Si ahí no te metés mucho, después en el código vas a estar validando contra algo que no entendiste del todo.
+
+Con todo prendido fuego es tentador soltar la revisión, pero la deuda aparece después en forma de bugs, y se paga más cara. Con 10 minutos más en el service, enfocados en lo riesgoso, ya cubrís la mayor parte del problema.

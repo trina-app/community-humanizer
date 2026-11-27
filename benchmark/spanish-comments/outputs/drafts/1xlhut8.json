@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "answer",
+  "joke",
+  "disagree"
+ ],
+ "drafts": [
+  "Para nada es poco profesional, lo poco profesional es meter código que no entendés. Si lo haces por diversión, pídele a la IA que te lo explique línea por línea y después intentá reescribirlo vos sin mirar. Si no podés, todavía no lo entendiste, y ahí es donde se aprende. Y si te sobrepasa la teoría, nadie dice que tengas que entender toda la matemática de golpe, con entender qué hace cada paso ya vas bien",
+  "Tranqui, el que se queja de depender de la IA seguro también usa una librería que no entiende, un SO que no escribió y un procesador del que no sabe ni cuántos transistores tiene",
+  "Lo poco profesional no es usar IA, es pegar 30 líneas que no entiendes y seguir de largo. Si lo haces por diversión y quieres aprender, pídele que te explique paso a paso lo que hizo, o intenta reescribirlo tú sin mirar. Si no puedes, ahí sí tienes un problema, pero es de aprendizaje, no de profesionalismo"
+ ],
+ "pick": 1,
+ "haiku": "2",
+ "rates_from": "pool (94)"
+}

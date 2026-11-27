@@ -1,0 +1,22 @@
+{
+ "id": "1xu31mn",
+ "sub": "devsarg",
+ "order": [
+  "HUMAN",
+  "HUMANIZER_S",
+  "SKILL",
+  "PLAIN"
+ ],
+ "human": {
+  "HUMAN": 88,
+  "HUMANIZER_S": 15,
+  "SKILL": 82,
+  "PLAIN": 6
+ },
+ "rank": {
+  "HUMAN": 2,
+  "HUMANIZER_S": 3,
+  "SKILL": 1,
+  "PLAIN": 4
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "id": "1xuttu1",
+ "sub": "China_irl",
+ "order": [
+  "HUMANIZER_S",
+  "HUMAN",
+  "PLAIN",
+  "SKILL"
+ ],
+ "human": {
+  "HUMANIZER_S": 3,
+  "HUMAN": 88,
+  "PLAIN": 10,
+  "SKILL": 65
+ },
+ "rank": {
+  "HUMANIZER_S": 4,
+  "HUMAN": 2,
+  "PLAIN": 3,
+  "SKILL": 1
+ }
+}

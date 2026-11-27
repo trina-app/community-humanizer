@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "answer",
+  "complaint",
+  "one-liner"
+ ],
+ "drafts": [
+  "Sí, se puede, y la matemática es de las mejores bases que podés tener para esto. Lo que cuesta hoy es el puesto de \"sé hacer una web con React y nada más\", no el de alguien que piensa bien y entiende lo que hay abajo. Que te guste modularizar y la recursión te salen naturales es buena señal, eso no te lo da un bootcamp.\n\nTerminá la carrera con calma, que te faltan años y para cuando salgas el panorama va a ser otro. Mientras tanto programá por tu cuenta con algo más mainstream que Racket (Python, y algo de SQL), y usá la IA para que te explique y revise, no para que te haga todo. Si la IA hace todo lo que hacés vos, igual alguien tiene que saber si lo que devolvió está bien, y ahí un matemático rinde.",
+  "Otra vez la misma pregunta de \"me van a reemplazar con IA\", ya van como 40 hilos iguales esta semana. Terminá la carrera, andá aprendiendo a programar de a poco que ya lo estás disfrutando, y después vemos. Nadie sabe cómo va a estar el mercado en 3 años, ni vos ni los que te dicen que está todo muerto",
+  "Sí, y terminá la carrera. Matemática + saber programar te abre más puertas que programar solo, data, finanzas, ML, lo que sea"
+ ],
+ "pick": 1,
+ "haiku": "2",
+ "rates_from": "pool (94)"
+}

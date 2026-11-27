@@ -1,0 +1,14 @@
+Me parece una pregunta honesta y la respuesta incómoda es que tenés algo de razón: el piso bajó. Pero creo que estás midiendo el valor en el lugar equivocado.
+
+Que la AI te pregunte "¿querés una transacción acá?" solo sirve si quien responde sabe qué implica. Alguien sin criterio dice "sí, lo que te parezca" y después se entera en producción de lo que no le preguntaron. Lo peligroso no son las preguntas que la AI hace, sino las que no hace: el caso borde que nadie mencionó en la call, el dato viejo que rompe la migración, el proceso del cliente que en realidad funciona distinto de como lo describe el ticket. Eso lo ves vos porque conocés el producto y la operación.
+
+Además, tu valor no está solo en escribir el código:
+
+- **Traducir el ticket.** Muchas veces lo que piden no es lo que necesitan. Vos sabés cuándo conviene discutirlo antes de construirlo.
+- **Responsabilidad.** Cuando algo falla un viernes a las 18, alguien tiene que entender el sistema entero y resolverlo. Un "anda y no rompe nada" se sostiene porque alguien lo está sosteniendo.
+- **Coherencia a largo plazo.** Un CRM vive años. Cada ticket "suficientemente bueno" suma deuda si nadie cuida la arquitectura, y la AI optimiza para el ticket de hoy, no para el sistema de dentro de dos años.
+- **Saber qué no hacer.** A veces la mejor solución es no tocar nada, o resolverlo con un proceso y no con código.
+
+Dicho esto, hay un riesgo real: si solo revisás y aprobás, el criterio se te oxida. Y ahí sí te volvés reemplazable. Yo usaría el tiempo que te ahorrás para subir de nivel: cuestionar tickets, hablar más con los usuarios, proponer mejoras antes de que las pidan, cuidar tests y observabilidad. Con eso pasás de "el que ejecuta tickets" a "el que entiende el negocio y la tecnología", y esa combinación es la que cuesta reemplazar.
+
+Tu intuición sobre los roles también va bien encaminada: en un CRM interno el costo del error es bajo, así que el criterio se nota menos. Pero ser el único dev de un producto es justamente un contexto donde nadie más va a notar lo que se te escape.

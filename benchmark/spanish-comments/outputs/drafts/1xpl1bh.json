@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "answer",
+  "one-liner",
+  "complaint"
+ ],
+ "drafts": [
+  "Copiar y pegar a veces sí alcanza (los portables, los .exe sueltos). Instalar es para lo que el programa necesita además de los archivos: registrar cosas en el registro de Windows, asociar extensiones (que .pdf abra con tu lector), crear accesos directos y la entrada en el menú inicio, instalar dependencias como los runtimes o DLLs compartidas, y dejar un desinstalador para que luego se pueda quitar limpio. Un instalador es básicamente un script que hace todo eso por ti, y copiar los archivos es solo una parte.",
+  "Registro, accesos directos, dependencias y desinstalador. Si tu programa es un exe suelto sin nada de eso, no hace falta instalarlo (los portables)",
+  "Lo que me quema es que \"instalar\" se vendió siempre como magia cuando en el 90% de los casos es copiar archivos y apuntar un par de cosas en el registro, y nadie lo explica así. Y de paso te cuelan el desinstalador que a veces deja media basura repartida por AppData."
+ ],
+ "pick": 2,
+ "haiku": "[3]",
+ "rates_from": "pool (94)"
+}

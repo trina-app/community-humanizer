@@ -1,0 +1,13 @@
+No es poco profesional usar IA. En el trabajo la usa casi todo el mundo, y como proyecto de diversión no tienes que rendirle cuentas a nadie. Lo que sí importa es *cómo* la usas.
+
+Si pegas las 30 líneas y sigues, aprendes cero y el miedo a depender de ella tiene sentido. Pero puedes usarla como tutor en vez de como generador:
+
+1. **Pídele que te explique el código línea por línea**, y que te lo explique como si no supieras la teoría de fondo. Si algo no se entiende, pregunta "¿por qué?" hasta que cierre.
+2. **Intenta reescribirlo tú sin mirar.** Si no puedes, todavía no lo entendiste. Esta es la prueba más honesta.
+3. **Cámbiale cosas y rómpelo a propósito** para ver qué pasa. Así se entiende de verdad qué hace cada parte.
+4. **Haz una versión simple tú primero**, aunque sea lenta o fea (fuerza bruta, un caso chico), y luego compárala con la de la IA. Ver la diferencia enseña mucho.
+5. **Deja la matemática para después.** No necesitas entender la demostración para entender qué entra, qué sale y qué hace cada paso. La teoría suele tener más sentido cuando ya viste el algoritmo funcionando.
+
+Una regla práctica: si puedes explicar el código a otra persona y modificarlo sin ayuda, es tuyo, lo haya escrito quien lo haya escrito. Si no, todavía hay trabajo por hacer.
+
+Y como lo haces por diversión, no hay prisa. Si prefieres sufrir un poco y aprender la teoría a tu ritmo, también es válido. Solo que sea una decisión tuya y no un miedo a "hacer trampa".

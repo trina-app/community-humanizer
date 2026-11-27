@@ -1,0 +1,38 @@
+
+## opus (n=28)
+arm          human%  pass%  upvote-rank
+PLAIN           8.7    0.0      3.5
+HUMANIZER_S    28.0    0.0      2.8
+SKILL          60.1   71.4      2.1
+HUMAN          86.5  100.0      1.6
+SKILL - HUMANIZER_S: human 32.1 [24.8, 39.3]
+SKILL - HUMAN: human -26.5 [-33.7, -19.3]
+SKILL - PLAIN: human 51.4 [44.2, 58.4]
+HUMANIZER_S - PLAIN: human 19.3 [15.7, 22.6]
+judged more human than the real comment: PLAIN 0/28, HUMANIZER_S 0/28, SKILL 2/28
+
+## sonnet (n=28)
+arm          human%  pass%  upvote-rank
+PLAIN          10.7    0.0      3.7
+HUMANIZER_S    36.0   28.6      2.5
+SKILL          59.5   71.4      2.0
+HUMAN          81.4  100.0      1.7
+SKILL - HUMANIZER_S: human 23.5 [14.1, 32.2]
+SKILL - HUMAN: human -21.9 [-29.1, -15.0]
+SKILL - PLAIN: human 48.8 [41.9, 55.5]
+HUMANIZER_S - PLAIN: human 25.3 [18.9, 32.4]
+judged more human than the real comment: PLAIN 0/28, HUMANIZER_S 1/28, SKILL 2/28
+
+## average of 2 judges (opus, sonnet)
+PLAIN        9.7
+HUMANIZER_S  32.0
+SKILL        59.8
+HUMAN        84.0
+SKILL - HUMANIZER_S (judge average, n=28): 27.8 [21.0, 34.8]
+SKILL - HUMAN (judge average, n=28): -24.2 [-30.4, -18.3]
+
+Primary rule (SKILL beats HUMANIZER_S on all three judges, interval above zero): cannot be applied as written, codex not run. On the judges that ran (opus, sonnet): SKILL beats HUMANIZER_S on every one, interval above zero
+length (characters, median): PLAIN 476, HUMANIZER_S 183, SKILL 57, HUMAN 70
+not mainly Chinese: PLAIN 0/28, HUMANIZER_S 0/28, SKILL 0/28, HUMAN 0/28
+SKILL picked type: joke 10, disagree 5, complaint 4, answer 4, side-point 2, one-liner 2, question-back 1
+Claude cost (all calls, from cost.jsonl): $3.19

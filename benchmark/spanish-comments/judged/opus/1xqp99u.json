@@ -1,0 +1,22 @@
+{
+ "id": "1xqp99u",
+ "sub": "mexico",
+ "order": [
+  "PLAIN",
+  "HUMAN",
+  "SKILL",
+  "HUMANIZER_S"
+ ],
+ "human": {
+  "PLAIN": 15,
+  "HUMAN": 85,
+  "SKILL": 30,
+  "HUMANIZER_S": 20
+ },
+ "rank": {
+  "PLAIN": 4,
+  "HUMAN": 1,
+  "SKILL": 3,
+  "HUMANIZER_S": 2
+ }
+}

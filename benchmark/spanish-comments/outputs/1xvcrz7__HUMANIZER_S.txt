@@ -1,0 +1,7 @@
+Loco, 2 años de laburo, terminaste la facu y ya estás por tirar todo. Hace tres años decían que a esta altura no quedaba ni un programador, y acá seguimos.
+
+Lo de que "lo hace cualquiera" no lo compro. Cualquiera te arma un prototipo que anda en la demo. Cuando se rompe en producción un viernes a las 6, o el cliente pide algo que contradice lo que pidió el mes pasado, alguien tiene que entender qué carajo pasó. Si no sabés lo técnico, te quedás mirando a un agente que se inventa cosas con mucha seguridad. Saber lo técnico es lo que te permite revisar lo que escupe la IA, y hoy esa es buena parte del laburo.
+
+Y qué aportás vos que un LLM no: responsabilidad. El LLM no responde por nada, vos sí, y a las empresas les importa tener a alguien a quien señalar cuando sale mal.
+
+Tampoco hace falta meterse en "lo humano" a la fuerza. Hay un montón de cosas técnicas que no se van a ir pronto, como infra, seguridad o sistemas donde un error cuesta plata de verdad. Si dentro de un par de años igual no te cierra, ahí cambiás, pero con más laburo encima y no por lo que se dice en twitter.
