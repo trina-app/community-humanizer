@@ -1,6 +1,6 @@
 # Full results
 
-Moved here from the main README on 2026-11-27 so the front page stays short. Nothing below was changed.
+Moved here from the main README on 2026-11-27 so the front page stays short. Nothing below was changed, except the dated no-ai-slop line under the English replies table.
 
 ## Does it work?
 
@@ -18,6 +18,8 @@ We judged every version blind:
 | [humanizer](https://github.com/blader/humanizer) (74k★) + 10 real comments from the same subreddit | 15 | 25 | 33 |
 | **community-humanizer** | **51** | **56** | **68** |
 | The real top comment | 85 | 78 | 78 |
+
+Added 2026-11-27: the same 28 threads were run against [no-ai-slop](https://github.com/petergyang/no-ai-slop) (13.8k★) with the same 10 real comments, in a separate round with **two judges (Opus, Sonnet), not three**. Opus / Sonnet scores: no-ai-slop 25 / 33, humanizer 27 / 34, community-humanizer 61 / 69, real comment 79 / 80. community-humanizer beat no-ai-slop by +36 on both judges (intervals above zero, pass rule written before the run). These come from a different round without GPT, so they are not directly comparable with the table above or with the published three-judge averages (58 for community-humanizer, 24 for humanizer). Details are in [reddit-comments/RESULTS.md](reddit-comments/RESULTS.md#round-ns-no-ai-slop-arm-held-out-f1-threads-2026-11-27).
 
 **Replies, Korean** (28 Clien threads from 모두의공원 and 아무거나질문)
 

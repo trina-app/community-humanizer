@@ -1,0 +1,3 @@
+Honestly most people in here put Cloudflare in front for the hiding-your-home-IP part, not because they think it's a stand-in for a properly set up origin. If your ISP only gives you CGNAT or a v4 address that changes, IPv6 on the origin doesn't help much either.
+
+The origin TLS stuff is fair though. Caddy gets you modern TLS by default with zero config, so that part is pretty painless. Post quantum on a box that serves like three people feels like overkill, but it's not hurting anything.

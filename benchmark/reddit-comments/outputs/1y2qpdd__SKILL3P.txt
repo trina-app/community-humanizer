@@ -1,0 +1,1 @@
+Not a prompt, just a habit: when a task is bigger than a couple of lines, I tell it "ask me questions first, don't start yet" and let it quiz me before it writes anything. Most of the bad output I get comes from it guessing what I meant, so that cuts out a lot of rerolling.

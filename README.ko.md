@@ -115,7 +115,7 @@ node skills/community-humanizer/bin/voice.mjs post --to clien/kin --title "맥�
 
 **바로 풀기: [quiz.trina.app](https://quiz.trina.app/?lang=ko)**
 
-시험에 쓴 글에서 10문제가 나와요. 댓글이나 글 두 개 중 하나는 사람이 썼어요. 다 풀면 내 점수와 다른 사람들이 맞힌 비율을 보여 줘요.
+시험에 쓴 글 중 AI 채점자가 가장 헷갈려한 쌍에서 10문제가 나와요. 댓글이나 글 두 개 중 하나는 사람이 썼어요. 다 풀면 내 점수와 다른 사람들이 맞힌 비율을 보여 줘요.
 
 사람이 얼마나 알아보는지 알리려고 답을 익명으로 저장해요. 무작위 세션 번호만 남기고, IP는 저장하지 않아요. 코드는 [quiz/](quiz/)에 있어요.
 

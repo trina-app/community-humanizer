@@ -1,0 +1,1 @@
+So your fix for "can't override files in a git repo" is a bash script and a compose.override.yml, and the tools built to replace that are the ones missing basic features. Sounds like the tools are the ones that need to migrate to your setup.

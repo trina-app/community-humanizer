@@ -1,0 +1,25 @@
+{
+ "id": "19282887",
+ "board": "kin",
+ "order": [
+  "SKILLP",
+  "PLAIN",
+  "IMNOTAI_S",
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILLP": 25,
+  "PLAIN": 8,
+  "IMNOTAI_S": 20,
+  "SKILL": 75,
+  "HUMAN": 90
+ },
+ "rank": {
+  "SKILLP": 3,
+  "PLAIN": 5,
+  "IMNOTAI_S": 4,
+  "SKILL": 1,
+  "HUMAN": 2
+ }
+}

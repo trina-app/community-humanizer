@@ -1,0 +1,54 @@
+
+## opus (n=28 threads)
+arm          human%  pass%  upvote-rank  more-human-than-HUMAN (ties)
+PLAIN          10.3    0.0      2.7      1/28 (0)
+BLADER_S       24.7    3.6      2.4      1/28 (0)
+SKILL3         50.3   42.9      3.2      5/28 (0)
+SKILL3P        49.7   42.9      3.4      3/28 (0)
+HUMAN          78.0   89.3      3.3      
+SKILL3P - BLADER_S: human +25.0 [16.7, 32.7], upvote rank better by -0.9
+SKILL3P - SKILL3: human -0.6 [-8.1, 7.0], upvote rank better by -0.1
+SKILL3 - BLADER_S: human +25.6 [17.9, 32.3], upvote rank better by -0.8
+SKILL3P - HUMAN: human -28.3 [-38.6, -16.8], upvote rank better by -0.0
+SKILL3 - HUMAN: human -27.7 [-36.9, -18.0], upvote rank better by 0.1
+
+## sonnet (n=28 threads)
+arm          human%  pass%  upvote-rank  more-human-than-HUMAN (ties)
+PLAIN          12.3    0.0      3.0      0/28 (0)
+BLADER_S       33.8   21.4      2.4      2/28 (0)
+SKILL3         67.9   85.7      2.8      5/28 (0)
+SKILL3P        62.9   78.6      3.0      5/28 (0)
+HUMAN          78.5   92.9      3.8      
+SKILL3P - BLADER_S: human +29.1 [18.7, 38.1], upvote rank better by -0.7
+SKILL3P - SKILL3: human -5.0 [-12.6, 3.1], upvote rank better by -0.2
+SKILL3 - BLADER_S: human +34.1 [25.4, 42.1], upvote rank better by -0.5
+SKILL3P - HUMAN: human -15.6 [-25.6, -4.5], upvote rank better by 0.8
+SKILL3 - HUMAN: human -10.6 [-19.7, -0.9], upvote rank better by 1.0
+
+## mean of the two judges
+PLAIN 11.3, BLADER_S 29.2, SKILL3 59.1, SKILL3P 56.3, HUMAN 78.3
+SKILL3P - BLADER_S (two-judge mean per thread): +27.0 [18.5, 34.5]
+SKILL3P - SKILL3 (two-judge mean per thread): -2.8 [-9.2, 3.8]
+SKILL3 - BLADER_S (two-judge mean per thread): +29.8 [22.1, 36.6]
+SKILL3P - HUMAN (two-judge mean per thread): -22.0 [-31.7, -11.2]
+SKILL3 - HUMAN (two-judge mean per thread): -19.2 [-27.5, -10.1]
+
+## punctuation (share of the 28 replies, %)
+measure                       SKILL3  SKILL3P    HUMAN   new closer to HUMAN?
+ends with . ? !                  3.6     85.7     64.3   yes
+any sentence punctuation        89.3    100.0     82.1   no
+line break                      17.9     46.4     42.9   yes
+(PLAIN: ends with . ? ! 100.0, any sentence punctuation 100.0, line break 100.0)
+(BLADER_S: ends with . ? ! 100.0, any sentence punctuation 100.0, line break 85.7)
+
+## length (median)
+PLAIN 272 words / 1556 chars, BLADER_S 164 words / 878 chars, SKILL3 53 words / 284 chars, SKILL3P 58 words / 319 chars, HUMAN 55 words / 273 chars
+picked comment type same as SKILL3's: 10/28
+
+RULE: (a) SKILL3P beats BLADER_S, interval above zero: opus yes, sonnet yes; (b) SKILL3P - SKILL3 >= -3: opus yes (-0.6), sonnet no (-5.0); (c) closer to HUMAN on 2 of 3 measures. FAIL: revert the line
+
+## cost: $1.67 over 168 calls (0 not ok)
+gen-draft: 84 calls, $0.77, models claude-sonnet-5-5
+gen-pick: 28 calls, $0.01, models claude-haiku-5-5
+judge-sonnet: 28 calls, $0.29, models claude-sonnet-5-5
+judge-opus: 28 calls, $0.60, models claude-opus-5-5

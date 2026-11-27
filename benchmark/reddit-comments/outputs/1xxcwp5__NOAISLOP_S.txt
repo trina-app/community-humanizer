@@ -1,0 +1,3 @@
+I expect enshittification eventually, so I'm not using it as if it's permanent. Anything I build on it I keep portable: prompts in plain files, no vendor-specific tooling where I can avoid it. If pricing goes sideways I can switch to another model in a weekend instead of a quarter.
+
+The competition is the only real check on this. As long as open models keep within a few months of the frontier, Anthropic can't squeeze too hard. The day that gap widens, I'd start worrying.

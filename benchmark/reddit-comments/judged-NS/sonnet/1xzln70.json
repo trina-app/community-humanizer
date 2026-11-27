@@ -1,0 +1,25 @@
+{
+ "id": "1xzln70",
+ "sub": "SaaS",
+ "order": [
+  "NOAISLOP_S",
+  "BLADER_S",
+  "PLAIN",
+  "SKILL3",
+  "HUMAN"
+ ],
+ "human": {
+  "NOAISLOP_S": 30,
+  "BLADER_S": 25,
+  "PLAIN": 12,
+  "SKILL3": 72,
+  "HUMAN": 45
+ },
+ "rank": {
+  "NOAISLOP_S": 1,
+  "BLADER_S": 4,
+  "PLAIN": 5,
+  "SKILL3": 3,
+  "HUMAN": 2
+ }
+}

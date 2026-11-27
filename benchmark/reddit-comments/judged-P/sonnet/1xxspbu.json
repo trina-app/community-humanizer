@@ -1,0 +1,25 @@
+{
+ "id": "1xxspbu",
+ "sub": "ClaudeAI",
+ "order": [
+  "PLAIN",
+  "SKILL3",
+  "HUMAN",
+  "SKILL3P",
+  "BLADER_S"
+ ],
+ "human": {
+  "PLAIN": 12,
+  "SKILL3": 80,
+  "HUMAN": 88,
+  "SKILL3P": 68,
+  "BLADER_S": 35
+ },
+ "rank": {
+  "PLAIN": 5,
+  "SKILL3": 3,
+  "HUMAN": 4,
+  "SKILL3P": 2,
+  "BLADER_S": 1
+ }
+}

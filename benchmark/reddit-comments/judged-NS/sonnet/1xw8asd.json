@@ -1,0 +1,25 @@
+{
+ "id": "1xw8asd",
+ "sub": "smallbusiness",
+ "order": [
+  "BLADER_S",
+  "NOAISLOP_S",
+  "HUMAN",
+  "PLAIN",
+  "SKILL3"
+ ],
+ "human": {
+  "BLADER_S": 12,
+  "NOAISLOP_S": 10,
+  "HUMAN": 88,
+  "PLAIN": 14,
+  "SKILL3": 80
+ },
+ "rank": {
+  "BLADER_S": 3,
+  "NOAISLOP_S": 2,
+  "HUMAN": 5,
+  "PLAIN": 1,
+  "SKILL3": 4
+ }
+}

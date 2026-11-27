@@ -1,0 +1,3 @@
+Most of us run Cloudflare because our ISP has us behind CGNAT or we don't want our home IP public. IPv6 on the origin isn't an option for a lot of people, since the ISP either doesn't offer it or hands out a prefix that changes. And post quantum on a Jellyfin box that only my family uses seems like a lot of effort for very little gain.
+
+Modern TLS between CF and the origin is fair though. If you're still on Flexible mode, fix that first.

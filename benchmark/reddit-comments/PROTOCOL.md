@@ -47,3 +47,54 @@ On the 28 fresh posts: REWRITE (plain Claude's reply rewritten with blader/human
 
 ## Writer-model test (2026-11-27, before running)
 Question: is Sonnet's higher score partly Sonnet judging its own writing? Same prompts, drafts written by Opus instead of Sonnet (Haiku still picks), on the fresh 28 (SKILL3_OPUS), the Korean 28 (SKILL_OPUS) and the post holdout without political posts (MESSY_OPUS). Each judged with the Sonnet-written version, the humanizer arm and HUMAN by GPT, Opus and Sonnet (judged-W). Self-preference shows as each Claude judge favouring its own model's text; GPT is the neutral judge.
+
+## Round NS: no-ai-slop arm (2026-11-27, written before generating)
+Question: on the 28 held-out F1 threads, does SKILL3 also beat petergyang/no-ai-slop when that skill gets the same 10 real comments, as it beat blader/humanizer?
+
+Comparison skill: [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop) `skills/no-ai-slop/SKILL.md` at commit 000650b156983f5159695b441477f4e63b25dc85 (2026-09-02, the newest commit on 2026-11-27), MIT, 13.8k stars. It is copied as `noaislop-SKILL.md`, with its license in `noaislop-LICENSE`. Known before the run: it is an editing skill. It edits a draft the user pastes, returns the edited draft plus a "What changed" section, and asks for a draft if there isn't one. It also tells the editor to check its work against the repo's `eval.md`, which the writer does not get. As with blader's, Humanizer-zh and humanizer-indonesia, only SKILL.md is passed, and the writer has no tools. It was not built to write Reddit replies; pasting SKILL.md into the writing prompt with real samples is the same cheap substitute used for blader.
+
+Arms:
+- NOAISLOP_S (new): the `gen.ts` BLADER_S prompt word for word, with `noaislop-SKILL.md` in place of `blader-SKILL.md`. That is: the post, "Write a reply to this Reddit post in r/<sub>.", the RULE line, "Use this writing skill:", the skill inside `<skill>` tags, the same 10 samples, then "Reply with the final comment text only." The 10 samples are each thread's `samples` in `posts-fresh.json` (built by `build-fresh-as.ts`, unchanged since working-folder commit 63e791a), the exact ones F1's BLADER_S got. Claude Sonnet (`--model sonnet`) writes one reply per thread, through `claude -p` with `gen.ts`'s isolation flags: no tools, no slash commands, an empty MCP config, project settings only, `CLAUDE_CODE_DISABLE_CLAUDE_MDS=1`, run from an empty folder. A call that returns an error or an empty result is retried, up to 3 attempts. Returned text is kept exactly as returned: never regenerated, edited or dropped.
+- PLAIN, BLADER_S, SKILL3: the F1 outputs (`outputs/<id>__<ARM>.txt`), unchanged. HUMAN: the real top comment in `posts-fresh.json`.
+
+Judging (`judged-NS/`): judges see all five versions of a thread at once, labelled A-E. Each judge gets its own seeded order: `order()` of `judge.ts` over PLAIN, BLADER_S, NOAISLOP_S, SKILL3, HUMAN, with seed `<id>:<judge>:NS`. The prompt is `judge.ts` word for word. The judges are Claude Opus and Claude Sonnet only (no GPT), isolated as above, with two attempts per thread. A thread a judge fails twice is reported and left out of that judge's numbers. Every raw answer is saved in `judged-NS-raw/<judge>/`, and parsed scores in `judged-NS/<judge>/<id>.json`. Judges score relative to the other replies in the same round, and F1 had three judges including GPT. So this round's numbers are not directly comparable with F1's published ones, and F1's arms are re-scored here for the within-round comparison.
+
+Measure: mean human probability (0-100) per arm and judge. The differences SKILL3 - NOAISLOP_S and SKILL3 - BLADER_S are paired by thread, with a bootstrap 95% interval (10,000 resamples, `boot()` of `analyze.ts`).
+
+**Pass: SKILL3 beats NOAISLOP_S on both judges (Opus and Sonnet), with the bootstrap 95% interval of SKILL3 - NOAISLOP_S above zero on both. Otherwise no-go.** Both judges are Claude models, and Sonnet also wrote every AI arm. That limit is known and is reported.
+
+Reported as it comes:
+- NOAISLOP_S - BLADER_S and SKILL3 - HUMAN, with intervals.
+- Each arm's mean per judge and over the two judges.
+- Pass rate (50+) and upvote rank.
+- How often each AI arm is judged more human than HUMAN (strictly higher; ties counted apart).
+- Median length in words and characters, and the shares with bullets, bold and em dashes.
+- Which NOAISLOP_S outputs contain text that is not the comment, such as a "What changed" section, a request for a draft, or notes about the edit. These are found by a regex and by reading all 28, and listed by id. As a sensitivity check (not the rule), the pass rule is also computed without those threads.
+- Judge failures; cost from `total_cost_usd`; the model IDs behind the aliases, from `modelUsage`.
+
+Script: `noaislop.ts` (`gen`, `judge opus`, `judge sonnet`, `analyze`). Budget: about $10 of model calls.
+
+## Round P: punctuation line (2026-11-27, written before generating)
+Why: native readers of the public quiz (quiz.trina.app) found a giveaway the AI judges never flagged. Our replies almost never end with sentence punctuation: 1 of 18 English AI replies ends with . ? ! against 10 of 18 real top comments. They are also one block with no line break more often than real comments. The likely cause is the persona's last clause, "and you often skip the final period". Reviews: `research/community-humanizer-launch/quiz-review/{en,ko}.md` (outside this repo).
+
+Change, and nothing else in `skills/community-humanizer/lib/prompts.mjs`: in `personaEn`, "No greeting, no wrap-up, no list of tips, and you often skip the final period." becomes "No greeting, no wrap-up, no list of tips. Punctuate and break lines the way the real comments below do." Reddit replies in every language use `personaEn`, so zh/es/id/ja Reddit replies change too. They are re-tested later, not in this round. The Korean line (`personaKo`) has its own Round P in `korean-comments/PROTOCOL.md`. Each line is kept or reverted on its own language's rule.
+
+Arms:
+- SKILL3P (new): F1's SKILL3 generation (`gen3.ts` with `POSTS=posts-fresh.json`) with only that sentence changed. Same 28 F1 threads, same labelled pool (`types.json` over `bd/comments.json`, test threads left out, 2+ upvotes), same seeded draw of 3 comment types per thread (`rng(<id>)`), the same 6 typed examples per type. Claude Sonnet writes the three drafts and Claude Haiku picks one with `gen3.ts`'s pick prompt. The prompts are built by `prompts.mjs` itself (`replyPrompt`, `replyPick`), so the round runs the shipped code. Before the edit, `punct.ts check` showed that on all 28 threads `prompts.mjs` gives `gen3.ts`'s 84 draft prompts and 28 pick prompts byte for byte, that the type draws equal F1's `drafts3/<id>.json`, and that `outputs/<id>__SKILL3.txt` is F1's picked draft. After the edit, the same check must show the persona sentence as the only difference. Isolation flags as `gen.ts`. A call that fails or comes back empty is retried, up to 3 attempts (as the shipped `claude.mjs`). Text is kept as returned (trimmed), never regenerated, edited or dropped. Drafts and the pick go to `drafts3p/<id>.json` in the working folder.
+- PLAIN, BLADER_S, SKILL3: the F1 outputs, unchanged. HUMAN: the real top comment.
+
+Judging (`judged-P/`): Claude Opus and Claude Sonnet only (no GPT), all five versions of a thread at once, labelled A-E. The prompt is `judge.ts` word for word. Each judge gets its own seeded order: `order()` over PLAIN, BLADER_S, SKILL3, SKILL3P, HUMAN with seed `<id>:<judge>:P`. Two attempts per thread; a thread a judge fails twice is reported and left out of that judge's numbers. Raw answers in `judged-P-raw/<judge>/`, scores in `judged-P/<judge>/<id>.json`. Both judges are Claude and Sonnet wrote every AI arm. Numbers are compared within this round only.
+
+Measures:
+- Mean human probability (0-100) per arm and judge. Paired by thread with a bootstrap 95% interval (10,000 resamples, `boot()` of `analyze.ts`): SKILL3P - BLADER_S, SKILL3P - SKILL3, SKILL3 - BLADER_S, and each of SKILL3 and SKILL3P minus HUMAN.
+- Punctuation, as the share of the 28 replies, for SKILL3, SKILL3P and HUMAN (PLAIN and BLADER_S for reference). Definitions are in `punct.ts`:
+  1. ends with sentence punctuation: after trimming whitespace and trailing closing quotes or brackets, the last character is . ? ! or … (or full-width 。？！);
+  2. any sentence punctuation: one of those characters followed by whitespace, a closing quote or bracket, or the end of the text (so "3.5" and "example.com" don't count);
+  3. a line break: the trimmed text contains a newline.
+  On the outputs that exist before this round, these give SKILL3 1/28, 25/28, 5/28 and HUMAN 18/28, 23/28, 12/28. The definitions were fixed after looking at the old arm and HUMAN only, before any SKILL3P text existed. SKILL3P is "closer to HUMAN" on a measure when |SKILL3P - HUMAN| < |SKILL3 - HUMAN| (strictly).
+
+**Pass (keep the new `personaEn` line): on both judges, (a) SKILL3P beats BLADER_S with the bootstrap 95% interval of SKILL3P - BLADER_S above zero, and (b) mean SKILL3P minus mean SKILL3 is at least -3 points; and (c) SKILL3P is closer to HUMAN than SKILL3 on at least 2 of the 3 punctuation measures. Otherwise the line is reverted in `prompts.mjs`.** There is one sample per thread, so SKILL3P - SKILL3 carries sampling noise; the -3 tolerance is set with that in mind.
+
+Reported as it comes: pass rate (50+), upvote rank, how often each AI arm is judged more human than HUMAN, median length, how often SKILL3P's picked comment type equals SKILL3's, judge failures, cost from `total_cost_usd`, and the model IDs from `modelUsage`.
+
+Script: `punct.ts` (`check`, `gen`, `judge opus`, `judge sonnet`, `analyze`). Budget: about $5 of model calls for both languages.

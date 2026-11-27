@@ -1,0 +1,9 @@
+Most of them don't know at the start. They just have a better idea of which part is the riskiest and how to test that part cheaply. For deep tech that's usually "does the physics/chemistry/engineering actually work at the performance a customer would pay for?" A lot of founders already spent years in a lab or at a company in that field, so they've seen both the technical edge and the customer pain firsthand. The idea usually comes out of that, not out of brainstorming.
+
+Before building anything, talk to the people who would buy it and ask what spec they'd need to switch from what they use now. If your thing is 10% better and they need 3x, you just saved yourself two years.
+
+Funding is mostly milestone based. Grants like SBIR/STTR and university or national lab programs pay for early prototypes without taking equity. Then a pre-seed or seed from a VC that does deep tech, because they have people who can do technical diligence on your claims. Hardware eats cash, so investors want to see you've proven the scary part before they fund the expensive part.
+
+So yeah, a startup is kind of a group of people testing whether something is possible, but you do it in order, cheapest test first.
+
+At 19 I'd get technical depth now. Work in a lab, intern at a hardware company, or build small things. That gets you the knowledge you're asking about, and it'll probably hand you the idea too.

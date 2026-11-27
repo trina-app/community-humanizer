@@ -1,0 +1,7 @@
+Either works, they both spit out a pretty standard React/Vite/Tailwind app, so lock-in on the code is low. I'd lean Lovable because the Supabase and GitHub sync is the more polished path. Bolt is fine too, so don't spend more than an hour on the choice.
+
+The real risk is Supabase, not the builder. These tools will happily ship tables with RLS off or policies that let any logged-in user read everyone's rows. Before you invite anyone, go through every table and test it with two different accounts. Also keep a separate Supabase project for dev and prod, so a prompt that rewrites your schema doesn't touch beta users' data.
+
+For GitHub, treat the repo as the source of truth. Use branches, deploy from main on Vercel or Netlify, and don't let the builder push straight to the branch that's live. Editing outside the builder works fine as long as you do it in small commits. It gets messy when you and the AI both change the same files.
+
+On handoff, my guess is engineers keep the schema, the auth setup, and most of the UI, and rewrite the business logic once they know what the product does. That's still a good outcome, since the beta tells you what to build. Write down your data model and what each table is for, and it'll save them days.

@@ -1,0 +1,5 @@
+Mine is telling it to push back before it builds anything. I have a line in my CLAUDE.md like "if my plan has a hole, say so before you write code." Before that it would cheerfully build whatever I asked for, even a bad idea, and I'd find out three hours later. Now it sometimes comes back with "this breaks when X happens" and I skip the rewrite.
+
+The thing I stopped doing is arguing with it in the same chat. If it gets something wrong twice, I open a fresh chat and paste a short brief of what I actually want. It's way faster than trying to fix a conversation that's already confused.
+
+I might steal your 80/20 block for the long sessions, though.

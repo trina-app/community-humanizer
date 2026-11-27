@@ -1,0 +1,9 @@
+Hetzner Cloud. Private networks are free, you get a big traffic allowance in the EU, and they have a CCM and CSI driver so LoadBalancers and volumes just work with k3s. Their CPU is also not oversold the way a lot of LET providers are. Put everything in one location and you're done.
+
+If you want to spread across providers, netcup is solid for the price, especially the annual plans. Just don't expect private networking between their VPSes, so you'd run WireGuard or Tailscale on top.
+
+I'd skip Contabo for this. The specs on paper look great, but the disk IO and CPU steal are bad, and etcd hates slow disks.
+
+On the 2 control planes: just run 3 with embedded etcd. It's cheap enough that it's not worth the external DB hassle, and 2 gives you worse availability than 1 because you lose quorum if either dies. The control planes can be small, 2GB is fine for k3s. Put the money into the workers.
+
+Also, cross-provider latency will hurt etcd. Keep the control planes in the same DC and put workers wherever.

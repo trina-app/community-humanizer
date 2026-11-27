@@ -46,6 +46,25 @@ for (const [lang, dir, name] of [['zh', 'chinese-voice-test', 'chinese-comments'
       scores: Object.fromEntries(['codex', 'opus', 'sonnet'].map((j) => [j === 'codex' ? 'gpt' : j, { human: score(join(D, 'judged'), j, p.id, 'HUMAN'), ai: score(join(D, 'judged'), j, p.id, 'MESSY') }])) })
   }
 }
+// English and Korean comments: use the punctuated version from Round P (2026-11-27) instead. People spotted the old
+// version at once because it never ends a sentence with punctuation; the AI judges didn't. New qids (-p) keep the
+// answers to the two versions apart, so the quiz also tells which version people catch less often.
+for (const [lang, name, arm] of [['en', 'reddit-comments', 'SKILL3P'], ['ko', 'korean-comments', 'SKILLP']] as const) {
+  const B = new URL(`../../benchmark/${name}/`, import.meta.url).pathname
+  for (const x of items.filter((x) => x.lang === lang && x.kind === 'comment')) {
+    const id = x.qid.split('-')[1], f = join(B, 'outputs', `${id}__${arm}.txt`)
+    if (!existsSync(f)) continue
+    const ai = readFileSync(f, 'utf8').trim()
+    x.qid += '-p'; x.rawAi = ai; x.ai = cut(ai)
+    x.scores = Object.fromEntries(['opus', 'sonnet'].map((j) => [j, { human: score(join(B, 'judged-P'), j, id, 'HUMAN'), ai: score(join(B, 'judged-P'), j, id, arm) }]))
+  }
+}
+// How hard a pair is: the judges' human score for the AI side minus the real side's (higher = harder). The worker
+// serves the hardest pairs first.
+for (const x of items) {
+  const v = Object.values(x.scores as Record<string, { human: number | null; ai: number | null }>).filter((s) => s.ai != null && s.human != null)
+  x.d = v.length ? Math.round(v.reduce((a, s) => a + (s.ai! - s.human!), 0) / v.length) : -100
+}
 // r/China_irl drifts into politics and one real person's scandal; the benchmark's guard let those through, the quiz doesn't.
 // 1xnixty was read by hand: Taiwan and NVIDIA come up only as chip-industry examples.
 const ZH_POL = /黄仁勋|老黄|黄皮|爱泼斯坦|萝莉岛|中共|共产党|习近平|政府|政治|台湾|香港|新疆|西藏|穆斯林|伊斯兰|性少数|间谍|认知战|地缘|粉红|润人|经济停止|经济恶化|身败名裂|川普|特朗普|拜登|战争|民主|社会主义|集权/
@@ -90,7 +109,7 @@ const clean = (s: string) => s
   .replace(/\bu\/[A-Za-z0-9_-]+/g, 'u/…')
   .replace(/[‘’]/g, "'").replace(/[“”]/g, '"')
   .trim()
-const keep = items.filter((x) => !ko.includes(x) && !unfair.includes(x) && !REVIEW_DROP.has(x.qid)).map(({ rawHuman, rawAi, ...x }) => ({ ...x, title: clean(x.title), body: clean(x.body), human: clean(x.human), ai: clean(x.ai) }))
+const keep = items.filter((x) => !ko.includes(x) && !unfair.includes(x) && !REVIEW_DROP.has(x.qid.replace(/-p$/, ''))).map(({ rawHuman, rawAi, ...x }) => ({ ...x, title: clean(x.title), body: clean(x.body), human: clean(x.human), ai: clean(x.ai) }))
 writeFileSync(new URL('../src/items.json', import.meta.url), JSON.stringify(keep))
 for (const [l, k] of [['en', 'comment'], ['en', 'post'], ['ko', 'comment'], ['ko', 'post'], ['zh', 'comment'], ['es', 'comment'], ['id', 'comment'], ['ja', 'comment']]) console.log(`${l} ${k}: ${keep.filter((x) => x.lang === l && x.kind === k).length}`)
 console.log(`dropped as political: ${ko.length}, dropped because only one side would be cut: ${unfair.length}`)

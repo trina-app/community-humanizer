@@ -1,0 +1,11 @@
+First 10 were all manual. For B2B, a launch thread basically never gets you there, because the people who show up from a launch aren't the ones with the problem. I got mine by finding people who were already complaining about the problem and messaging them directly.
+
+Where they came from: Reddit and Slack communities where my target users hang out. I searched for people describing the exact pain, replied with something useful (no link), and DMed a few of them after. Maybe 1 in 8 DMs turned into a call. Cold email did slightly worse, around the same effort for fewer replies, but it worked better once I had a specific list of 30 companies instead of a broad one.
+
+The unscalable stuff was worth it. Every call told me what to fix and what to say on the landing page, and the first few users basically wrote my positioning for me.
+
+Paid ads were burned money for me that early. You don't know your message yet, so you're paying to test copy. Wait until you have 10 people who'd be sad if the product vanished and you can say why.
+
+What I stopped: directories (a spike of views, zero retention), launch threads, and posting on X with no audience. Launching again and again is probably the pattern you're stuck in. You get a bump, it dies, and you build the next thing.
+
+If you're struggling with B2B, pick one narrow niche, write down 50 specific people in it, and talk to all of them before you build anything else.

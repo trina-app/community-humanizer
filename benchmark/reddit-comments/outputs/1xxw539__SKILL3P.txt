@@ -1,0 +1,3 @@
+Bring in the senior dev friend, you're not overcomplicating it. Pay them for an hour or two if you can, it's cheap compared to a bad cofounder. Honestly I'd weight the code walkthrough less than you think though. Whether she can explain things to you in plain language, owns the tradeoffs and says "I don't know" when she doesn't is most of what you can judge yourself.
+
+Also just do a small real project together for a couple weeks before you sign anything. You learn way more from watching someone work than from any interview, and a strong candidate won't mind since she's evaluating you too.

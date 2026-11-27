@@ -1,0 +1,12 @@
+The code was never the moat. Most successful SaaS products I've seen could be cloned in a weekend by a decent dev, and it doesn't matter, because the customer isn't paying for the code.
+
+What actually holds up:
+
+- Distribution. If you own a channel (SEO, a community, a list, a partner integration), a clone starts at zero while you're already in front of buyers.
+- Data and workflow lock-in. Once a team has two years of history and their process built around your tool, switching costs a month of pain. Nobody does that to save $10.
+- Trust. For anything touching payments, payroll or customer data, people pick the vendor they expect to still exist in three years.
+- Niche depth. A generic tool is easy to copy. Knowing how a dental clinic or a freight broker actually works, and building around that, takes years of talking to them.
+
+On your maintenance point, I agree it's getting easier. But support, edge cases and "why did this break for one customer" are mostly people problems, not code problems.
+
+Someone will copy your idea tomorrow, probably. Most of them will quit when the first 20 customers ask for weird things. If your moat is "nobody else thought of this," you don't have one.

@@ -1,0 +1,25 @@
+{
+ "id": "1xxsnku",
+ "sub": "SaaS",
+ "order": [
+  "SKILL3P",
+  "BLADER_S",
+  "SKILL3",
+  "PLAIN",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL3P": 62,
+  "BLADER_S": 18,
+  "SKILL3": 55,
+  "PLAIN": 6,
+  "HUMAN": 92
+ },
+ "rank": {
+  "SKILL3P": 2,
+  "BLADER_S": 3,
+  "SKILL3": 5,
+  "PLAIN": 4,
+  "HUMAN": 1
+ }
+}

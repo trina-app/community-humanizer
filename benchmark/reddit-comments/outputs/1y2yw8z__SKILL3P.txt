@@ -1,0 +1,5 @@
+Radicale or Baikal for the CalDAV side, they're tiny and don't break. Both handle events and tasks, and the colors/lists are just per-calendar.
+
+Then DAVx5 on android syncs it, and tasks.org can use the same CalDAV account, so your tasks show up next to your events in whatever calendar app you pick. Windows is the weak spot, there's no great native client, so you'd probably end up using Thunderbird for it or just a browser.
+
+Nextcloud does do all this, but yeah it's a lot of stack for a calendar.

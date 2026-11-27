@@ -48,10 +48,12 @@ export default {
       let s = await unsign(env, decodeURIComponent(cookie(req) || ''))
       const headers = {}
       if (!s) { s = crypto.randomUUID(); headers['set-cookie'] = `s=${encodeURIComponent(await signed(env, s))}; Path=/; Max-Age=31536000; SameSite=Lax; Secure; HttpOnly` }
-      const pool = shuffle(ITEMS.filter((x) => x.lang === lang))
-      // 6 comments and 4 posts; Chinese and Spanish have comments only
-      const posts = pool.filter((x) => x.kind === 'post').slice(0, 4)
-      const picked = shuffle([...pool.filter((x) => x.kind === 'comment').slice(0, 10 - posts.length), ...posts])
+      const pool = ITEMS.filter((x) => x.lang === lang)
+      // the hardest half of each kind (x.d: AI side's human score minus the real side's), then a random draw from it
+      const hardest = (xs, n) => shuffle(xs.sort((a, b) => b.d - a.d).slice(0, Math.max(n, Math.ceil(xs.length / 2)))).slice(0, n)
+      // 6 comments and 4 posts; languages without posts get 10 comments
+      const posts = hardest(pool.filter((x) => x.kind === 'post'), 4)
+      const picked = shuffle([...hardest(pool.filter((x) => x.kind === 'comment'), 10 - posts.length), ...posts])
       const round = await signed(env, `${s}|${Date.now()}|${picked.map((x) => x.qid).join(',')}`)
       const items = []
       for (const x of picked) {

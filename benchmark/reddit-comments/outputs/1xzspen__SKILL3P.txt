@@ -1,0 +1,1 @@
+Hetzner Cloud. Private networks are free and the traffic allowance is huge. Just go 3 control planes or k3s with an external DB.

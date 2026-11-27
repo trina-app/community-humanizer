@@ -1,0 +1,11 @@
+I default to Sonnet and only move when it's clearly not cutting it.
+
+Haiku for the throwaway stuff: reformatting a list, summarizing a long email, "is this daycare's tour schedule weekdays only?", renaming files, quick lookups. Anything where I'd know a bad answer immediately.
+
+Sonnet for most of the rest: tailoring a resume bullet to a job posting, drafting a cover letter, comparing daycares from my notes, and most Claude Code work like small fixes, writing a script, or explaining what some code does.
+
+Opus when I've already watched Sonnet fumble it, or when the task is big and fuzzy. For you that could be planning a whole job search strategy, or a Claude Code task that touches a bunch of files and needs to hold the whole picture in its head.
+
+Easy test: try the cheaper model first. If the answer is off, rerun it on the bigger one. You'll learn your own line pretty fast, and it costs you one extra prompt now and then. Also, if you're on a plan with usage limits, Opus burns through them noticeably faster, so that's the real reason not to leave it on for everything.
+
+Good luck with the job hunt and the daycare search, that's a lot at once.

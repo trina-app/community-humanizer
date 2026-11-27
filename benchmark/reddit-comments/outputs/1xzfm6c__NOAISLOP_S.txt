@@ -1,0 +1,9 @@
+Honestly your setup is fine. Those tools assume the git repo is the source of truth, so the override pattern doesn't fit them. The usual workaround is to put your own compose file in your own private repo and sync that instead.
+
+If all you're missing is those three things, you can bolt them onto what you have:
+
+- git sync: cron running `git pull`, or a webhook if you want it faster
+- updates: Renovate on the repo, or Diun if you only want notifications
+- vuln scanning: Trivy, run it against the images from your build-and-run script
+
+That's a lot less work than migrating every project to a new tool.

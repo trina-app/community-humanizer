@@ -1,0 +1,7 @@
+Your plan is fine, but I'd make it a paid trial rather than a one-off code session. An hour of reading code together shows you how she talks about code. It doesn't show how she works when nobody's watching. Give her a real, small piece of your roadmap for 2-4 weeks and see what happens. Does she ask good questions up front, does she tell you early when something's slipping, can she explain a tradeoff in plain English without making you feel dumb? Those matter as much as raw coding skill, and you can judge them yourself.
+
+For the part you can't judge, do bring in your senior dev friend. Have them do a reference call and look at her actual output (PRs, commit history, a past project) instead of sitting in on a live session, which is mostly performance. Get them to ask her to walk through something she shipped and what she'd do differently. Good engineers have opinions about their own past mistakes. Weak ones blame the previous team.
+
+Also talk to someone who worked with her directly, not just the references she hands you.
+
+On number of tests, I'd say 3-4 conversations, one working session, and the trial. If she's strong, anything beyond that is just you being nervous. And the vesting setup (4 years, 1 year cliff) protects you if it doesn't work out, so you don't have to be 100% sure going in.

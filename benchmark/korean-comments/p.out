@@ -1,0 +1,74 @@
+
+## opus (n=28 threads)
+arm          human%  pass%  upvote-rank  more-human-than-HUMAN (ties)
+PLAIN           9.2    0.0      3.9      0/28 (0)
+IMNOTAI_S      29.3    3.6      3.0      0/28 (0)
+SKILL          51.9   42.9      3.1      1/28 (0)
+SKILLP         43.2   28.6      3.3      1/28 (1)
+HUMAN          87.5  100.0      1.8      
+SKILLP - IMNOTAI_S: human +14.0 [7.9, 20.6], upvote rank better by -0.3
+SKILLP - SKILL: human -8.7 [-19.7, 2.4], upvote rank better by -0.1
+SKILL - IMNOTAI_S: human +22.7 [13.8, 31.6], upvote rank better by -0.1
+SKILLP - HUMAN: human -44.3 [-51.5, -36.4], upvote rank better by -1.5
+SKILL - HUMAN: human -35.6 [-43.6, -27.4], upvote rank better by -1.3
+
+## sonnet (n=28 threads)
+arm          human%  pass%  upvote-rank  more-human-than-HUMAN (ties)
+PLAIN          12.6    0.0      4.5      0/28 (0)
+IMNOTAI_S      37.1   21.4      3.3      0/28 (0)
+SKILL          67.5   75.0      2.4      5/28 (0)
+SKILLP         57.8   71.4      2.8      2/28 (0)
+HUMAN          87.3  100.0      2.1      
+SKILLP - IMNOTAI_S: human +20.8 [12.9, 28.8], upvote rank better by 0.4
+SKILLP - SKILL: human -9.7 [-20.5, 0.6], upvote rank better by -0.5
+SKILL - IMNOTAI_S: human +30.5 [19.6, 40.6], upvote rank better by 0.9
+SKILLP - HUMAN: human -29.5 [-38.3, -20.7], upvote rank better by -0.7
+SKILL - HUMAN: human -19.8 [-29.4, -10.6], upvote rank better by -0.3
+
+## mean of the two judges
+PLAIN 10.9, IMNOTAI_S 33.2, SKILL 59.7, SKILLP 50.5, HUMAN 87.4
+SKILLP - IMNOTAI_S (two-judge mean per thread): +17.4 [11.0, 24.0]
+SKILLP - SKILL (two-judge mean per thread): -9.2 [-19.6, 1.0]
+SKILL - IMNOTAI_S (two-judge mean per thread): +26.6 [18.0, 34.9]
+SKILLP - HUMAN (two-judge mean per thread): -36.9 [-44.2, -29.6]
+SKILL - HUMAN (two-judge mean per thread): -27.7 [-35.3, -20.2]
+
+## punctuation (share of the 28 replies, %)
+measure                        SKILL   SKILLP    HUMAN   new closer to HUMAN?
+ends with . ? !                  3.6     78.6     71.4   yes
+any sentence punctuation        21.4     92.9     78.6   yes
+line break                       7.1      3.6     35.7   no
+sentences run together          57.1      3.6      7.1   yes
+(PLAIN: ends with . ? ! 82.1, any sentence punctuation 100.0, line break 82.1, sentences run together 0.0)
+(IMNOTAI_S: ends with . ? ! 96.4, any sentence punctuation 100.0, line break 32.1, sentences run together 0.0)
+  run-on SKILL 19297449: 집인데요 그 돈이면 바닥에 
+  run-on SKILL 19297441: 짜증남 5년 뒤 걱정할 때
+  run-on SKILL 19296840: 나왔네요 주유소 알바 DLC
+  run-on SKILL 19296796: 않나요 주식 담보로 버티는
+  run-on SKILL 19297442: 올라오네요 결국 사는 사람이  ; 거죠 삼성이 해자 못 만
+  run-on SKILL 19296527: 알겠죠 뭐
+  run-on SKILL 19297879: 건지요 끊는다고 끊어지면 
+  run-on SKILL 19297445: 싶네요 아는 애들도 낚이게
+  run-on SKILL 19297272: 이상한데요 애한테는 발음 완벽 ; 낫습니다 독학 계획 세우기 
+  run-on SKILL 19284140: 있나요 그냥 차에 눕혀서 
+  run-on SKILL 19282887: 이상한데요 그 질문은 "우리  ; 겪어요 후기 그 정도면 면
+  run-on SKILL 19277530: 마세요 결혼식 있는데 일정
+  run-on SKILL 19290575: 있나요 가나다순이든 아무  ; 거죠 11년 동안 못 봤
+  run-on SKILL 19275834: 거죠 근데 대부분 돈 버
+  run-on SKILL 19295608: 이상한데요 박스가 덮고 있으면 ; 마릅니다 눈에 안 보일 뿐이
+  run-on SKILL 19254356: 돼요 어차피 5년 뒤에도
+  run-on SKILLP 19297879: 지웠다 깔았다 반복 중입니 ; 깔았다 반복 중입니다.
+  run-on HUMAN 19284140: 될거같은데요 27인치면 별로 안
+  run-on HUMAN 19253662: 같네요 양옆을 조금이라도 
+
+## length (median chars)
+PLAIN 436, IMNOTAI_S 142, SKILL 68, SKILLP 84, HUMAN 63
+picked comment type same as SKILL's: 11/28
+
+RULE: (a) SKILLP beats IMNOTAI_S, interval above zero: opus yes, sonnet yes; (b) SKILLP - SKILL >= -3: opus no (-8.7), sonnet no (-9.7); (c) closer to HUMAN on 3 of 4 measures. FAIL: revert the line
+
+## cost: $2.19 over 168 calls (0 not ok)
+gen-draft: 84 calls, $1.04, models claude-sonnet-5-5
+gen-pick: 28 calls, $0.02, models claude-haiku-5-5
+judge-sonnet: 28 calls, $0.36, models claude-sonnet-5-5
+judge-opus: 28 calls, $0.77, models claude-opus-5-5

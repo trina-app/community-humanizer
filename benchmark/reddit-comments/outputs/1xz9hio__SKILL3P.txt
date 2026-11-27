@@ -1,0 +1,5 @@
+Every one of these threads is the same. Someone wants a fast MVP and "engineers can take over later" in the same sentence, and the answer is always that the engineers look at the generated code, sigh, and rewrite half of it anyway.
+
+Nobody ever posts the part where it's 3 months later and they're paying for credits to fix the thing the last prompt broke.
+
+Honestly the tool matters way less than whether you've got one person who can read the code before beta users show up.

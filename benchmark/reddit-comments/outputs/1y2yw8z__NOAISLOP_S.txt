@@ -1,0 +1,9 @@
+Skip Nextcloud for now, you don't need it for this. Radicale or Baikal will do the calendar part and both are tiny. Baikal has a web UI for making users and calendars, Radicale is just a config file. Both speak CalDAV, which handles events and tasks.
+
+On Android, install DAVx5 and point it at your server. It syncs the calendar into your normal calendar app and the tasks into tasks.org, so that's your "show it on a calendar" fix. Tasks.org supports CalDAV natively, so you can keep using it.
+
+Colors are per calendar, so make one calendar each for work, personal, and so on and give each its own color in DAVx5. 
+
+On Windows, Thunderbird has a built-in calendar that does CalDAV, tasks included. It's not pretty but it works.
+
+Put it behind a reverse proxy with HTTPS or just reach it over Tailscale/WireGuard. Don't expose it raw to the internet.

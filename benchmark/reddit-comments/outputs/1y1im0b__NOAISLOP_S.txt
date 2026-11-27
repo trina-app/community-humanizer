@@ -1,0 +1,3 @@
+Tried it from the demo link. The UI was fine, what stopped me was the stack. Last time I looked it wanted a Postgres container plus separate frontend and server containers, and I already run too many of those for one app. A single container with SQLite would've gotten me to install it that night.
+
+The other thing is a feature list of food, workouts, water, meds, mood, caffeine, alcohol and 29 integrations makes me wonder how much of it is half-done. I'd rather use a tracker that does food and workouts well than one that does everything. Multiple PRs merged a day is great for momentum, but it also makes me nervous about upgrades breaking my data. Do you have a documented migration path and a stable tag, or is it just pull latest and hope?

@@ -1,0 +1,9 @@
+Your outbound isn't the bottleneck, your traction is. A locked deck and an MVP with nobody using it is a hard pre-seed pitch right now, and cold emails to investors convert terribly anyway.
+
+So spend the empty hours getting users. Talk to 5 to 10 potential customers a week and try to get a few to actually use it or sign an LOI/pilot. Every one of those conversations either validates the deck or tells you what's wrong with it, which fits your fail-fast approach better than building features. Then put the real numbers and quotes in your updates to investors.
+
+The second use of that time is warm intros. Ask every customer, advisor and founder you talk to who they'd put you in front of. One intro from a founder an investor trusts beats 50 cold emails.
+
+Also keep a short monthly update going to the investors who said "come back when you have X." It's how you turn a pass into a check later.
+
+The only coding I'd do is whatever stops a pilot user from churning. Everything else can wait until someone is paying for it.

@@ -1,0 +1,3 @@
+Haven't installed it, but the feature list is what makes me shrug. Food, workouts, meds, mood, caffeine, NFC, 29 integrations... I can't tell what it's actually good at, and "does everything" usually means the thing I care about is mediocre.
+
+Also, the first thing I want to know is whether I can get my existing data in and out. Put that and a one-line compose at the top of the readme and I'd be more likely to click the demo.

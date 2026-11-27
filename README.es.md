@@ -115,7 +115,7 @@ El personaje está adaptado del que hizo que GPT-4.5 pasara por humano el 73 % d
 
 **Juega aquí: [quiz.trina.app](https://quiz.trina.app/?lang=es)**
 
-Son 10 preguntas en español, sacadas de los hilos de la prueba. Cada una trae dos respuestas y una de ellas la escribió una persona. Al final ves tu puntuación y cómo les fue a los demás.
+Son 10 preguntas en español, sacadas de los hilos de la prueba que a los jueces de IA más les costó distinguir. Cada una trae dos respuestas y una de ellas la escribió una persona. Al final ves tu puntuación y cómo les fue a los demás.
 
 Lo que contestas en el test se guarda de forma anónima (un ID de sesión aleatorio, sin IP), así por fin podremos decir con qué frecuencia la gente acierta. El código está en [quiz/](quiz/).
 

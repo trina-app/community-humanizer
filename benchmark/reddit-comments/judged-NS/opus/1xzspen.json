@@ -1,0 +1,25 @@
+{
+ "id": "1xzspen",
+ "sub": "selfhosted",
+ "order": [
+  "BLADER_S",
+  "NOAISLOP_S",
+  "HUMAN",
+  "PLAIN",
+  "SKILL3"
+ ],
+ "human": {
+  "BLADER_S": 30,
+  "NOAISLOP_S": 35,
+  "HUMAN": 88,
+  "PLAIN": 12,
+  "SKILL3": 80
+ },
+ "rank": {
+  "BLADER_S": 3,
+  "NOAISLOP_S": 2,
+  "HUMAN": 5,
+  "PLAIN": 1,
+  "SKILL3": 4
+ }
+}

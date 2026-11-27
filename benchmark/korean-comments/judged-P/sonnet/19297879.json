@@ -1,0 +1,25 @@
+{
+ "id": "19297879",
+ "board": "park",
+ "order": [
+  "PLAIN",
+  "IMNOTAI_S",
+  "HUMAN",
+  "SKILL",
+  "SKILLP"
+ ],
+ "human": {
+  "PLAIN": 30,
+  "IMNOTAI_S": 35,
+  "HUMAN": 85,
+  "SKILL": 88,
+  "SKILLP": 55
+ },
+ "rank": {
+  "PLAIN": 4,
+  "IMNOTAI_S": 5,
+  "HUMAN": 2,
+  "SKILL": 1,
+  "SKILLP": 3
+ }
+}

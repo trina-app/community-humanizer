@@ -1,0 +1,3 @@
+Honestly my rule is whether I'd have to check the answer. If it's rewriting an email, summarizing something, or asking what a word means, the cheap model is fine. If a wrong answer costs me an afternoon, like debugging or planning something with a lot of moving parts, that's when I bump up.
+
+For Claude Code I'd start on Sonnet and only switch when it's clearly struggling. Job search stuff like resume tweaks and cover letters doesn't need Opus.

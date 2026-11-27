@@ -1,0 +1,3 @@
+honestly the biggest thing is don't rely on the app code to keep tenants apart. Agents will forget a `WHERE clinic_id = ...` somewhere eventually, so put it in Postgres with row level security so a missed filter returns nothing instead of another clinic's patients. That also half answers your drift question, because you can lock auth and the tenant stuff behind required review and tests that try to read across tenants and fail the build if they succeed.
+
+Also it's patient data, so before any real records go in, pay someone who knows your local health privacy rules to look at it for an hour or two. That's cheaper than any course and way cheaper than a breach.

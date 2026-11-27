@@ -1,0 +1,5 @@
+150 out of 620 is a 24% acceptance rate, which is high for cold outreach. But the numbers that decide whether this works are missing. How many of the 150 actually posted? How many posts drove paying users? $4.7k MRR split across 150 influencers could mean 5 of them did all the work.
+
+The 14% lifetime is also a bigger liability than you're treating it. At 100k MRR you'd be paying out 14% of every legacy customer forever, to people who stopped promoting you months ago. I'd cap it at 12 or 24 months, or make the lifetime tier conditional on them still posting.
+
+Also, you're paying 70% for two months. If your churn is high, you could be net negative on a lot of those customers. What's your payback looking like?

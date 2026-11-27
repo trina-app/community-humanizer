@@ -1,0 +1,17 @@
+You're not going to out-learn the agent on syntax, so learn the few things that are expensive to fix later and make them checkable.
+
+For tenancy, put a tenant_id on every table and turn on Postgres row-level security so the database enforces isolation, not just your app code. Then write tests that log in as clinic A and try to read clinic B's data. Run them in CI on every change. That one test suite catches most of the scary stuff. Read the Postgres docs on RLS and the Citus/Crunchy Data posts on multi-tenancy. They're free and better than most paid courses.
+
+The mistakes that hurt most later:
+- picking the tenancy model wrong (shared schema with RLS is fine for you, don't overthink it)
+- no audit log of who viewed or changed a patient record
+- storing money as floats instead of integer cents
+- timezones on appointments (store UTC plus the clinic's timezone)
+- hard deleting records instead of soft deleting
+- no tested backup restore
+
+Since it's medical data, find out which rules apply where you are (HIPAA, GDPR, local equivalent) before you onboard a real clinic. Pay a human security person for a one-off review before real patient data goes in. That's the best use of paid help, and cheaper than a breach.
+
+For parallel agents, one git worktree per agent, one small ticket each, and never let two agents touch the same area. Everything goes through a PR, CI has to pass, and you merge. Most of the breakage comes from big vague tasks, so keep them small.
+
+For drift, put the architecture rules in CLAUDE.md in plain language ("all queries go through the tenant-scoped db helper, never raw SQL"). Use CODEOWNERS or branch protection so any change to auth or tenant code needs your explicit approval. Tests do more than instructions here, because an agent will happily ignore a rule but it can't ignore a red build.

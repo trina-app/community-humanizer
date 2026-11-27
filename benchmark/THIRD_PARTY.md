@@ -1,6 +1,6 @@
 # Third-party files
 
-Five skills are copied here so the benchmark can be rerun with the exact text it used. All five are MIT licensed; their notices follow (or sit next to the file).
+Six skills are copied here so the benchmark can be rerun with the exact text it used. All six are MIT licensed; their notices follow (or sit next to the file).
 
 | File | Source |
 | --- | --- |
@@ -9,6 +9,7 @@ Five skills are copied here so the benchmark can be rerun with the exact text it
 | `chinese-comments/humanizer-zh-SKILL.md` | [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh) `SKILL.md` (license in `chinese-comments/humanizer-zh-LICENSE`) |
 | `indonesian-comments/humanizer-id-SKILL.md` | [adhiprib/humanizer-indonesia](https://github.com/adhiprib/humanizer-indonesia) `SKILL.md`, commit 05231b5 (license in `indonesian-comments/humanizer-id-LICENSE`) |
 | `japanese-comments/yomiyasu-SKILL.md` | [nanaism/yomiyasu](https://github.com/nanaism/yomiyasu) `skills/yomiyasu/SKILL.md`, commit 3979c75 (license in `japanese-comments/yomiyasu-LICENSE`) |
+| `reddit-comments/noaislop-SKILL.md` | [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop) `skills/no-ai-slop/SKILL.md`, commit 000650b (license in `reddit-comments/noaislop-LICENSE`) |
 
 ## blader/humanizer
 
