@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://quiz.trina.app/?lang=en"><img src="https://img.shields.io/badge/Human_or_AI%3F-Take_the_quiz-2a78d6?style=for-the-badge" alt="Human or AI? Take the quiz"></a>
+  <a href="https://quiz.trina.app/?lang=en"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/quiz-en-dark.png"><img src="docs/img/quiz-en-light.png" alt="Human or AI? Take the quiz" width="520"></picture></a>
 </p>
 
 <p align="center">

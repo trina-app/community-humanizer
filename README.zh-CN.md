@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://quiz.trina.app/?lang=zh"><img src="https://img.shields.io/badge/%E7%9C%9F%E4%BA%BA%E8%BF%98%E6%98%AF_AI%EF%BC%9F-%E6%9D%A5%E7%AD%94%E9%A2%98-2a78d6?style=for-the-badge" alt="真人还是 AI？来答题"></a>
+  <a href="https://quiz.trina.app/?lang=zh"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/quiz-zh-dark.png"><img src="docs/img/quiz-zh-light.png" alt="真人还是 AI？来答题" width="520"></picture></a>
 </p>
 
 <p align="center">

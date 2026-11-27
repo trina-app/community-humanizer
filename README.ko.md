@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://quiz.trina.app/?lang=ko"><img src="https://img.shields.io/badge/%EC%82%AC%EB%9E%8C%EC%9D%BC%EA%B9%8C_AI%EC%9D%BC%EA%B9%8C%3F-%ED%80%B4%EC%A6%88_%ED%92%80%EA%B8%B0-2a78d6?style=for-the-badge" alt="사람일까 AI일까? 퀴즈 풀기"></a>
+  <a href="https://quiz.trina.app/?lang=ko"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/quiz-ko-dark.png"><img src="docs/img/quiz-ko-light.png" alt="사람일까 AI일까? 퀴즈 풀기" width="520"></picture></a>
 </p>
 
 <p align="center">

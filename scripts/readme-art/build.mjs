@@ -33,6 +33,7 @@ body { width: ${width}px; font-family: Inter, Pretendard, system-ui, sans-serif;
 .card .kicker.zh { font: 500 13px "PingFang SC", "Noto Sans SC", sans-serif; letter-spacing: .04em; text-transform: none; }
 .kicker i { width: 7px; height: 7px; border-radius: 50%; background: ${t.accent}; display: inline-block; }
 h1 { font: 400 40px/1.12 'Instrument Serif', Pretendard, serif; letter-spacing: -.01em; margin-top: 14px; }
+h1.long { font-size: 31px; line-height: 1.18; }
 h1.ko { font: 600 31px/1.3 Pretendard, sans-serif; letter-spacing: -.02em; }
 h1.zh { font: 600 31px/1.3 "PingFang SC", "Noto Sans SC", sans-serif; letter-spacing: .01em; }
 .num { font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; }
@@ -60,6 +61,9 @@ function judged(dir, thread) {
 }
 const ZH = judged('chinese-comments', '1xmd3vj')
 const ES = judged('spanish-comments', '1xynq5l')
+const ID = judged('indonesian-comments', '1xrgz1c')
+ID.note = ID.t.SKILL >= ID.t.HUMAN ? 'Skornya sama dengan komentar asli teratas (399 poin)' : ID.above.length ? `${ID.above.join(' dan ')} lebih memilih meng-upvote balasan ini daripada komentar asli teratas` : 'Satu kalimat, 20 kata'
+ID.headText = `community-humanizer ${(ID.s.SKILL / ID.s.HUMANIZER_S).toFixed(1).replace('.', ',')} kali lebih mirip manusia daripada humanizer-indonesia`
 ZH.note = ZH.above.length ? `问“会给哪条点赞”时，${ZH.above.join('和')}把它排在真实最高赞评论前面` : '一句反问，只有 51 个字'
 ES.note = ES.above.length ? `${ES.above.join(' y ')} la votarían antes que al comentario real más votado` : 'La misma idea que humanizer, en una sola frase'
 ZH.headText = `community-humanizer 的真人分是 Humanizer-zh 的 ${(ZH.s.SKILL / ZH.s.HUMANIZER_S).toFixed(1)} 倍`
@@ -122,6 +126,19 @@ const THREADS = {
     real: ES.t.HUMAN, realLabel: 'comentario real más votado', unit: '% humano',
     foot: `El comentario real más votado (368 puntos) sacó ${ES.t.HUMAN} % humano. Puntuación: probabilidad de 0 a 100 de que lo haya escrito una persona, media de ${ES.judges.join(" y ")}, evaluado a ciegas con todas las versiones mezcladas.`,
   },
+  id: {
+    kicker: 'r/indonesia · satu thread, tiga balasan', title: 'Kayak gini sebenernya konsumennya siapa? Anggaplah semua manusia sudah diganti oleh AI 100% dan sudah tidak ada source of income. Logikanya bagaimana ini?',
+    rows: [
+      // benchmark/indonesian-comments/judged/{opus,sonnet}/1xrgz1c.json: PLAIN
+      { who: 'Claude tanpa skill', sub: 'tanpa skill', score: ID.t.PLAIN, lines: 4, text: 'Secara logika ekonomi, skenario 100% itu nggak stabil, jadi nggak akan sampai ke titik itu tanpa sistemnya berubah dulu. Perusahaan butuh pembeli, pembeli butuh duit, duit datangnya dari gaji. Kalau gaji hilang semua, pendapatan perusahaan juga ikut hilang. Ini masalah yang sama dengan yang dulu dibilang Henry Ford: pekerjanya harus mampu beli produknya.', more: '224 kata' },
+      // HUMANIZER_S
+      { who: 'humanizer-indonesia', sub: 'skill 360★ + 10 komentar asli', score: ID.t.HUMANIZER_S, lines: 3, text: 'Ini sebenernya masalah klasik, tiap perusahaan cuma mikirin ongkos produksinya sendiri dan gak ada yang mikirin daya beli secara keseluruhan. Makanya tiap CEO bakal tetep mecat orang demi efisiensi, padahal kalau semua perusahaan ngelakuin hal yang sama, pasarnya ilang.', more: '91 kata' },
+      // SKILL
+      { who: 'community-humanizer', sub: 'repo ini', score: ID.t.SKILL, ours: true, text: 'Kalau semua orang udah ga punya income, yang jual produknya ke siapa? Emang perusahaannya mau jualan ke sesama robot doang', note: ID.note },
+    ],
+    real: ID.t.HUMAN, realLabel: 'komentar asli teratas', unit: '% manusia',
+    foot: `Komentar asli teratas (399 poin) mendapat ${ID.t.HUMAN}% manusia. Skor: peluang 0–100 bahwa balasan ditulis orang, rata-rata ${ID.judges.join(' dan ')}, dinilai secara buta dengan semua versi diacak.`,
+  },
 }
 
 function threadFigure(lang, t) {
@@ -159,7 +176,7 @@ function threadFigure(lang, t) {
 .legend b { width: 2px; height: 12px; background: ${t.ink}; opacity: .55; display: inline-block; }`
   const html = `<div class="card ${d.script || ""}">
 <div class="kicker case ${d.script || ""}"><i></i>${esc(d.kicker)}</div>
-<h1 class="${d.script || ""}">${esc(d.title)}</h1>
+<h1 class="${d.script || ""} ${d.title.length > 90 ? "long" : ""}">${esc(d.title)}</h1>
 <div class="rows">${rows}</div>
 <div class="legend"><b></b>${esc(d.realLabel)} ${d.real}</div>
 <div class="foot">${esc(d.foot)}</div>
@@ -201,6 +218,14 @@ const SCALES = {
     ],
     axis: `"Lo escribió una persona", de 0 a 100, media de ${ES.judges.join(" y ")}. 0 = seguro que es IA, 100 = seguro que es una persona.`,
   },
+  id: {
+    kicker: '28 thread uji berbahasa Indonesia · dinilai secara buta',
+    headText: ID.headText,
+    tracks: [
+      { name: 'Balasan berbahasa Indonesia', marks: [['Claude tanpa skill', ID.s.PLAIN], ['humanizer-indonesia + komentar asli', ID.s.HUMANIZER_S], ['community-humanizer', ID.s.SKILL, 'ours'], ['komentar asli teratas', ID.s.HUMAN, 'real']] },
+    ],
+    axis: `"Ditulis orang", 0–100, rata-rata ${ID.judges.join(' dan ')}. 0 = pasti AI, 100 = pasti orang.`,
+  },
 }
 
 function scaleFigure(lang, t) {
@@ -237,11 +262,47 @@ function scaleFigure(lang, t) {
 .haxis span { position: absolute; transform: translateX(-50%); font-size: 11px; color: ${t.ink3}; }`
   const html = `<div class="card ${d.script || ""}">
 <div class="kicker ${d.script || ""}"><i></i>${esc(d.kicker)}</div>
-<div class="headtext ${d.script || ""}">${esc(d.headText)}</div>
+<div class="headtext ${d.script || ""}">${esc(d.headText).replace(/(\S+-\S+)/g, '<span style="white-space:nowrap">$1</span>')}</div>
 ${d.tracks.map(panel).join('')}
 <div class="foot">${esc(d.axis)}</div>
 </div>`
   return page(t, W + 120, { css, html })
+}
+
+// ---------- Quiz button: two answer options and a call to action ----------
+const QUIZ = {
+  en: { q: 'Which one did a person write?', sub: '10 rounds · 3 min · quiz.trina.app', cta: 'Take the quiz →' },
+  ko: { q: '어느 쪽이 사람이 쓴 걸까요?', sub: '10문제 · 3분 · quiz.trina.app', cta: '퀴즈 풀기 →', script: 'ko' },
+  zh: { q: '哪一条是真人写的？', sub: '约 3 分钟 · quiz.trina.app', cta: '来答题 →', script: 'zh' },
+  es: { q: '¿Cuál escribió una persona?', sub: '10 preguntas · 3 min · quiz.trina.app', cta: 'Haz el test →' },
+  id: { q: 'Mana yang ditulis orang?', sub: '10 soal · 3 menit · quiz.trina.app', cta: 'Ikut kuis →' },
+}
+function quizButton(lang, t) {
+  const d = QUIZ[lang]
+  const onAccent = t.paper === '#121314' ? '#0b1020' : '#ffffff'
+  const opt = (letter, w1, w2, pick) => `<div class="opt${pick ? ' pick' : ''}"><b>${letter}</b><div class="lines"><i style="width:${w1}%"></i><i style="width:${w2}%"></i></div></div>`
+  const css = `
+.qcard { display: grid; grid-template-columns: 190px 1fr auto; gap: 26px; align-items: center; background: ${t.paper}; border: 1px solid ${t.rule}; border-radius: 20px; padding: 22px 24px 22px 22px; }
+.opt { display: flex; align-items: center; gap: 10px; border: 1.5px solid ${t.rule}; border-radius: 12px; padding: 9px 12px; }
+.opt + .opt { margin-top: 8px; }
+.opt b { flex: none; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font: 600 12px Inter, sans-serif; background: ${t.track}; color: ${t.ink2}; }
+.opt.pick { border-color: ${t.accent}; background: ${t.accentSoft}; }
+.opt.pick b { background: ${t.accent}; color: ${onAccent}; }
+.lines { flex: 1; }
+.lines i { display: block; height: 6px; border-radius: 3px; background: ${t.track}; }
+.lines i + i { margin-top: 6px; }
+.q { font: 400 29px/1.15 'Instrument Serif', serif; color: ${t.ink}; }
+.ko .q { font: 600 21px/1.35 Pretendard, sans-serif; letter-spacing: -.02em; }
+.zh .q { font: 600 21px/1.35 "PingFang SC", "Noto Sans SC", sans-serif; }
+.sub { font: 500 12px 'JetBrains Mono', monospace; color: ${t.ink3}; margin-top: 8px; letter-spacing: .03em; }
+.ko .sub, .zh .sub { font-family: 'JetBrains Mono', Pretendard, "PingFang SC", monospace; }
+.cta { background: ${t.accent}; color: ${onAccent}; font: 600 16px Inter, Pretendard, "PingFang SC", sans-serif; padding: 14px 22px; border-radius: 999px; white-space: nowrap; }`
+  const html = `<div class="qcard ${d.script || ''}">
+<div class="opts">${opt('A', 82, 55, false)}${opt('B', 64, 38, true)}</div>
+<div><div class="q">${esc(d.q)}</div><div class="sub">${esc(d.sub)}</div></div>
+<div class="cta">${esc(d.cta)}</div>
+</div>`
+  return page(t, 760, { css, html })
 }
 
 function measure(file, width) {
@@ -256,9 +317,10 @@ function shoot(name, html, width) {
     `--window-size=${width},${height}`, '--virtual-time-budget=4000', `--screenshot=${join(OUT, `${name}.png`)}`, `file://${file}`], { stdio: 'ignore' })
 }
 
-for (const lang of ['en', 'ko', 'zh', 'es'])
+for (const lang of ['en', 'ko', 'zh', 'es', 'id'])
   for (const [mode, t] of Object.entries(THEMES)) {
     shoot(`thread-${lang}-${mode}`, threadFigure(lang, t), 1000)
     shoot(`scores-${lang}-${mode}`, scaleFigure(lang, t), 1000)
+    shoot(`quiz-${lang}-${mode}`, quizButton(lang, t), 760)
   }
-console.log('wrote docs/img/{thread,scores}-{en,ko,zh,es}-{light,dark}.png')
+console.log('wrote docs/img/{thread,scores,quiz}-{en,ko,zh,es,id}-{light,dark}.png')

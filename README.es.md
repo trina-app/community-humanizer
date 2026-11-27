@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://quiz.trina.app/?lang=es"><img src="https://img.shields.io/badge/%C2%BFPersona_o_IA%3F-Haz_el_test-2a78d6?style=for-the-badge" alt="¿Persona o IA? Haz el test"></a>
+  <a href="https://quiz.trina.app/?lang=es"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/quiz-es-dark.png"><img src="docs/img/quiz-es-light.png" alt="¿Persona o IA? Haz el test" width="520"></picture></a>
 </p>
 
 <p align="center">
