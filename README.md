@@ -26,7 +26,7 @@
 </p>
 
 <p align="center">
-  <b>English</b> · <a href="README.ko.md">한국어</a> · <a href="README.zh-CN.md">中文</a> · <a href="README.es.md">Español</a> · <a href="README.id.md">Bahasa Indonesia</a>
+  <b>English</b> · <a href="README.ko.md">한국어</a> · <a href="README.zh-CN.md">中文</a> · <a href="README.es.md">Español</a> · <a href="README.id.md">Bahasa</a>
 </p>
 
 ---
@@ -49,7 +49,7 @@
 
 Three AI judges saw every version of a reply at once, each in its own shuffled order, and gave each a 0–100 chance that a person wrote it. The 28 threads come from r/smallbusiness, r/SaaS, r/selfhosted, r/ClaudeAI and r/startups, and none of them was used while tuning the prompts. The pass rule was written down before the run. Per-judge scores, posts, intervals and every generated text: [benchmark/RESULTS.md](benchmark/RESULTS.md).
 
-We ran the same test in Chinese, Spanish and Indonesian, with the same English prompts and two judges (Claude Opus and Claude Sonnet): 60 vs 32 against [Humanizer-zh](https://github.com/op7418/Humanizer-zh) on r/China_irl, 56 vs 33 against humanizer on five Spanish-language subreddits, and 56 vs 32 against [humanizer-indonesia](https://github.com/adhiprib/humanizer-indonesia) on four Indonesian ones. See [中文](README.zh-CN.md), [Español](README.es.md) and [Bahasa Indonesia](README.id.md).
+We ran the same test in Chinese, Spanish and Indonesian, with the same English prompts and two judges (Claude Opus and Claude Sonnet): 60 vs 32 against [Humanizer-zh](https://github.com/op7418/Humanizer-zh) on r/China_irl, 56 vs 33 against humanizer on five Spanish-language subreddits, and 56 vs 32 against [humanizer-indonesia](https://github.com/adhiprib/humanizer-indonesia) on four Indonesian ones. See [中文](README.zh-CN.md), [Español](README.es.md) and [Bahasa](README.id.md).
 
 What this doesn't show:
 - **The judges are all LLMs.** We have no human answers yet. That is what the [quiz](#quiz) is for.

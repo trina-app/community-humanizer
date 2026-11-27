@@ -68,7 +68,7 @@ const T = {
   id: { title: "Dua versi, hanya satu yang asli.", lede: "Setiap soal berisi thread asli dari subreddit berbahasa Indonesia dan dua balasan. Yang satu komentar teratas tulisan orang sungguhan, yang lain tulisan AI. Pilih yang ditulis orang. 10 soal, sekitar 3 menit.", start: "Mulai", pick: "Pilih yang ditulis orang.", right: "Benar. Itu yang asli.", wrong: "Salah. Itu tulisan AI.", next: "Berikutnya", result: "Lihat hasil", real: "Asli", ai: "AI", judges: "Skor “ditulis orang” dari juri AI: ", crowd: (n, p) => `${n} orang sudah menjawab soal ini, ${p}% di antaranya benar.`, done: (r, n) => `Anda menjawab benar ${r} dari ${n} soal`, chance: (n) => `Kalau asal tebak, rata-rata benar ${String(n / 2).replace(".", ",")} soal.`, everyone: (p, n) => `Semua pemain sejauh ini: ${p}% benar dari ${n} jawaban.`, share: "Salin hasil", copied: "Disalin", again: "Main lagi", source: "Thread asli", label: "Mana yang asli?", shareText: (r, n) => `Saya menebak benar ${r} dari ${n}: mana tulisan orang, mana tulisan AI.`, post: "postingan", comment: "komentar", note: "Teks asli dipotong sampai 600 karakter dan ditampilkan tanpa nama pengguna. Untuk meminta teks dihapus, buka issue di GitHub." },
 };
 const params = new URLSearchParams(location.search);
-const LANGS = { en: "English", ko: "한국어", zh: "中文", es: "Español", id: "Bahasa Indonesia" };
+const LANGS = { en: "English", ko: "한국어", zh: "中文", es: "Español", id: "Bahasa" };
 const browser = (navigator.language || "").slice(0, 2).toLowerCase();
 let lang = LANGS[params.get("lang")] ? params.get("lang") : LANGS[browser] ? browser : "en";
 const dataLang = (l) => l; // Each language has its own questions: English, Spanish and Indonesian Reddit, Korean Clien, Chinese r/China_irl.

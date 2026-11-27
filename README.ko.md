@@ -26,7 +26,7 @@
 </p>
 
 <p align="center">
-  <a href="README.md">English</a> · <b>한국어</b> · <a href="README.zh-CN.md">中文</a> · <a href="README.es.md">Español</a> · <a href="README.id.md">Bahasa Indonesia</a>
+  <a href="README.md">English</a> · <b>한국어</b> · <a href="README.zh-CN.md">中文</a> · <a href="README.es.md">Español</a> · <a href="README.id.md">Bahasa</a>
 </p>
 
 ---
@@ -49,7 +49,7 @@
 
 채점자 셋(GPT, Claude Opus, Claude Sonnet)에게 한 글의 모든 버전을 한꺼번에, 채점자마다 다른 순서로 섞어서 보여 줬어요. 버전마다 "사람이 썼을 확률"(0~100)을 매겼어요. 숫자는 모두 프롬프트를 고칠 때 쓰지 않은 글(언어마다 28개)에서 나왔고, 통과 기준은 시험 전에 적어 뒀어요. 채점자별 점수, 글 시험, 신뢰 구간, 생성 결과는 [benchmark/RESULTS.ko.md](benchmark/RESULTS.ko.md)에 있어요.
 
-중국어·스페인어·인도네시아어도 같은 영어 프롬프트로 쟀어요(채점자는 Claude Opus·Sonnet 둘). r/China_irl에서 [Humanizer-zh](https://github.com/op7418/Humanizer-zh)와 60 대 32, 스페인어 서브레딧 5곳에서 humanizer와 56 대 33, 인도네시아어 서브레딧 4곳에서 [humanizer-indonesia](https://github.com/adhiprib/humanizer-indonesia)와 56 대 32예요. 자세한 건 [中文](README.zh-CN.md)·[Español](README.es.md)·[Bahasa Indonesia](README.id.md) 페이지에 있어요.
+중국어·스페인어·인도네시아어도 같은 영어 프롬프트로 쟀어요(채점자는 Claude Opus·Sonnet 둘). r/China_irl에서 [Humanizer-zh](https://github.com/op7418/Humanizer-zh)와 60 대 32, 스페인어 서브레딧 5곳에서 humanizer와 56 대 33, 인도네시아어 서브레딧 4곳에서 [humanizer-indonesia](https://github.com/adhiprib/humanizer-indonesia)와 56 대 32예요. 자세한 건 [中文](README.zh-CN.md)·[Español](README.es.md)·[Bahasa](README.id.md) 페이지에 있어요.
 
 이 숫자로 말할 수 없는 것도 있어요.
 - **채점자는 모두 AI예요.** 아직 사람의 답은 없어요. 그래서 [퀴즈](#퀴즈)로 모아요.
