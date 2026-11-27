@@ -1,0 +1,47 @@
+
+## opus (n=28)
+arm          human%  pass%  upvote-rank
+PLAIN           9.8    0.0      3.8
+HUMANIZER_S    34.3    7.1      2.9
+SKILL          58.3   64.3      2.3
+HUMAN          85.2  100.0      1.1
+SKILL - HUMANIZER_S: human 24.0 [13.0, 34.4]
+SKILL - HUMAN: human -26.9 [-35.4, -18.3]
+SKILL - PLAIN: human 48.5 [39.5, 57.3]
+HUMANIZER_S - PLAIN: human 24.5 [20.5, 28.9]
+judged more human than the real comment: PLAIN 0/28, HUMANIZER_S 0/28, SKILL 2/28; tied with it: PLAIN 0, HUMANIZER_S 0, SKILL 0
+upvote rank SKILL above HUMAN: 4/28
+by subreddit (SKILL - HUMANIZER_S): newsokur 30.0 (n=2), newsokunomoral 14.3 (n=8), ja 39.2 (n=9), lowlevelaware 16.1 (n=9)
+by subreddit (SKILL mean): newsokur 62.5, newsokunomoral 54.6, ja 64.4, lowlevelaware 54.4
+without the 9 borderline threads (n=19): PLAIN 8.7, HUMANIZER_S 32.0, SKILL 56.6, HUMAN 86.9; SKILL - HUMANIZER_S 24.6 [12.5, 36.5]; SKILL - HUMAN -30.4 [-40.6, -20.1]
+
+## sonnet (n=28)
+arm          human%  pass%  upvote-rank
+PLAIN          13.1    0.0      3.3
+HUMANIZER_S    42.5   42.9      2.6
+SKILL          59.0   75.0      2.2
+HUMAN          77.6   96.4      1.9
+SKILL - HUMANIZER_S: human 16.5 [5.4, 27.6]
+SKILL - HUMAN: human -18.6 [-27.5, -9.0]
+SKILL - PLAIN: human 45.9 [37.8, 53.4]
+HUMANIZER_S - PLAIN: human 29.4 [23.1, 36.0]
+judged more human than the real comment: PLAIN 0/28, HUMANIZER_S 3/28, SKILL 6/28; tied with it: PLAIN 0, HUMANIZER_S 0, SKILL 0
+upvote rank SKILL above HUMAN: 12/28
+by subreddit (SKILL - HUMANIZER_S): newsokur 32.5 (n=2), newsokunomoral -2.6 (n=8), ja 38.8 (n=9), lowlevelaware 7.6 (n=9)
+by subreddit (SKILL mean): newsokur 57.5, newsokunomoral 50.6, ja 68.8, lowlevelaware 56.9
+without the 9 borderline threads (n=19): PLAIN 12.2, HUMANIZER_S 39.8, SKILL 57.8, HUMAN 79.7; SKILL - HUMANIZER_S 18.1 [3.8, 32.4]; SKILL - HUMAN -21.9 [-31.9, -12.4]
+
+## mean of the two judges (opus, sonnet)
+PLAIN        11.4
+HUMANIZER_S  38.4
+SKILL        58.6
+HUMAN        81.4
+
+pass rule (SKILL beats HUMANIZER_S on both judges, interval above zero): opus yes, sonnet yes -> PASS
+
+length (median characters): PLAIN 379, HUMANIZER_S 104, SKILL 63, HUMAN 50
+in Japanese (script check): PLAIN 28/28, HUMANIZER_S 28/28, SKILL 28/28, HUMAN 28/28
+not Japanese: none
+SKILL picked type: answer 7, complaint 5, side-point 5, disagree 4, one-liner 4, joke 2, question-back 1
+
+Claude cost (total_cost_usd): guard-sonnet $0.40, guard $0.02, label $0.24, gen-skill $0.63, gen-humanizer $1.87, gen-plain $0.26, gen-pick $0.01, judge-sonnet $0.20, judge-opus $0.50; total $4.13 over 501 calls

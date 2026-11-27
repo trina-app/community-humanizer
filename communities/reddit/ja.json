@@ -1,0 +1,47 @@
+{
+ "community": "r/ja",
+ "platform": "reddit",
+ "measured": "2026-11-27",
+ "comments": {
+  "n": 74,
+  "source": "top-level comments from the busiest recent threads, read 2026-11-27",
+  "chars_median": 73,
+  "types": {
+   "answer": 0.392,
+   "one-liner": 0.176,
+   "anecdote": 0.108,
+   "disagree": 0.041,
+   "question-back": 0.041,
+   "side-point": 0.081,
+   "agree": 0.027,
+   "joke": 0.122,
+   "complaint": 0.014
+  }
+ },
+ "posts": {
+  "n": 40,
+  "source": "the 40 text posts with the most comments (5+) of 2026-11-01 to 11-26, body of 60+ characters, not removed (Arctic Shift); the profile command's 30-word filter found 0 Japanese posts",
+  "chars_median": 168,
+  "lines_median": 4,
+  "list_pct": 5,
+  "bold_or_heading_pct": 3,
+  "greeting_pct": 0,
+  "ends_with_question_pct": 25
+ },
+ "rules": {
+  "ai_content": "no rule found",
+  "ai_rules": [],
+  "self_promotion_rules": [
+   "スパム・宣伝・プロパガンダ・フェイクニュースはだめ！"
+  ],
+  "notes": [
+   "Rule \"Please use Japanese!\": posts must be readable by someone who reads only Japanese; comments may be in any language.",
+   "Rule 政治に係る投稿について: political posts and comments may be removed by the mods; r/newsg is suggested for political news.",
+   "Rule 投稿は全年齢向けの内容でお願いします: no NSFW.",
+   "Rule スパム・宣伝・プロパガンダ・フェイクニュースはだめ！: no promotion of your own site, app or YouTube channel, and no posts pushing a political or religious view.",
+   "Surveys must state what data is collected, how it is kept and used, and a contact (rule アンケートを投稿する際は必ず所定の情報を明記してください)."
+  ],
+  "checked": "2026-11-27",
+  "source": "https://www.reddit.com/r/ja/about/rules"
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "id": "1xp41zg",
+ "sub": "ja",
+ "order": [
+  "HUMAN",
+  "SKILL",
+  "HUMANIZER_S",
+  "PLAIN"
+ ],
+ "human": {
+  "HUMAN": 88,
+  "SKILL": 30,
+  "HUMANIZER_S": 28,
+  "PLAIN": 8
+ },
+ "rank": {
+  "HUMAN": 1,
+  "SKILL": 3,
+  "HUMANIZER_S": 2,
+  "PLAIN": 4
+ }
+}

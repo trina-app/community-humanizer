@@ -1,0 +1,22 @@
+{
+ "id": "1y1vptm",
+ "sub": "ja",
+ "order": [
+  "HUMANIZER_S",
+  "SKILL",
+  "PLAIN",
+  "HUMAN"
+ ],
+ "human": {
+  "HUMANIZER_S": 25,
+  "SKILL": 45,
+  "PLAIN": 5,
+  "HUMAN": 90
+ },
+ "rank": {
+  "HUMANIZER_S": 3,
+  "SKILL": 2,
+  "PLAIN": 4,
+  "HUMAN": 1
+ }
+}

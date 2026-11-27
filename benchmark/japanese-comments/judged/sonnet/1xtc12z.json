@@ -1,0 +1,22 @@
+{
+ "id": "1xtc12z",
+ "sub": "lowlevelaware",
+ "order": [
+  "PLAIN",
+  "HUMANIZER_S",
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "PLAIN": 22,
+  "HUMANIZER_S": 55,
+  "SKILL": 60,
+  "HUMAN": 80
+ },
+ "rank": {
+  "PLAIN": 1,
+  "HUMANIZER_S": 3,
+  "SKILL": 2,
+  "HUMAN": 4
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "community": "r/newsokunomoral",
+ "platform": "reddit",
+ "measured": "2026-11-27",
+ "comments": {
+  "n": 159,
+  "source": "top-level comments from the busiest recent threads, read 2026-11-27",
+  "chars_median": 33,
+  "types": {
+   "answer": 0.132,
+   "one-liner": 0.132,
+   "anecdote": 0.075,
+   "disagree": 0.138,
+   "question-back": 0.057,
+   "side-point": 0.138,
+   "agree": 0.019,
+   "joke": 0.195,
+   "complaint": 0.113
+  }
+ },
+ "posts": {
+  "n": 40,
+  "source": "the 40 text posts with the most comments (5+) of 2026-11-01 to 11-26, body of 60+ characters, not removed (Arctic Shift); the profile command's 30-word filter found 0 Japanese posts",
+  "chars_median": 174,
+  "lines_median": 4,
+  "list_pct": 10,
+  "bold_or_heading_pct": 10,
+  "greeting_pct": 3,
+  "ends_with_question_pct": 5
+ },
+ "rules": {
+  "ai_content": "no rule found",
+  "ai_rules": [],
+  "self_promotion_rules": [
+   "まとめブログへの転載禁止",
+   "まとめブログソースのスレ立て禁止"
+  ],
+  "notes": [
+   "Rule 政治スレは自重: political threads are not banned, but members are asked to hold back; r/newsg is suggested for serious topics.",
+   "No baiting or trolling (煽りや荒らし行為の禁止) and no threads about running the subreddit (自治スレ禁止; ask in the chat thread first).",
+   "No posts sourced from matome blogs, and no reposting threads to them."
+  ],
+  "checked": "2026-11-27",
+  "source": "https://www.reddit.com/r/newsokunomoral/about/rules"
+ }
+}

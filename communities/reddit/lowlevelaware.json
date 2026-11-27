@@ -1,0 +1,41 @@
+{
+ "community": "r/lowlevelaware",
+ "platform": "reddit",
+ "measured": "2026-11-27",
+ "comments": {
+  "n": 146,
+  "source": "top-level comments from the busiest recent threads, read 2026-11-27",
+  "chars_median": 23,
+  "types": {
+   "answer": 0.24,
+   "one-liner": 0.253,
+   "anecdote": 0.075,
+   "disagree": 0.041,
+   "question-back": 0.075,
+   "side-point": 0.068,
+   "agree": 0.027,
+   "joke": 0.205,
+   "complaint": 0.014
+  }
+ },
+ "posts": {
+  "n": 40,
+  "source": "the 40 text posts with the most comments (5+) of 2026-11-01 to 11-26, body of 60+ characters, not removed (Arctic Shift); the profile command's 30-word filter found 0 Japanese posts",
+  "chars_median": 155,
+  "lines_median": 4,
+  "list_pct": 8,
+  "bold_or_heading_pct": 15,
+  "greeting_pct": 0,
+  "ends_with_question_pct": 5
+ },
+ "rules": {
+  "ai_content": "no rule found",
+  "ai_rules": [],
+  "self_promotion_rules": [],
+  "notes": [
+   "The rules are mostly jokes (\"いかなるルールもあってはならない\", \"唇の薄皮を歯でちぎって食べたらBAN\"); the one meant seriously is \"けど人を傷つけること言っちゃだめ\": do not say things that hurt people."
+  ],
+  "checked": "2026-11-27",
+  "source": "https://www.reddit.com/r/lowlevelaware/about/rules"
+ }
+}

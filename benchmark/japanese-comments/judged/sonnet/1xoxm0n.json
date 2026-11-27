@@ -1,0 +1,22 @@
+{
+ "id": "1xoxm0n",
+ "sub": "newsokur",
+ "order": [
+  "PLAIN",
+  "HUMAN",
+  "SKILL",
+  "HUMANIZER_S"
+ ],
+ "human": {
+  "PLAIN": 12,
+  "HUMAN": 80,
+  "SKILL": 55,
+  "HUMANIZER_S": 30
+ },
+ "rank": {
+  "PLAIN": 1,
+  "HUMAN": 4,
+  "SKILL": 2,
+  "HUMANIZER_S": 3
+ }
+}

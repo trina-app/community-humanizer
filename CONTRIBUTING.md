@@ -8,7 +8,7 @@ One profile per subreddit in [communities/reddit/](communities/reddit/). Run one
 
 ## A language
 
-The prompts are in English and are used unchanged for every language. They have been tested blind in English, Korean, Chinese, Spanish and Indonesian. To add a language:
+The prompts are in English and are used unchanged for every language. They have been tested blind in English, Korean, Japanese, Chinese, Spanish and Indonesian. To add a language:
 - Run a blind test on held-out threads in that language. Copy [benchmark/indonesian-comments/](benchmark/indonesian-comments/): write the protocol before collecting, keep real posts and comments out of the repo (links go in `ids.json`), compare against the best-known humanizer for that language with the same real samples, and report what the judges said even if it doesn't pass.
 - Add profiles for the subreddits you tested.
 - If you are a native speaker: a `README.<lang>.md` and the quiz strings in [quiz/public/index.html](quiz/public/index.html) are welcome too.

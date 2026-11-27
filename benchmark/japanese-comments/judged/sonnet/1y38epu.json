@@ -1,0 +1,22 @@
+{
+ "id": "1y38epu",
+ "sub": "ja",
+ "order": [
+  "SKILL",
+  "PLAIN",
+  "HUMANIZER_S",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 80,
+  "PLAIN": 8,
+  "HUMANIZER_S": 30,
+  "HUMAN": 75
+ },
+ "rank": {
+  "SKILL": 1,
+  "PLAIN": 4,
+  "HUMANIZER_S": 3,
+  "HUMAN": 2
+ }
+}

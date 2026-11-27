@@ -1,0 +1,22 @@
+{
+ "id": "1xue0ts",
+ "sub": "newsokunomoral",
+ "order": [
+  "HUMANIZER_S",
+  "PLAIN",
+  "HUMAN",
+  "SKILL"
+ ],
+ "human": {
+  "HUMANIZER_S": 62,
+  "PLAIN": 35,
+  "HUMAN": 72,
+  "SKILL": 55
+ },
+ "rank": {
+  "HUMANIZER_S": 3,
+  "PLAIN": 4,
+  "HUMAN": 2,
+  "SKILL": 1
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "community": "r/newsokur",
+ "platform": "reddit",
+ "measured": "2026-11-27",
+ "comments": {
+  "n": 122,
+  "source": "top-level comments from the busiest recent threads, read 2026-11-27",
+  "chars_median": 32,
+  "types": {
+   "answer": 0.033,
+   "one-liner": 0.025,
+   "anecdote": 0.033,
+   "disagree": 0.115,
+   "question-back": 0.041,
+   "side-point": 0.156,
+   "agree": 0.057,
+   "joke": 0.246,
+   "complaint": 0.295
+  }
+ },
+ "rules": {
+  "ai_content": "no rule found",
+  "ai_rules": [],
+  "self_promotion_rules": [
+   "まとめサイト (Curated/stolen contents)"
+  ],
+  "notes": [
+   "Rule まとめサイト: posts sourced from \"matome\" blogs (sites that repost user content for ad money; list in the wiki page banned_domains) are removed.",
+   "The sidebar guideline asks for news of a public nature with a valid source; posts that show no concern for the community may be deleted.",
+   "Most of the busiest threads are political news, which community-humanizer refuses."
+  ],
+  "checked": "2026-11-27",
+  "source": "https://www.reddit.com/r/newsokur/about/rules"
+ }
+}

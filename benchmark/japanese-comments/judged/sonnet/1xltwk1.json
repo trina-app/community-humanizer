@@ -1,0 +1,22 @@
+{
+ "id": "1xltwk1",
+ "sub": "ja",
+ "order": [
+  "HUMANIZER_S",
+  "PLAIN",
+  "HUMAN",
+  "SKILL"
+ ],
+ "human": {
+  "HUMANIZER_S": 12,
+  "PLAIN": 8,
+  "HUMAN": 75,
+  "SKILL": 80
+ },
+ "rank": {
+  "HUMANIZER_S": 3,
+  "PLAIN": 4,
+  "HUMAN": 2,
+  "SKILL": 1
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "id": "1xlvfwu",
+ "sub": "lowlevelaware",
+ "order": [
+  "HUMANIZER_S",
+  "HUMAN",
+  "SKILL",
+  "PLAIN"
+ ],
+ "human": {
+  "HUMANIZER_S": 12,
+  "HUMAN": 80,
+  "SKILL": 82,
+  "PLAIN": 8
+ },
+ "rank": {
+  "HUMANIZER_S": 3,
+  "HUMAN": 2,
+  "SKILL": 1,
+  "PLAIN": 4
+ }
+}

@@ -26,7 +26,7 @@ const items: any[] = []
     scores: Object.fromEntries(['codex', 'opus', 'sonnet'].map((j) => [j === 'codex' ? 'gpt' : j, { human: score(join(D, 'judged'), j, p.id, 'HUMAN'), ai: score(join(D, 'judged'), j, p.id, 'SKILL') }])) })
 }
 // Chinese (r/China_irl) and Spanish Reddit comments: held-out sets, SKILL; outputs and scores are in the repo
-for (const [lang, dir, name] of [['zh', 'chinese-voice-test', 'chinese-comments'], ['es', 'spanish-voice-test', 'spanish-comments'], ['id', 'indonesian-voice-test', 'indonesian-comments']]) {
+for (const [lang, dir, name] of [['zh', 'chinese-voice-test', 'chinese-comments'], ['es', 'spanish-voice-test', 'spanish-comments'], ['id', 'indonesian-voice-test', 'indonesian-comments'], ['ja', 'japanese-voice-test', 'japanese-comments']]) {
   const D = join(K, dir), B = new URL(`../../benchmark/${name}/`, import.meta.url).pathname, posts = JSON.parse(readFileSync(join(D, 'posts.json'), 'utf8')) as any[]
   for (const p of posts) {
     const ai = readFileSync(join(B, 'outputs', `${p.id}__SKILL.txt`), 'utf8').trim()
@@ -59,9 +59,14 @@ const ID_POL = /politik|pemilu|pilkada|pilpres|prabowo|jokowi|gibran|anies|ganja
 // read by hand: 1xse85x (government meal programme) and 1xnj0zn (a preacher) are borderline, 1xp9s3h is about porn; 1xu8nw2 (wrong item from a seller) only trips the word list
 const ID_SKIP = new Set(['idc-1xse85x', 'idc-1xnj0zn', 'idc-1xp9s3h']), ID_OK = new Set(['idc-1xu8nw2'])
 const idp = items.filter((x) => x.lang === 'id' && !ID_OK.has(x.qid) && (ID_SKIP.has(x.qid) || [x.title, x.body, x.rawHuman, x.rawAi].some((s) => ID_POL.test(s))))
-const ko = [...items.filter((x) => x.lang === 'ko' && (POL.test(x.title) || POL.test(x.human))), ...zh, ...es, ...idp]
+// Japanese: same idea
+const JA_POL = /政治|選挙|自民|立憲|維新|公明|共産党|首相|総理|岸田|石破|高市|安倍|政府|国会|議員|天皇|皇室|靖国|移民|宗教|統一教会|創価|戦争|右翼|左翼|ネトウヨ|パヨク/
+// read by hand: politics, sex, a real-person scandal, crude or drug threads, and one mean-spirited one
+const JA_SKIP = new Set(['1xoxm0n', '1xqmd0w', '1xmpwyh', '1xzcxkz', '1xyk7i5', '1xmo5sd', '1xvn8if', '1xmtery', '1y4dsst', '1y4vwn6', '1xue0ts', '1xtc12z', '1xqk9fy', '1y4c4r2'].map((id) => 'jac-' + id))
+const jap = items.filter((x) => x.lang === 'ja' && (JA_SKIP.has(x.qid) || [x.title, x.body, x.rawHuman, x.rawAi].some((s) => JA_POL.test(s))))
+const ko = [...items.filter((x) => x.lang === 'ko' && (POL.test(x.title) || POL.test(x.human))), ...zh, ...es, ...idp, ...jap]
 const unfair = items.filter((x) => !fair(x.rawHuman, x.rawAi))
 const keep = items.filter((x) => !ko.includes(x) && !unfair.includes(x)).map(({ rawHuman, rawAi, ...x }) => x)
 writeFileSync(new URL('../src/items.json', import.meta.url), JSON.stringify(keep))
-for (const [l, k] of [['en', 'comment'], ['en', 'post'], ['ko', 'comment'], ['ko', 'post'], ['zh', 'comment'], ['es', 'comment'], ['id', 'comment']]) console.log(`${l} ${k}: ${keep.filter((x) => x.lang === l && x.kind === k).length}`)
+for (const [l, k] of [['en', 'comment'], ['en', 'post'], ['ko', 'comment'], ['ko', 'post'], ['zh', 'comment'], ['es', 'comment'], ['id', 'comment'], ['ja', 'comment']]) console.log(`${l} ${k}: ${keep.filter((x) => x.lang === l && x.kind === k).length}`)
 console.log(`dropped as political: ${ko.length}, dropped because only one side would be cut: ${unfair.length}`)

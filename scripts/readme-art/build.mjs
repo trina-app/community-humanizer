@@ -55,6 +55,7 @@ function judged(dir, thread) {
   const one = js.map(([j]) => JSON.parse(readFileSync(join(base, j, `${thread}.json`), 'utf8')))
   return {
     judges: js.map(([, name]) => name),
+    raw: Object.fromEntries(arms.map((a) => { const xs = all.map((rows) => rows.reduce((t, r) => t + r.human[a], 0) / rows.length); return [a, xs.reduce((p, q) => p + q, 0) / xs.length] })),
     s: Object.fromEntries(arms.map((a) => [a, mean(all.map((rows) => rows.reduce((t, r) => t + r.human[a], 0) / rows.length))])),
     t: Object.fromEntries(arms.map((a) => [a, mean(one.map((r) => r.human[a]))])),
     // "above": judges whose upvote ranking put our reply ahead of the real top comment
@@ -64,12 +65,15 @@ function judged(dir, thread) {
 const ZH = judged('chinese-comments', '1xmd3vj')
 const ES = judged('spanish-comments', '1xynq5l')
 const ID = judged('indonesian-comments', '1xrgz1c')
+const JA = judged('japanese-comments', '1y38epu')
+JA.note = JA.t.SKILL > JA.t.HUMAN ? '本物のトップコメントよりスコアが高くなりました' : '1文・61文字'
+JA.headText = `community-humanizerはyomiyasuより${(JA.raw.SKILL / JA.raw.HUMANIZER_S).toFixed(1)}倍、人が書いたように見える`
 ID.note = ID.t.SKILL >= ID.t.HUMAN ? 'Skornya sama dengan komentar asli teratas (399 poin)' : ID.above.length ? `${ID.above.join(' dan ')} lebih memilih meng-upvote balasan ini daripada komentar asli teratas` : 'Satu kalimat, 20 kata'
-ID.headText = `community-humanizer ${(ID.s.SKILL / ID.s.HUMANIZER_S).toFixed(1).replace('.', ',')} kali lebih mirip manusia daripada humanizer-indonesia`
+ID.headText = `community-humanizer ${(ID.raw.SKILL / ID.raw.HUMANIZER_S).toFixed(1).replace('.', ',')} kali lebih mirip manusia daripada humanizer-indonesia`
 ZH.note = ZH.above.length ? `问“会给哪条点赞”时，${ZH.above.join('和')}把它排在真实最高赞评论前面` : '一句反问，只有 51 个字'
 ES.note = ES.above.length ? `${ES.above.join(' y ')} la votarían antes que al comentario real más votado` : 'La misma idea que humanizer, en una sola frase'
-ZH.headText = `community-humanizer 的真人分是 Humanizer-zh 的 ${(ZH.s.SKILL / ZH.s.HUMANIZER_S).toFixed(1)} 倍`
-ES.headText = `community-humanizer suena ${(ES.s.SKILL / ES.s.HUMANIZER_S).toFixed(1).replace('.', ',')} veces más humano que humanizer`
+ZH.headText = `community-humanizer 的真人分是 Humanizer-zh 的 ${(ZH.raw.SKILL / ZH.raw.HUMANIZER_S).toFixed(1)} 倍`
+ES.headText = `community-humanizer suena ${(ES.raw.SKILL / ES.raw.HUMANIZER_S).toFixed(1).replace('.', ',')} veces más humano que humanizer`
 console.log(JSON.stringify({ ZH, ES }))
 
 // ---------- Figure 1: one thread, three writers ----------
@@ -140,6 +144,19 @@ const THREADS = {
     ],
     real: ID.t.HUMAN, realLabel: 'komentar asli teratas', unit: '% manusia',
     foot: `Komentar asli teratas (399 poin) mendapat ${ID.t.HUMAN}% manusia. Skor: peluang 0–100 bahwa balasan ditulis orang, rata-rata ${ID.judges.join(' dan ')}, dinilai secara buta dengan semua versi diacak.`,
+  },
+  ja: {
+    kicker: 'r/ja · 同じスレッド、3つの返信', title: 'AIはこう言っています！みたいな事を言うやつにどうしたらいいんだろうな？', script: 'ja',
+    rows: [
+      // benchmark/japanese-comments/judged/{opus,sonnet}/1y38epu.json: PLAIN
+      { who: 'そのままのClaude', sub: 'スキルなし', score: JA.t.PLAIN, lines: 4, text: '不快感の正体は、たぶん「正しいかどうか」じゃなくて「誰が喋ってるのか」だと思う。1. 自分の意見が見えない。こっちは相手の考えを聞きたいのに、AIの出力を貼られると、相手が理解して納得した上で言ってるのか、ただ流しただけなのかがわからない。', more: '8段落・774文字' },
+      // HUMANIZER_S
+      { who: 'yomiyasu', sub: 'スター3,556のスキル＋実際のコメント10件', score: JA.t.HUMANIZER_S, lines: 3, text: 'あの手の発言って、本人の意見が見えないのが不快なんだと思う。「AIはこう言ってる」は、自分で考えた結果じゃなくて、考える作業を丸ごと外に出してるだけに見える。しかも間違ってたら「AIが言ったので」で責任も逃げられる。', more: '3段落・274文字' },
+      // SKILL
+      { who: 'community-humanizer', sub: 'このリポジトリ', score: JA.t.SKILL, ours: true, text: 'AIって言ってくれるだけまだマシで、黙ってAIの文章を貼って自分の意見みたいな顔してる人の方が見分けつかなくて厄介だと思う', note: JA.note },
+    ],
+    real: JA.t.HUMAN, realLabel: '本物のトップコメント', unit: '% 人',
+    foot: `本物のトップコメントは${JA.t.HUMAN}%でした。スコアは「人が書いた確率」（0〜100）で、${JA.judges.join('と')}の平均です。すべてのバージョンを混ぜて、ブラインドで採点しました。`,
   },
 }
 
@@ -227,6 +244,14 @@ const SCALES = {
       { name: 'Balasan berbahasa Indonesia', marks: [['Claude tanpa skill', ID.s.PLAIN], ['humanizer-indonesia + komentar asli', ID.s.HUMANIZER_S], ['community-humanizer', ID.s.SKILL, 'ours'], ['komentar asli teratas', ID.s.HUMAN, 'real']] },
     ],
     axis: `"Ditulis orang", 0–100, rata-rata ${ID.judges.join(' dan ')}. 0 = pasti AI, 100 = pasti orang.`,
+  },
+  ja: {
+    kicker: '日本語のテスト用スレッド28件 · ブラインド採点', script: 'ja',
+    headText: JA.headText,
+    tracks: [
+      { name: '日本語の返信', marks: [['そのままのClaude', JA.s.PLAIN], ['yomiyasu＋実際のコメント', JA.s.HUMANIZER_S], ['community-humanizer', JA.s.SKILL, 'ours'], ['本物のトップコメント', JA.s.HUMAN, 'real']] },
+    ],
+    axis: `「人が書いた確率」（0〜100）、${JA.judges.join('と')}の平均。0は確実にAI、100は確実に人です。`,
   },
 }
 
