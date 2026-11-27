@@ -1,0 +1,5 @@
+Hp nggak bakal "najis", jadi yang perlu dibersihin cuma jejak digitalnya, dan itu bisa tanpa reset.
+
+Hapus histori + cache + cookies di semua browser yang pernah dipakai. Terus buka myactivity.google.com, hapus semua aktivitas, sekalian matiin Web & App Activity biar nggak kesimpen lagi. Cek juga folder download, galeri, sama folder tersembunyi di file manager, soalnya video sering nyangkut di situ. Uninstall app yang sering dipake buat nonton, dan hapus saved password/autofill di browser.
+
+Biar nggak kebablasan lagi, ganti DNS ke 1.1.1.3 (Cloudflare family) atau pasang app pemblokir. Lebih ngefek lagi kalo tantangannya dibikin susah, misal minta temen yang pegang password pemblokirnya. Semangat bang.

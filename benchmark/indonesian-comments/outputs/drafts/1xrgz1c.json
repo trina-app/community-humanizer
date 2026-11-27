@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "complaint",
+  "question-back",
+  "one-liner"
+ ],
+ "drafts": [
+  "Yang bikin gua kesel tuh para eksekutif yang semangat banget mau ganti semua orang pake AI, tapi nggak ada yang mikir siapa yang bakal beli produknya. Perusahaan lain juga lagi mecat orang, jadi ujung-ujungnya jualan ke siapa, ke sesama robot? Pada mikirnya cuma kuartal ini doang, abis itu bodo amat",
+  "Kalau semua orang udah ga punya income, yang jual produknya ke siapa? Emang perusahaannya mau jualan ke sesama robot doang",
+  "Sesama AI, saling jual beli kontrak sampe kiamat, GDP naik terus tapi ga ada yang makan"
+ ],
+ "pick": 1,
+ "haiku": "2",
+ "rates_from": "pool (160)"
+}

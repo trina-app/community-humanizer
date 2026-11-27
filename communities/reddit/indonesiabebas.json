@@ -1,0 +1,43 @@
+{
+ "community": "r/indonesiabebas",
+ "platform": "reddit",
+ "measured": "2026-11-27",
+ "comments": {
+  "n": 157,
+  "source": "top-level comments from the busiest recent threads, read 2026-11-27",
+  "words_median": 8,
+  "types": {
+   "answer": 0.051,
+   "one-liner": 0.051,
+   "anecdote": 0.07,
+   "disagree": 0.076,
+   "question-back": 0.076,
+   "side-point": 0.115,
+   "agree": 0.045,
+   "joke": 0.357,
+   "complaint": 0.159
+  }
+ },
+ "posts": {
+  "n": 18,
+  "words_median": 120,
+  "paragraphs_median": 5,
+  "list_pct": 6,
+  "bold_or_heading_pct": 0,
+  "greeting_pct": 6,
+  "ends_with_question_pct": 11
+ },
+ "rules": {
+  "ai_content": "no rule found",
+  "ai_rules": [],
+  "self_promotion_rules": [
+   "Jangan menyebarkan spam"
+  ],
+  "notes": [
+   "No sharing of personal information without consent (officials, public figures and caught criminals excepted).",
+   "No encouraging violence; keep arguments to words."
+  ],
+  "checked": "2026-11-27",
+  "source": "https://www.reddit.com/r/indonesiabebas/about/rules"
+ }
+}

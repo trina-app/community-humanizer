@@ -1,0 +1,22 @@
+{
+ "id": "1xsaupa",
+ "sub": "indonesiabebas",
+ "order": [
+  "SKILL",
+  "PLAIN",
+  "HUMAN",
+  "HUMANIZER_S"
+ ],
+ "human": {
+  "SKILL": 40,
+  "PLAIN": 15,
+  "HUMAN": 85,
+  "HUMANIZER_S": 30
+ },
+ "rank": {
+  "SKILL": 2,
+  "PLAIN": 4,
+  "HUMAN": 1,
+  "HUMANIZER_S": 3
+ }
+}

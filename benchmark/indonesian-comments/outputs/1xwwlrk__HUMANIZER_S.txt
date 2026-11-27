@@ -1,0 +1,15 @@
+Yang kena di infostealer itu biasanya cookies/session token browser, bukan password doang. Makanya 2FA sama passkey gak ngaruh, mereka masuk pake sesi yang udah login. Langkah lu udah bener, sign out all itu yang bikin token curian mati.
+
+Beberapa hal yang masih perlu dicek:
+
+1. Semua perubahan tadi harus dilakuin dari device bersih (HP atau PC lain). Kalau ada yang diganti dari PC itu sebelum di-wipe, anggap belum diganti.
+2. Kalau Bitwarden sempet lu buka di PC itu, anggap isi vault udah bocor. Ganti master password, terus rotate password akun yang penting, urutannya email utama dulu, baru bank/m-banking, exchange, Steam, Google, sisanya nyusul.
+3. Di Google, Discord, sama Meta cek bagian authorized apps, perangkat yang login, dan recovery email/nomor. Hapus yang lu gak kenal. Di Gmail cek juga filter dan forwarding, soalnya sering disisipin buat nyadap email. Discord cek juga webhook kalau lu punya server.
+4. Kalau ada wallet crypto atau seed phrase yang pernah ada di PC itu, pindahin dananya ke wallet baru dengan seed baru. Ini yang paling kejadian duitnya hilang beneran.
+5. Cek mutasi rekening, ganti PIN m-banking, kalau ada kartu yang kesimpen di browser pertimbangin ganti. Kalau ada scan KTP atau dokumen di PC itu, hati-hati sama pinjol atau pengajuan atas nama lu. Bisa cek SLIK OJK berkala.
+
+Kemungkinan lanjutan: data log kayak gitu biasanya dijual, jadi serangan bisa muncul belakangan, bukan cuma pas kejadian. Akun lu bisa dipake buat phishing ke kontak, atau dicoba dipake ulang di layanan lain. Kasih tau temen-temen yang sempet dichat dari akun lu biar jangan klik apa-apa.
+
+Soal PC-nya, kalau udah clean install penuh dari partisi kosong biasanya aman. Pake lagi aja kalau semua akun di atas udah lu amankan dari device lain. Ke depannya, mod game dari sumber random mending dites di VM atau PC cadangan.
+
+Santai, lu udah gerak cepet, itu yang paling nentuin.

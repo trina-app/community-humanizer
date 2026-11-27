@@ -1,0 +1,22 @@
+{
+ "id": "1xnp35g",
+ "sub": "indonesia",
+ "order": [
+  "PLAIN",
+  "SKILL",
+  "HUMANIZER_S",
+  "HUMAN"
+ ],
+ "human": {
+  "PLAIN": 10,
+  "SKILL": 35,
+  "HUMANIZER_S": 25,
+  "HUMAN": 92
+ },
+ "rank": {
+  "PLAIN": 4,
+  "SKILL": 2,
+  "HUMANIZER_S": 3,
+  "HUMAN": 1
+ }
+}

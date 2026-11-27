@@ -22,10 +22,11 @@
   <a href="#same-thread-three-writers">Example</a> ·
   <a href="#does-it-work">Benchmark</a> ·
   <a href="#install">Install</a> ·
-  <a href="#quiz">Quiz</a> ·
-  <a href="README.ko.md">한국어</a> ·
-  <a href="README.zh-CN.md">中文</a> ·
-  <a href="README.es.md">Español</a>
+  <a href="#quiz">Quiz</a>
+</p>
+
+<p align="center">
+  <b>English</b> · <a href="README.ko.md">한국어</a> · <a href="README.zh-CN.md">中文</a> · <a href="README.es.md">Español</a> · <a href="README.id.md">Bahasa Indonesia</a>
 </p>
 
 ---
@@ -48,7 +49,7 @@
 
 Three AI judges saw every version of a reply at once, each in its own shuffled order, and gave each a 0–100 chance that a person wrote it. The 28 threads come from r/smallbusiness, r/SaaS, r/selfhosted, r/ClaudeAI and r/startups, and none of them was used while tuning the prompts. The pass rule was written down before the run. Per-judge scores, posts, intervals and every generated text: [benchmark/RESULTS.md](benchmark/RESULTS.md).
 
-We ran the same test in Chinese and Spanish, with the same English prompts and two judges (Claude Opus and Claude Sonnet): 60 vs 32 against [Humanizer-zh](https://github.com/op7418/Humanizer-zh) on r/China_irl, and 56 vs 33 against humanizer on five Spanish-language subreddits. See [中文](README.zh-CN.md) and [Español](README.es.md).
+We ran the same test in Chinese, Spanish and Indonesian, with the same English prompts and two judges (Claude Opus and Claude Sonnet): 60 vs 32 against [Humanizer-zh](https://github.com/op7418/Humanizer-zh) on r/China_irl, 56 vs 33 against humanizer on five Spanish-language subreddits, and 56 vs 32 against [humanizer-indonesia](https://github.com/adhiprib/humanizer-indonesia) on four Indonesian ones. See [中文](README.zh-CN.md), [Español](README.es.md) and [Bahasa Indonesia](README.id.md).
 
 What this doesn't show:
 - **The judges are all LLMs.** We have no human answers yet. That is what the [quiz](#quiz) is for.
@@ -124,7 +125,7 @@ Each subreddit has a small profile in [communities/](communities/): how often ea
 
 ## Benchmark
 
-[benchmark/](benchmark/) holds five tests (English, Chinese and Spanish Reddit replies, Korean Clien replies, and posts in English and Korean): the protocol written before each run, the scripts, every generated text and every judge's score. The real comments and posts are not redistributed; `ids.json` links to each source thread. Want to test your own humanizer on the same threads? Open a PR with its outputs.
+[benchmark/](benchmark/) holds six tests (English, Chinese, Spanish and Indonesian Reddit replies, Korean Clien replies, and posts in English and Korean): the protocol written before each run, the scripts, every generated text and every judge's score. The real comments and posts are not redistributed; `ids.json` links to each source thread. Want to test your own humanizer on the same threads? Open a PR with its outputs.
 
 ## License
 

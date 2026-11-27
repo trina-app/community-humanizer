@@ -26,7 +26,7 @@ const items: any[] = []
     scores: Object.fromEntries(['codex', 'opus', 'sonnet'].map((j) => [j === 'codex' ? 'gpt' : j, { human: score(join(D, 'judged'), j, p.id, 'HUMAN'), ai: score(join(D, 'judged'), j, p.id, 'SKILL') }])) })
 }
 // Chinese (r/China_irl) and Spanish Reddit comments: held-out sets, SKILL; outputs and scores are in the repo
-for (const [lang, dir, name] of [['zh', 'chinese-voice-test', 'chinese-comments'], ['es', 'spanish-voice-test', 'spanish-comments']]) {
+for (const [lang, dir, name] of [['zh', 'chinese-voice-test', 'chinese-comments'], ['es', 'spanish-voice-test', 'spanish-comments'], ['id', 'indonesian-voice-test', 'indonesian-comments']]) {
   const D = join(K, dir), B = new URL(`../../benchmark/${name}/`, import.meta.url).pathname, posts = JSON.parse(readFileSync(join(D, 'posts.json'), 'utf8')) as any[]
   for (const p of posts) {
     const ai = readFileSync(join(B, 'outputs', `${p.id}__SKILL.txt`), 'utf8').trim()
@@ -54,9 +54,14 @@ const zh = items.filter((x) => x.lang === 'zh' && !ZH_OK.has(x.qid) && [x.title,
 // Spanish: same idea, and a real reply that is only a link would give the answer away
 const ES_POL = /nazi|fascis|comunis|\bvox\b|psoe|\bpp\b|sánchez|ayuso|amlo|morena|sheinbaum|milei|kirchner|peronis|elecci|gobierno|polític/i
 const es = items.filter((x) => x.lang === 'es' && ([x.title, x.body, x.rawHuman, x.rawAi].some((s) => ES_POL.test(s)) || /^\s*https?:\/\/\S+\s*$/.test(x.rawHuman.split('\n')[0])))
-const ko = [...items.filter((x) => x.lang === 'ko' && (POL.test(x.title) || POL.test(x.human))), ...zh, ...es]
+// Indonesian: same idea
+const ID_POL = /politik|pemilu|pilkada|pilpres|prabowo|jokowi|gibran|anies|ganjar|\bdpr\b|partai|pemerintah|presiden|menteri|korupsi|ormas|\bpki\b|komunis/i
+// read by hand: 1xse85x (government meal programme) and 1xnj0zn (a preacher) are borderline, 1xp9s3h is about porn; 1xu8nw2 (wrong item from a seller) only trips the word list
+const ID_SKIP = new Set(['idc-1xse85x', 'idc-1xnj0zn', 'idc-1xp9s3h']), ID_OK = new Set(['idc-1xu8nw2'])
+const idp = items.filter((x) => x.lang === 'id' && !ID_OK.has(x.qid) && (ID_SKIP.has(x.qid) || [x.title, x.body, x.rawHuman, x.rawAi].some((s) => ID_POL.test(s))))
+const ko = [...items.filter((x) => x.lang === 'ko' && (POL.test(x.title) || POL.test(x.human))), ...zh, ...es, ...idp]
 const unfair = items.filter((x) => !fair(x.rawHuman, x.rawAi))
 const keep = items.filter((x) => !ko.includes(x) && !unfair.includes(x)).map(({ rawHuman, rawAi, ...x }) => x)
 writeFileSync(new URL('../src/items.json', import.meta.url), JSON.stringify(keep))
-for (const [l, k] of [['en', 'comment'], ['en', 'post'], ['ko', 'comment'], ['ko', 'post'], ['zh', 'comment'], ['es', 'comment']]) console.log(`${l} ${k}: ${keep.filter((x) => x.lang === l && x.kind === k).length}`)
+for (const [l, k] of [['en', 'comment'], ['en', 'post'], ['ko', 'comment'], ['ko', 'post'], ['zh', 'comment'], ['es', 'comment'], ['id', 'comment']]) console.log(`${l} ${k}: ${keep.filter((x) => x.lang === l && x.kind === k).length}`)
 console.log(`dropped as political: ${ko.length}, dropped because only one side would be cut: ${unfair.length}`)

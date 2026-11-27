@@ -1,0 +1,46 @@
+{
+ "community": "r/indotech",
+ "platform": "reddit",
+ "measured": "2026-11-27",
+ "comments": {
+  "n": 158,
+  "source": "top-level comments from the busiest recent threads, read 2026-11-27",
+  "words_median": 17,
+  "types": {
+   "answer": 0.259,
+   "one-liner": 0.108,
+   "anecdote": 0.152,
+   "disagree": 0.057,
+   "question-back": 0.063,
+   "side-point": 0.095,
+   "agree": 0.044,
+   "joke": 0.12,
+   "complaint": 0.101
+  }
+ },
+ "posts": {
+  "n": 40,
+  "words_median": 65,
+  "paragraphs_median": 3,
+  "list_pct": 13,
+  "bold_or_heading_pct": 5,
+  "greeting_pct": 3,
+  "ends_with_question_pct": 28
+ },
+ "rules": {
+  "ai_content": "no rule found",
+  "ai_rules": [],
+  "self_promotion_rules": [
+   "Tidak melakukan spam atau memposting konten yang tidak relevan secara berlebihan",
+   "Dilarang membuat post yang tujuannya untuk transaksi menjual atau membeli",
+   "Patuhi aturan khusus flair Project Showcase (lebih lanjut baca di deskripsi rules)"
+  ],
+  "notes": [
+   "Posts need a real explanation, not just a title (\"Put more effort into your post\"), and the poster is expected to join the discussion.",
+   "A post asking what to buy must give the budget and what it is for.",
+   "Posts with a YouTube video or a web link must name the source; Tech News titles must match the source."
+  ],
+  "checked": "2026-11-27",
+  "source": "https://www.reddit.com/r/indotech/about/rules"
+ }
+}

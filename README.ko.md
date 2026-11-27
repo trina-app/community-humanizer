@@ -22,10 +22,11 @@
   <a href="#같은-글-세-가지-댓글">예시</a> ·
   <a href="#사람-같은지-채점한-결과">채점 결과</a> ·
   <a href="#설치">설치</a> ·
-  <a href="#퀴즈">퀴즈</a> ·
-  <a href="README.md">English</a> ·
-  <a href="README.zh-CN.md">中文</a> ·
-  <a href="README.es.md">Español</a>
+  <a href="#퀴즈">퀴즈</a>
+</p>
+
+<p align="center">
+  <a href="README.md">English</a> · <b>한국어</b> · <a href="README.zh-CN.md">中文</a> · <a href="README.es.md">Español</a> · <a href="README.id.md">Bahasa Indonesia</a>
 </p>
 
 ---
@@ -48,7 +49,7 @@
 
 채점자 셋(GPT, Claude Opus, Claude Sonnet)에게 한 글의 모든 버전을 한꺼번에, 채점자마다 다른 순서로 섞어서 보여 줬어요. 버전마다 "사람이 썼을 확률"(0~100)을 매겼어요. 숫자는 모두 프롬프트를 고칠 때 쓰지 않은 글(언어마다 28개)에서 나왔고, 통과 기준은 시험 전에 적어 뒀어요. 채점자별 점수, 글 시험, 신뢰 구간, 생성 결과는 [benchmark/RESULTS.ko.md](benchmark/RESULTS.ko.md)에 있어요.
 
-중국어와 스페인어도 같은 영어 프롬프트로 쟀어요(채점자는 Claude Opus·Sonnet 둘). r/China_irl에서 [Humanizer-zh](https://github.com/op7418/Humanizer-zh)와 60 대 32, 스페인어 서브레딧 5곳에서 humanizer와 56 대 33이에요. 자세한 건 [中文](README.zh-CN.md)·[Español](README.es.md) 페이지에 있어요.
+중국어·스페인어·인도네시아어도 같은 영어 프롬프트로 쟀어요(채점자는 Claude Opus·Sonnet 둘). r/China_irl에서 [Humanizer-zh](https://github.com/op7418/Humanizer-zh)와 60 대 32, 스페인어 서브레딧 5곳에서 humanizer와 56 대 33, 인도네시아어 서브레딧 4곳에서 [humanizer-indonesia](https://github.com/adhiprib/humanizer-indonesia)와 56 대 32예요. 자세한 건 [中文](README.zh-CN.md)·[Español](README.es.md)·[Bahasa Indonesia](README.id.md) 페이지에 있어요.
 
 이 숫자로 말할 수 없는 것도 있어요.
 - **채점자는 모두 AI예요.** 아직 사람의 답은 없어요. 그래서 [퀴즈](#퀴즈)로 모아요.
@@ -124,7 +125,7 @@ node skills/community-humanizer/bin/voice.mjs post --to clien/kin --title "맥�
 
 ## 벤치마크
 
-[benchmark/](benchmark/)에는 시험 다섯 개(영어·중국어·스페인어 Reddit 댓글, 한국어 클리앙 댓글, 영어·한국어 글)가 있어요. 시험마다 시험 전에 적은 기준, 대본, 생성 결과, 채점 점수가 들어 있어요. 실제 댓글과 글은 쓴 사람의 것이라 넣지 않았고, `ids.json`에 원문 링크를 뒀어요. 내 휴머나이저도 같은 글로 재 보고 싶으면 결과를 PR로 보내 주세요.
+[benchmark/](benchmark/)에는 시험 여섯 개(영어·중국어·스페인어·인도네시아어 Reddit 댓글, 한국어 클리앙 댓글, 영어·한국어 글)가 있어요. 시험마다 시험 전에 적은 기준, 대본, 생성 결과, 채점 점수가 들어 있어요. 실제 댓글과 글은 쓴 사람의 것이라 넣지 않았고, `ids.json`에 원문 링크를 뒀어요. 내 휴머나이저도 같은 글로 재 보고 싶으면 결과를 PR로 보내 주세요.
 
 ## 라이선스
 

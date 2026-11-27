@@ -22,10 +22,11 @@
   <a href="#三种回复对比">示例</a> ·
   <a href="#效果如何">测评</a> ·
   <a href="#安装">安装</a> ·
-  <a href="#答题">答题</a> ·
-  <a href="README.md">English</a> ·
-  <a href="README.ko.md">한국어</a> ·
-  <a href="README.es.md">Español</a>
+  <a href="#答题">答题</a>
+</p>
+
+<p align="center">
+  <a href="README.md">English</a> · <a href="README.ko.md">한국어</a> · <b>中文</b> · <a href="README.es.md">Español</a> · <a href="README.id.md">Bahasa Indonesia</a>
 </p>
 
 ---

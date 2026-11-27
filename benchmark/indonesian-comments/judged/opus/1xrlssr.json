@@ -1,0 +1,22 @@
+{
+ "id": "1xrlssr",
+ "sub": "indowibu",
+ "order": [
+  "SKILL",
+  "PLAIN",
+  "HUMANIZER_S",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 35,
+  "PLAIN": 10,
+  "HUMANIZER_S": 20,
+  "HUMAN": 85
+ },
+ "rank": {
+  "SKILL": 4,
+  "PLAIN": 3,
+  "HUMANIZER_S": 2,
+  "HUMAN": 1
+ }
+}

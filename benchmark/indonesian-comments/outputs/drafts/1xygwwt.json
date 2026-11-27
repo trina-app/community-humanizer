@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "question-back",
+  "joke",
+  "complaint"
+ ],
+ "drafts": [
+  "Emang kegiatan kampus yang bikin rame itu beneran kepake ya? Atau cuma enak buat cerita doang pas udah lulus",
+  "Menyesal sih nggak, cuma kadang mikir kenapa dulu bayar UKT mahal-mahal buat ruang kelas sama kasur kos doang",
+  "Kesel sama budaya \"mahasiswa aktif itu wajib\", seolah yang pulang habis kuliah itu buang-buang masa muda. Kuliah itu bayar mahal buat belajar, bukan buat jadi panitia acara yang 90% isinya rapat sampe malem dan foto-foto doang"
+ ],
+ "pick": 1,
+ "haiku": "2",
+ "rates_from": "pool (160)"
+}

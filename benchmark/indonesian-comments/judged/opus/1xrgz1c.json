@@ -1,0 +1,22 @@
+{
+ "id": "1xrgz1c",
+ "sub": "indonesia",
+ "order": [
+  "PLAIN",
+  "HUMAN",
+  "SKILL",
+  "HUMANIZER_S"
+ ],
+ "human": {
+  "PLAIN": 5,
+  "HUMAN": 85,
+  "SKILL": 80,
+  "HUMANIZER_S": 30
+ },
+ "rank": {
+  "PLAIN": 4,
+  "HUMAN": 1,
+  "SKILL": 2,
+  "HUMANIZER_S": 3
+ }
+}

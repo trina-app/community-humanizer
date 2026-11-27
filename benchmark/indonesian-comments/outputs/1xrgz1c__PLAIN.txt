@@ -1,0 +1,11 @@
+Secara logika ekonomi, skenario 100% itu nggak stabil, jadi nggak akan sampai ke titik itu tanpa sistemnya berubah dulu. Perusahaan butuh pembeli, pembeli butuh duit, duit datangnya dari gaji. Kalau gaji hilang semua, pendapatan perusahaan juga ikut hilang. Ini masalah yang sama dengan yang dulu dibilang Henry Ford: pekerjanya harus mampu beli produknya.
+
+Tapi realitanya, perusahaan satu-satu nggak mikir sampai situ. Masing-masing cuma mikir "kalau gue ganti pegawai pakai AI, biaya gue turun". Kalau semua perusahaan mikir gitu, hasilnya malah merugikan semua (tragedy of the commons). Jadi masalahnya bukan di logikanya, tapi di insentifnya.
+
+Kemungkinan ujungnya ada beberapa:
+
+1. **Redistribusi**: UBI, pajak atas AI/robot, atau dividen dari kepemilikan bersama. Konsumennya tetap manusia, tapi duitnya datang dari hasil kerja mesin.
+2. **Ekonomi segelintir pemilik**: yang punya AI dan sumber daya cuma jualan dan tukar-menukar antar sesama mereka. Rakyat di luar itu ya tersingkir. Ini skenario paling suram, mirip feodal.
+3. **Ekonomi nggak butuh "konsumen" lagi**: kalau produksi hampir gratis, barang bisa dibagi langsung tanpa lewat jual-beli. Tapi ini butuh perubahan politik yang gede banget.
+
+Intinya, kalau manusia beneran nggak punya pemasukan sama sekali, ya nggak ada konsumen, dan bisnisnya sendiri mati. Makanya skenario "AI ganti semua tapi sistem tetap sama" itu nggak masuk akal. Salah satu pasti berubah. Pertanyaan yang lebih penting: siapa yang megang kendali waktu transisinya, dan apakah hasilnya dibagi rata atau enggak.

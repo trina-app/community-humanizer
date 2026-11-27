@@ -1,0 +1,44 @@
+{
+ "community": "r/indowibu",
+ "platform": "reddit",
+ "measured": "2026-11-27",
+ "comments": {
+  "n": 69,
+  "source": "top-level comments from the busiest recent threads, read 2026-11-27",
+  "words_median": 6,
+  "types": {
+   "answer": 0.145,
+   "one-liner": 0.449,
+   "anecdote": 0.087,
+   "disagree": 0.014,
+   "question-back": 0.072,
+   "side-point": 0.101,
+   "agree": 0.014,
+   "joke": 0.072,
+   "complaint": 0.043
+  }
+ },
+ "posts": {
+  "n": 3,
+  "words_median": 92,
+  "paragraphs_median": 3,
+  "list_pct": 33,
+  "bold_or_heading_pct": 33,
+  "greeting_pct": 33,
+  "ends_with_question_pct": 33
+ },
+ "rules": {
+  "ai_content": "no rule found",
+  "ai_rules": [],
+  "self_promotion_rules": [
+   "Tidak melakukan spam atau memposting konten yang tidak relevan secara berlebihan"
+  ],
+  "notes": [
+   "Credit the creator in the title and link the source within 30 minutes, or the post is removed.",
+   "NSFW and spoiler tags are required; sexually explicit images and videos only on Saturday and Sunday.",
+   "Schizoposting only after 10 posts that are not schizoposting, and only under its tag."
+  ],
+  "checked": "2026-11-27",
+  "source": "https://www.reddit.com/r/indowibu/about/rules"
+ }
+}

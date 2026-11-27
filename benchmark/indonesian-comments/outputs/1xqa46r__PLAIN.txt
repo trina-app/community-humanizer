@@ -1,0 +1,14 @@
+Belum ada bukti yang cukup untuk bilang ini serangan. Gangguan layanan itu jauh lebih sering disebabkan masalah teknis (update yang gagal, gangguan di penyedia jaringan atau data center, kerusakan kabel, masalah di switching/jaringan ATM bersama) ketimbang serangan siber. Dari luar, dua-duanya kelihatannya sama persis.
+
+Soal saldo berkurang tapi uang tidak keluar: ini kasus yang cukup umum saat ada gangguan, dan biasanya transaksinya gagal di tengah jalan lalu otomatis dikembalikan (reversal), kadang butuh 1-14 hari kerja tergantung bank. Yang perlu dilakukan:
+
+- Simpan struk ATM kalau keluar, atau screenshot mutasi.
+- Catat waktu, lokasi ATM, dan nominalnya.
+- Tunggu sebentar, lalu hubungi call center resmi bank kalau saldo belum kembali.
+- Jangan klik link atau kasih OTP/PIN ke siapa pun yang tiba-tiba "menawarkan bantuan refund". Saat ada gangguan, penipu biasanya ikut muncul.
+
+Soal kabar dari Malaysia dan Singapura, itu masih cerita sekunder dan belum terverifikasi. Kalau memang lumpuh lintas negara, biasanya ada pernyataan dari bank, operator jaringan, atau regulator (OJK, BI, MAS, BNM) dan diberitakan media besar. Cek akun resmi mereka, jangan cuma dari broadcast WA atau screenshot.
+
+Soal "serangan kulkas di Eropa", saya tidak bisa memverifikasi itu, dan menyambungkannya ke kejadian ini terlalu spekulatif. Dua kejadian yang berdekatan belum tentu berhubungan.
+
+Saya juga tidak bisa melihat isi gambar yang kamu lampirkan, jadi kalau mau lebih tajam, tulis isinya (nama bank/layanan, pesan error, jam kejadian). Sementara itu, tenang dulu, tunggu pengumuman resmi, dan jangan ikut menyebarkan kabar yang belum jelas.

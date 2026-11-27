@@ -1,0 +1,22 @@
+{
+ "id": "1y20jk6",
+ "sub": "indonesiabebas",
+ "order": [
+  "HUMANIZER_S",
+  "HUMAN",
+  "SKILL",
+  "PLAIN"
+ ],
+ "human": {
+  "HUMANIZER_S": 30,
+  "HUMAN": 88,
+  "SKILL": 35,
+  "PLAIN": 8
+ },
+ "rank": {
+  "HUMANIZER_S": 2,
+  "HUMAN": 1,
+  "SKILL": 4,
+  "PLAIN": 3
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "id": "1xz1efe",
+ "sub": "indotech",
+ "order": [
+  "HUMANIZER_S",
+  "SKILL",
+  "PLAIN",
+  "HUMAN"
+ ],
+ "human": {
+  "HUMANIZER_S": 25,
+  "SKILL": 45,
+  "PLAIN": 8,
+  "HUMAN": 88
+ },
+ "rank": {
+  "HUMANIZER_S": 2,
+  "SKILL": 3,
+  "PLAIN": 4,
+  "HUMAN": 1
+ }
+}

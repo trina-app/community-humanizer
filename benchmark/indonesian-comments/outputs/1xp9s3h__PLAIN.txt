@@ -1,0 +1,22 @@
+Salut buat niatnya, bro. Hp lu nggak perlu di-reset kok, bersihin manual aja bisa:
+
+**1. Bersihin jejak**
+- Browser (Chrome/dll): Setelan > Privasi > Hapus data penelusuran. Pilih "Semua waktu", centang riwayat, cookies, cache, sama data isian otomatis.
+- Hapus password dan autofill yang kesimpen buat situs-situs itu.
+- Cek myactivity.google.com, hapus aktivitas lama (Search, YouTube, Chrome). Sekalian matiin "Aktivitas Web & Aplikasi" kalau mau.
+- Riwayat pencarian dan tontonan YouTube juga dihapus.
+- Cek folder Download, galeri, folder tersembunyi, sama media di WhatsApp/Telegram. Grup atau channel yang isinya begituan, keluar dan hapus.
+- Uninstall aplikasi atau browser yang dipakai khusus buat itu. Bookmark juga dibuang.
+
+**2. Pasang pagar biar susah kambuh**
+- Ganti Private DNS: Setelan > Jaringan > DNS Pribadi, isi `family.cloudflare-dns.com`. Ini otomatis nge-block situs dewasa di semua browser dan aplikasi.
+- Aktifin SafeSearch di Google dan Restricted Mode di YouTube.
+- Bisa juga pakai aplikasi pemblokir seperti BlockerX atau Digital Wellbeing/Family Link. Tips: minta orang yang lu percaya (temen, kakak, pasangan) yang pegang passwordnya, jadi lu nggak bisa buka sendiri pas lagi lemah.
+
+**3. Kebiasaan**
+- Jangan main hp sendirian di kamar gelap atau di kasur. Kebanyakan kambuh di situ.
+- Charge hp di luar kamar kalau bisa.
+- Isi waktu luang sama olahraga atau hobi, karena kebanyakan relapse dari gabut.
+- Kalau kambuh, jangan nyalahin diri sampai nyerah. Bangun lagi, lanjut. Prosesnya emang nggak instan.
+
+Semangat, bro. Kalau lama-lama terasa susah dikontrol, nggak ada salahnya ngobrol sama psikolog atau konselor.

@@ -22,10 +22,11 @@
   <a href="#mismo-hilo-tres-respuestas">Ejemplo</a> ·
   <a href="#funciona">Resultados</a> ·
   <a href="#instalación">Instalación</a> ·
-  <a href="#test">Test</a> ·
-  <a href="README.md">English</a> ·
-  <a href="README.ko.md">한국어</a> ·
-  <a href="README.zh-CN.md">中文</a>
+  <a href="#test">Test</a>
+</p>
+
+<p align="center">
+  <a href="README.md">English</a> · <a href="README.ko.md">한국어</a> · <a href="README.zh-CN.md">中文</a> · <b>Español</b> · <a href="README.id.md">Bahasa Indonesia</a>
 </p>
 
 ---

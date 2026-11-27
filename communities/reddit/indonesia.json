@@ -1,0 +1,44 @@
+{
+ "community": "r/indonesia",
+ "platform": "reddit",
+ "measured": "2026-11-27",
+ "comments": {
+  "n": 159,
+  "source": "top-level comments from the busiest recent threads, read 2026-11-27",
+  "words_median": 14,
+  "types": {
+   "answer": 0.075,
+   "one-liner": 0.107,
+   "anecdote": 0.075,
+   "disagree": 0.145,
+   "question-back": 0.013,
+   "side-point": 0.126,
+   "agree": 0.025,
+   "joke": 0.208,
+   "complaint": 0.226
+  }
+ },
+ "posts": {
+  "n": 26,
+  "words_median": 90,
+  "paragraphs_median": 3,
+  "list_pct": 0,
+  "bold_or_heading_pct": 15,
+  "greeting_pct": 4,
+  "ends_with_question_pct": 8
+ },
+ "rules": {
+  "ai_content": "no rule found",
+  "ai_rules": [],
+  "self_promotion_rules": [
+   "No self-promotion/advertisement"
+  ],
+  "notes": [
+   "Posts must be about Indonesia or Indonesians, at home or abroad.",
+   "Use the right flair; casual questions belong under the \"Ask Indonesians\" flair (rule \"Not so \\\"serious discussion\\\"\").",
+   "News posts keep the original headline; editorialised titles are removed."
+  ],
+  "checked": "2026-11-27",
+  "source": "https://www.reddit.com/r/indonesia/about/rules"
+ }
+}

@@ -1,0 +1,7 @@
+Gue pake Signal buat chat sehari-hari, tapi jujur masih kebagian sedikit orang aja. Isinya temen-temen deket sama beberapa kolega yang emang peduli privasi. Keluarga dan grup RT/kantor tetep di WhatsApp, karena ya mau gimana lagi, semua orang di sana.
+
+Kelebihannya: enkripsinya solid, nggak ada iklan, dan fitur disappearing message-nya enak. Nggak perlu nyimpen nomor orang juga kalau pake username.
+
+Kekurangannya: sepi, jadi network effect-nya nol. Kadang notifikasi telat di HP tertentu kalau battery optimization-nya agresif (Xiaomi/Oppo biasanya), jadi perlu dimatiin manual buat Signal. Backup chat juga nggak semudah WA.
+
+Saran gue, jangan langsung pindah total. Install dulu, ajak 3-5 orang terdekat, dan pelan-pelan aja. Kalau udah ada yang nyaman, baru lebih banyak yang ikut.

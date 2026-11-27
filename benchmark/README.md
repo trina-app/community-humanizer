@@ -1,6 +1,6 @@
 # Benchmark
 
-Five blind tests, run 2026-11-26/27. Each folder has the protocols (written before each run), the results, the scripts, every generated text (`outputs/`, `holdout-outputs/`) and every judge's scores (`judged*/`). The real comments and posts belong to their authors and are not copied here; `ids.json` links to each source thread. Five political Korean posts that slipped into the post holdout are left out.
+Six blind tests, run 2026-11-26/27. Each folder has the protocols (written before each run), the results, the scripts, every generated text (`outputs/`, `holdout-outputs/`) and every judge's scores (`judged*/`). The real comments and posts belong to their authors and are not copied here; `ids.json` links to each source thread. Five political Korean posts that slipped into the post holdout are left out.
 
 | Folder | What | Held-out rounds |
 |---|---|---|
@@ -8,9 +8,10 @@ Five blind tests, run 2026-11-26/27. Each folder has the protocols (written befo
 | `korean-comments/` | Korean replies, Clien 모두의공원 and 아무거나질문 | `judged` (main, first run, no tuning), `judged-G`, `judged-W` |
 | `chinese-comments/` | Chinese replies, r/China_irl, against Humanizer-zh | `judged` (first run, no tuning; Opus and Sonnet only) |
 | `spanish-comments/` | Spanish replies, 5 subreddits | `judged` (first run, no tuning; Opus and Sonnet only) |
+| `indonesian-comments/` | Indonesian replies, 4 subreddits, against humanizer-indonesia | `judged` (first run, no tuning; Opus and Sonnet only) |
 | `posts/` | English and Korean posts written from notes | `holdout-judged` (main), `holdout-judged-W` (Opus vs Sonnet writing); rounds 1-4 (`judged`-`judged4`) are the development set |
 
-Judges: GPT (codex CLI), Claude Opus, Claude Sonnet (the Chinese and Spanish tests ran without GPT; see their RESULTS.md). Each saw all versions of one post at once, in its own shuffled order, and gave a 0-100 "a person wrote this" probability. Scores are relative within one round: compare arms judged together only.
+Judges: GPT (codex CLI), Claude Opus, Claude Sonnet (the Chinese, Spanish and Indonesian tests ran without GPT; see their RESULTS.md). Each saw all versions of one post at once, in its own shuffled order, and gave a 0-100 "a person wrote this" probability. Scores are relative within one round: compare arms judged together only.
 
 Arm names in the files:
 - `PLAIN`: plain Claude

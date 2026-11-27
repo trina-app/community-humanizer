@@ -1,0 +1,46 @@
+{
+ "community": "r/finansial",
+ "platform": "reddit",
+ "measured": "2026-11-27",
+ "comments": {
+  "n": 160,
+  "source": "top-level comments from the busiest recent threads, read 2026-11-27",
+  "words_median": 36,
+  "types": {
+   "answer": 0.487,
+   "one-liner": 0.113,
+   "anecdote": 0.181,
+   "disagree": 0.013,
+   "question-back": 0.031,
+   "side-point": 0.056,
+   "agree": 0.019,
+   "joke": 0.05,
+   "complaint": 0.05
+  }
+ },
+ "posts": {
+  "n": 40,
+  "words_median": 74,
+  "paragraphs_median": 4,
+  "list_pct": 15,
+  "bold_or_heading_pct": 3,
+  "greeting_pct": 10,
+  "ends_with_question_pct": 30
+ },
+ "rules": {
+  "ai_content": "banned",
+  "ai_rules": [
+   "No low effort post"
+  ],
+  "self_promotion_rules": [
+   "Self-promotional advertising or soliciting"
+  ],
+  "notes": [
+   "The rule \"No low effort post\" says: \"No copy-pasted generative AI answer\".",
+   "Questions must give details about your own situation; \"what is the best/paling worth it?\" with no details is removed.",
+   "No referral, invite or affiliate links or codes, and no PM/DM requests or offers."
+  ],
+  "checked": "2026-11-27",
+  "source": "https://www.reddit.com/r/finansial/about/rules"
+ }
+}

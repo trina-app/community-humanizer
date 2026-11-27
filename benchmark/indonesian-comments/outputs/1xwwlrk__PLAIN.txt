@@ -1,0 +1,27 @@
+Kena infostealer itu kejadiannya memang begini: mereka ambil **session cookie/token**, bukan password. Makanya 2FA, passkey, dan TOTP bisa ke-bypass. Jadi langkah lo (sign out all, ganti kredensial) sudah benar. Lo juga cepat bereaksi dan wipe SSD, itu sudah di atas rata-rata.
+
+**1. Yang sebaiknya dilakuin**
+
+Pastikan semua ini dikerjain dari device bersih (HP atau PC lain), bukan PC lama sebelum di-wipe.
+
+- **Email utama (Gmail/dll) paling prioritas.** Itu kunci reset semua akun. Ganti password, "sign out of all devices", cek forwarding/filter rule yang mencurigakan, cek recovery email/nomor, dan cek third-party app/OAuth access.
+- **Bitwarden.** Ganti master password, log out all sessions, rotate API key kalau ada. Kalau vault pernah kebuka di browser PC itu, anggap semua isinya bocor, jadi ganti password akun-akun penting satu-satu, jangan cuma yang kena. Kalau seed TOTP lo disimpan di PC atau di Bitwarden, regenerate 2FA di tiap akun penting.
+- **Passkey.** Hapus passkey lama yang tersimpan di PC/Windows Hello/browser itu, lalu buat ulang.
+- **Keuangan.** Ganti PIN dan password m-banking, e-wallet (GoPay, OVO, Dana, ShopeePay), dan marketplace. Cek mutasi dan riwayat login. Kalau ada yang aneh atau lo ragu, telepon bank dan minta pengamanan. Hapus kartu yang tersimpan di browser atau marketplace.
+- **Crypto.** Kalau lo punya wallet atau seed phrase yang pernah ada di PC itu, pindahin dana ke wallet baru dengan seed baru. Ganti password cuma tidak cukup untuk ini.
+- **Akun lain yang sering dilupain:** Steam, Epic, Google, Microsoft, GitHub, Twitter/X, TikTok, cloud storage, VPN, dan akun kerja kalau ada login di PC itu. Di Discord, cek juga authorized apps dan webhook.
+- **Telegram.** Lo sudah delete, ya sudah. Kabarin kontak penting lewat channel lain supaya mereka tidak percaya pesan aneh atas nama lo.
+- **Nomor HP.** Aktifin kunci SIM/PIN SIM, dan hati-hati sama modus SIM swap atau minta OTP ke operator.
+- **PC.** Install ulang dari USB installer yang dibuat di device bersih. Jangan restore file dari backup atau partisi lama tanpa discan, terutama .exe, .zip, dan script. Kalau cuma butuh dokumen/foto, pindahin file datanya saja.
+
+**2. Kemungkinan lanjutan**
+
+- Phishing atau penipuan ke kontak lo dari akun yang sempat kebajak. Beberapa hari ke depan masih bisa terjadi lewat akun yang belum lo sadari.
+- Data lo (email, nomor, identitas) dijual atau dipakai untuk phishing yang lebih personal, jadi curiga sama pesan "bank/ekspedisi" yang tiba-tiba tahu data lo.
+- Percobaan login ke akun lain pakai data yang dicuri. Karena tiap app password-nya beda, risikonya kecil.
+- Pemerasan atau ancaman bocorin data. Kalau ada, jangan bayar, simpan bukti, dan lapor.
+- Pinjol atau akun palsu pakai identitas lo, kalau dokumen KTP/selfie ada di PC. Cek SLIK OJK sesekali, dan kalau ada file KTP di sana, waspada.
+
+**Pencegahan ke depan:** mod game dan software crack itu salah satu vektor infostealer paling umum. Kalau mau coba, pakai VM atau PC terpisah yang tidak login akun apa pun. Cek hash/sumbernya, dan upload ke VirusTotal dulu. Pisahkan browser untuk akun penting, dan jangan simpan sesi login permanen di perangkat yang sering install software baru.
+
+Dan lo bukan bodoh. Infostealer sekarang memang dibuat supaya kelihatan seperti installer normal, dan banyak orang yang paham keamanan juga pernah kena. Yang penting lo sudah gerak cepat. Semoga aman ya.
