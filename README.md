@@ -115,7 +115,7 @@ The persona is adapted from the one that got GPT-4.5 judged human 73% of the tim
 
 **Play it: [quiz.trina.app](https://quiz.trina.app/?lang=en)**
 
-Ten questions from the held-out sets, drawn from the pairs our AI judges found hardest: two versions of a reply or a post, and a person wrote one of them. At the end you see your score and how everyone else did.
+Ten questions from the held-out sets: two versions of a reply or a post, and a person wrote one of them. At the end you see your score and how everyone else did.
 
 Answers are stored anonymously (a random session id, no IP), so we can finally report how often people can tell. The code is in [quiz/](quiz/).
 

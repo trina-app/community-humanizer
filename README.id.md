@@ -115,7 +115,7 @@ Persona ini diadaptasi dari persona yang membuat GPT-4.5 dikira manusia dalam 73
 
 **Main di sini: [quiz.trina.app](https://quiz.trina.app/?lang=id)**
 
-Sepuluh soal dari thread pengujian berbahasa Indonesia yang paling sulit dibedakan oleh juri AI. Setiap soal berisi dua balasan, dan satu di antaranya ditulis orang. Di akhir, Anda bisa melihat skor sendiri dan hasil pemain lain.
+Sepuluh soal dari thread pengujian berbahasa Indonesia. Setiap soal berisi dua balasan, dan satu di antaranya ditulis orang. Di akhir, Anda bisa melihat skor sendiri dan hasil pemain lain.
 
 Jawaban disimpan secara anonim (ID sesi acak, tanpa IP), supaya nanti kami bisa melaporkan seberapa sering orang berhasil membedakannya. Kodenya ada di [quiz/](quiz/).
 

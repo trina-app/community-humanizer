@@ -115,7 +115,7 @@ node skills/community-humanizer/bin/voice.mjs post --to r/selfhosted --title "Is
 
 **直接玩：[quiz.trina.app](https://quiz.trina.app/?lang=zh)**
 
-中文题来自 r/China_irl 的测试帖子，去掉了涉及政治和具体人物新闻的帖子，目前只有 3 题：每题两条回复，其中一条是真人写的。答完能看到你的得分，以及其他人的正确率。
+中文题来自 r/China_irl 的测试帖子，去掉了涉及政治和具体人物新闻的帖子，共 3 题：每题两条回复，其中一条是真人写的。答完能看到你的得分，以及其他人的正确率。
 
 答案匿名保存（只有一个随机会话 ID，不存 IP），这样我们终于能统计出人能认出来的比例。代码在 [quiz/](quiz/)。
 
