@@ -13,14 +13,15 @@
 :root {
   --bg: #f2f4f6; --surface: #ffffff; --ink: #15191e; --muted: #5c6672; --line: #d8dde3;
   --accent: #3653c9; --accent-soft: #e6eaf9; --human: #167248; --human-soft: #e2f2ea; --wrong: #a23b2a; --bar: #c9d0d8;
-  --body: "IBM Plex Sans", "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
   --data: "IBM Plex Mono", ui-monospace, Menlo, monospace;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) { :root { --bg: #0f1215; --surface: #171b20; --ink: #e6e9ed; --muted: #98a2ad; --line: #2a3139; --accent: #8ea2ff; --accent-soft: #1f2640; --human: #52c78f; --human-soft: #15291f; --wrong: #f08c78; --bar: #39414b; color-scheme: dark; } }
 * { box-sizing: border-box; }
 html { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
-body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.6; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 32px 64px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.6; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 56px 64px; }
+.lang { position: fixed; top: max(12px, env(safe-area-inset-top, 0px)); right: max(12px, env(safe-area-inset-right, 0px)); z-index: 2; font: 13px var(--body); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; cursor: pointer; }
 .wrap { max-width: 760px; margin: 0 auto; display: grid; gap: 22px; }
 h1, h2 { margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
 h1 { font-size: clamp(28px, 6vw, 40px); line-height: 1.15; }
@@ -60,12 +61,30 @@ footer { font-size: 13px; color: var(--muted); display: grid; gap: 6px; }
 <main class="wrap" id="app"></main>
 <script>
 const T = {
-  en: { title: "Two versions. One is real.", lede: "Each question is a real Reddit thread with two versions of a reply or a post. One is the top comment a person really wrote, or the real post. The other was written by an AI. Pick the one a person wrote. 10 questions, about 3 minutes.", start: "Start", pick: "Tap the one a person wrote.", right: "Right. That one is real.", wrong: "Wrong. You picked the AI one.", next: "Next", result: "See result", real: "Real", ai: "AI", judges: "AI judges' human score", crowd: (n, p) => `${n} people answered this one; ${p}% got it right.`, done: (r) => `You spotted ${r} of 10`, chance: "Guessing gets 5 on average.", everyone: (p, n) => `Everyone so far: ${p}% right across ${n} answers.`, share: "Copy result", copied: "Copied", again: "Play another round", source: "Original thread", other: "한국어로 하기", post: "post", comment: "comment", note: "Real texts are cut to 600 characters and shown without usernames. To have a text removed, open an issue on GitHub." },
-  ko: { title: "둘 중 하나만 진짜예요", lede: "클리앙 실제 글마다 댓글(또는 본문) 두 개가 있어요. 하나는 사람이 실제로 쓴 공감 1위 댓글이나 원래 글이고, 하나는 AI가 썼어요. 사람이 쓴 쪽을 고르세요. 10문제, 3분쯤 걸려요.", start: "시작하기", pick: "사람이 쓴 쪽을 누르세요.", right: "맞혔어요. 진짜 사람이 쓴 거예요.", wrong: "틀렸어요. AI가 쓴 쪽을 골랐어요.", next: "다음", result: "결과 보기", real: "진짜 사람", ai: "AI", judges: "AI 채점자가 본 '사람일 확률'", crowd: (n, p) => `이 문제는 ${n}명이 풀었고 ${p}%가 맞혔어요.`, done: (r) => `10개 중 ${r}개 맞혔어요`, chance: "찍으면 평균 5개예요.", everyone: (p, n) => `지금까지 전체 정답률 ${p}% (답 ${n}개)`, share: "결과 복사", copied: "복사했어요", again: "한 판 더", source: "원문 보기", other: "Play in English", post: "글", comment: "댓글", note: "진짜 글은 600자까지만 보여 주고 아이디는 지웠어요. 내리고 싶은 글이 있으면 GitHub 이슈로 알려 주세요." },
+  en: { title: "Two versions. One is real.", lede: "Each question is a real Reddit thread with two versions of a reply or a post. One is the top comment a person really wrote, or the real post. The other was written by an AI. Pick the one a person wrote. 10 questions, about 3 minutes.", start: "Start", pick: "Tap the one a person wrote.", right: "Right. That one is real.", wrong: "Wrong. You picked the AI one.", next: "Next", result: "See result", real: "Real", ai: "AI", judges: "AI judges' human score", crowd: (n, p) => `${n} people answered this one; ${p}% got it right.`, done: (r) => `You spotted ${r} of 10`, chance: "Guessing gets 5 on average.", everyone: (p, n) => `Everyone so far: ${p}% right across ${n} answers.`, share: "Copy result", copied: "Copied", again: "Play another round", source: "Original thread", label: "Which one is real?", shareText: (r) => `I picked the real one ${r}/10 times against an AI.`, post: "post", comment: "comment", note: "Real texts are cut to 600 characters and shown without usernames. To have a text removed, open an issue on GitHub." },
+  ko: { title: "둘 중 하나만 진짜예요", lede: "클리앙 실제 글마다 댓글(또는 본문) 두 개가 있어요. 하나는 사람이 실제로 쓴 공감 1위 댓글이나 원래 글이고, 하나는 AI가 썼어요. 사람이 쓴 쪽을 고르세요. 10문제, 3분쯤 걸려요.", start: "시작하기", pick: "사람이 쓴 쪽을 누르세요.", right: "맞혔어요. 진짜 사람이 쓴 거예요.", wrong: "틀렸어요. AI가 쓴 쪽을 골랐어요.", next: "다음", result: "결과 보기", real: "진짜 사람", ai: "AI", judges: "AI 채점자가 본 '사람일 확률'", crowd: (n, p) => `이 문제는 ${n}명이 풀었고 ${p}%가 맞혔어요.`, done: (r) => `10개 중 ${r}개 맞혔어요`, chance: "찍으면 평균 5개예요.", everyone: (p, n) => `지금까지 전체 정답률 ${p}% (답 ${n}개)`, share: "결과 복사", copied: "복사했어요", again: "한 판 더", source: "원문 보기", label: "진짜는 어느 쪽?", shareText: (r) => `AI 댓글 사이에서 진짜 사람 댓글 10개 중 ${r}개 맞혔어요.`, post: "글", comment: "댓글", note: "진짜 글은 600자까지만 보여 주고 아이디는 지웠어요. 내리고 싶은 글이 있으면 GitHub 이슈로 알려 주세요." },
+  zh: { title: "两个版本，只有一个是真人写的", lede: "每道题都来自一个真实的 Reddit 帖子，附有两段回复或两版正文。一段是真人写的高赞评论或原帖，另一段由 AI 写成。选出真人写的那段。题目原文为英文，共 10 题，约 3 分钟。", start: "开始答题", pick: "点选真人写的那一段。", right: "答对了，这段是真人写的。", wrong: "答错了，你选的是 AI 写的。", next: "下一题", result: "查看结果", real: "真人", ai: "AI", judges: "AI 评委给出的真人概率", crowd: (n, p) => `这道题已有 ${n} 人作答，${p}% 答对。`, done: (r) => `10 题中你答对了 ${r} 题`, chance: "随便猜的话，平均能答对 5 题。", everyone: (p, n) => `目前所有人的正确率：${p}%（共 ${n} 次作答）`, share: "复制结果", copied: "已复制", again: "再来一轮", source: "查看原帖", label: "哪个是真的？", shareText: (r) => `我和 AI 比了一轮，10 题里认出了 ${r} 段真人写的内容。`, post: "帖子", comment: "评论", note: "真人原文最多显示 600 字，并已去除用户名。如需删除某段内容，请在 GitHub 提交 issue。" },
+  es: { title: "Dos versiones. Una es real.", lede: "Cada pregunta trae un hilo real de Reddit y dos versiones de una respuesta o publicación. Una es real: el comentario más votado o la publicación original. La otra la escribió una IA. Elige la que escribió una persona. Los textos están en inglés. Son 10 preguntas, unos 3 minutos.", start: "Empezar", pick: "Toca la que escribió una persona.", right: "Correcto. Esa es real.", wrong: "Incorrecto. Elegiste la de la IA.", next: "Siguiente", result: "Ver resultado", real: "Real", ai: "IA", judges: "Probabilidad humana según los jueces de IA", crowd: (n, p) => `${n} personas respondieron esta pregunta. Acertó el ${p}\u00a0%.`, done: (r) => `Acertaste ${r} de 10`, chance: "Al azar, la media es 5.", everyone: (p, n) => `Hasta ahora: ${p}\u00a0% de aciertos en ${n} respuestas.`, share: "Copiar resultado", copied: "Copiado", again: "Jugar otra ronda", source: "Ver hilo original", label: "¿Cuál es el real?", shareText: (r) => `Reconocí ${r} de 10 textos escritos por personas frente a una IA.`, post: "publicación", comment: "comentario", note: "Los textos reales se recortan a 600 caracteres y se muestran sin nombres de usuario. Para retirar un texto, abre un issue en GitHub." },
 };
 const params = new URLSearchParams(location.search);
-let lang = params.get("lang") === "ko" || (!params.get("lang") && (navigator.language || "").startsWith("ko")) ? "ko" : "en";
-document.documentElement.lang = lang;
+const LANGS = { en: "English", ko: "한국어", zh: "中文", es: "Español" };
+const browser = (navigator.language || "").slice(0, 2).toLowerCase();
+let lang = LANGS[params.get("lang")] ? params.get("lang") : LANGS[browser] ? browser : "en";
+const dataLang = (l) => (l === "ko" ? "ko" : "en"); // Questions exist in English (Reddit) and Korean (Clien).
+const htmlLang = (l) => (l === "zh" ? "zh-CN" : l);
+document.documentElement.lang = htmlLang(lang);
+let rerender = () => intro();
+function langMenu() {
+  const sel = el("select", "lang"); sel.setAttribute("aria-label", "Language");
+  for (const [code, name] of Object.entries(LANGS)) { const o = el("option", null, name); o.value = code; o.selected = code === lang; sel.append(o); }
+  sel.addEventListener("change", () => {
+    const before = dataLang(lang); lang = sel.value;
+    document.documentElement.lang = htmlLang(lang);
+    const u = new URL(location.href); u.searchParams.set("lang", lang); history.replaceState(null, "", u);
+    before === dataLang(lang) ? rerender() : intro(); // Same questions: stay where you are. Other set: start over.
+  });
+  document.body.prepend(sel);
+}
 const t = () => T[lang];
 const app = document.getElementById("app");
 const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
@@ -78,18 +97,18 @@ function mountTurnstile(box) {
 
 function intro() {
   app.textContent = "";
-  app.append(el("span", "meta", lang === "en" ? "Which one is real?" : "진짜는 어느 쪽?"), el("h1", null, t().title), el("p", "lede", t().lede));
+  rerender = intro;
+  app.append(el("span", "meta", t().label), el("h1", null, t().title), el("p", "lede", t().lede));
   if (cfg.turnstile) { const box = el("div"); box.id = "cf"; app.append(box); mountTurnstile(box); }
   const row = el("div", "row");
   const go = el("button", "primary", t().start); go.type = "button"; go.id = "go"; go.disabled = !!cfg.turnstile && !cfToken; go.addEventListener("click", start);
-  const sw = el("button", "ghost", t().other); sw.type = "button"; sw.addEventListener("click", () => { lang = lang === "en" ? "ko" : "en"; document.documentElement.lang = lang; intro(); });
-  row.append(go, sw); app.append(row);
+  row.append(go); app.append(row);
   footer();
 }
 function footer() { const f = el("footer"); f.append(el("p", null, t().note)); app.append(f); }
 
 async function start() {
-  const r = await fetch(`/api/round?lang=${lang}&cf=${encodeURIComponent(cfToken)}`, { credentials: "same-origin" });
+  const r = await fetch(`/api/round?lang=${dataLang(lang)}&cf=${encodeURIComponent(cfToken)}`, { credentials: "same-origin" });
   const d = await r.json();
   if (!r.ok) { alert(d.error || "Try again."); return; }
   items = d.items; roundToken = d.round; i = 0; right = 0; cfToken = ""; ask();
@@ -100,6 +119,7 @@ function head() {
   return bar;
 }
 function ask() {
+  rerender = ask;
   const q = items[i];
   app.textContent = "";
   app.append(head(), el("span", "meta", `${i + 1} / ${items.length} · ${q.place} · ${q.kind === "post" ? t().post : t().comment}`), el("h2", null, q.title));
@@ -118,6 +138,11 @@ async function answer(pick) {
   const q = items[i];
   const r = await (await fetch("/api/answer", { method: "POST", credentials: "same-origin", headers: { "content-type": "application/json" }, body: JSON.stringify({ round: roundToken, qid: q.qid, pick, ms: Date.now() - shownAt }) })).json();
   if (r.correct) right++;
+  showAnswer(pick, r);
+}
+function showAnswer(pick, r) {
+  rerender = () => showAnswer(pick, r);
+  const q = items[i];
   app.textContent = "";
   app.append(head(), el("span", "meta", `${i + 1} / ${items.length} · ${q.place}`), el("h2", null, q.title));
   app.append(el("p", "verdict " + (r.correct ? "right" : "wrong"), r.correct ? t().right : t().wrong));
@@ -138,13 +163,14 @@ async function answer(pick) {
   row.append(nx, a); app.append(row); nx.focus(); window.scrollTo(0, 0);
 }
 async function end() {
+  rerender = end;
   app.textContent = "";
   app.append(el("h1", null, t().done(right)), el("p", "lede", t().chance));
   try {
     const s = await (await fetch("/api/stats")).json();
     if (s.all && s.all.n) app.append(el("p", "meta", t().everyone(Math.round((100 * s.all.right) / s.all.n), s.all.n)));
   } catch {}
-  const msg = lang === "en" ? `I picked the real one ${right}/10 times against an AI. ${location.origin}` : `AI 댓글 사이에서 진짜 사람 댓글 10개 중 ${right}개 맞혔어요. ${location.origin}/?lang=ko`;
+  const msg = `${t().shareText(right)} ${location.origin}/?lang=${lang}`;
   const ta = el("textarea"); ta.id = "share"; ta.rows = 2; ta.readOnly = true; ta.value = msg;
   const row = el("div", "row");
   const cp = el("button", "ghost", t().share); cp.type = "button";
@@ -152,6 +178,7 @@ async function end() {
   const again = el("button", "primary", t().again); again.type = "button"; again.addEventListener("click", start);
   row.append(again, cp); app.append(ta, row); footer();
 }
+langMenu();
 fetch("/api/config").then((r) => r.json()).then((c) => { cfg = c || {}; }).catch(() => {}).finally(intro);
 </script>
 </body>
