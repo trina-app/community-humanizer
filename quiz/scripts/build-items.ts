@@ -69,7 +69,28 @@ const SCRIPT: Record<string, RegExp> = { ko: /[一-鿿぀-ヿ]/, ja: /[가-힣]/
 const mixed = items.filter((x) => SCRIPT[x.lang] && (SCRIPT[x.lang].test(x.rawAi) || SCRIPT[x.lang].test(x.rawHuman)))
 const ko = [...items.filter((x) => x.lang === 'ko' && (POL.test(x.title) || POL.test(x.human))), ...zh, ...es, ...idp, ...jap, ...mixed]
 const unfair = items.filter((x) => !fair(x.rawHuman, x.rawAi))
-const keep = items.filter((x) => !ko.includes(x) && !unfair.includes(x)).map(({ rawHuman, rawAi, ...x }) => x)
+// Native-reader review of every pair (2026-11-27, research/community-humanizer-launch/quiz-review/<lang>.md):
+// sensitive topics, a "real" side that itself reads AI-written, answers that only make sense with an image,
+// AI sides cut off mid-sentence or contradicting the post, posters who are minors.
+const REVIEW_DROP = new Set([
+  'rc-1xxmkig', 'rc-1y2u0ax', 'rc-1xwftge', 'rc-1y2w0kq', 'rp-1xt8215', 'rp-1xtkr5f', 'rp-1xqzk0w', 'rp-1xsf4kt',
+  'kc-19296796', 'kc-19258962', 'kc-19297442', 'kp-19296188', 'kp-19295252', 'kp-19236320', 'kp-19232088', 'kp-19210883',
+  'jac-1xp9gzm', 'jac-1xpo2tv', 'jac-1xp41zg', 'jac-1xls1ev', 'jac-1xnn3w2', 'jac-1xnodwz', 'jac-1y1vptm',
+  'zhc-1xy7izp', 'zhc-1xnxlct', 'zhc-1xt8vyu', 'zhc-1xmd3vj', 'zhc-1xt9yjz', 'zhc-1xq953d',
+  'esc-1xlfmlc', 'esc-1xorzbq', 'esc-1xx6qt7', 'esc-1xx6o70', 'esc-1y4nyeu', 'esc-1y4bdkq', 'esc-1xx2109', 'esc-1xr111l', 'esc-1xqp99u', 'esc-1xyizqg', 'esc-1xrezri',
+  'idc-1xsaupa', 'idc-1y45n2r', 'idc-1xrqub1', 'idc-1xu8nw2', 'idc-1xu7vwa', 'idc-1y51nul', 'idc-1y4y1tc', 'idc-1xqa46r', 'idc-1xnp35g', 'idc-1xp1i7t',
+])
+// The page shows plain text: decode entities, drop markdown and scrape leftovers, hide usernames, and use plain quotes
+// on both sides so typography can't give the answer away.
+const clean = (s: string) => s
+  .replace(/\s*(&lt;|<)div[\s\S]*$/, '')
+  .replace(/&gt;/g, '>').replace(/&lt;/g, '<').replace(/&amp;/g, '&').replace(/&#x200B;|​/g, '')
+  .replace(/\\([>*_\-#\[\]()~])/g, '$1')
+  .replace(/\*\*([^*]+)\*\*/g, '$1').replace(/(^|\s)\*([^*\s][^*]*)\*/g, '$1$2')
+  .replace(/\bu\/[A-Za-z0-9_-]+/g, 'u/…')
+  .replace(/[‘’]/g, "'").replace(/[“”]/g, '"')
+  .trim()
+const keep = items.filter((x) => !ko.includes(x) && !unfair.includes(x) && !REVIEW_DROP.has(x.qid)).map(({ rawHuman, rawAi, ...x }) => ({ ...x, title: clean(x.title), body: clean(x.body), human: clean(x.human), ai: clean(x.ai) }))
 writeFileSync(new URL('../src/items.json', import.meta.url), JSON.stringify(keep))
 for (const [l, k] of [['en', 'comment'], ['en', 'post'], ['ko', 'comment'], ['ko', 'post'], ['zh', 'comment'], ['es', 'comment'], ['id', 'comment'], ['ja', 'comment']]) console.log(`${l} ${k}: ${keep.filter((x) => x.lang === l && x.kind === k).length}`)
 console.log(`dropped as political: ${ko.length}, dropped because only one side would be cut: ${unfair.length}`)
