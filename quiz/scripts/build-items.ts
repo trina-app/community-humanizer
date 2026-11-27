@@ -4,7 +4,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
 const K = process.argv[2]!
-const POL = /국힘|민주당|이재명|잼통|윤석열|윤두창|대통령|정부|탄핵|정치|선거|국회|검찰|조희대|보수|진보|좌파|우파|한동훈|조국|여당|야당|정권|지지율|민생지원금|리박|일베|호남|영남|지역화폐|전국민|특검|대법|판사|김민석|투표|기소|장관|의원/
+const POL = /국힘|민주당|이재명|잼통|쨈통|윤석열|윤두창|대통령|정부|탄핵|정치|선거|국회|검찰|조희대|보수|진보|좌파|우파|한동훈|조국|여당|야당|정권|지지율|민생지원금|리박|일베|호남|영남|지역화폐|전국민|특검|대법|판사|김민석|투표|기소|장관|의원/
 const LIMIT = 600
 const cut = (s: string) => (s.length > LIMIT ? s.slice(0, LIMIT).replace(/\s+\S*$/, '') + '…' : s)
 // a pair where only one side would be cut would give the answer away, so such pairs are left out
@@ -64,7 +64,10 @@ const JA_POL = /政治|選挙|自民|立憲|維新|公明|共産党|首相|総�
 // read by hand: politics, sex, a real-person scandal, crude or drug threads, and one mean-spirited one
 const JA_SKIP = new Set(['1xoxm0n', '1xqmd0w', '1xmpwyh', '1xzcxkz', '1xyk7i5', '1xmo5sd', '1xvn8if', '1xmtery', '1y4dsst', '1y4vwn6', '1xue0ts', '1xtc12z', '1xqk9fy', '1y4c4r2'].map((id) => 'jac-' + id))
 const jap = items.filter((x) => x.lang === 'ja' && (JA_SKIP.has(x.qid) || [x.title, x.body, x.rawHuman, x.rawAi].some((s) => JA_POL.test(s))))
-const ko = [...items.filter((x) => x.lang === 'ko' && (POL.test(x.title) || POL.test(x.human))), ...zh, ...es, ...idp, ...jap]
+// a stray character from another script (e.g. Chinese 露 inside a Korean word) gives the answer away
+const SCRIPT: Record<string, RegExp> = { ko: /[一-鿿぀-ヿ]/, ja: /[가-힣]/, zh: /[가-힣぀-ヿ]/, en: /[぀-ヿ一-鿿가-힣]/, es: /[぀-ヿ一-鿿가-힣]/, id: /[぀-ヿ一-鿿가-힣]/ }
+const mixed = items.filter((x) => SCRIPT[x.lang] && (SCRIPT[x.lang].test(x.rawAi) || SCRIPT[x.lang].test(x.rawHuman)))
+const ko = [...items.filter((x) => x.lang === 'ko' && (POL.test(x.title) || POL.test(x.human))), ...zh, ...es, ...idp, ...jap, ...mixed]
 const unfair = items.filter((x) => !fair(x.rawHuman, x.rawAi))
 const keep = items.filter((x) => !ko.includes(x) && !unfair.includes(x)).map(({ rawHuman, rawAi, ...x }) => x)
 writeFileSync(new URL('../src/items.json', import.meta.url), JSON.stringify(keep))
