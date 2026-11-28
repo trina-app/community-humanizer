@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Which One Is Real</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C85147L69X"></script>
+<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag("js", new Date()); gtag("config", "G-C85147L69X");</script>
 <meta name="description" content="Two versions, one written by a person. Can you tell which?">
 <meta property="og:title" content="Spot the AI">
 <meta property="og:description" content="Two replies from a real thread. One was written by a person. Can you tell which?">
@@ -122,7 +124,10 @@ function intro() {
 }
 function footer() { const f = el("footer"); f.append(el("p", null, t().note)); app.append(f); }
 
+// Google Analytics events (Trina GA4, same property as ax.trina.app)
+const track = (name, params) => { try { gtag("event", name, { quiz_lang: lang, ...params }); } catch {} };
 async function start() {
+  track("quiz_start");
   const r = await fetch(`/api/round?lang=${dataLang(lang)}&cf=${encodeURIComponent(cfToken)}`, { credentials: "same-origin" });
   const d = await r.json();
   if (!r.ok) { alert(d.error || "Try again."); return; }
@@ -202,6 +207,7 @@ async function end() {
     if (n >= 50) p = r / n; else if (stats.all && stats.all.n >= 50) p = stats.all.right / stats.all.n;
   } catch {}
   const n = items.length, x = topShare(right, n, p);
+  track("quiz_finish", { score: right, total: n, top_percent: x });
   app.append(el("h1", null, t().done(right, n)), el("p", "rank", t().top(x)), el("p", "grid", marks.map((c) => (c ? "🟩" : "🟥")).join("")), el("p", "meta", t().topNote), el("p", "lede", t().chance(n)));
   if (stats && stats.all && stats.all.n) app.append(el("p", "meta", t().everyone(Math.round((100 * stats.all.right) / stats.all.n), stats.all.n)));
   const grid = marks.map((c) => (c ? "🟩" : "🟥")).join("");
@@ -212,12 +218,12 @@ async function end() {
   const copy = async (b) => { try { await navigator.clipboard.writeText(ta.value); b.textContent = t().copied; } catch { ta.select(); } };
   // share sheet where there is one, otherwise the share button copies the result and link
   const sh = el("button", "primary", t().shareBtn); sh.type = "button";
-  sh.addEventListener("click", () => (navigator.share ? navigator.share({ text, url }).catch(() => {}) : copy(sh)));
-  const cp = el("button", "ghost", t().copyLink); cp.type = "button"; cp.addEventListener("click", () => copy(cp));
+  sh.addEventListener("click", () => (track("share", { method: navigator.share ? "share_sheet" : "copy" }), navigator.share ? navigator.share({ text, url }).catch(() => {}) : copy(sh)));
+  const cp = el("button", "ghost", t().copyLink); cp.type = "button"; cp.addEventListener("click", () => (track("share", { method: "copy_link" }), copy(cp)));
   row.append(sh, cp);
   const again = el("button", "ghost", t().again); again.type = "button"; again.addEventListener("click", start);
   const row2 = el("div", "row"); row2.append(again);
-  const made = el("p", "made", t().starAsk + " "); made.append(link(t().starLink, "https://github.com/trina-app/community-humanizer"));
+  const made = el("p", "made", t().starAsk + " "); const star = link(t().starLink, "https://github.com/trina-app/community-humanizer"); star.addEventListener("click", () => track("star_click")); made.append(star);
   app.append(ta, row, row2, made); footer();
 }
 langMenu();
