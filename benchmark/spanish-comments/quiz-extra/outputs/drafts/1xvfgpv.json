@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "joke",
+  "disagree",
+  "answer"
+ ],
+ "drafts": [
+  "Sí se puede, pero siempre hay uno de los dos que está esperando que el otro la cague para dejar de ser \"solo amigos\".",
+  "Ese \"tarde o temprano\" ya supone que la única forma de relacionarse con alguien es pensando en si te atrae o no. Hay gente que simplemente no te gusta así y ya, no hay drama escondido.",
+  "Sí se puede, pero depende más de la gente que del género. Mientras los dos tengan claro lo que quieren y ninguno ande esperando algo más, no pasa nada. El problema suele ser cuando uno de los dos siente algo y se lo calla, ahí es donde se arruina todo. Si pasa, mejor decirlo y ya, aunque sea incómodo."
+ ],
+ "pick": 2,
+ "haiku": "3",
+ "rates_from": "pool (160)"
+}

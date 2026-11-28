@@ -1,0 +1,16 @@
+{
+ "id": "1xi7bw4",
+ "sub": "Colombia",
+ "order": [
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 72,
+  "HUMAN": 30
+ },
+ "rank": {
+  "SKILL": 1,
+  "HUMAN": 2
+ }
+}

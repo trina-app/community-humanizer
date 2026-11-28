@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "joke",
+  "answer",
+  "complaint"
+ ],
+ "drafts": [
+  "Es que el ajiaco no se pide con papas fritas encima, mijo. Toca venderle al gringo lo que sí cabe en un plato de a 15 lucas.",
+  "Nadie serio dice que sean el plato nacional, es comida de calle y ya. A los extranjeros les gusta porque es barata y la ven en todas partes, pero si uno los va a llevar a comer, mejor un ajiaco o una bandeja paisa.\n\nY en Bogotá se come porque es lo que hay a las 11 de la noche, no por orgullo patrio.",
+  "Es que a uno le da pena. Tenemos ajiaco, sancocho, mil tamales distintos y el tema es la papa frita con salchicha y salsa rosada. Y lo peor es cuando le ponen \"gourmet\" y te la cobran a 40 mil"
+ ],
+ "pick": 2,
+ "haiku": "3",
+ "rates_from": "pool (160)"
+}

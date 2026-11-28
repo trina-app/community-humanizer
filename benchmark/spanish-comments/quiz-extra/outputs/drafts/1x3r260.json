@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "joke",
+  "complaint",
+  "one-liner"
+ ],
+ "drafts": [
+  "Hiciste mal, le arruinaste el negocio del año al wey. Ya tenía su inversión de 100 pesos lista para multiplicarla por 20.",
+  "Hiciste bien. Qué poca madre aprovecharse de una señora que vende para comer, y todavía le dijo que la memoria estaba bien chafa para pagarle 100 pesos. Si quería agredirte es porque sabía perfectamente lo que estaba haciendo, el que nada debe nada teme.",
+  "Hiciste bien, le dijiste la verdad a la señora y nadie le robó nada a nadie."
+ ],
+ "pick": 1,
+ "haiku": "2",
+ "rates_from": "pool (160)"
+}

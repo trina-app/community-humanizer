@@ -1,0 +1,16 @@
+{
+ "id": "1xmgpj5",
+ "sub": "preguntaleareddit",
+ "order": [
+  "HUMAN",
+  "SKILL"
+ ],
+ "human": {
+  "HUMAN": 85,
+  "SKILL": 70
+ },
+ "rank": {
+  "HUMAN": 2,
+  "SKILL": 1
+ }
+}

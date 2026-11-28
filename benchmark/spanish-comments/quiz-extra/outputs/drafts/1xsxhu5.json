@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "question-back",
+  "disagree",
+  "joke"
+ ],
+ "drafts": [
+  "Oye, y el trabajo en EU es en remoto desde México o te tendrías que mudar allá? Porque con 2,000 de housing eso cambia toda la cuenta, y también si el contrato es por tiempo definido o te pueden sacar en cualquier momento con la TN.",
+  "Dices 7,000 dólares pero la mitad es para pagar la renta y la comida allá, eso no es lo que te sobra. Compara cuánto te queda a fin de mes en cada lado, no el número que suena bonito.",
+  "Dólares libres de impuestos que \"se dividen para no pagar tanto\"... tu contador va a querer platicar contigo, pero igual el gringo gana en cualquier caso, 3,500 de housing y per diem con renta en EU se evaporan más rápido que tu quincena."
+ ],
+ "pick": 2,
+ "haiku": "3",
+ "rates_from": "pool (160)"
+}

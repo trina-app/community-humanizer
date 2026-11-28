@@ -1,0 +1,16 @@
+{
+ "id": "1x66tkj",
+ "sub": "Colombia",
+ "order": [
+  "HUMAN",
+  "SKILL"
+ ],
+ "human": {
+  "HUMAN": 72,
+  "SKILL": 30
+ },
+ "rank": {
+  "HUMAN": 2,
+  "SKILL": 1
+ }
+}

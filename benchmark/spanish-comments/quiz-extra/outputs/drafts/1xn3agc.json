@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "question-back",
+  "one-liner",
+  "answer"
+ ],
+ "drafts": [
+  "Y tú qué entiendes por \"mucho dinero\"? Porque para algunos es 2000 al mes y para otros es otra cosa muy distinta",
+  "Limpiar fosas sépticas, siempre hay trabajo y nadie quiere hacerlo.",
+  "Limpiar fosas sépticas y alcantarillas, o cualquier cosa de mantenimiento industrial. Nadie sueña con eso de niño pero el que tiene su propio camión de vacío cobra bien porque siempre hay demanda y poca competencia. Eso sí, hay que aguantar el olor, y a los 10 minutos ya ni lo notas jaja."
+ ],
+ "pick": 0,
+ "haiku": "1",
+ "rates_from": "pool (160)"
+}

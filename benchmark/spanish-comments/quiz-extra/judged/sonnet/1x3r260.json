@@ -1,0 +1,16 @@
+{
+ "id": "1x3r260",
+ "sub": "mexico",
+ "order": [
+  "HUMAN",
+  "SKILL"
+ ],
+ "human": {
+  "HUMAN": 50,
+  "SKILL": 60
+ },
+ "rank": {
+  "HUMAN": 2,
+  "SKILL": 1
+ }
+}

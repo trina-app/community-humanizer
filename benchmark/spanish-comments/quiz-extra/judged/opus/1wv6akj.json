@@ -1,0 +1,16 @@
+{
+ "id": "1wv6akj",
+ "sub": "Colombia",
+ "order": [
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 35,
+  "HUMAN": 70
+ },
+ "rank": {
+  "SKILL": 1,
+  "HUMAN": 2
+ }
+}

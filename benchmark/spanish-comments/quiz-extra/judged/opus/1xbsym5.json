@@ -1,0 +1,16 @@
+{
+ "id": "1xbsym5",
+ "sub": "Colombia",
+ "order": [
+  "HUMAN",
+  "SKILL"
+ ],
+ "human": {
+  "HUMAN": 85,
+  "SKILL": 25
+ },
+ "rank": {
+  "HUMAN": 1,
+  "SKILL": 2
+ }
+}

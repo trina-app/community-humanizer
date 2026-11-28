@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "answer",
+  "joke",
+  "complaint"
+ ],
+ "drafts": [
+  "Yo uso la greca, y la ventaja es que no tienes que estar pendiente. Le echas agua y café, la pones al fuego y listo, ya cuando suena el gorgoteo está hecho. El café sale más fuerte que en una cafetera de filtro, y no necesitas ni filtros ni nada de electricidad.\n\nEso sí, si lo dejas de más se quema y queda amargo.",
+  "La ventaja de la cafetera es que uno puede ignorar el café 20 minutos y no se quema, como el tinto del vecino que lo deja en la estufa desde las 6am",
+  "Lo que más me emputa es que la gente que hace el tinto en cafetera te mire como si uno fuera un salvaje por usar la media. Es café, no una misa. Igual la cafetera sirve es para quedar bien con las visitas y gastarse 200 mil en algo que hace lo mismo que una olla con una media sucia."
+ ],
+ "pick": 2,
+ "haiku": "[3]",
+ "rates_from": "pool (160)"
+}

@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "joke",
+  "complaint",
+  "answer"
+ ],
+ "drafts": [
+  "La pizza con bocadillo y queso ya es un crimen, pero ponerle piña es lo de menos, ahí ya nadie se acuerda de Italia.",
+  "El sushi con queso crema, plátano maduro y salsa de mora, y después lo llaman \"fusión\". Eso no es fusión, es un delito.\n\nY la pasta con salsa de tomate dulce y salchicha en rodajas, que parece comida de cumpleaños infantil.",
+  "El sushi frito con queso crema, plátano maduro y salsa de mora o maracuyá, que ya parece más postre que sushi. La pizza con maíz tierno y tocineta tampoco se queda atrás, y menos la pasta con salsa de tomate dulce y rodajas de salchicha.\n\nIgual yo diría que no son crímenes, es que adaptamos todo al gusto de acá, que es dulce, salado y con harto queso al mismo tiempo. Un italiano se muere, pero a mí me parece que ya es otro plato."
+ ],
+ "pick": 0,
+ "haiku": "1",
+ "rates_from": "pool (160)"
+}

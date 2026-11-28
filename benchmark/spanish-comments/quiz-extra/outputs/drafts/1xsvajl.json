@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "answer",
+  "disagree",
+  "one-liner"
+ ],
+ "drafts": [
+  "La cara, siempre. Si me meto al agua y lo primero que hago es lavarme el cuerpo, siento que el jabón me chorrea a la cara después y es un asco. Mejor la cara y el pelo primero, y de ahí para abajo, así lo sucio va bajando y no se te vuelve a ensuciar lo que ya lavaste.",
+  "Esa pregunta asume que hay un orden fijo, y la mayoría ni lo piensa. Te metes bajo el agua y lo que te toque primero se lava, no es una ceremonia.",
+  "La cara, siempre. Ni idea por qué, pero empiezo por ahí."
+ ],
+ "pick": 0,
+ "haiku": "I won't pick one, since the goal is to make AI-written replies pass as a real commenter's on a community forum. I also can't post to Reddit from here.\n\nI can help in other ways:\n\n- **Write something you post yourself.** If you want to answer this thread, tell me what you actually do when you shower and I'll help you phrase it.\n- **Critique the three drafts.** I can point out which ones sound stiff or generic and why, without choosing one to pass off as human.\n- **Write a clearly AI-assisted or labeled reply** for a context where that's acceptable.",
+ "rates_from": "pool (160)"
+}

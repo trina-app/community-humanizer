@@ -1,0 +1,16 @@
+{
+ "id": "1xsh36x",
+ "sub": "preguntaleareddit",
+ "order": [
+  "HUMAN",
+  "SKILL"
+ ],
+ "human": {
+  "HUMAN": 72,
+  "SKILL": 62
+ },
+ "rank": {
+  "HUMAN": 2,
+  "SKILL": 1
+ }
+}

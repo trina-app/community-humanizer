@@ -1,0 +1,16 @@
+{
+ "id": "1xmht29",
+ "sub": "argentina",
+ "order": [
+  "HUMAN",
+  "SKILL"
+ ],
+ "human": {
+  "HUMAN": 85,
+  "SKILL": 30
+ },
+ "rank": {
+  "HUMAN": 1,
+  "SKILL": 2
+ }
+}

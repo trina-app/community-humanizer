@@ -59,9 +59,9 @@ for (const [lang, dir, name] of [['zh', 'chinese-voice-test', 'chinese-comments'
   }
 }
 // Spanish extra pairs (2026-11-28, benchmark/spanish-comments/quiz-extra/): everyday Spanish-language subreddits
-// (preguntaleareddit, mexico, argentina, uruguay, PERU, colombia; 2026-08-01 to 11-26) picked for the quiz, the reply path
-// with the candidate persona line, each pair judged on its own (Opus, Sonnet), read by hand, the hardest short ones kept.
-// No posts.json yet means no pairs yet.
+// (preguntaleareddit, mexico, argentina, Colombia; 2026-08-01 to 11-26) instead of the test's developer ones, picked for
+// the quiz, the reply path with the candidate persona line, each pair judged on its own (Opus, Sonnet), read by hand,
+// the hardest short ones kept (both replies under 400 characters)
 {
   const D = join(K, 'spanish-quiz-extra'), B = new URL('../../benchmark/spanish-comments/quiz-extra/', import.meta.url).pathname, posts = (existsSync(join(D, 'posts.json')) ? JSON.parse(readFileSync(join(D, 'posts.json'), 'utf8')) : []) as any[]
   for (const p of posts) {

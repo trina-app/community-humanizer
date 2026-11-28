@@ -1,0 +1,16 @@
+{
+ "id": "1vu1oh4",
+ "sub": "argentina",
+ "order": [
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 80,
+  "HUMAN": 30
+ },
+ "rank": {
+  "SKILL": 1,
+  "HUMAN": 2
+ }
+}

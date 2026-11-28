@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "complaint",
+  "one-liner",
+  "agree"
+ ],
+ "drafts": [
+  "Qué bronca que en este país uno tenga que pensar en armarse el búnker cuando ni siquiera llegás a fin de mes para comprar latas. El apocalipsis ya lo estamos viviendo, nada más que con inflación.",
+  "Con la inflación ya tenemos el apocalipsis, lo que te falta es el bunker.",
+  "Yo también, la verdad. Ya tengo mirando cuánta agua y latas me alcanzan para un par de semanas, por las dudas."
+ ],
+ "pick": 2,
+ "haiku": "3",
+ "rates_from": "pool (160)"
+}

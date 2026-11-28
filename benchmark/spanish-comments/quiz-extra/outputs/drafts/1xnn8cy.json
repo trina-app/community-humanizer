@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "question-back",
+  "joke",
+  "one-liner"
+ ],
+ "drafts": [
+  "¿Eso de viajar una o dos veces al mes quedó escrito en el contrato o solo te lo dijeron en las entrevistas?",
+  "Remoto con viajes una vez al mes es como el \"solo una cervecita\" de los trabajos, en seis meses estás arrendando apartamento en Chapinero y quejándote del frío.",
+  "Yo me quedo. Lo de tu amiga ya te dijo cómo termina eso."
+ ],
+ "pick": 1,
+ "haiku": "2",
+ "rates_from": "pool (160)"
+}
