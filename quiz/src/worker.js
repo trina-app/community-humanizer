@@ -37,6 +37,32 @@ async function turnstileOk(env, req, token) {
   return (await r.json()).success === true
 }
 
+
+// Link previews: the card image and title follow the language, and a shared result (?s=7&n=10&t=12) puts the score in the title.
+const OG = {
+  en: { title: 'Spot the AI', desc: 'Two replies from a real thread. One was written by a person. Can you tell which?', shared: (s, n, x) => `${s}/${n} right, top ${x}%. Can you spot the AI?` },
+  ko: { title: 'AI가 쓴 댓글 찾기', desc: '실제 글에 달린 댓글 두 개, 하나는 사람이 썼어요. 어느 쪽일까요?', shared: (s, n, x) => `${n}문제 중 ${s}개, 상위 ${x}%. AI가 쓴 댓글, 찾을 수 있어요?` },
+  ja: { title: 'AIが書いたのはどっち？', desc: '本物のスレッドの返信2つ。片方は人が書きました。どっちでしょう？', shared: (s, n, x) => `${n}問中${s}問正解、上位${x}%。AIが書いたのはどっち？` },
+  zh: { title: '找出 AI 写的回复', desc: '同一个帖子下的两条回复，其中一条是真人写的。你能分辨吗？', shared: (s, n, x) => `${n} 题答对 ${s} 题，前 ${x}%。你能找出 AI 写的回复吗？` },
+  es: { title: 'Encuentra la IA', desc: 'Dos respuestas de un hilo real. Una la escribió una persona. ¿Cuál?', shared: (s, n, x) => `${s} de ${n}, top ${x}\u00a0%. ¿Encuentras la IA?` },
+  id: { title: 'Temukan balasan AI', desc: 'Dua balasan dari thread asli. Satu ditulis orang. Yang mana?', shared: (s, n, x) => `Benar ${s} dari ${n}, top ${x}%. Bisa temukan balasan AI?` },
+}
+function preview(url, res) {
+  const lang = OG[url.searchParams.get('lang')] ? url.searchParams.get('lang') : 'en', o = OG[lang]
+  const v = ['s', 'n', 't'].map((k) => Number(url.searchParams.get(k))), [sc, n, x] = v
+  const ok = v.every(Number.isInteger) && n > 0 && n <= 10 && sc >= 0 && sc <= n && x >= 1 && x <= 99
+  const title = ok ? o.shared(sc, n, x) : o.title
+  const set = (v) => ({ element: (e) => e.setAttribute('content', v) })
+  return new HTMLRewriter()
+    .on('title', { element: (e) => e.setInnerContent(title) })
+    .on('meta[property="og:title"]', set(title))
+    .on('meta[property="og:description"]', set(o.desc))
+    .on('meta[name="description"]', set(o.desc))
+    .on('meta[property="og:image"]', set(`${url.origin}/og/${lang}.png`))
+    .on('meta[property="og:url"]', set(url.href))
+    .transform(res)
+}
+
 export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url)
@@ -90,6 +116,7 @@ export default {
       ctx.waitUntil(cache.put(req, res.clone()))
       return res
     }
+    if (req.method === 'GET' && (url.pathname === '/' || url.pathname === '/index.html')) return preview(url, await env.ASSETS.fetch(req))
     return env.ASSETS.fetch(req)
   },
 }
