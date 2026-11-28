@@ -132,7 +132,10 @@ const clean = (s: string) => s
   .replace(/\bu\/[A-Za-z0-9_-]+/g, 'u/…')
   .replace(/[‘’]/g, "'").replace(/[“”]/g, '"')
   .trim()
-const keep = items.filter((x) => !ko.includes(x) && !unfair.includes(x) && !REVIEW_DROP.has(x.qid.replace(/-p$/, ''))).map(({ rawHuman, rawAi, ...x }) => ({ ...x, title: clean(x.title), body: clean(x.body), human: clean(x.human), ai: clean(x.ai) }))
+// Developer communities make the quiz a developer quiz; players are anyone (2026-11-28). Spanish keeps its two for now,
+// until general-topic Spanish pairs replace them.
+const DEV = new Set(['r/selfhosted', 'r/ClaudeAI', 'r/SaaS', 'r/indotech'])
+const keep = items.filter((x) => !ko.includes(x) && !unfair.includes(x) && !REVIEW_DROP.has(x.qid.replace(/-p$/, '')) && !DEV.has(x.place)).map(({ rawHuman, rawAi, ...x }) => ({ ...x, title: clean(x.title), body: clean(x.body), human: clean(x.human), ai: clean(x.ai) }))
 writeFileSync(new URL('../src/items.json', import.meta.url), JSON.stringify(keep))
 for (const [l, k] of [['en', 'comment'], ['en', 'post'], ['ko', 'comment'], ['ko', 'post'], ['zh', 'comment'], ['es', 'comment'], ['id', 'comment'], ['ja', 'comment']]) console.log(`${l} ${k}: ${keep.filter((x) => x.lang === l && x.kind === k).length}`)
 console.log(`dropped as political: ${ko.length}, dropped because only one side would be cut: ${unfair.length}`)
