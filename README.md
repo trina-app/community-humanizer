@@ -29,6 +29,8 @@
   <b>English</b> · <a href="README.ko.md">한국어</a> · <a href="README.ja.md">日本語</a> · <a href="README.zh-CN.md">中文</a> · <a href="README.es.md">Español</a> · <a href="README.id.md">Bahasa</a>
 </p>
 
+> Made by the team behind [Trina AX](https://github.com/trina-app/trina-ax): set up Claude Code once on a server and your whole team gets it, with shared files, skills and MCP.
+
 ---
 
 ## Same thread, three writers
@@ -77,6 +79,7 @@ What this doesn't show:
 | **Claude Code** | `/plugin marketplace add trina-app/community-humanizer` then `/plugin install community-humanizer@community-humanizer` |
 | **Codex, Cursor, Gemini CLI, Copilot** and other [Agent Skills](https://agentskills.io) hosts | `npx skills add trina-app/community-humanizer -g` |
 | **Any agent that can run commands** | Paste the prompt below |
+| **Your whole team, with [Trina AX](https://github.com/trina-app/trina-ax)** | Put the skill in the team folder's `skills/` once. Trina AX packs it into a Claude Code plugin and keeps everyone's copy up to date. |
 
 ```text
 Set up community-humanizer for me: clone https://github.com/trina-app/community-humanizer,

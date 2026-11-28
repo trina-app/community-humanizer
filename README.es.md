@@ -29,6 +29,8 @@
   <a href="README.md">English</a> · <a href="README.ko.md">한국어</a> · <a href="README.ja.md">日本語</a> · <a href="README.zh-CN.md">中文</a> · <b>Español</b> · <a href="README.id.md">Bahasa</a>
 </p>
 
+> Hecho por el equipo de [Trina AX](https://github.com/trina-app/trina-ax). Configuras Claude Code una vez en un servidor y todo tu equipo lo usa, con los mismos archivos, skills y MCP.
+
 ---
 
 ## Mismo hilo, tres respuestas
@@ -77,6 +79,7 @@ Lo que esto no demuestra:
 | **Claude Code** | `/plugin marketplace add trina-app/community-humanizer` y después `/plugin install community-humanizer@community-humanizer` |
 | **Codex, Cursor, Gemini CLI, Copilot** y otros agentes compatibles con [Agent Skills](https://agentskills.io) | `npx skills add trina-app/community-humanizer -g` |
 | **Cualquier agente que pueda ejecutar comandos** | Pega el prompt de abajo |
+| **Todo tu equipo, con [Trina AX](https://github.com/trina-app/trina-ax)** | Pon la skill una sola vez en `skills/` de la carpeta del equipo. Trina AX la empaqueta como plugin de Claude Code y mantiene al día la copia de cada persona. |
 
 ```text
 Set up community-humanizer for me: clone https://github.com/trina-app/community-humanizer,

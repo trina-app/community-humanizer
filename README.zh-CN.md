@@ -29,6 +29,8 @@
   <a href="README.md">English</a> · <a href="README.ko.md">한국어</a> · <a href="README.ja.md">日本語</a> · <b>中文</b> · <a href="README.es.md">Español</a> · <a href="README.id.md">Bahasa</a>
 </p>
 
+> 由 [Trina AX](https://github.com/trina-app/trina-ax) 团队开发。在服务器上设置一次 Claude Code，全员共用同一套文件、技能和 MCP。
+
 ---
 
 ## 三种回复对比
@@ -77,6 +79,7 @@
 | **Claude Code** | `/plugin marketplace add trina-app/community-humanizer`，然后 `/plugin install community-humanizer@community-humanizer` |
 | **Codex、Cursor、Gemini CLI、Copilot** 等支持 [Agent Skills](https://agentskills.io) 的工具 | `npx skills add trina-app/community-humanizer -g` |
 | **任何能执行命令的 Agent** | 粘贴下面这段话 |
+| **整个团队（[Trina AX](https://github.com/trina-app/trina-ax)）** | 放进团队文件夹的 `skills/` 一次即可。Trina AX 会把它打包成 Claude Code 插件，每个人的副本自动保持最新。 |
 
 ```text
 Set up community-humanizer for me: clone https://github.com/trina-app/community-humanizer,

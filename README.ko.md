@@ -29,6 +29,8 @@
   <a href="README.md">English</a> · <b>한국어</b> · <a href="README.ja.md">日本語</a> · <a href="README.zh-CN.md">中文</a> · <a href="README.es.md">Español</a> · <a href="README.id.md">Bahasa</a>
 </p>
 
+> [Trina AX](https://github.com/trina-app/trina-ax) 팀이 만들었어요. 서버에 Claude Code를 한 번 설정하면 팀 전체가 같은 파일·스킬·MCP로 써요.
+
 ---
 
 ## 같은 글, 세 가지 댓글
@@ -77,6 +79,7 @@
 | **Claude Code** | `/plugin marketplace add trina-app/community-humanizer` 다음 `/plugin install community-humanizer@community-humanizer` |
 | **Codex, Cursor, Gemini CLI, Copilot** 등 [Agent Skills](https://agentskills.io) 지원 에이전트 | `npx skills add trina-app/community-humanizer -g` |
 | **명령어를 실행할 수 있는 모든 에이전트** | 아래 문장을 붙여 넣기 |
+| **팀 전체 ([Trina AX](https://github.com/trina-app/trina-ax))** | 팀 폴더의 `skills/`에 한 번 넣으면 Trina AX가 Claude Code 플러그인으로 묶어 팀원 모두에게 깔고, 계속 최신으로 맞춰 줘요. |
 
 ```text
 community-humanizer를 설치해 줘: https://github.com/trina-app/community-humanizer 를 받아서

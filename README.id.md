@@ -29,6 +29,8 @@
   <a href="README.md">English</a> · <a href="README.ko.md">한국어</a> · <a href="README.ja.md">日本語</a> · <a href="README.zh-CN.md">中文</a> · <a href="README.es.md">Español</a> · <b>Bahasa</b>
 </p>
 
+> Dibuat tim [Trina AX](https://github.com/trina-app/trina-ax). Atur Claude Code sekali di server, lalu seluruh tim Anda memakainya dengan file, skill, dan MCP yang sama.
+
 ---
 
 ## Satu thread, tiga balasan
@@ -77,6 +79,7 @@ Yang belum terbukti dari angka ini:
 | **Claude Code** | `/plugin marketplace add trina-app/community-humanizer` lalu `/plugin install community-humanizer@community-humanizer` |
 | **Codex, Cursor, Gemini CLI, Copilot**, dan agen lain yang mendukung [Agent Skills](https://agentskills.io) | `npx skills add trina-app/community-humanizer -g` |
 | **Agen apa pun yang bisa menjalankan perintah** | Tempel prompt di bawah ini |
+| **Seluruh tim, dengan [Trina AX](https://github.com/trina-app/trina-ax)** | Taruh skill ini sekali di `skills/` folder tim. Trina AX mengemasnya jadi plugin Claude Code dan menjaga salinan setiap orang tetap terbaru. |
 
 ```text
 Set up community-humanizer for me: clone https://github.com/trina-app/community-humanizer,
