@@ -14,6 +14,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;700&display=swap">
 <style>
 /* Layout: one narrow column; a question is the thread, then two reply slips side by side (stacked on phones). */
@@ -68,18 +69,37 @@ footer { font-size: 13px; color: var(--muted); display: grid; gap: 6px; }
 a.ghost { text-decoration: none; display: inline-block; }
 .made { font-size: 13px; color: var(--muted); }
 .grid { font-size: 22px; letter-spacing: 2px; }
+/* result: a verdict slip on a blue band, stamped with the tier */
+.stage { margin: 0 calc(-1 * max(16px, env(safe-area-inset-left, 0px))); padding: 28px 20px 40px; background: #2b44ff; }
+@media (min-width: 600px) { .stage { margin-inline: 0; border-radius: 16px; } }
+.card { --red: #d7262f; max-width: 400px; margin: 0 auto; background: #fff; color: #0e1530; border-radius: 12px; padding: 20px 22px 16px; box-shadow: 0 12px 0 rgba(10, 20, 80, 0.35); font-family: "Pretendard Variable", Pretendard, var(--body); }
+.card-q { margin: 0; font-size: 14px; color: #5a6280; }
+.stamp { display: grid; gap: 2px; width: fit-content; max-width: 100%; margin: 30px auto 28px; padding: 14px 26px 12px; border: 4px solid var(--red); border-radius: 12px; box-shadow: inset 0 0 0 4px #fff, inset 0 0 0 6px var(--red); color: var(--red); text-align: center; transform: rotate(-7deg); animation: thunk 0.34s cubic-bezier(0.2, 0.9, 0.3, 1.25) 0.15s both; }
+.stamp-tier { font-size: clamp(30px, 9vw, 40px); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; }
+.stamp-top { font-size: 16px; font-weight: 700; }
+@keyframes thunk { from { opacity: 0; transform: rotate(-7deg) scale(1.7); } to { opacity: 1; transform: rotate(-7deg) scale(1); } }
+@media (prefers-reduced-motion: reduce) { .stamp { animation: none; } }
+.card-score { margin: 0 0 10px; font-size: 18px; font-weight: 700; }
+.squares { display: grid; gap: 5px; }
+.sq { aspect-ratio: 1; border-radius: 4px; background: #18a058; }
+.sq.wrong { background: #ff5a5f; }
+.card-foot { display: flex; justify-content: space-between; gap: 12px; margin-top: 16px; padding-top: 12px; border-top: 1.5px solid #e3e6ef; font-size: 14px; font-weight: 700; }
+.card-foot span:last-child { color: #2b44ff; }
+.notes { margin: 0; font-size: 13px; color: var(--muted); }
+.primary.wide { width: 100%; justify-self: stretch; padding: 14px 18px; border-radius: 10px; background: #2b44ff; color: #fff; font-size: 16px; font-weight: 700; }
+.hidden-copy { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 </style>
 </head>
 <body>
 <main class="wrap" id="app"></main>
 <script>
 const T = {
-  en: { title: "Two versions. One is real.", lede: "Each question is a real Reddit thread with two versions of a reply or a post. One is the top comment a person really wrote, or the real post. The other was written by an AI. Pick the one a person wrote. 10 questions, about 3 minutes.", start: "Start", pick: "Tap the one a person wrote.", right: "Right. That one is real.", wrong: "Wrong. You picked the AI one.", next: "Next", result: "See result", real: "Real", ai: "AI", judges: "AI judges' human score: ", crowd: (n, p) => `${n} people answered this one; ${p}% got it right.`, done: (r, n) => `You spotted ${r} of ${n}`, chance: (n) => `Guessing gets ${n / 2} on average.`, everyone: (p, n) => `Everyone so far: ${p}% right across ${n} answers.`, share: "Copy result", copied: "Copied", again: "Play another round", source: "Original thread", label: "Which one is real?", top: (x) => `Top ${x}%`, topNote: "Estimated from everyone's answers so far.", friend: (s, n, x) => `Your friend got ${s} of ${n} right, top ${x}%. Can you beat that?`, shareText: (r, n, x) => `I spotted the AI ${r} of ${n} times, top ${x}%. Can you beat that?`, shareBtn: "Share", copyLink: "Copy link", starAsk: "Liked it?", starLink: "⭐ Star it on GitHub", team: "Made by the Trina AX team →", post: "post", comment: "comment", more: "Show more", note: "Real texts are cut to 600 characters and shown without usernames. To have a text removed, open an issue on GitHub." },
-  ko: { title: "둘 중 하나만 진짜예요", lede: "클리앙 실제 글마다 댓글(또는 본문) 두 개가 있어요. 하나는 사람이 실제로 쓴 공감 1위 댓글이나 원래 글이고, 하나는 AI가 썼어요. 사람이 쓴 쪽을 고르세요. 10문제, 3분쯤 걸려요.", start: "시작하기", pick: "사람이 쓴 쪽을 누르세요.", right: "맞혔어요. 진짜 사람이 쓴 거예요.", wrong: "틀렸어요. AI가 쓴 쪽을 골랐어요.", next: "다음", result: "결과 보기", real: "진짜 사람", ai: "AI", judges: "AI 채점자가 본 '사람일 확률': ", crowd: (n, p) => `이 문제는 ${n}명이 풀었고 ${p}%가 맞혔어요.`, done: (r, n) => `${n}개 중 ${r}개 맞혔어요`, chance: (n) => `찍으면 평균 ${n / 2}개예요.`, everyone: (p, n) => `지금까지 전체 정답률 ${p}% (답 ${n}개)`, share: "결과 복사", copied: "복사했어요", again: "한 판 더", source: "원문 보기", label: "진짜는 어느 쪽?", top: (x) => `상위 ${x}%`, topNote: "지금까지 모든 사람의 정답률로 추정했어요.", friend: (s, n, x) => `친구는 ${n}문제 중 ${s}개 맞혀서 상위 ${x}%였어요. 이길 수 있어요?`, shareText: (r, n, x) => `AI가 쓴 댓글 찾기, ${n}문제 중 ${r}개 맞혀서 상위 ${x}%! 너도 해 봐`, shareBtn: "공유하기", copyLink: "링크 복사", starAsk: "괜찮았다면", starLink: "⭐ GitHub에서 별 주기", team: "만든 팀: Trina AX →", post: "글", comment: "댓글", more: "더 보기", note: "진짜 글은 600자까지만 보여 주고 아이디는 지웠어요. 내리고 싶은 글이 있으면 GitHub 이슈로 알려 주세요." },
-  zh: { title: "两个版本，只有一个是真人写的", lede: "每道题取自 Reddit 中文版块 r/China_irl 的真实帖子，给出两段回复：一段是真人写的最高赞评论，另一段是 AI 写的。选出真人写的那段。约 3 分钟。", start: "开始答题", pick: "点击真人写的那段。", right: "答对了，这段是真人写的。", wrong: "答错了，你选的是 AI 写的。", next: "下一题", result: "查看结果", real: "真人", ai: "AI", judges: "AI 评委给出的真人概率：", crowd: (n, p) => `这道题已有 ${n} 人作答，${p}% 答对。`, done: (r, n) => `${n} 题中你答对了 ${r} 题`, chance: (n) => `随便猜的话，平均能答对 ${n / 2} 题。`, everyone: (p, n) => `目前所有人的正确率：${p}%（共 ${n} 次作答）`, share: "复制结果", copied: "已复制", again: "再来一轮", source: "查看原帖", label: "哪个是真的？", top: (x) => `前 ${x}%`, topNote: "根据目前所有人的正确率估算。", friend: (s, n, x) => `你的朋友 ${n} 题答对 ${s} 题，排在前 ${x}%。你能超过吗？`, shareText: (r, n, x) => `找出 AI 写的回复：${n} 题我答对了 ${r} 题，排在前 ${x}%。你也来试试？`, shareBtn: "分享", copyLink: "复制链接", starAsk: "觉得不错？", starLink: "⭐ 在 GitHub 上点个 Star", team: "制作团队：Trina AX →", post: "帖子", comment: "评论", more: "展开", note: "真人原文最多显示 600 个字符，并已隐去用户名。如需删除某段内容，请在 GitHub 提交 Issue。" },
-  es: { title: "Dos versiones. Una es real.", lede: "Cada pregunta trae un hilo real de un subreddit en español con dos respuestas. Una es el comentario más votado, escrito por una persona. La otra la escribió una IA. Elige la que escribió una persona. Son 10 preguntas y tardarás unos 3 minutos.", start: "Empezar", pick: "Toca la que escribió una persona.", right: "Correcto. Esa es la real.", wrong: "Incorrecto. Elegiste la de la IA.", next: "Siguiente", result: "Ver resultado", real: "Real", ai: "IA", judges: "Probabilidad de ser humano según los jueces de IA: ", crowd: (n, p) => `${n} personas respondieron esta pregunta. Acertó el ${p}\u00a0%.`, done: (r, n) => `Acertaste ${r} de ${n}`, chance: (n) => `Si respondes al azar, aciertas ${String(n / 2).replace(".", ",")} en promedio.`, everyone: (p, n) => `Entre todos, hasta ahora: ${p}\u00a0% de aciertos en ${n} respuestas.`, share: "Copiar resultado", copied: "Copiado", again: "Jugar otra ronda", source: "Ver hilo original", label: "¿Cuál es la real?", top: (x) => `Top ${x}\u00a0%`, topNote: "Calculado con los aciertos de todos hasta ahora.", friend: (s, n, x) => `Resultado a superar: ${s} de ${n}, top ${x}\u00a0%. ¿Puedes mejorarlo?`, shareText: (r, n, x) => `Distinguí la IA ${r} de ${n} veces, top ${x}\u00a0%. ¿Puedes superarme?`, shareBtn: "Compartir", copyLink: "Copiar enlace", starAsk: "¿Te gustó?", starLink: "⭐ Danos una estrella en GitHub", team: "Hecho por el equipo de Trina AX →", post: "publicación", comment: "comentario", more: "Ver más", note: "Los textos reales se recortan a 600 caracteres y se muestran sin nombres de usuario. Para retirar un texto, abre un issue en GitHub." },
-  id: { title: "Dua versi, hanya satu yang asli.", lede: "Setiap soal berisi thread asli dari subreddit berbahasa Indonesia dan dua balasan. Yang satu komentar teratas tulisan orang sungguhan, yang lain tulisan AI. Pilih yang ditulis orang. 10 soal, sekitar 3 menit.", start: "Mulai", pick: "Pilih yang ditulis orang.", right: "Benar. Itu yang asli.", wrong: "Salah. Itu tulisan AI.", next: "Berikutnya", result: "Lihat hasil", real: "Asli", ai: "AI", judges: "Skor “ditulis orang” dari juri AI: ", crowd: (n, p) => `${n} orang sudah menjawab soal ini, ${p}% di antaranya benar.`, done: (r, n) => `Anda menjawab benar ${r} dari ${n} soal`, chance: (n) => `Kalau asal tebak, rata-rata benar ${String(n / 2).replace(".", ",")} soal.`, everyone: (p, n) => `Semua pemain sejauh ini: ${p}% benar dari ${n} jawaban.`, share: "Salin hasil", copied: "Disalin", again: "Main lagi", source: "Thread asli", label: "Mana yang asli?", top: (x) => `Top ${x}%`, topNote: "Diperkirakan dari jawaban semua pemain sejauh ini.", friend: (s, n, x) => `Teman Anda benar ${s} dari ${n}, masuk top ${x}%. Bisa mengalahkannya?`, shareText: (r, n, x) => `Saya menebak benar ${r} dari ${n}, masuk top ${x}%. Bisa mengalahkan saya?`, shareBtn: "Bagikan", copyLink: "Salin tautan", starAsk: "Suka?", starLink: "⭐ Beri bintang di GitHub", team: "Dibuat tim Trina AX →", post: "postingan", comment: "komentar", more: "Selengkapnya", note: "Teks asli dipotong sampai 600 karakter dan ditampilkan tanpa nama pengguna. Untuk meminta teks dihapus, buka issue di GitHub." },
-  ja: { title: "人が書いたのは、どっち？", lede: "日本語のsubredditにある実際のスレッドから出題します。返信は2つで、片方はそのスレッドでいちばん人気だった本物のコメント、もう片方はAIが書いたものです。人が書いたほうを選んでください。約3分で終わります。", start: "はじめる", pick: "人が書いたと思うほうをタップしてください。", right: "正解です。こちらが本物です。", wrong: "不正解です。選んだのはAIが書いたほうです。", next: "次へ", result: "結果を見る", real: "本物", ai: "AI", judges: "AI審査員の「人が書いた確率」：", crowd: (n, p) => `この問題には${n}人が回答し、${p}%が正解しました。`, done: (r, n) => `${n}問中${r}問正解`, chance: (n) => `当てずっぽうでも、平均${n / 2}問は当たります。`, everyone: (p, n) => `これまでの全体の正解率は${p}%です（回答${n}件）。`, share: "結果をコピー", copied: "コピーしました", again: "もう一度遊ぶ", source: "元のスレッド", label: "どっちが本物？", top: (x) => `上位${x}%`, topNote: "これまでの全員の正解率から推定しています。", friend: (s, n, x) => `友だちは${n}問中${s}問正解で、上位${x}%でした。あなたは？`, shareText: (r, n, x) => `AIが書いたのはどっち？クイズ、${n}問中${r}問正解で上位${x}%でした。`, shareBtn: "シェアする", copyLink: "リンクをコピー", starAsk: "気に入ったら", starLink: "⭐ GitHubでスターを付ける", team: "制作：Trina AXチーム →", post: "投稿", comment: "コメント", more: "続きを読む", note: "本物の文章は600文字までに切り詰め、ユーザー名は表示していません。削除をご希望の場合は、GitHubでIssueを作成してください。" },
+  en: { title: "Two versions. One is real.", lede: "Each question is a real Reddit thread with two versions of a reply or a post. One is the top comment a person really wrote, or the real post. The other was written by an AI. Pick the one a person wrote. 10 questions, about 3 minutes.", start: "Start", pick: "Tap the one a person wrote.", right: "Right. That one is real.", wrong: "Wrong. You picked the AI one.", next: "Next", result: "See result", real: "Real", ai: "AI", judges: "AI judges' human score: ", crowd: (n, p) => `${n} people answered this one; ${p}% got it right.`, done: (r, n) => `You spotted ${r} of ${n}`, chance: (n) => `Guessing gets ${n / 2} on average.`, everyone: (p, n) => `Everyone so far: ${p}% right across ${n} answers.`, share: "Copy result", copied: "Copied", again: "Play another round", source: "Original thread", label: "Which one is real?", top: (x) => `Top ${x}%`, topNote: "Estimated from everyone's answers so far.", friend: (s, n, x) => `Your friend got ${s} of ${n} right, top ${x}%. Can you beat that?`, shareText: (r, n, x) => `I spotted the AI ${r} of ${n} times, top ${x}%. Can you beat that?`, shareBtn: "Share", copyLink: "Copy link", starAsk: "Liked it?", starLink: "⭐ Star it on GitHub", tiers: ["Team AI","Fooled by AI","Coin flipper","Pretty sharp","Eagle eye","AI slayer"], yourTurn: "Your turn", team: "Made by the Trina AX team →", post: "post", comment: "comment", more: "Show more", note: "Real texts are cut to 600 characters and shown without usernames. To have a text removed, open an issue on GitHub." },
+  ko: { title: "둘 중 하나만 진짜예요", lede: "클리앙 실제 글마다 댓글(또는 본문) 두 개가 있어요. 하나는 사람이 실제로 쓴 공감 1위 댓글이나 원래 글이고, 하나는 AI가 썼어요. 사람이 쓴 쪽을 고르세요. 10문제, 3분쯤 걸려요.", start: "시작하기", pick: "사람이 쓴 쪽을 누르세요.", right: "맞혔어요. 진짜 사람이 쓴 거예요.", wrong: "틀렸어요. AI가 쓴 쪽을 골랐어요.", next: "다음", result: "결과 보기", real: "진짜 사람", ai: "AI", judges: "AI 채점자가 본 '사람일 확률': ", crowd: (n, p) => `이 문제는 ${n}명이 풀었고 ${p}%가 맞혔어요.`, done: (r, n) => `${n}개 중 ${r}개 맞혔어요`, chance: (n) => `찍으면 평균 ${n / 2}개예요.`, everyone: (p, n) => `지금까지 전체 정답률 ${p}% (답 ${n}개)`, share: "결과 복사", copied: "복사했어요", again: "한 판 더", source: "원문 보기", label: "진짜는 어느 쪽?", top: (x) => `상위 ${x}%`, topNote: "지금까지 모든 사람의 정답률로 추정했어요.", friend: (s, n, x) => `친구는 ${n}문제 중 ${s}개 맞혀서 상위 ${x}%였어요. 이길 수 있어요?`, shareText: (r, n, x) => `AI가 쓴 댓글 찾기, ${n}문제 중 ${r}개 맞혀서 상위 ${x}%! 너도 해 봐`, shareBtn: "공유하기", copyLink: "링크 복사", starAsk: "괜찮았다면", starLink: "⭐ GitHub에서 별 주기", tiers: ["AI 편애자","AI한테 낚이는 중","반반 찍신","눈치 백단","매의 눈","AI 킬러"], yourTurn: "너도 해 봐", team: "만든 팀: Trina AX →", post: "글", comment: "댓글", more: "더 보기", note: "진짜 글은 600자까지만 보여 주고 아이디는 지웠어요. 내리고 싶은 글이 있으면 GitHub 이슈로 알려 주세요." },
+  zh: { title: "两个版本，只有一个是真人写的", lede: "每道题取自 Reddit 中文版块 r/China_irl 的真实帖子，给出两段回复：一段是真人写的最高赞评论，另一段是 AI 写的。选出真人写的那段。约 3 分钟。", start: "开始答题", pick: "点击真人写的那段。", right: "答对了，这段是真人写的。", wrong: "答错了，你选的是 AI 写的。", next: "下一题", result: "查看结果", real: "真人", ai: "AI", judges: "AI 评委给出的真人概率：", crowd: (n, p) => `这道题已有 ${n} 人作答，${p}% 答对。`, done: (r, n) => `${n} 题中你答对了 ${r} 题`, chance: (n) => `随便猜的话，平均能答对 ${n / 2} 题。`, everyone: (p, n) => `目前所有人的正确率：${p}%（共 ${n} 次作答）`, share: "复制结果", copied: "已复制", again: "再来一轮", source: "查看原帖", label: "哪个是真的？", top: (x) => `前 ${x}%`, topNote: "根据目前所有人的正确率估算。", friend: (s, n, x) => `你的朋友 ${n} 题答对 ${s} 题，排在前 ${x}%。你能超过吗？`, shareText: (r, n, x) => `找出 AI 写的回复：${n} 题我答对了 ${r} 题，排在前 ${x}%。你也来试试？`, shareBtn: "分享", copyLink: "复制链接", starAsk: "觉得不错？", starLink: "⭐ 在 GitHub 上点个 Star", tiers: ["AI 的知音","被 AI 骗了","全靠蒙","眼光不错","火眼金睛","AI 克星"], yourTurn: "你也来试试", team: "制作团队：Trina AX →", post: "帖子", comment: "评论", more: "展开", note: "真人原文最多显示 600 个字符，并已隐去用户名。如需删除某段内容，请在 GitHub 提交 Issue。" },
+  es: { title: "Dos versiones. Una es real.", lede: "Cada pregunta trae un hilo real de un subreddit en español con dos respuestas. Una es el comentario más votado, escrito por una persona. La otra la escribió una IA. Elige la que escribió una persona. Son 10 preguntas y tardarás unos 3 minutos.", start: "Empezar", pick: "Toca la que escribió una persona.", right: "Correcto. Esa es la real.", wrong: "Incorrecto. Elegiste la de la IA.", next: "Siguiente", result: "Ver resultado", real: "Real", ai: "IA", judges: "Probabilidad de ser humano según los jueces de IA: ", crowd: (n, p) => `${n} personas respondieron esta pregunta. Acertó el ${p}\u00a0%.`, done: (r, n) => `Acertaste ${r} de ${n}`, chance: (n) => `Si respondes al azar, aciertas ${String(n / 2).replace(".", ",")} en promedio.`, everyone: (p, n) => `Entre todos, hasta ahora: ${p}\u00a0% de aciertos en ${n} respuestas.`, share: "Copiar resultado", copied: "Copiado", again: "Jugar otra ronda", source: "Ver hilo original", label: "¿Cuál es la real?", top: (x) => `Top ${x}\u00a0%`, topNote: "Calculado con los aciertos de todos hasta ahora.", friend: (s, n, x) => `Resultado a superar: ${s} de ${n}, top ${x}\u00a0%. ¿Puedes mejorarlo?`, shareText: (r, n, x) => `Distinguí la IA ${r} de ${n} veces, top ${x}\u00a0%. ¿Puedes superarme?`, shareBtn: "Compartir", copyLink: "Copiar enlace", starAsk: "¿Te gustó?", starLink: "⭐ Danos una estrella en GitHub", tiers: ["Fan de la IA","La IA te engañó","A cara o cruz","Buen olfato","Ojo de halcón","Cazabots"], yourTurn: "¿Te animas?", team: "Hecho por el equipo de Trina AX →", post: "publicación", comment: "comentario", more: "Ver más", note: "Los textos reales se recortan a 600 caracteres y se muestran sin nombres de usuario. Para retirar un texto, abre un issue en GitHub." },
+  id: { title: "Dua versi, hanya satu yang asli.", lede: "Setiap soal berisi thread asli dari subreddit berbahasa Indonesia dan dua balasan. Yang satu komentar teratas tulisan orang sungguhan, yang lain tulisan AI. Pilih yang ditulis orang. 10 soal, sekitar 3 menit.", start: "Mulai", pick: "Pilih yang ditulis orang.", right: "Benar. Itu yang asli.", wrong: "Salah. Itu tulisan AI.", next: "Berikutnya", result: "Lihat hasil", real: "Asli", ai: "AI", judges: "Skor “ditulis orang” dari juri AI: ", crowd: (n, p) => `${n} orang sudah menjawab soal ini, ${p}% di antaranya benar.`, done: (r, n) => `Anda menjawab benar ${r} dari ${n} soal`, chance: (n) => `Kalau asal tebak, rata-rata benar ${String(n / 2).replace(".", ",")} soal.`, everyone: (p, n) => `Semua pemain sejauh ini: ${p}% benar dari ${n} jawaban.`, share: "Salin hasil", copied: "Disalin", again: "Main lagi", source: "Thread asli", label: "Mana yang asli?", top: (x) => `Top ${x}%`, topNote: "Diperkirakan dari jawaban semua pemain sejauh ini.", friend: (s, n, x) => `Teman Anda benar ${s} dari ${n}, masuk top ${x}%. Bisa mengalahkannya?`, shareText: (r, n, x) => `Saya menebak benar ${r} dari ${n}, masuk top ${x}%. Bisa mengalahkan saya?`, shareBtn: "Bagikan", copyLink: "Salin tautan", starAsk: "Suka?", starLink: "⭐ Beri bintang di GitHub", tiers: ["Fans berat AI","Tertipu AI","Untung-untungan","Cukup jeli","Mata elang","Pemburu AI"], yourTurn: "Giliran Anda", team: "Dibuat tim Trina AX →", post: "postingan", comment: "komentar", more: "Selengkapnya", note: "Teks asli dipotong sampai 600 karakter dan ditampilkan tanpa nama pengguna. Untuk meminta teks dihapus, buka issue di GitHub." },
+  ja: { title: "人が書いたのは、どっち？", lede: "日本語のsubredditにある実際のスレッドから出題します。返信は2つで、片方はそのスレッドでいちばん人気だった本物のコメント、もう片方はAIが書いたものです。人が書いたほうを選んでください。約3分で終わります。", start: "はじめる", pick: "人が書いたと思うほうをタップしてください。", right: "正解です。こちらが本物です。", wrong: "不正解です。選んだのはAIが書いたほうです。", next: "次へ", result: "結果を見る", real: "本物", ai: "AI", judges: "AI審査員の「人が書いた確率」：", crowd: (n, p) => `この問題には${n}人が回答し、${p}%が正解しました。`, done: (r, n) => `${n}問中${r}問正解`, chance: (n) => `当てずっぽうでも、平均${n / 2}問は当たります。`, everyone: (p, n) => `これまでの全体の正解率は${p}%です（回答${n}件）。`, share: "結果をコピー", copied: "コピーしました", again: "もう一度遊ぶ", source: "元のスレッド", label: "どっちが本物？", top: (x) => `上位${x}%`, topNote: "これまでの全員の正解率から推定しています。", friend: (s, n, x) => `友だちは${n}問中${s}問正解で、上位${x}%でした。あなたは？`, shareText: (r, n, x) => `AIが書いたのはどっち？クイズ、${n}問中${r}問正解で上位${x}%でした。`, shareBtn: "シェアする", copyLink: "リンクをコピー", starAsk: "気に入ったら", starLink: "⭐ GitHubでスターを付ける", tiers: ["AIの味方","AIにだまされ中","五分五分","なかなかの目利き","鷹の目","AIハンター"], yourTurn: "あなたも挑戦", team: "制作：Trina AXチーム →", post: "投稿", comment: "コメント", more: "続きを読む", note: "本物の文章は600文字までに切り詰め、ユーザー名は表示していません。削除をご希望の場合は、GitHubでIssueを作成してください。" },
 };
 const params = new URLSearchParams(location.search);
 const LANGS = { en: "English", ko: "한국어", ja: "日本語", zh: "中文", es: "Español", id: "Bahasa" };
@@ -197,6 +217,38 @@ function showAnswer(pick, r) {
 // Top %: a score out of n is taken as normal around n·p (p = everyone's accuracy so far), sd √(n·p·(1−p)).
 const erf = (x) => { const sg = Math.sign(x), a = Math.abs(x), k = 1 / (1 + 0.3275911 * a); return sg * (1 - ((((1.061405429 * k - 1.453152027) * k + 1.421413741) * k - 0.284496736) * k + 0.254829592) * k * Math.exp(-a * a)); };
 const topShare = (r, n, p) => { const mu = n * p, sd = Math.sqrt(n * p * (1 - p)) || 1, z = (r - 0.5 - mu) / sd; return Math.min(99, Math.max(1, Math.round(100 * (1 - 0.5 * (1 + erf(z / Math.SQRT2)))))); };
+async function cardPicture(o) {
+  const F = '"Pretendard Variable", Pretendard, -apple-system, "Hiragino Sans", "PingFang SC", "Apple SD Gothic Neo", sans-serif';
+  const RED = "#d7262f", INK = "#0e1530", BLUE = "#2b44ff";
+  try { await Promise.all([document.fonts.load(`800 120px ${F}`, o.tier), document.fonts.load(`700 50px ${F}`, o.q + o.score + o.top + o.cta + "quiz.trina.app")]); } catch {}
+  const W = 1080, H = 1350, c = document.createElement("canvas"), g = c.getContext("2d");
+  c.width = W; c.height = H;
+  const box = (x, y, w, hh, r) => { g.beginPath(); if (g.roundRect) g.roundRect(x, y, w, hh, r); else g.rect(x, y, w, hh); };
+  g.fillStyle = BLUE; g.fillRect(0, 0, W, H);
+  const cx = 90, cy = 140, cw = 900, ch = 1040, pad = 70;
+  g.fillStyle = "rgba(10, 20, 80, 0.35)"; box(cx, cy + 30, cw, ch, 28); g.fill();
+  g.fillStyle = "#fff"; box(cx, cy, cw, ch, 28); g.fill();
+  g.textBaseline = "alphabetic"; g.textAlign = "left";
+  g.fillStyle = "#5a6280"; g.font = `500 38px ${F}`; g.fillText(o.q, cx + pad, cy + 100);
+  // stamp
+  let size = 124; g.font = `800 ${size}px ${F}`;
+  while (g.measureText(o.tier).width > 640 && size > 56) { size -= 4; g.font = `800 ${size}px ${F}`; }
+  const tw = g.measureText(o.tier).width; g.font = `700 46px ${F}`; const bw = Math.max(tw, g.measureText(o.top).width) + 130, bh = size + 150;
+  g.save(); g.translate(W / 2, cy + 400); g.rotate((-7 * Math.PI) / 180);
+  g.strokeStyle = RED; g.lineWidth = 11; box(-bw / 2, -bh / 2, bw, bh, 26); g.stroke();
+  g.lineWidth = 4; box(-bw / 2 + 20, -bh / 2 + 20, bw - 40, bh - 40, 14); g.stroke();
+  g.fillStyle = RED; g.textAlign = "center";
+  g.font = `800 ${size}px ${F}`; g.fillText(o.tier, 0, -bh / 2 + 44 + size * 0.82);
+  g.font = `700 46px ${F}`; g.fillText(o.top, 0, bh / 2 - 46);
+  g.restore();
+  g.textAlign = "left"; g.fillStyle = INK; g.font = `700 52px ${F}`; g.fillText(o.score, cx + pad, cy + 700);
+  const n = o.marks.length, gap = 14, s = (cw - 2 * pad - gap * (n - 1)) / n;
+  o.marks.forEach((m, i) => { g.fillStyle = m ? "#18a058" : "#ff5a5f"; box(cx + pad + i * (s + gap), cy + 750, s, s, 12); g.fill(); });
+  g.fillStyle = "#e3e6ef"; g.fillRect(cx + pad, cy + 900, cw - 2 * pad, 4);
+  g.font = `700 42px ${F}`; g.fillStyle = INK; g.fillText("quiz.trina.app", cx + pad, cy + 980);
+  g.textAlign = "right"; g.fillStyle = BLUE; g.fillText(o.cta, cx + cw - pad, cy + 980);
+  return new Promise((ok, no) => c.toBlob((b) => (b ? ok(new File([b], "which-one-is-real.png", { type: "image/png" })) : no()), "image/png"));
+}
 async function end() {
   rerender = end;
   app.textContent = "";
@@ -208,28 +260,43 @@ async function end() {
   } catch {}
   const n = items.length, x = topShare(right, n, p);
   track("quiz_finish", { score: right, total: n, top_percent: x });
-  app.append(el("h1", null, t().done(right, n)), el("p", "rank", t().top(x)), el("p", "grid", marks.map((c) => (c ? "🟩" : "🟥")).join("")), el("p", "meta", t().topNote), el("p", "lede", t().chance(n)));
-  if (stats && stats.all && stats.all.n) app.append(el("p", "meta", t().everyone(Math.round((100 * stats.all.right) / stats.all.n), stats.all.n)));
   const grid = marks.map((c) => (c ? "🟩" : "🟥")).join("");
-  const url = `${location.origin}/?lang=${lang}&s=${right}&n=${n}&t=${x}`, text = `${t().shareText(right, n, x)}\n${grid}`;
-  const ta = el("textarea"); ta.id = "share"; ta.rows = 3; ta.readOnly = true; ta.value = `${text}\n${url}`;
-  const row = el("div", "row");
+  const tier = t().tiers[Math.floor((right * 5) / n)];
+  const card = el("div", "card"), stamp = el("div", "stamp"), squares = el("div", "squares"), foot = el("div", "card-foot");
+  stamp.append(el("span", "stamp-tier", tier), el("span", "stamp-top", t().top(x)));
+  squares.style.gridTemplateColumns = `repeat(${n}, 1fr)`; squares.setAttribute("role", "img"); squares.setAttribute("aria-label", grid);
+  marks.forEach((c) => squares.append(el("span", c ? "sq" : "sq wrong")));
+  foot.append(el("span", null, "quiz.trina.app"), el("span", null, t().yourTurn));
+  card.append(el("p", "card-q", t().label), stamp, el("p", "card-score", t().done(right, n)), squares, foot);
+  const stage = el("div", "stage"); stage.append(card);
+  const everyone = stats && stats.all && stats.all.n ? " " + t().everyone(Math.round((100 * stats.all.right) / stats.all.n), stats.all.n) : "";
+  const notes = el("p", "notes", `${t().chance(n)}${everyone}`);
+  const url = `${location.origin}/?lang=${lang}&s=${right}&n=${n}&t=${x}`, text = `${tier}\n${t().shareText(right, n, x)}\n${grid}`;
+  const ta = el("textarea", "hidden-copy"); ta.id = "share"; ta.readOnly = true; ta.tabIndex = -1; ta.setAttribute("aria-hidden", "true"); ta.value = `${text}\n${url}`;
   const link = (label, href) => { const l = el("a", "ghost", label); l.href = href; l.target = "_blank"; l.rel = "noopener"; return l; };
   const copy = async (b) => { try { await navigator.clipboard.writeText(ta.value); b.textContent = t().copied; } catch { ta.select(); } };
-  // share sheet where there is one, otherwise the share button copies the result and link
-  const sh = el("button", "primary", t().shareBtn); sh.type = "button";
-  sh.addEventListener("click", () => (track("share", { method: navigator.share ? "share_sheet" : "copy" }), navigator.share ? navigator.share({ text, url }).catch(() => {}) : copy(sh)));
+  // the card as a picture, made now so the share sheet opens straight from the tap
+  let picture = null;
+  cardPicture({ q: t().label, tier, top: t().top(x), score: t().done(right, n), marks, cta: t().yourTurn }).then((f) => { picture = f; }).catch(() => {});
+  const sh = el("button", "primary wide", t().shareBtn); sh.type = "button";
+  sh.addEventListener("click", () => {
+    if (picture && navigator.canShare && navigator.canShare({ files: [picture] })) { track("share", { method: "image" }); navigator.share({ files: [picture], text: `${text}\n${url}` }).catch(() => {}); return; }
+    if (navigator.share) { track("share", { method: "share_sheet" }); navigator.share({ text, url }).catch(() => {}); return; }
+    // computers without a share sheet: save the picture and copy the text with the link
+    track("share", { method: "download" });
+    if (picture) { const a = document.createElement("a"); a.href = URL.createObjectURL(picture); a.download = picture.name; a.click(); }
+    copy(sh);
+  });
   const cp = el("button", "ghost", t().copyLink); cp.type = "button"; cp.addEventListener("click", () => (track("share", { method: "copy_link" }), copy(cp)));
-  row.append(sh, cp);
   const again = el("button", "ghost", t().again); again.type = "button"; again.addEventListener("click", start);
-  const row2 = el("div", "row"); row2.append(again);
+  const row = el("div", "row"); row.append(cp, again);
   const made = el("p", "made", t().starAsk + " "); const star = link(t().starLink, "https://github.com/trina-app/community-humanizer"); star.addEventListener("click", () => track("star_click")); made.append(star);
   // the team behind it, tagged so GA can tell quiz visitors apart on ax.trina.app
   const team = el("p", "made"), ax = el("a", null, t().team);
   ax.href = `https://ax.trina.app/${lang === "en" ? "" : `${lang}/`}?utm_source=quiz&utm_medium=end_screen&utm_campaign=community-humanizer`; ax.target = "_blank"; ax.rel = "noopener";
   ax.addEventListener("click", () => track("trina_click"));
   team.append(ax);
-  app.append(ta, row, row2, made, team); footer();
+  app.append(stage, notes, sh, row, made, team, ta); footer();
 }
 langMenu();
 fetch("/api/config").then((r) => r.json()).then((c) => { cfg = c || {}; }).catch(() => {}).finally(intro);
