@@ -1,0 +1,16 @@
+{
+ "id": "1x8q5rn",
+ "sub": "China_irl",
+ "order": [
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 30,
+  "HUMAN": 80
+ },
+ "rank": {
+  "SKILL": 2,
+  "HUMAN": 1
+ }
+}

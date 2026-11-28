@@ -1,0 +1,16 @@
+{
+ "id": "1x7v48b",
+ "sub": "China_irl",
+ "order": [
+  "HUMAN",
+  "SKILL"
+ ],
+ "human": {
+  "HUMAN": 62,
+  "SKILL": 70
+ },
+ "rank": {
+  "HUMAN": 2,
+  "SKILL": 1
+ }
+}

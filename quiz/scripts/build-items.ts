@@ -38,7 +38,7 @@ for (const [lang, dir, name] of [['zh', 'chinese-voice-test', 'chinese-comments'
 // Chinese extra pairs (2026-11-27, benchmark/chinese-comments/quiz-extra/): more r/China_irl threads (2026-08-01 to
 // 11-26) picked for the quiz, the reply path with the Round P persona line, each pair judged on its own (Opus, Sonnet)
 {
-  const D = join(K, 'chinese-quiz-extra'), B = new URL('../../benchmark/chinese-comments/quiz-extra/', import.meta.url).pathname, posts = (existsSync(join(D, 'posts.json')) ? JSON.parse(readFileSync(join(D, 'posts.json'), 'utf8')) : []) as any // until the Chinese extra set is written[]
+  const D = join(K, 'chinese-quiz-extra'), B = new URL('../../benchmark/chinese-comments/quiz-extra/', import.meta.url).pathname, posts = (existsSync(join(D, 'posts.json')) ? JSON.parse(readFileSync(join(D, 'posts.json'), 'utf8')) : []) as any[]
   for (const p of posts) {
     const ai = readFileSync(join(B, 'outputs', `${p.id}__SKILL.txt`), 'utf8').trim()
     items.push({ qid: `zhc-${p.id}`, lang: 'zh', kind: 'comment', place: `r/${p.sub}`, title: p.title, body: cut(p.body ?? ''), url: `https://www.reddit.com/r/${p.sub}/comments/${p.id}/`,
