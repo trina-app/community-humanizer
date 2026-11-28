@@ -75,8 +75,10 @@ export default {
       const headers = {}
       if (!s) { s = crypto.randomUUID(); headers['set-cookie'] = `s=${encodeURIComponent(await signed(env, s))}; Path=/; Max-Age=31536000; SameSite=Lax; Secure; HttpOnly` }
       const pool = ITEMS.filter((x) => x.lang === lang)
-      // only the 15 hardest pairs of the language (x.d: AI side's human score minus the real side's), 10 at random from them
-      const picked = shuffle(pool.sort((a, b) => b.d - a.d).slice(0, Math.max(10, Math.min(15, pool.length)))).slice(0, 10)
+      // the 20 hardest pairs of the language (x.d: AI side's human score minus the real side's), the 13 shortest of those, 10 at random
+      const size = (x) => [...`${x.title}${x.human}${x.ai}`].length
+      const hard = pool.sort((a, b) => b.d - a.d).slice(0, Math.max(10, Math.min(20, pool.length)))
+      const picked = shuffle(hard.sort((a, b) => size(a) - size(b)).slice(0, Math.max(10, Math.min(13, hard.length)))).slice(0, 10)
       const round = await signed(env, `${s}|${Date.now()}|${picked.map((x) => x.qid).join(',')}`)
       const items = []
       for (const x of picked) {
