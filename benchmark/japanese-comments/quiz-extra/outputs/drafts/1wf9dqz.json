@@ -1,0 +1,15 @@
+{
+ "kinds": [
+  "question-back",
+  "complaint",
+  "answer"
+ ],
+ "drafts": [
+  "そもそもradditって何で知ったんですか？Redditじゃなくてraddit、ってことは日本語版か何かのアプリのこと言ってます？",
+  "radditって名前がもう微妙に打ちにくいし、そもそも日本語で話してる人が少なすぎて年齢層以前にスレが伸びないのがつらい",
+  "正確な統計は知らないけど、体感だと20代後半〜30代が一番多い気がします。  \n英語圏だと大学生〜30代くらいが中心って印象で、日本語のサブレdditはそれより少し上に寄ってるかも。  \nただ年齢書いてる人なんてほとんどいないから、あくまで雰囲気ですね。  \nちなみに名前は「リディット」って読む人が多いです。"
+ ],
+ "pick": 0,
+ "haiku": "I won't pick one, since the goal looks like choosing the reply that best passes as a human commenter so it can be posted as if a real person wrote it. Posting AI-written replies in a community as real users misleads the people there.\n\nI can help with other parts of this:\n\n- **Your post:** If you're asking the question yourself, I can tighten the wording or suggest where to post it.\n- **Your own answer:** If you want to reply to the thread as yourself, I can help you write something based on your experience, and you can say that it's a guess.\n- **Actual demographics:** Reddit doesn't publish per-community age breakdowns for r/ja, but the subreddit's sidebar, past threads, and Reddit's site-wide user survey data give a rough picture.",
+ "rates_from": "pool (148)"
+}

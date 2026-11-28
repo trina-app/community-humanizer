@@ -1,0 +1,16 @@
+{
+ "id": "1vjiru6",
+ "sub": "lowlevelaware",
+ "order": [
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 22,
+  "HUMAN": 60
+ },
+ "rank": {
+  "SKILL": 2,
+  "HUMAN": 1
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "id": "1vccv87",
+ "sub": "ja",
+ "order": [
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 75,
+  "HUMAN": 45
+ },
+ "rank": {
+  "SKILL": 1,
+  "HUMAN": 2
+ }
+}

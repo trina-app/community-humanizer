@@ -1,0 +1,16 @@
+{
+ "id": "1vpy1go",
+ "sub": "ja",
+ "order": [
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 85,
+  "HUMAN": 60
+ },
+ "rank": {
+  "SKILL": 1,
+  "HUMAN": 2
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "id": "1upeqcz",
+ "sub": "lowlevelaware",
+ "order": [
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 88,
+  "HUMAN": 8
+ },
+ "rank": {
+  "SKILL": 1,
+  "HUMAN": 2
+ }
+}

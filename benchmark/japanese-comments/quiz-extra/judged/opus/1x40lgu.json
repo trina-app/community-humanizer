@@ -1,0 +1,16 @@
+{
+ "id": "1x40lgu",
+ "sub": "lowlevelaware",
+ "order": [
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 75,
+  "HUMAN": 60
+ },
+ "rank": {
+  "SKILL": 1,
+  "HUMAN": 2
+ }
+}

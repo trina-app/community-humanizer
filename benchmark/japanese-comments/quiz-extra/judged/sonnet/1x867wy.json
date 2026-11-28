@@ -1,0 +1,16 @@
+{
+ "id": "1x867wy",
+ "sub": "lowlevelaware",
+ "order": [
+  "HUMAN",
+  "SKILL"
+ ],
+ "human": {
+  "HUMAN": 62,
+  "SKILL": 38
+ },
+ "rank": {
+  "HUMAN": 1,
+  "SKILL": 2
+ }
+}

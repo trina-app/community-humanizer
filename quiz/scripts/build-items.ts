@@ -35,6 +35,29 @@ for (const [lang, dir, name] of [['zh', 'chinese-voice-test', 'chinese-comments'
       scores: Object.fromEntries(['codex', 'opus', 'sonnet'].map((j) => [j === 'codex' ? 'gpt' : j, { human: score(join(B, 'judged'), j, p.id, 'HUMAN'), ai: score(join(B, 'judged'), j, p.id, 'SKILL') }])) })
   }
 }
+// Chinese extra pairs (2026-11-27, benchmark/chinese-comments/quiz-extra/): more r/China_irl threads (2026-08-01 to
+// 11-26) picked for the quiz, the reply path with the Round P persona line, each pair judged on its own (Opus, Sonnet)
+{
+  const D = join(K, 'chinese-quiz-extra'), B = new URL('../../benchmark/chinese-comments/quiz-extra/', import.meta.url).pathname, posts = (existsSync(join(D, 'posts.json')) ? JSON.parse(readFileSync(join(D, 'posts.json'), 'utf8')) : []) as any // until the Chinese extra set is written[]
+  for (const p of posts) {
+    const ai = readFileSync(join(B, 'outputs', `${p.id}__SKILL.txt`), 'utf8').trim()
+    items.push({ qid: `zhc-${p.id}`, lang: 'zh', kind: 'comment', place: `r/${p.sub}`, title: p.title, body: cut(p.body ?? ''), url: `https://www.reddit.com/r/${p.sub}/comments/${p.id}/`,
+      rawHuman: String(p.human.body), rawAi: ai, human: cut(String(p.human.body)), ai: cut(ai),
+      scores: Object.fromEntries(['codex', 'opus', 'sonnet'].map((j) => [j === 'codex' ? 'gpt' : j, { human: score(join(B, 'judged'), j, p.id, 'HUMAN'), ai: score(join(B, 'judged'), j, p.id, 'SKILL') }])) })
+  }
+}
+// Japanese extra pairs (2026-11-28, benchmark/japanese-comments/quiz-extra/): more threads from the Japanese test's four
+// subreddits (2026-07-01 to 11-26) picked for the quiz, the reply path with the candidate persona line, each pair judged
+// on its own (Opus, Sonnet), read by hand and the hardest kept
+{
+  const D = join(K, 'japanese-quiz-extra'), B = new URL('../../benchmark/japanese-comments/quiz-extra/', import.meta.url).pathname, posts = JSON.parse(readFileSync(join(D, 'posts.json'), 'utf8')) as any[]
+  for (const p of posts) {
+    const ai = readFileSync(join(B, 'outputs', `${p.id}__SKILL.txt`), 'utf8').trim()
+    items.push({ qid: `jac-${p.id}`, lang: 'ja', kind: 'comment', place: `r/${p.sub}`, title: p.title, body: cut(p.body ?? ''), url: `https://www.reddit.com/r/${p.sub}/comments/${p.id}/`,
+      rawHuman: String(p.human.body), rawAi: ai, human: cut(String(p.human.body)), ai: cut(ai),
+      scores: Object.fromEntries(['opus', 'sonnet'].map((j) => [j, { human: score(join(B, 'judged'), j, p.id, 'HUMAN'), ai: score(join(B, 'judged'), j, p.id, 'SKILL') }])) })
+  }
+}
 // posts: held-out set, MESSY
 {
   const D = join(K, 'post-voice-test', 'holdout'), posts = JSON.parse(readFileSync(join(D, 'posts.json'), 'utf8')) as any[]

@@ -1,0 +1,16 @@
+{
+ "id": "1xdhp2j",
+ "sub": "ja",
+ "order": [
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 62,
+  "HUMAN": 70
+ },
+ "rank": {
+  "SKILL": 2,
+  "HUMAN": 1
+ }
+}

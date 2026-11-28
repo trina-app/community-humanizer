@@ -1,0 +1,16 @@
+{
+ "id": "1wim24q",
+ "sub": "newsokunomoral",
+ "order": [
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 62,
+  "HUMAN": 72
+ },
+ "rank": {
+  "SKILL": 1,
+  "HUMAN": 2
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "id": "1vgzter",
+ "sub": "ja",
+ "order": [
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 25,
+  "HUMAN": 88
+ },
+ "rank": {
+  "SKILL": 2,
+  "HUMAN": 1
+ }
+}
