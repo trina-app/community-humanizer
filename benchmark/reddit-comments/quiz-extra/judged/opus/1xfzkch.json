@@ -1,0 +1,16 @@
+{
+ "id": "1xfzkch",
+ "sub": "AskEurope",
+ "order": [
+  "HUMAN",
+  "SKILL"
+ ],
+ "human": {
+  "HUMAN": 88,
+  "SKILL": 30
+ },
+ "rank": {
+  "HUMAN": 1,
+  "SKILL": 2
+ }
+}

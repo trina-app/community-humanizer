@@ -1,0 +1,16 @@
+{
+ "id": "19270865",
+ "board": "park",
+ "order": [
+  "HUMAN",
+  "SKILL"
+ ],
+ "human": {
+  "HUMAN": 72,
+  "SKILL": 80
+ },
+ "rank": {
+  "HUMAN": 2,
+  "SKILL": 1
+ }
+}

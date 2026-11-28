@@ -1,0 +1,16 @@
+{
+ "id": "1x28asm",
+ "sub": "BuyItForLife",
+ "order": [
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 22,
+  "HUMAN": 85
+ },
+ "rank": {
+  "SKILL": 2,
+  "HUMAN": 1
+ }
+}

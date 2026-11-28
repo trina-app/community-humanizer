@@ -1,0 +1,16 @@
+{
+ "id": "1xmpdu3",
+ "sub": "HomeImprovement",
+ "order": [
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 40,
+  "HUMAN": 80
+ },
+ "rank": {
+  "SKILL": 1,
+  "HUMAN": 2
+ }
+}

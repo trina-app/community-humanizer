@@ -1,0 +1,16 @@
+{
+ "id": "1xu0i98",
+ "sub": "BuyItForLife",
+ "order": [
+  "HUMAN",
+  "SKILL"
+ ],
+ "human": {
+  "HUMAN": 82,
+  "SKILL": 22
+ },
+ "rank": {
+  "HUMAN": 2,
+  "SKILL": 1
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "id": "19297462",
+ "board": "kin",
+ "order": [
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 80,
+  "HUMAN": 72
+ },
+ "rank": {
+  "SKILL": 2,
+  "HUMAN": 1
+ }
+}

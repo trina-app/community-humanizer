@@ -58,6 +58,45 @@ for (const [lang, dir, name] of [['zh', 'chinese-voice-test', 'chinese-comments'
       scores: Object.fromEntries(['opus', 'sonnet'].map((j) => [j, { human: score(join(B, 'judged'), j, p.id, 'HUMAN'), ai: score(join(B, 'judged'), j, p.id, 'SKILL') }])) })
   }
 }
+// Spanish extra pairs (2026-11-28, benchmark/spanish-comments/quiz-extra/): everyday Spanish-language subreddits
+// (preguntaleareddit, mexico, argentina, uruguay, PERU, colombia; 2026-08-01 to 11-26) picked for the quiz, the reply path
+// with the candidate persona line, each pair judged on its own (Opus, Sonnet), read by hand, the hardest short ones kept.
+// No posts.json yet means no pairs yet.
+{
+  const D = join(K, 'spanish-quiz-extra'), B = new URL('../../benchmark/spanish-comments/quiz-extra/', import.meta.url).pathname, posts = (existsSync(join(D, 'posts.json')) ? JSON.parse(readFileSync(join(D, 'posts.json'), 'utf8')) : []) as any[]
+  for (const p of posts) {
+    const ai = readFileSync(join(B, 'outputs', `${p.id}__SKILL.txt`), 'utf8').trim()
+    items.push({ qid: `esc-${p.id}`, lang: 'es', kind: 'comment', place: `r/${p.sub}`, title: p.title, body: cut(p.body ?? ''), url: `https://www.reddit.com/r/${p.sub}/comments/${p.id}/`,
+      rawHuman: String(p.human.body), rawAi: ai, human: cut(String(p.human.body)), ai: cut(ai),
+      scores: Object.fromEntries(['opus', 'sonnet'].map((j) => [j, { human: score(join(B, 'judged'), j, p.id, 'HUMAN'), ai: score(join(B, 'judged'), j, p.id, 'SKILL') }])) })
+  }
+}
+// English extra pairs (2026-11-28, benchmark/reddit-comments/quiz-extra/): everyday subreddits (AskAnAmerican,
+// BuyItForLife, AskEurope, HomeImprovement; 2026-08-01 to 11-26) instead of the test's developer ones, picked for the quiz,
+// the reply path with the candidate persona line, each pair judged on its own (Opus, Sonnet), read by hand, the hardest
+// short ones kept. Their ids are not F1 ids, so the Round P swap below leaves them alone.
+{
+  const D = join(K, 'english-quiz-extra'), B = new URL('../../benchmark/reddit-comments/quiz-extra/', import.meta.url).pathname, posts = (existsSync(join(D, 'posts.json')) ? JSON.parse(readFileSync(join(D, 'posts.json'), 'utf8')) : []) as any[]
+  for (const p of posts) {
+    const ai = readFileSync(join(B, 'outputs', `${p.id}__SKILL.txt`), 'utf8').trim()
+    items.push({ qid: `rce-${p.id}`, lang: 'en', kind: 'comment', place: `r/${p.sub}`, title: p.title, body: cut(p.body ?? ''), url: `https://www.reddit.com/r/${p.sub}/comments/${p.id}/`,
+      rawHuman: String(p.human.body), rawAi: ai, human: cut(String(p.human.body)), ai: cut(ai),
+      scores: Object.fromEntries(['opus', 'sonnet'].map((j) => [j, { human: score(join(B, 'judged'), j, p.id, 'HUMAN'), ai: score(join(B, 'judged'), j, p.id, 'SKILL') }])) })
+  }
+}
+// Korean extra pairs (2026-11-28, benchmark/korean-comments/quiz-extra/): more Clien 모두의공원 and 아무거나질문 threads
+// (2026-09-27 to 11-26, none the Korean tests used) picked for the quiz, the reply path with the candidate persona line,
+// each pair judged on its own (Opus, Sonnet), read by hand, the hardest short ones kept. The Round P swap below finds no
+// SKILLP output for these ids, so it leaves them alone.
+{
+  const D = join(K, 'korean-quiz-extra'), B = new URL('../../benchmark/korean-comments/quiz-extra/', import.meta.url).pathname, posts = (existsSync(join(D, 'posts.json')) ? JSON.parse(readFileSync(join(D, 'posts.json'), 'utf8')) : []) as any[]
+  for (const p of posts) {
+    const ai = readFileSync(join(B, 'outputs', `${p.id}__SKILL.txt`), 'utf8').trim()
+    items.push({ qid: `kce-${p.id}`, lang: 'ko', kind: 'comment', place: `클리앙 ${p.boardName}`, title: p.title, body: cut(p.body), url: `https://www.clien.net/service/board/${p.board}/${p.id}`,
+      rawHuman: String(p.human.body), rawAi: ai, human: cut(String(p.human.body)), ai: cut(ai),
+      scores: Object.fromEntries(['opus', 'sonnet'].map((j) => [j, { human: score(join(B, 'judged'), j, p.id, 'HUMAN'), ai: score(join(B, 'judged'), j, p.id, 'SKILL') }])) })
+  }
+}
 // posts: held-out set, MESSY
 {
   const D = join(K, 'post-voice-test', 'holdout'), posts = JSON.parse(readFileSync(join(D, 'posts.json'), 'utf8')) as any[]
@@ -132,10 +171,12 @@ const clean = (s: string) => s
   .replace(/\bu\/[A-Za-z0-9_-]+/g, 'u/…')
   .replace(/[‘’]/g, "'").replace(/[“”]/g, '"')
   .trim()
-// Developer communities make the quiz a developer quiz; players are anyone (2026-11-28). Spanish keeps its two for now,
-// until general-topic Spanish pairs replace them.
-const DEV = new Set(['r/selfhosted', 'r/ClaudeAI', 'r/SaaS', 'r/indotech'])
-const keep = items.filter((x) => !ko.includes(x) && !unfair.includes(x) && !REVIEW_DROP.has(x.qid.replace(/-p$/, '')) && !DEV.has(x.place)).map(({ rawHuman, rawAi, ...x }) => ({ ...x, title: clean(x.title), body: clean(x.body), human: clean(x.human), ai: clean(x.ai) }))
+// Developer communities make the quiz a developer quiz; players are anyone (2026-11-28).
+const DEV = new Set(['r/selfhosted', 'r/ClaudeAI', 'r/SaaS', 'r/indotech', 'r/devsarg', 'r/programacion'])
+const usable = items.filter((x) => !ko.includes(x) && !unfair.includes(x) && !REVIEW_DROP.has(x.qid.replace(/-p$/, '')))
+// developer subreddits only while a language would have fewer than 10 pairs without them (hardest first)
+const devFill = Object.entries(Object.groupBy(usable, (x) => x.lang)).flatMap(([, xs]) => { const dev = xs.filter((x) => DEV.has(x.place)).sort((a, b) => b.d - a.d); return dev.slice(0, Math.max(0, 10 - (xs.length - dev.length))) })
+const keep = usable.filter((x) => !DEV.has(x.place) || devFill.includes(x)).map(({ rawHuman, rawAi, ...x }) => ({ ...x, title: clean(x.title), body: clean(x.body), human: clean(x.human), ai: clean(x.ai) }))
 writeFileSync(new URL('../src/items.json', import.meta.url), JSON.stringify(keep))
 for (const [l, k] of [['en', 'comment'], ['en', 'post'], ['ko', 'comment'], ['ko', 'post'], ['zh', 'comment'], ['es', 'comment'], ['id', 'comment'], ['ja', 'comment']]) console.log(`${l} ${k}: ${keep.filter((x) => x.lang === l && x.kind === k).length}`)
 console.log(`dropped as political: ${ko.length}, dropped because only one side would be cut: ${unfair.length}`)

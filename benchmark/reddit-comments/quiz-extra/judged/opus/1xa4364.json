@@ -1,0 +1,16 @@
+{
+ "id": "1xa4364",
+ "sub": "AskAnAmerican",
+ "order": [
+  "SKILL",
+  "HUMAN"
+ ],
+ "human": {
+  "SKILL": 30,
+  "HUMAN": 85
+ },
+ "rank": {
+  "SKILL": 2,
+  "HUMAN": 1
+ }
+}

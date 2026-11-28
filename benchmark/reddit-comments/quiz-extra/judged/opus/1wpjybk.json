@@ -1,0 +1,16 @@
+{
+ "id": "1wpjybk",
+ "sub": "HomeImprovement",
+ "order": [
+  "HUMAN",
+  "SKILL"
+ ],
+ "human": {
+  "HUMAN": 80,
+  "SKILL": 40
+ },
+ "rank": {
+  "HUMAN": 2,
+  "SKILL": 1
+ }
+}
